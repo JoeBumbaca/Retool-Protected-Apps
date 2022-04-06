@@ -1,0 +1,10 @@
+id: $header
+type: frame
+subtype: Frame
+resourceName: null
+template:
+  type: header
+  sticky: true
+style:
+  ordered: []
+createdAt: 2021-07-15T05:17:20.592Z

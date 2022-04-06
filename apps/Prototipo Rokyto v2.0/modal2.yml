@@ -1,0 +1,28 @@
+id: modal2
+type: widget
+subtype: ModalWidget
+resourceName: null
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Nueva Direccion
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: wizard1
+    row: 6
+    height: 1
+    width: 5
+    tabNum: nTVxmNGrC
+createdAt: 2021-07-16T13:33:25.221Z

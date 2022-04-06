@@ -1,0 +1,28 @@
+id: modal3
+type: widget
+subtype: ModalWidget
+resourceName: null
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: true
+    - loading: ''
+    - disabled: ''
+    - buttonText: Verificar mi Pedido
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: tabbedcontainer1
+    subcontainer: '0'
+    row: 6
+    height: 0.8
+    width: 12
+createdAt: 2021-07-17T01:06:38.736Z

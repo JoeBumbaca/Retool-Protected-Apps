@@ -1,0 +1,40 @@
+id: button5
+type: widget
+subtype: ButtonWidget2
+resourceName: null
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: null
+    - text: Ir 🚶🏻‍♀️
+    - showInEditor: null
+    - tooltipText: ''
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: geolocaliza
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: ''
+    - loaderPosition: auto
+    - disabled: ''
+    - maintainSpaceWhenHidden: null
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: modal2
+    row: 1
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2021-07-16T14:41:28.413Z

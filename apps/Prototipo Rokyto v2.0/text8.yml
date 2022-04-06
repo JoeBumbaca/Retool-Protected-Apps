@@ -1,0 +1,27 @@
+id: text8
+type: widget
+subtype: TextWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '**Total del Pedido:** S/. {{totalpedido.data.total}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: modal3
+    row: 9.4
+    height: 0.6
+    width: 12
+createdAt: 2021-07-17T03:02:26.870Z

@@ -1,0 +1,113 @@
+id: tabbedcontainer1
+type: widget
+subtype: ContainerWidget2
+resourceName: null
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - heightType: fixed
+    - currentViewKey: 0
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - hidden: null
+    - showHeader: true
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: null
+    - tooltipText: ''
+    - style:
+        ordered: []
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - currentViewIndex: 0
+    - _hasMigratedNestedItems: true
+    - transition: slide
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    - events:
+        ordered: []
+    - _ids:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - loading: false
+    - overflowType: hidden
+    - disabled: ''
+    - _labels:
+        - Rokys Brasas
+        - Parrillas
+        - Fusion Criolla
+        - Almuerzos
+        - Broaster
+        - Hamburguesas
+    - styleContext:
+        ordered:
+          - textDark: '#ffffff'
+          - primary: rgba(211, 216, 53, 1)
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: null
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: wizard1
+    height: 10
+    width: 12
+    tabNum: gk2xSE1KE
+createdAt: 2021-07-15T03:18:37.750Z

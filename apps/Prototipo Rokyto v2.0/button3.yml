@@ -1,0 +1,42 @@
+id: button3
+type: widget
+subtype: ButtonWidget2
+resourceName: null
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: null
+    - text: SI es! 😁
+    - showInEditor: null
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgba(56, 134, 84, 1)
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: cierramodal2
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: ''
+    - loaderPosition: auto
+    - disabled: '{{textinput2.value==''''}}'
+    - maintainSpaceWhenHidden: null
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: modal2
+    row: 16.799999999999997
+    height: 1
+    width: 6
+createdAt: 2021-07-16T14:29:18.465Z

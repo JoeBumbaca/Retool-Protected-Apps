@@ -1,0 +1,28 @@
+id: text13
+type: widget
+subtype: TextWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: Luego de ingresar tu numero, pulsa el boton **Validar**
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: wizard1
+    row: 7.2
+    height: 0.6
+    width: 12
+    tabNum: K1i47hSmL
+createdAt: 2021-07-23T03:05:37.845Z

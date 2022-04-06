@@ -1,0 +1,58 @@
+id: numberinput2
+type: widget
+subtype: NumberInputWidget
+resourceName: null
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: null
+    - hidden: '{{radiogroup1.value !==''Efectivo''}}'
+    - customValidation: ''
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - allowNull: false
+    - showClear: false
+    - tooltipText: ''
+    - currency: SOL
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: 0
+    - labelCaption: ''
+    - min: null
+    - labelWidth: '33'
+    - placeholder: Enter value
+    - showStepper: true
+    - label: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: currency
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - decimalPlaces: null
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: modal4
+    row: 0.2
+    col: 6
+    height: 1
+    width: 6
+createdAt: 2021-07-20T15:09:28.674Z

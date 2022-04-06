@@ -1,0 +1,31 @@
+id: image3
+type: widget
+subtype: ImageWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: fixed
+    - horizontalAlign: center
+    - srcWidth: null
+    - clickable: false
+    - src: https://www.mallplaza.com.pe/media/stores/rokys/logo/rokys-list.png
+    - hidden: null
+    - srcHeight: null
+    - showInEditor: null
+    - tooltipText: ''
+    - fit: contain
+    - aspectRatio: null
+    - storageBlobId: ''
+    - altText: ''
+    - dbBlobId: ''
+    - events:
+        ordered: []
+    - srcType: src
+    - maintainSpaceWhenHidden: null
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    height: 1.8
+    width: 3
+createdAt: 2021-07-15T05:12:19.125Z

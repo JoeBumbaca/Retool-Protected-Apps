@@ -1,0 +1,44 @@
+id: button2
+type: widget
+subtype: ButtonWidget2
+resourceName: null
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: null
+    - text: Siguiente ▶️
+    - showInEditor: null
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: hsl(141, 20%, 55%)
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: bajafila
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: ''
+    - loaderPosition: auto
+    - disabled: '{{table2.selectedRow.index == formatDataAsArray(table2.data).length -1}}'
+    - maintainSpaceWhenHidden: null
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: tabbedcontainer1
+    subcontainer: '0'
+    row: 7
+    col: 6
+    height: 1
+    width: 6
+createdAt: 2021-07-15T03:26:36.294Z

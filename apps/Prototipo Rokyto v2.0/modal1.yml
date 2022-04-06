@@ -1,0 +1,32 @@
+id: modal1
+type: widget
+subtype: ModalWidget
+resourceName: null
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - style:
+        ordered:
+          - accent-background: hsl(141, 20%, 55%)
+    - modalHeight: ''
+    - onModalOpen: ''
+    - events: []
+    - modalWidth: ''
+    - closeOnOutsideClick: true
+    - loading: ''
+    - disabled: ''
+    - buttonText: Agrega este Producto
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: tabbedcontainer1
+    subcontainer: '0'
+    row: 5
+    height: 0.8
+    width: 12
+createdAt: 2021-07-15T03:56:07.192Z

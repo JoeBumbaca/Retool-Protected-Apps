@@ -1,0 +1,28 @@
+id: text7
+type: widget
+subtype: TextWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '**Pedido Nro:** {{urlparams.pedido}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: modal3
+    row: 0.2
+    col: 9
+    height: 0.6
+    width: 3
+createdAt: 2021-07-17T03:01:09.489Z

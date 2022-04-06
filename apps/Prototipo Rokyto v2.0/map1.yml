@@ -1,0 +1,70 @@
+id: map1
+type: widget
+subtype: MapWidget
+resourceName: null
+template:
+  ordered:
+    - hoveredOverPoint: null
+    - pointValue: ''
+    - points: >-
+        {{ [{'latitude':
+        geolocaliza.rawData.results['0'].geometry.location.lat,'longitude':
+        geolocaliza.rawData.results['0'].geometry.location.lng
+
+        }] }}
+    - latitude: '{{parseFloat(geolocaliza.rawData.results[''0''].geometry.location.lat)}}'
+    - onPointSelected: ''
+    - latitudeColumnName: latitude
+    - longitude: '{{parseFloat(geolocaliza.rawData.results[''0''].geometry.location.lng)}}'
+    - longitudeColumnName: longitude
+    - zoom: '16'
+    - onViewportChange: ''
+    - selectedPoint: null
+    - visiblePoints:
+        array: []
+    - showCurrentLngLat: false
+    - fitBoundsToGeoJson: false
+    - geoJsonLayerStyle: ''
+    - geoJson: |-
+        {
+           "type":"FeatureCollection",
+           "features":[
+              {
+                 "type":"Feature",
+                 "geometry":{
+                    "type":"Polygon",
+                    "coordinates":[
+                       [
+                          [
+                             -122.454,
+                             37.766
+                          ],
+                          [
+                             -122.510,
+                             37.764
+                          ],
+                          [
+                             -122.510,
+                             37.772
+                          ],
+                          [
+                             -122.455,
+                             37.773
+                          ]
+                       ]
+                    ]
+                 }
+              }
+           ]
+        }
+    - onPointHoveredOverEnd: ''
+    - onPointHoveredOver: ''
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: modal2
+    row: 2
+    height: 7
+    width: 12
+createdAt: 2021-07-16T14:12:57.394Z

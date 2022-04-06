@@ -1,0 +1,82 @@
+id: wizard1
+type: widget
+subtype: WizardWidget
+resourceName: null
+template:
+  ordered:
+    - spinWhenChildrenAreFetching: true
+    - currentStep: gk2xSE1KE
+    - steps:
+        ordered:
+          - gk2xSE1KE:
+              ordered:
+                - name: Selecciona
+                - navButtons:
+                    - ordered:
+                        - buttonText: Selecciona tu direccion
+                        - buttonType: goToStep
+                        - buttonGoToStep: nTVxmNGrC
+                        - buttonEnabled: '{{true}}'
+                        - triggerButtonIf: '{{false}}'
+                - visualizationXCoordinate: 408
+                - visualizationYCoordinate: 360
+          - GDrtLremT:
+              ordered:
+                - name: Cancela
+                - navButtons: []
+                - visualizationXCoordinate: 408
+                - visualizationYCoordinate: 552
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: false
+          - nTVxmNGrC:
+              ordered:
+                - name: Confirma
+                - navButtons:
+                    - ordered:
+                        - buttonText: Paga tu Pedido
+                        - buttonType: goToStep
+                        - buttonGoToStep: GDrtLremT
+                        - buttonEnabled: '{{true}}'
+                        - triggerButtonIf: '{{false}}'
+                - visualizationXCoordinate: 408
+                - visualizationYCoordinate: 456
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: false
+          - K1i47hSmL:
+              ordered:
+                - name: Saludo
+                - navButtons:
+                    - ordered:
+                        - buttonText: Selecciona tu pedido
+                        - buttonType: goToStep
+                        - buttonGoToStep: gk2xSE1KE
+                        - buttonEnabled: '{{true}}'
+                        - triggerButtonIf: '{{false}}'
+                - visualizationXCoordinate: 408
+                - visualizationYCoordinate: 264
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: true
+    - stepHistory: []
+    - hidden: false
+    - customInitialStepName: Saludo
+    - scroll: false
+    - initialStep: gk2xSE1KE
+    - onReset: ''
+    - onStepChange: ''
+    - hideResetButton: false
+style:
+  ordered: []
+position2:
+  position2:
+    col: 3
+    height: 11.6
+    width: 6
+mobilePosition2:
+  position2:
+    row: 2.2
+    height: 13.399999999999999
+    width: 12
+createdAt: 2021-07-15T02:36:12.985Z

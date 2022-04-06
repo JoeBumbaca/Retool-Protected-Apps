@@ -1,0 +1,28 @@
+id: text4
+type: widget
+subtype: TextWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: right
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '**Sub Total: S/. {{productos.data.price[0]*numberinput1.value}}**'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    container: modal1
+    row: 8.8
+    col: 3
+    height: 0.6
+    width: 9
+createdAt: 2021-07-15T04:26:02.758Z

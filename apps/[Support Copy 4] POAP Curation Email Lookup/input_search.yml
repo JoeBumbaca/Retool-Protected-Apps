@@ -1,0 +1,112 @@
+id: input_search
+type: widget
+subtype: TextInputWidget2
+resourceName: null
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: matei@poap.io
+    - labelCaption: ''
+    - hideLabel: true
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: Enter value
+    - label: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        - ordered:
+            - event: change
+            - type: widget
+            - method: setFilters
+            - pluginId: table1
+            - targetId: null
+            - params:
+                ordered:
+                  - filters: >-
+                      [{columnName: "Email", filterValue:{{input_search.value}},
+                      operator: "equals" }]
+                  - filterStackType: and
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{select_searchType.value == "Email"}}'
+        - ordered:
+            - event: blur
+            - type: widget
+            - method: setFilters
+            - pluginId: table1
+            - targetId: null
+            - params:
+                ordered:
+                  - filters: >-
+                      [{columnName: "Email", filterValue:{{input_search.value}},
+                      operator: "contains"}]
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{ select_searchType.value == "Domain"}}'
+        - ordered:
+            - event: change
+            - type: widget
+            - method: setFilters
+            - pluginId: table1
+            - targetId: null
+            - params:
+                ordered:
+                  - filters: >-
+                      [{columnName: "Drop ID",
+                      filterValue:{{input_search.value}}, operator: "equals"}]
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{ select_searchType.value == "Drop ID"}}'
+        - ordered:
+            - event: change
+            - type: widget
+            - method: setFilters
+            - pluginId: table1
+            - targetId: null
+            - params:
+                ordered:
+                  - filters: >-
+                      [{columnName: "Petition ID",
+                      filterValue:{{input_search.value}}, operator: "equals"}]
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{ select_searchType.value == "Petition ID"}}'
+    - autoCapitalize: none
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    height: 1
+    width: 3
+createdAt: 2022-02-16T23:31:57.101Z

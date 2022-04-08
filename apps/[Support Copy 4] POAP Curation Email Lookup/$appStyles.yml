@@ -1,0 +1,12 @@
+id: $appStyles
+type: setting
+subtype: AppStyles
+resourceName: null
+template:
+  ordered:
+    - value: |-
+        .ant-btn {
+          background-color: transparent;
+          border: none
+        }
+createdAt: 2022-03-27T05:37:05.957Z

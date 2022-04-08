@@ -1,0 +1,11 @@
+version: 43.0.9
+pageUuid: 31374cb4-b539-11ec-becb-43ca6eb7478a
+appTemplate:
+  rootScreen: null
+  version: 2.86.11
+  markdownLinkBehavior: auto
+  customShortcuts:
+    array:
+      - object:
+          shortcut: command+/
+          action: input_search.focus()

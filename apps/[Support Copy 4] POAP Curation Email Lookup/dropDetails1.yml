@@ -1,0 +1,20 @@
+id: dropDetails1
+type: widget
+subtype: GlobalWidget
+resourceName: null
+template:
+  ordered:
+    - showFetchingIndicator: false
+    - heightType: auto
+    - name: Drop Details
+    - pageUuid: ac495854-193a-4a81-bb42-a46350f0266f
+    - dropID: '{{table1.selectedRow.data[''age'']}}'
+    - childNamespace: dropDetails1
+style:
+  ordered: []
+position2:
+  position2:
+    col: 9
+    height: 1
+    width: 3
+createdAt: 2022-03-04T01:39:40.068Z

@@ -1,0 +1,386 @@
+id: table1
+type: widget
+subtype: TableWidget
+resourceName: null
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - Suggestion:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: mapped
+                - allowCustomValue: true
+          - Created Date:
+              ordered:
+                - manageTimeZone: true
+                - dateFormat: MMM d, yyyy
+                - valueTimeZone: '00:00'
+                - displayTimeZone: local
+                - timeFormat: HH:mm
+          - Flag:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: mapped
+                - allowCustomValue: true
+                - optionColors: |-
+                    switch ({{ item }}){
+                      case "Closed": 
+                      break;
+                    }
+          - Drop ID:
+              ordered:
+                - showSeparators: false
+                - padDecimal: true
+                - decimalPlaces: '0'
+          - Comments:
+              ordered: []
+          - Approve For:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: mapped
+                - allowCustomValue: true
+                - optionColors: ''
+          - Custom Column 1:
+              ordered:
+                - allowCustomValue: true
+          - Email:
+              ordered: []
+          - Petition ID:
+              ordered:
+                - showSeparators: false
+                - padDecimal: true
+    - columnWidths:
+        - object:
+            id: Approve For
+            value: 93
+        - object:
+            id: Requested
+            value: 87.03125
+        - object:
+            id: Suggestion
+            value: 90.6312484741211
+        - object:
+            id: Reviewer
+            value: 83.6312484741211
+        - object:
+            id: Validator
+            value: 109.97500610351562
+        - object:
+            id: Petition ID
+            value: 88.3062515258789
+        - object:
+            id: Created Date
+            value: 140.80625915527344
+        - object:
+            id: Drop ID
+            value: 82.80624389648438
+        - object:
+            id: Comments
+            value: 292
+        - object:
+            id: Validator Comment
+            value: 232
+        - object:
+            id: EXE?_1
+            value: 60
+        - object:
+            id: Accepted
+            value: 88
+        - object:
+            id: Delivery
+            value: 131
+        - object:
+            id: Created Date ISO
+            value: 171
+        - object:
+            id: Email
+            value: 198
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered:
+          - Drop ID:
+              ordered:
+                - buttonType: action
+                - url: https://app.poap.xyz/admin/requests/{{self}}
+                - newWindow: true
+                - action: search_dropID
+          - Petition ID:
+              ordered:
+                - buttonType: copy-to-clipboard
+                - valueToCopy: '{{ currentRow[''Petition ID''] }}'
+          - Email:
+              ordered:
+                - buttonType: action
+                - action: search_email
+                - buttonDisabled: false
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - Custom Column 1: Email
+          - Comments: Comments
+          - EXE?_1: EXE?
+          - EXE?: EXE?_Old
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - Event ID: ''
+          - Suggestion: ''
+          - Match: ''
+          - Reviewer: ''
+          - Created Date: ''
+          - Accepted: ''
+          - name: ''
+          - Created Date ISO: ''
+          - sales: ''
+          - Flag: ''
+          - Drop ID: ''
+          - EXE?: ''
+          - Requested: ''
+          - Executed?: ''
+          - Validator Comment: ''
+          - Status: ''
+          - Validator: ''
+          - Delivery: ''
+          - Comments: ''
+          - Approve For: ''
+          - Custom Column 1: ''
+          - id: ''
+          - Email: ''
+          - email: ''
+          - Petition ID: ''
+          - EXE?_1: ''
+          - age: ''
+    - columnFrozenAlignments:
+        ordered:
+          - EXE?_1: left
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - Suggestion: default
+          - Created Date: DateTimeDataCell
+          - Flag: default
+          - Drop ID: button
+          - Comments: TextMultiDataCell
+          - Approve For: default
+          - Custom Column 1: UserDataCell
+          - Email: button
+          - Petition ID: default
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: false
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - Event ID: true
+          - Suggestion: true
+          - Match: false
+          - Reviewer: true
+          - Created Date: false
+          - Accepted: true
+          - name: true
+          - Created Date ISO: true
+          - sales: true
+          - Flag: true
+          - Drop ID: true
+          - EXE?: false
+          - Requested: true
+          - Executed?: true
+          - Validator Comment: true
+          - Status: false
+          - Validator: true
+          - Delivery: true
+          - Comments: true
+          - Approve For: true
+          - id: true
+          - Email: true
+          - email: true
+          - Petition ID: true
+          - EXE?_1: true
+          - age: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor: ''
+    - actionButtonColumnName: Actions
+    - columnSummaryTypes:
+        ordered: []
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{query_validatedPetitions.data}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Audit
+            - actionButtonType: openExternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: >-
+                https://legacy.poap.gallery/event/{{table1.selectedRow.data['Drop
+                ID']}}
+            - actionButtonNewWindow: true
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: Petition ID
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - Suggestion: left
+          - Created Date: left
+          - Accepted: center
+          - Flag: left
+          - Drop ID: center
+          - Requested: center
+          - Comments: left
+          - Approve For: left
+          - Custom Column 1: left
+          - Email: left
+          - Petition ID: center
+    - columnSummaries:
+        object: {}
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered:
+          - Comments: false
+    - showRefreshButton: true
+    - pageSize: 52
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - alternateRowBackground: '#f5f5f5'
+          - background: ''
+          - border: rgba(38, 38, 38, 0.25)
+    - actionButtonPosition: left
+    - dynamicRowHeights: true
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - columnSummaryValues:
+        ordered: []
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: false
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered:
+          - Comments: true
+          - Validator Comment: true
+    - beforeCursor: ''
+    - serverPaginationType: forwardCursorBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: ''
+    - defaultSortDescending: true
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: ''
+    - events: []
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - Custom Column 1: false
+          - Comments: false
+          - Drop ID: false
+          - Petition ID: false
+          - Email: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - Custom Column 1: '{{email_petitions.data}}[0]'
+          - Drop ID: ''
+          - Suggestion: ''
+          - Flag: ''
+          - Approve For: ''
+          - Email: ''
+          - Accepted: '{{self}}'
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - Created Date ISO
+        - Created Date
+        - Petition ID
+        - Drop ID
+        - Email
+        - Reviewer
+        - Suggestion
+        - Flag
+        - Requested
+        - Approve For
+        - Accepted
+        - Delivery
+        - Comments
+        - Status
+        - Match
+        - Validator
+        - Validator Comment
+        - EXE?
+        - EXE?_1
+        - name
+        - age
+        - email
+    - defaultSelectedRow: none
+    - freezeActionButtonColumns: true
+    - sort: null
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: true
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 3.1086244689504383e-15
+    height: 57.00000000000001
+    width: 9
+mobilePosition2:
+  position2:
+    row: 1.400000000000003
+    height: 107.60000000000001
+    width: 12
+createdAt: 2022-02-12T18:47:05.407Z

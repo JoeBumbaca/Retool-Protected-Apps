@@ -1,0 +1,97 @@
+id: select_searchType
+type: widget
+subtype: SegmentedControlWidget
+resourceName: null
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - false
+        - false
+    - _values:
+        - Email
+        - Domain
+        - Drop ID
+        - Petition ID
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - hideValidationMessage: false
+    - selectedItem: null
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ self.values[0] }}'
+    - labelCaption: ''
+    - labelWidth: '15'
+    - deprecatedLabels:
+        array: []
+    - label: Search by
+    - _hasMigratedNestedItems: true
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - invalid: false
+    - selectedIndex: null
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - event: change
+            - type: widget
+            - method: clearValue
+            - pluginId: input_search
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - d03e1
+        - fdf68
+        - 72ab6
+        - b35cd
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+        - left
+        - left
+    - disabled: false
+    - labelPosition: left
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
+    - labelWrap: false
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    row: 0.2
+    col: 3
+    height: 0.8
+    width: 5
+createdAt: 2022-03-27T04:42:23.955Z

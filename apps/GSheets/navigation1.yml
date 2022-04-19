@@ -1,0 +1,49 @@
+id: navigation1
+type: widget
+subtype: NavigationWidget
+resourceName: null
+template:
+  ordered:
+    - horizontalAlign: left
+    - valueToCopy: ''
+    - menuItems:
+        - title: Menu item 1
+          hidden: ''
+          clickable:
+            valueToCopy: ''
+            internalUrlHashParams: ''
+            exportFileType: csv
+            buttonType: action
+            exportTemplate: null
+            url: ''
+            newWindow: false
+            exportQuery: ''
+            action: ''
+            internalUrlQuery: ''
+            internalUrlPath: ''
+            exportFileName: ''
+            disabled: ''
+          menuItems: []
+    - srcFromUrl: true
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - logoImageFile: ''
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - logoImageSrc: ''
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - exportFileName: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    col: 5
+    height: 1
+    width: 7
+createdAt: 2022-04-19T01:09:34.829Z

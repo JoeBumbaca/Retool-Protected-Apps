@@ -7,23 +7,25 @@ template:
     - horizontalAlign: left
     - valueToCopy: ''
     - menuItems:
-        - title: Menu item 1
-          hidden: ''
-          clickable:
-            valueToCopy: ''
-            internalUrlHashParams: ''
-            exportFileType: csv
-            buttonType: action
-            exportTemplate: null
-            url: ''
-            newWindow: false
-            exportQuery: ''
-            action: ''
-            internalUrlQuery: ''
-            internalUrlPath: ''
-            exportFileName: ''
-            disabled: ''
-          menuItems: []
+        - ordered:
+            - title: Menu item 1
+            - hidden: ''
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: action
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: ''
+                  - exportFileName: ''
+                  - disabled: ''
+            - menuItems: []
     - srcFromUrl: true
     - internalUrlHashParams: ''
     - exportFileType: csv

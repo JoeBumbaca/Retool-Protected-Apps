@@ -1,0 +1,9 @@
+id: state_widget_needs_saving
+type: state
+subtype: State
+resourceName: null
+template:
+  ordered:
+    - value: 'false'
+createdAt: 2022-03-02T00:16:52.506Z
+folder: Temporary state

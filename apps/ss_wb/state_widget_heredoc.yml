@@ -1,0 +1,9 @@
+id: state_widget_heredoc
+type: state
+subtype: State
+resourceName: null
+template:
+  ordered:
+    - value: '{}'
+createdAt: 2022-03-02T14:44:35.420Z
+folder: Temporary state

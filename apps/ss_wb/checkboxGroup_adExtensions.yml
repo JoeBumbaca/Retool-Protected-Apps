@@ -1,0 +1,154 @@
+id: checkboxGroup_adExtensions
+type: widget
+subtype: CheckboxGroupWidget2
+resourceName: null
+template:
+  ordered:
+    - _disabledByIndex:
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+    - _values:
+        - LocalAds
+        - longAdsTitle
+        - Option 3
+        - siteLink
+        - Option 5
+        - Option 6
+        - Option 7
+        - Option 8
+        - Option 9
+        - Option 10
+        - Option 11
+        - Option 12
+    - values: ''
+    - selectedIndexes:
+        array: []
+    - selectedItems:
+        array: []
+    - groupLayout: multiColumn
+    - hidden: false
+    - customValidation: ''
+    - data: >-
+        ['LocalAds','longAdsTitle','osb','siteLink','CallExtension','favicon','adEnableProductAds','adEnableCalloutExtension','adEnableReview','adEnableActionExt','adImageExtensions']
+    - maxCount: null
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue:
+        array: []
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ load_Config.data.adExtensions }}'
+    - hiddenByIndex: ''
+    - labelCaption: ''
+    - hideLabel: true
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - label: Ad Extensions
+    - _hasMigratedNestedItems: true
+    - captionByIndex: ''
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - invalid: false
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex: ''
+    - events:
+        ordered: []
+    - _ids:
+        - b5085
+        - df4d8
+        - 8ecb6
+        - c3fd8
+        - f5c2a
+        - 035f3
+        - 77d33
+        - ba11a
+        - 3ab20
+        - b4c08
+        - 95b3e
+        - b6d51
+    - selectedLabels:
+        array: []
+    - disabled: false
+    - labelPosition: top
+    - minCount: null
+    - _labels:
+        - ''
+        - ''
+        - osb
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex: ''
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: 4
+    col: 3
+    height: 0.6
+    width: 2
+createdAt: 2022-01-29T02:40:09.813Z

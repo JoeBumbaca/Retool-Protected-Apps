@@ -1,0 +1,72 @@
+id: checkboxGroup_miscellaneous
+type: widget
+subtype: CheckboxGroupWidget2
+resourceName: null
+template:
+  ordered:
+    - _disabledByIndex: []
+    - _values: []
+    - values: '{{ item }}'
+    - selectedIndexes:
+        array: []
+    - selectedItems:
+        array: []
+    - groupLayout: multiColumn
+    - hidden: false
+    - customValidation: ''
+    - data: '[''bolding'',''moreSponsoredResults'']'
+    - maxCount: null
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue:
+        array: []
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ load_Config.data.miscellaneous }}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - hideLabel: true
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex: []
+    - _captionByIndex: []
+    - label: Label
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - invalid: false
+    - _tooltipByIndex: []
+    - tooltipByIndex:
+        array: []
+    - events:
+        ordered: []
+    - _ids: []
+    - selectedLabels:
+        array: []
+    - disabled: false
+    - labelPosition: top
+    - minCount: null
+    - _labels: []
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels: '{{ _.startCase(item) }}'
+style:
+  ordered: []
+position2:
+  position2:
+    row: 5.200000000000001
+    height: 0.6
+    width: 2
+createdAt: 2022-01-29T02:46:36.327Z

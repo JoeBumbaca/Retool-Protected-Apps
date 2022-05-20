@@ -1,0 +1,36 @@
+id: button1
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Download zip
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: hsl(141, 20%, 46%)
+          - border: '#262626'
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: download
+    - events:
+        ordered: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    col: 8
+    height: 1
+    width: 2
+    tabNum: 2
+createdAt: 2022-03-18T22:39:38.098Z

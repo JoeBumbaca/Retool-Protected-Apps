@@ -1,0 +1,46 @@
+id: form3
+type: widget
+subtype: FormWidget2
+template:
+  ordered:
+    - disableSubmit: false
+    - heightType: auto
+    - resetAfterSubmit: true
+    - submitting: false
+    - hidden: false
+    - data:
+        object: {}
+    - showHeader: true
+    - hoistFetching: true
+    - _hasSubmitEvents: false
+    - initialData: null
+    - showInEditor: false
+    - tooltipText: ''
+    - invalid: false
+    - showFooter: true
+    - events:
+        - ordered:
+            - event: submit
+            - type: datasource
+            - method: trigger
+            - pluginId: fund_property
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - requireValidation: true
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal6
+    row: 2.1094237467877974e-15
+    height: 6
+    width: 12
+createdAt: 2022-05-10T11:25:01.471Z

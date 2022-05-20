@@ -1,0 +1,24 @@
+id: no_spaces
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >-
+        rounting = {{rounting.value}}
+
+        account = {{account.value}}
+
+        zip_code = {{zip_code.value}}
+
+        raise_error = false
+
+        if (account.indexOf(' ') > -1 || rounting.indexOf(' ') > -1 ||
+        zip_code.indexOf(' ') > -1){
+          raise_error = true
+        }
+
+
+        return raise_error
+    - value: ''
+createdAt: 2022-05-10T12:19:38.923Z
+folder: new_vendor

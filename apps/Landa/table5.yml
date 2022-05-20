@@ -1,0 +1,179 @@
+id: table5
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: Year
+            value: 71.328125
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - '0': Balance Sheet accum
+          - '1': Income Statement dep expense
+          - '2': Date
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - '0': ''
+          - '1': ''
+          - '2': ''
+          - Accum Depriciation: ''
+          - Year: ''
+          - Address: ''
+          - ticker: ''
+          - yearend: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - '0': usd_dollars
+          - '1': usd_dollars
+          - '2': date
+          - Accum Depriciation: usd_dollars
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - '0': true
+          - '1': true
+          - '2': true
+          - Accum Depriciation: true
+          - Year: true
+          - Address: true
+          - ticker: true
+          - yearend: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - hidden: '{{select2.value != "Depriciation schedule"}}'
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ Depreciation_schedule_full.value }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - '0': center
+          - '1': center
+          - '2': center
+          - Year: center
+          - Accum Depriciation: center
+    - columnSummaries:
+        object: {}
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 29
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: true
+    - showColumnBorders: false
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - '2'
+        - '0'
+        - '1'
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 14.200000000000017
+    height: 32.99999999999999
+    width: 4
+    tabNum: 1
+createdAt: 2022-03-24T13:02:47.668Z

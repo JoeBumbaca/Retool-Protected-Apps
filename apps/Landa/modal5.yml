@@ -1,0 +1,28 @@
+id: modal5
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - events: []
+    - modalWidth: ''
+    - closeOnOutsideClick: true
+    - loading: ''
+    - disabled: ''
+    - buttonText: Add Vendor
+style:
+  ordered: []
+position2:
+  position2:
+    container: form2
+    row: 2.8
+    col: 7
+    height: 1
+    width: 4
+createdAt: 2022-05-10T09:18:00.435Z

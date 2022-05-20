@@ -1,0 +1,21 @@
+id: container7
+type: widget
+subtype: ContainerWidget
+template:
+  ordered:
+    - title: ''
+    - disabled: ''
+    - spinWhenChildrenAreFetching: true
+    - showBorder: true
+    - showDropShadow: true
+    - heightType: fixed
+    - overflowType: hidden
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 46.20000000000002
+    height: 17.8
+    width: 6
+createdAt: 2022-03-18T22:17:14.943Z

@@ -1,0 +1,71 @@
+id: general_ledger
+type: datasource
+subtype: SqlTransformQuery
+resourceName: SQL Transforms
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: |-
+        SELECT * FROM {{Transaction3.data}} trans
+        WHERE trans.account_type = ANY({{multiselect1.value}})
+        ORDER BY trans.date_created
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-04-10T14:02:00.040Z
+folder: json

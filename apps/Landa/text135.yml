@@ -1,0 +1,30 @@
+id: text135
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '**Trash**'
+    - style:
+        ordered:
+          - color: '#262626'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 12.200000000000001
+    height: 0.6
+    width: 4
+    tabNum: 4
+createdAt: 2022-03-19T19:57:07.496Z

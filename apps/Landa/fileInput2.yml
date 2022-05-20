@@ -1,0 +1,58 @@
+id: fileInput2
+type: widget
+subtype: FileInputWidget
+template:
+  ordered:
+    - parsedValue:
+        array: []
+    - iconAfter: ''
+    - parseFiles: false
+    - maxSize: ''
+    - selectionType: multiple
+    - accept:
+        array: []
+    - hidden: false
+    - customValidation: ''
+    - maxCount: null
+    - hideValidationMessage: false
+    - textBefore: Add photos
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - parsing: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - minSize: ''
+    - placeholder: ''
+    - label: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - files:
+        array: []
+    - iconBefore: file
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - minCount: null
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 3.6
+    col: 1
+    height: 1
+    width: 3
+createdAt: 2022-05-09T21:36:36.819Z

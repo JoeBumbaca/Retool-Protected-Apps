@@ -1,0 +1,57 @@
+id: numberInput6
+type: widget
+subtype: NumberInputWidget
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: null
+    - hidden: false
+    - customValidation: ''
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - allowNull: true
+    - showClear: false
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: 'null'
+    - labelCaption: ''
+    - min: null
+    - labelWidth: '33'
+    - placeholder: ''
+    - showStepper: true
+    - label: Amount
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: currency
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - decimalPlaces: null
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form4
+    row: 3.3306690738754696e-16
+    col: 1
+    height: 1
+    width: 10
+createdAt: 2022-05-10T12:00:42.793Z

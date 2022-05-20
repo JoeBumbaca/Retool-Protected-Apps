@@ -1,0 +1,37 @@
+id: switch8
+type: widget
+subtype: SwitchWidget2
+template:
+  ordered:
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: false
+    - labelCaption: ''
+    - label: on/off
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: false
+    - labelPosition: right
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 8.6
+    col: 4
+    height: 0.6
+    width: 1
+    tabNum: 4
+createdAt: 2022-03-19T19:57:07.024Z

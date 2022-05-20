@@ -1,0 +1,9 @@
+id: all_digested
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: "let allRecords = {{all.data}};\nlet propertyExpenseTypes = {{property_expense_types.data}};\nlet propertyExpenseTypeById = Object.assign({}, ...Object.values(propertyExpenseTypes.id_as_hash).map((propertyExpenseTypeId, i) => (\n  {\n  \t[propertyExpenseTypeId]: propertyExpenseTypes.type[i]\n  }\n)));\nlet orderedTypes = allRecords.property_expense_id.map((propertyExpenseId, i) => propertyExpenseTypeById[propertyExpenseId] || allRecords.category[i]);\n\n return {\n   property_ticker: allRecords.property_ticker,\n   amount: allRecords.amount_amount.map(parseFloat),\n   date_created: allRecords.date_created,\n   type: orderedTypes,\n   id: allRecords.id,\n }"
+    - value: ''
+createdAt: 2022-03-24T16:33:11.382Z
+folder: scripts

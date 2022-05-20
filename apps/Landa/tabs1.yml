@@ -1,0 +1,38 @@
+id: tabs1
+type: widget
+subtype: TabbedContainerWidget
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - hidden: ''
+    - tabNames: |-
+        ["Home", "Accounting", "Files & photos", 
+        "Stats", "Utilities", "Maintenance", "Acquisition"]
+    - selectedTabIndex: 0
+    - events:
+        - ordered:
+            - event: change
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - src: ''
+            - waitType: debounce
+            - waitMs: '0'
+    - selectedTab: '"0"'
+    - showTabBar: true
+    - disableAnimation: false
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.6653345369377348e-16
+    height: 106.19999999999997
+    width: 12
+createdAt: 2022-03-19T15:44:32.713Z

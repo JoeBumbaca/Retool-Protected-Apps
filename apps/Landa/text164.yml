@@ -1,0 +1,30 @@
+id: text164
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: center
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: |-
+        #### **Fund Property**
+        {{urlparams.address}}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form3
+    rowGroup: header
+    row: 0.20000000000000107
+    col: 2
+    height: 1.4
+    width: 8
+createdAt: 2022-05-10T11:24:48.780Z

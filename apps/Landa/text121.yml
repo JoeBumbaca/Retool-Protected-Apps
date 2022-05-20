@@ -1,0 +1,29 @@
+id: text121
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: 'Description: {{description_value.data[''0''].description}}'
+    - style:
+        ordered:
+          - color: '#262626'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container2
+    row: 15.799999999999997
+    height: 0.6
+    width: 9
+createdAt: 2022-03-19T19:50:15.849Z

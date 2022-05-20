@@ -1,0 +1,55 @@
+id: phone
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: Phone
+    - label: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: false
+    - labelPosition: top
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form5
+    row: 2
+    height: 1
+    width: 6
+createdAt: 2022-05-10T12:17:17.037Z

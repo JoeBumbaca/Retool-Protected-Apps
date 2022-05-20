@@ -1,0 +1,29 @@
+id: text88
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: 'Routing: {{account_number_routing.data.routing_number}}'
+    - style:
+        ordered:
+          - color: rgba(0, 0, 0, 1)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container7
+    row: 2.8
+    height: 0.6
+    width: 7
+createdAt: 2022-03-18T22:17:15.123Z

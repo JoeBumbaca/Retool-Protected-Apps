@@ -1,0 +1,29 @@
+id: text156
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '{{series.data.name}}, Filing: #{{series.data.number}}'
+    - style:
+        ordered:
+          - color: rgba(0, 0, 0, 1)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container7
+    row: 1.5999999999999996
+    height: 0.6
+    width: 4
+createdAt: 2022-05-09T22:19:46.032Z

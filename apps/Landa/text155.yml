@@ -1,0 +1,27 @@
+id: text155
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: ' **Describe the work**'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 19.6
+    col: 1
+    height: 0.6
+    width: 3
+createdAt: 2022-05-09T21:44:06.678Z

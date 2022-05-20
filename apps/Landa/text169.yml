@@ -1,0 +1,25 @@
+id: text169
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '##### 🏡 ****{{ property_data.data.address }}****'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal8
+    height: 0.6
+    width: 10
+createdAt: 2022-05-12T10:52:03.014Z

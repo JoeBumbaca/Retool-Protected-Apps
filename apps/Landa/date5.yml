@@ -1,0 +1,48 @@
+id: date5
+type: widget
+subtype: DateWidget
+template:
+  ordered:
+    - minDate: ''
+    - readOnly: false
+    - iconAfter: ''
+    - datePlaceholder: '{{ self.dateFormat.toUpperCase() }}'
+    - dateFormat: MMM d, yyyy
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ new Date() }}'
+    - labelCaption: ''
+    - maxDate: ''
+    - labelWidth: '33'
+    - label: Invoice Date
+    - formattedValue: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: calendar
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: top
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form2
+    row: 0.6
+    height: 1
+    width: 5
+createdAt: 2022-05-10T09:17:49.785Z

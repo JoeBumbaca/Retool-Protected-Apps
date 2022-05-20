@@ -1,0 +1,29 @@
+id: text41
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: 'ID: {{ urlparams.property_ticker}}'
+    - style:
+        ordered:
+          - color: '#979797'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container2
+    row: 26.599999999999998
+    height: 0.6
+    width: 8
+createdAt: 2022-03-10T08:52:20.596Z

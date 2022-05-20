@@ -1,0 +1,97 @@
+id: upload_appraisal_to_gql
+type: datasource
+subtype: GraphQLQuery
+resourceName: d5010b19-db7b-49ca-95b9-0a6a74158a49
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |-
+        mutation new_lease($firstName: String!, $lastName: String!,
+        $email: String!, $phoneNumber: String, 
+        $startDate: Date!, $endDate: Date!, $monthlyRentAmount: Int!,
+        $securityDepositAmount: Int!, $documentUri: String!,
+        $isSecurityDepositPaidToHoldings: Boolean, $ticker: String!) {
+            uploadRentLease(firstName: $firstName, lastName: $lastName,
+            email: $email, phoneNumber: $phoneNumber, startDate: $startDate,
+            endDate: $endDate, monthlyRentAmount: $monthlyRentAmount,
+            securityDepositAmount: $securityDepositAmount,
+            documentUri: $documentUri, isSecurityDepositPaidToHoldings: $isSecurityDepositPaidToHoldings,
+            ticker: $ticker) {
+                ok   
+            }
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: '{{!upload_lease_to_s3.data}}'
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: ''
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - graphQLVariables: >-
+        [{"key":"firstName","value":"{{textInput1.value}}"},{"key":"lastName","value":"{{textInput2.value}}"},{"key":"email","value":"{{textInput3.value}}"},{"key":"phoneNumber","value":"{{textInput4.value}}"},{"key":"startDate","value":"{{date3.value}}"},{"key":"endDate","value":"{{date4.value}}"},{"key":"monthlyRentAmount","value":"{{numberInput1.value}}"},{"key":"securityDepositAmount","value":"{{numberInput2.value}}"},{"key":"documentUri","value":"{{upload_lease_to_s3.data}}"},{"key":"isSecurityDepositPaidToHoldings","value":"{{checkbox3.value}}"},{"key":"ticker","value":"{{select8.value}}"}]
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - cookies: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        //Use the variables data, metadata, and errors to reference these fields
+        from your query's results
+
+        if (Array.isArray(errors) && errors.length > 0) {
+          return errors[0].message;
+        } else {
+          return false
+        }
+            
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - graphQLErrors: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-05-12T10:59:36.872Z
+folder: upload_appraisal

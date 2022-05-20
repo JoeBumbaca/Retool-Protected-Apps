@@ -1,0 +1,27 @@
+id: text149
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: ' **Leases**'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 2.2
+    height: 0.6
+    width: 3
+    tabNum: 2
+createdAt: 2022-05-08T12:43:56.453Z

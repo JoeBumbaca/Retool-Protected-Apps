@@ -1,0 +1,28 @@
+id: text160
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: 'Acquisition Lead:'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 1.6
+    col: 3
+    height: 0.6
+    width: 2
+    tabNum: 6
+createdAt: 2022-05-09T23:07:25.123Z

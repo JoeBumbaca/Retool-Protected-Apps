@@ -1,0 +1,50 @@
+id: textArea4
+type: widget
+subtype: TextAreaWidget
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - autoResize: true
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - minLines: 2
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: Description
+    - label: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - minLength: null
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - maxLines: null
+    - loading: false
+    - disabled: false
+    - labelPosition: top
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form5
+    row: 7.4
+    height: 1
+    width: 12
+createdAt: 2022-05-10T12:17:08.563Z

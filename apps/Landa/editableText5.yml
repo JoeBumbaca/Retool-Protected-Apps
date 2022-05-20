@@ -1,0 +1,57 @@
+id: editableText5
+type: widget
+subtype: EditableTextWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - editIcon: edit
+    - inputValue: ''
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textSize: default
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: add
+    - label: Account
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: '`Enter` to save, `Esc` to cancel'
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 23.6
+    height: 0.6
+    width: 2
+    tabNum: 4
+createdAt: 2022-03-19T19:57:09.246Z

@@ -1,0 +1,93 @@
+id: create_loan
+type: datasource
+subtype: RESTQuery
+resourceName: 1b2fcf3b-5591-4034-8eb4-eabf8804c359
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"data","value":"{'type': 'loans', 'attributes':
+        {'obtaining_property': {'type': 'properties'}, 'external_object_id':
+        {{urlparams.property_ticker}}, 'description':{{textArea3.value}},
+        'initial_debt': {{numberInput6.value}}, 'interest':
+        {{numberInput4.value}}, 'term_in_months': {{numberInput5.value}},
+        'type': 'principal'}}"}]
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: ''
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: api/admin/loans?
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - cookies: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: util
+            - method: confetti
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: json
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-05-10T11:55:52.404Z
+folder: create_loan

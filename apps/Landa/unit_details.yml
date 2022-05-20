@@ -1,0 +1,86 @@
+id: unit_details
+type: datasource
+subtype: RESTQuery
+resourceName: ef7019a5-cb7c-4185-9630-efb9e1c122b4
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |-
+        {
+          "minify": true,
+          "statements": [
+              {
+              "statement": {{cypher_queries.value.units_details}} ,
+                "type": "read"
+              }
+          ]
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: ''
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - cookies: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: true
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return formatDataAsObject(data.results[0])
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-04-14T08:14:58.399Z
+folder: graph

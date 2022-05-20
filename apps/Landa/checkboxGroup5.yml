@@ -1,0 +1,155 @@
+id: checkboxGroup5
+type: widget
+subtype: CheckboxGroupWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+    - _values:
+        - Loan Package
+        - Closing documents PDF
+        - Closing documents CSV
+        - Open work orders
+        - 'Approval for no material updates '
+        - Tenant onboarding sheet,
+        - Updated leases (If any)
+        - Updated rent roll (If any)
+        - Consessions amendment
+        - Vacancy confirmation (photos)
+    - values:
+        array: []
+    - selectedIndexes:
+        array: []
+    - selectedItems:
+        array: []
+    - groupLayout: singleColumn
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - maxCount: null
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue:
+        array: []
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ [self.values[0]] }}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - label: Closing
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - invalid: false
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - events:
+        - ordered:
+            - event: change
+            - type: widget
+            - method: validate
+            - pluginId: fileInput9
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - bc240
+        - b55bf
+        - 1016f
+        - 39a82
+        - f87e2
+        - 52ab2
+        - e0bb8
+        - 412ff
+        - '1e272'
+        - 959b3
+    - selectedLabels:
+        array: []
+    - disabled: false
+    - labelPosition: top
+    - minCount: null
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: container8
+    subcontainer: 635d0
+    row: 26.799999999999997
+    col: 2
+    height: 0.6
+    width: 4
+createdAt: 2022-05-09T23:01:19.599Z

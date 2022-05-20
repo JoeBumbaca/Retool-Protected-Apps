@@ -1,0 +1,26 @@
+id: timeline1
+type: widget
+subtype: TimelineWidget
+template:
+  ordered:
+    - items: >-
+        ["Sourcing:","Contract:","Closing: {{
+        dates_trasformer.value.closing_date }}", "Filing:
+        {{series.data.date_filed}} ", "Qualification:"]
+    - pending: ''
+    - timestamps: >-
+        ["2020-06-29T21:34:00+00:00", "2020-06-29T20:39:00+00:00",
+        "2020-06-28T11:12:00+00:00"]
+    - renderAsHtml: false
+    - isGrouped: false
+    - sortedDesc: false
+    - groupBy: day
+style:
+  ordered: []
+position2:
+  position2:
+    container: container7
+    row: 6.4
+    height: 6.6
+    width: 7
+createdAt: 2022-03-18T22:48:31.857Z

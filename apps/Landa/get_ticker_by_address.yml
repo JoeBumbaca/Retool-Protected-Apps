@@ -1,0 +1,11 @@
+id: get_ticker_by_address
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: |-
+        let address = {{select1.value}}
+        return address
+    - value: ''
+createdAt: 2022-03-23T07:52:04.038Z
+folder: scripts

@@ -1,0 +1,57 @@
+id: numberInput5
+type: widget
+subtype: NumberInputWidget
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: null
+    - hidden: false
+    - customValidation: ''
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - allowNull: true
+    - showClear: false
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '60'
+    - labelCaption: ''
+    - min: '0'
+    - labelWidth: '33'
+    - placeholder: ''
+    - showStepper: true
+    - label: Term in months
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: decimal
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: 'true'
+    - labelPosition: left
+    - decimalPlaces: null
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form4
+    row: 1.9999999999999991
+    col: 1
+    height: 1
+    width: 10
+createdAt: 2022-05-10T12:00:11.413Z

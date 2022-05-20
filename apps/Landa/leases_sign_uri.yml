@@ -1,0 +1,98 @@
+id: leases_sign_uri
+type: datasource
+subtype: RESTQuery
+resourceName: 1b2fcf3b-5591-4034-8eb4-eabf8804c359
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |-
+        {
+          "data": {
+            "attributes": {
+              "urls": [{{ variable0 }}]
+            }
+          }
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: 94
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: '[{"key":"Content-Type","value":"application/vnd.api+json"}]'
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: api/admin/sign_uri
+    - playgroundQueryUuid: a3d57299-196b-4ad3-b2d0-7ea81e7a6f89
+    - playgroundQueryId: 63
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - retoolVersion: 2.86.10
+    - importedQueryInputs:
+        ordered:
+          - variable0: '{{table11.selectedRow.data.document_uri}}'
+    - isImported: true
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - cookies: ''
+    - metadata: null
+    - triggersOnFailure: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - url: '{{leases_sign_uri.data.attributes.urls[0]}}'
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-04-17T08:05:01.244Z
+folder: api

@@ -1,0 +1,56 @@
+id: fileInput1
+type: widget
+subtype: FileInputWidget
+template:
+  ordered:
+    - parsedValue:
+        array: []
+    - iconAfter: ''
+    - parseFiles: false
+    - maxSize: ''
+    - selectionType: single
+    - accept:
+        array: []
+    - hidden: false
+    - customValidation: ''
+    - maxCount: null
+    - hideValidationMessage: false
+    - textBefore: Browse
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - parsing: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - minSize: ''
+    - placeholder: ''
+    - label: Signed Document
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - files:
+        array: []
+    - iconBefore: file
+    - events: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - minCount: null
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: form6
+    row: 8.199999999999996
+    height: 1
+    width: 12
+createdAt: 2022-05-08T12:32:12.627Z

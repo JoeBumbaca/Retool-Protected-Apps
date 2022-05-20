@@ -1,0 +1,29 @@
+id: tags1
+type: widget
+subtype: TagsWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - hidden: false
+    - showInEditor: false
+    - _defaultValue:
+        array: []
+    - colors: >-
+        ['#f8dbd8', '#f9e7d7', '#fbedc8', '#d7eae0', '#d2eaf6', '#e4dcf5',
+        '#fadbec']
+    - tooltipText: ''
+    - value: >-
+        ['{{ property_data.data.property_type }}',
+        '{{property_details.data['0'].status}}']
+    - allowWrap: true
+    - hashColors: true
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container2
+    row: 0.5999999999999999
+    height: 0.8
+    width: 5
+createdAt: 2022-03-18T23:14:39.022Z

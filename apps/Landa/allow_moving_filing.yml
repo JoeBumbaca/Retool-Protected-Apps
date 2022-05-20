@@ -1,0 +1,17 @@
+id: allow_moving_filing
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: |
+        const allow_status = ['filed', 'inventory', 'qualified', 'signed'];
+        const status = {{property_details.data['0'].status}};
+        if (allow_status.includes(status)){
+          return true;
+        }
+        else{
+          return false;
+        }
+    - value: ''
+createdAt: 2022-05-01T14:59:53.547Z
+folder: scripts

@@ -1,0 +1,29 @@
+id: text47
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: Recent appraisal:${{appraisal_value_property.data['0'].appraisal}}
+    - style:
+        ordered:
+          - color: rgba(0, 0, 0, 1)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container2
+    row: 14.6
+    height: 0.6
+    width: 4
+createdAt: 2022-03-10T09:25:34.461Z

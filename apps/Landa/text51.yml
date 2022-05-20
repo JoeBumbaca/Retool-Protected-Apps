@@ -1,0 +1,29 @@
+id: text51
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: '{{all_units.data.ticker.length <= 1}}'
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '**🏣 Residents and units**'
+    - style:
+        ordered:
+          - color: '#979797'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    row: 5.329070518200751e-15
+    height: 0.6
+    width: 5
+createdAt: 2022-03-13T13:00:48.439Z

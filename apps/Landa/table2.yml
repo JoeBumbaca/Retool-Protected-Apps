@@ -1,0 +1,201 @@
+id: table2
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths: []
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - date_created: Date Created
+          - title: Titles
+          - is_resolved: Resolved
+          - description: Description
+          - unit_id: Unit
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - last_admin_name: ''
+          - unit_ticker: ''
+          - is_resolved: ''
+          - last_admin_avatar: ''
+          - last_admin_id: ''
+          - intercom_id: ''
+          - unit_id: ''
+          - id_as_hash: ''
+          - date_created: ''
+          - title: ''
+          - notifications_count: ''
+          - reporter_id: ''
+          - id: ''
+          - categories: ''
+          - description: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - date_created: datetime_tz
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - last_admin_name: false
+          - unit_ticker: true
+          - is_resolved: true
+          - last_admin_avatar: false
+          - last_admin_id: false
+          - intercom_id: true
+          - unit_id: true
+          - id_as_hash: false
+          - date_created: true
+          - title: true
+          - notifications_count: false
+          - reporter_id: false
+          - id: false
+          - categories: false
+          - description: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ open_maintenance.data }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - unit_id: center
+          - intercom_id: center
+          - is_resolved: center
+          - description: center
+          - title: center
+          - date_created: center
+    - columnSummaries:
+        object: {}
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 12
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: ''
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - date_created
+        - title
+        - description
+        - categories
+        - is_resolved
+        - intercom_id
+        - reporter_id
+        - last_admin_avatar
+        - last_admin_id
+        - last_admin_name
+        - notifications_count
+        - unit_id
+        - id_as_hash
+        - unit_ticker
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 0.8
+    height: 15.999999999999998
+    width: 12
+    tabNum: 5
+createdAt: 2022-03-21T12:26:46.972Z

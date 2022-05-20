@@ -1,0 +1,78 @@
+id: SendSlack
+type: datasource
+subtype: SlackQuery
+resourceName: 3ddddaac-98de-42ac-a984-db8eefdb3b37
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - channel: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - message: >-
+        {{property_details.data['0'].status === "primary" ? ":large_red_circle:"
+        : property_details.data['0'].status === "secondary" ?
+        ":large_blue_circle:" : property_details.data['0'].status === "filed" ?
+        ":large_yellow_circle:":
+        ''}}{{property_details.data['0'].status.charAt(0).toUpperCase() +
+        property_details.data['0'].status.slice(1)}}: {{current_user.fullName}}
+        <https://retool.landa.company/apps/Property%20Management/Property%20Page%20graph?property_ticker={{property_data.data.ticker['0']}}|({{property_data.data.address[0]}})>
+        - {{comment1.comments[comment1.comments.length - 1].value}}
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - useSlackMarkdown: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-05-10T12:50:10.372Z

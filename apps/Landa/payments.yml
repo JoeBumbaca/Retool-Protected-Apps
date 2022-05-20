@@ -1,0 +1,111 @@
+id: payments
+type: datasource
+subtype: SqlQueryUnified
+resourceName: bd070b5e-3e02-4fbd-b4f3-a519f1f24272
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: >-
+        SELECT * FROM
+
+        (
+            SELECT * FROM
+            (
+              SELECT 'Late Fee' AS transaction_type, transaction.*, rent_payment.date_due FROM late_fee
+              JOIN rent_payment ON late_fee.rent_payment_id = rent_payment.id
+              JOIN transaction_flow ON transaction_flow.late_fee_id = late_fee.id
+              JOIN transaction ON transaction.transaction_flow_id = transaction_flow.id
+              WHERE rent_payment.external_model_type = 'RENT_USER' AND rent_payment.external_object_id = ANY({{rent_lease_user.data.rent_user_id}})
+            ) late_fee
+            UNION
+            SELECT * FROM 
+            (
+              SELECT 'Rent Payment' AS transaction_type, transaction.*, rent_payment.date_due  FROM rent_payment
+              JOIN transaction_flow ON transaction_flow.rent_payment_id = rent_payment.id
+              JOIN transaction ON transaction.transaction_flow_id = transaction_flow.id
+              WHERE rent_payment.external_model_type = 'RENT_USER' 
+              AND rent_payment.external_object_id = ANY({{rent_lease_user.data.rent_user_id}})
+            ) rent_payment
+        ) all_payments
+
+        WHERE date_due::DATE >= {{ dates_trasformer.value.start }} AND
+        date_due::DATE <= {{ dates_trasformer.value.end }}
+
+        ORDER BY date_due DESC;
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - databaseHostOverride: ''
+    - metadata: null
+    - editorMode: sql
+    - actionType: ''
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - tableName: ''
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-03-03T15:28:27.363Z
+folder: financials

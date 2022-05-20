@@ -1,0 +1,28 @@
+id: text167
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: '{{!no_spaces.value}}'
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: Please remove unnecessary spaces
+    - style:
+        ordered:
+          - color: rgba(241, 10, 10, 1)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form5
+    height: 0.6
+    width: 12
+createdAt: 2022-05-10T12:17:28.214Z

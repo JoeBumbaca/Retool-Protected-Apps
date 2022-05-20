@@ -1,0 +1,27 @@
+id: text152
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: ' **Redacted Leases**'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 10.000000000000002
+    height: 0.6
+    width: 3
+    tabNum: 2
+createdAt: 2022-05-09T15:21:42.423Z

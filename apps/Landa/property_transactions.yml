@@ -1,0 +1,85 @@
+id: property_transactions
+type: datasource
+subtype: SqlQueryUnified
+resourceName: bd070b5e-3e02-4fbd-b4f3-a519f1f24272
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: "SELECT\nCASE\nWHEN transaction_flow.referral_id  IS NOT NULL THEN 'Refrral'\nWHEN transaction_flow.loan_id  IS NOT NULL THEN 'Loan'\nWHEN transaction_flow.landa_gift_id  IS NOT NULL THEN 'Gift'\nWHEN transaction_flow.security_deposit_id  IS NOT NULL THEN 'Security Deposit'\nWHEN transaction_flow.rent_payment_id  IS NOT NULL THEN 'Rent Payment'\nWHEN transaction_flow.late_fee_id  IS NOT NULL THEN 'Late Fee'\nWHEN transaction_flow.payable_rent_id  IS NOT NULL THEN 'Dividend'\nELSE transaction_flow.external_model_type::TEXT END transaction_type,\n\nCASE WHEN receiver_identity.external_model_type != 'PROPERTY' AND receiver_identity.external_object_id != {{urlparams.property_ticker}}\nTHEN receiver_identity.external_model_type\nELSE sender_identity.external_model_type END to_from_type,\n\nCASE WHEN receiver_identity.external_model_type != 'PROPERTY' AND receiver_identity.external_object_id != {{urlparams.property_ticker}}\nTHEN receiver_conn.primary_use\nELSE sender_conn.primary_use END node_description,\n\n\nsender_identity.external_object_id AS sender_id,\nsender_identity.external_model_type  AS sender_type,\nreceiver_identity.external_object_id  AS receiver_id,\nreceiver_identity.external_model_type  AS receiver_type,\nsender_conn.primary_use AS sender_use,\nreceiver_conn.primary_use AS receiver_use,\ntran.date_created::DATE AS date_created,\ntran.transaction_status, ROUND(tran.amount_amount, 2) AS amount,\ntransaction_flow.external_model_type AS transaction_flow_type,\ntransaction_flow.external_object_id AS expense_object_id,\ntransaction_flow.comment, rent_user.landa_user_rent, late_fee.landa_user_late_fee\n\n\nFROM \"transaction\" tran\nLEFT JOIN transaction_flow \nON transaction_flow.id = tran.transaction_flow_id\nLEFT JOIN financial_connection sender_conn ON sender_conn.id = tran.sender_financial_connection_id\nLEFT JOIN financial_identity sender_identity ON sender_identity.id = sender_conn.financial_identity_id\nLEFT JOIN financial_connection receiver_conn ON receiver_conn.id = tran.receiver_financial_connection_id\nLEFT JOIN financial_identity receiver_identity ON receiver_identity.id = receiver_conn.financial_identity_id\nLEFT JOIN\n(\n  SELECT tran.id AS \"id\", rent_payment.external_object_id, {{lease_unit.data.landa_user['0']}} AS landa_user_rent  FROM transaction_flow\n\tJOIN \"transaction\" tran\n\tON tran.transaction_flow_id = transaction_flow.id\n\tJOIN rent_payment\n\tON rent_payment.id = transaction_flow.rent_payment_id\n\tWHERE rent_payment.external_object_id = {{lease_unit.data.rent_user_id['0']}} AND rent_payment.external_model_type = 'RENT_USER' \n) rent_user\nON rent_user.id = tran.id\nLEFT JOIN\n(\n  SELECT tran.id, {{lease_unit.data.landa_user['0']}} AS landa_user_late_fee  FROM transaction_flow\n  JOIN \"transaction\" tran\n  ON tran.transaction_flow_id = transaction_flow.id\n  JOIN late_fee\n  ON late_fee.id = transaction_flow.late_fee_id\n  WHERE late_fee.external_object_id = {{lease_unit.data.rent_user_id['0']}} AND late_fee.external_model_type = 'RENT_USER' \n) late_fee\nON late_fee.id = tran.id\nWHERE ((((sender_identity.external_model_type= 'PROPERTY' AND sender_identity.external_object_id = {{urlparams.property_ticker}})\nOR (receiver_identity.external_model_type= 'PROPERTY' AND receiver_identity.external_object_id = {{urlparams.property_ticker}})\nOR transaction_flow.external_object_id = ANY({{invoice.data.id_as_hash}})))\nAND tran.date_created::DATE >= {{num_invoice.value}} AND tran.date_created::DATE <= {{ date2.value }}  AND {{!checkbox1.value}})\nOR \n(\n  {{checkbox1.value}}\n\tAND \n  \t(receiver_identity.external_object_id = ANY({{lease_unit.data.landa_user}})\n   \tOR\n   \tsender_identity.external_object_id = ANY({{lease_unit.data.landa_user}})\n    OR rent_user.landa_user_rent = ANY({{lease_unit.data.landa_user}})\n    OR late_fee.landa_user_late_fee = ANY({{lease_unit.data.landa_user}}))\n   AND\n   (tran.date_created::DATE >= {{num_invoice.value}} AND tran.date_created::DATE <= {{ date2.value }}));"
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - databaseHostOverride: ''
+    - metadata: null
+    - editorMode: sql
+    - actionType: ''
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - tableName: ''
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-03-10T12:55:24.681Z
+folder: financials

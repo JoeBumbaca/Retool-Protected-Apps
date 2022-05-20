@@ -1,0 +1,30 @@
+id: modal7
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: >-
+        {{['inventory', 'qualified', 'pre_primary','signed',
+        'sourced'].includes(property_details.data['0'].status)}}
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: '400'
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: true
+    - loading: ''
+    - disabled: ''
+    - buttonText: Create Loan
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 1
+    col: 10
+    height: 1
+    width: 1
+createdAt: 2022-05-10T11:58:47.421Z

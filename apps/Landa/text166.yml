@@ -1,0 +1,27 @@
+id: text166
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: center
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### New Vendor'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form5
+    rowGroup: header
+    row: 0.2
+    height: 0.8
+    width: 12
+createdAt: 2022-05-10T12:17:06.165Z

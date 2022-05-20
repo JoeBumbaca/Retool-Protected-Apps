@@ -1,0 +1,103 @@
+id: multiselect1
+type: widget
+subtype: MultiselectWidget2
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex: []
+    - showSelectionIndicator: true
+    - _values: []
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex: []
+    - wrapTags: true
+    - selectedIndexes:
+        array: []
+    - selectedItems:
+        array: []
+    - inputValue: ''
+    - hidden: '{{select2.value!=''General ledger''}}'
+    - customValidation: ''
+    - data: '{{distinct_transaction_type.data.map((item) => item.account_type)}}'
+    - maxCount: null
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex: []
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue:
+        array: []
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{distinct_transaction_type.data.map((item) => item.account_type)}}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex: []
+    - placeholder: Select options
+    - _captionByIndex: []
+    - itemAdornmentSize: auto
+    - label: ''
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - _tooltipByIndex: []
+    - _colorByIndex: []
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - events:
+        ordered: []
+    - _ids: []
+    - emptyMessage: ''
+    - selectedLabels:
+        array: []
+    - overlayMaxHeight: null
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - minCount: null
+    - _labels: []
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex: []
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 1.2000000000000028
+    height: 1
+    width: 4
+    tabNum: 1
+createdAt: 2022-04-10T13:59:56.363Z

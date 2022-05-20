@@ -1,0 +1,22 @@
+version: 43.0.9
+pageUuid: 6dad69cc-d856-11ec-8ffa-8bb9d0eacce9
+appTemplate:
+  folders:
+    - platform
+    - financials
+    - graph
+    - kyc
+    - scripts
+    - json
+    - api
+    - new_expense
+    - fund_property
+    - create_loan
+    - new_vendor
+    - upload_lease
+    - upload_appraisal
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+  rootScreen: null
+  version: 2.89.11

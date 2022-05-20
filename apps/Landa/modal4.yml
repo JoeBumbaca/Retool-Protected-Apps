@@ -1,0 +1,26 @@
+id: modal4
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: 60%
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Maintenance
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    col: 11
+    height: 1
+    width: 1
+createdAt: 2022-05-09T21:28:15.985Z

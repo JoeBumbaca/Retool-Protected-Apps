@@ -1,0 +1,50 @@
+id: date2
+type: widget
+subtype: DateWidget
+template:
+  ordered:
+    - minDate: ''
+    - readOnly: false
+    - iconAfter: ''
+    - datePlaceholder: '{{ self.dateFormat.toUpperCase() }}'
+    - dateFormat: MMM d, yyyy
+    - hidden: '{{select2.value != ''Trial Balance''}}'
+    - customValidation: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{new Date(default_dates_transactions.data.today[''0''])}}'
+    - labelCaption: ''
+    - maxDate: ''
+    - labelWidth: '15'
+    - label: 'As of:'
+    - formattedValue: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: calendar
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    row: 2.3037127760971998e-14
+    col: 4
+    height: 1
+    width: 3
+    tabNum: 1
+createdAt: 2022-03-14T09:01:41.644Z

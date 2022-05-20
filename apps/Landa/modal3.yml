@@ -1,0 +1,27 @@
+id: modal3
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: auto
+    - tooltipText: ''
+    - modalHeight: 800px
+    - onModalOpen: ''
+    - modalWidth: 30%
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Upload Lease
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs1
+    col: 10
+    height: 1
+    width: 2
+    tabNum: 2
+createdAt: 2022-05-01T09:39:09.709Z

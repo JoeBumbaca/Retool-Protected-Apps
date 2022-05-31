@@ -1,0 +1,26 @@
+id: dispatchID
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: 👋 **Hello {{ current_user.firstName || 'friend' }}!**
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.8
+    col: 1
+    height: 0.6
+    width: 3
+createdAt: 2022-05-31T21:34:20.343Z

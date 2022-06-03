@@ -3,7 +3,7 @@ pageUuid: 8d6ed570-e391-11ec-bfd2-97208cc993bf
 appTemplate:
   preloadedAppJavaScript: |-
     window.myFunction = () => {
-      return true
+      return false
     }
   rootScreen: null
   isGlobalWidget: true

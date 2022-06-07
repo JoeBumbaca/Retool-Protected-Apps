@@ -3,9 +3,10 @@ pageUuid: 8d6ed570-e391-11ec-bfd2-97208cc993bf
 appTemplate:
   preloadedAppJavaScript: |-
     window.myFunction = () => {
-      return false
+      console.log('testing');
+      return false;
     }
   rootScreen: null
   isGlobalWidget: true
-  version: 2.90.9
+  version: 2.90.12
   markdownLinkBehavior: auto

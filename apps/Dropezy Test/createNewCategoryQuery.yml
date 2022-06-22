@@ -1,0 +1,104 @@
+id: createNewCategoryQuery
+type: datasource
+subtype: NoSqlQuery
+resourceName: abe48b65-6cfe-4fe5-8b65-543b061c463d
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: insertOne
+    - lastReceivedFromResourceAt: null
+    - aggregation: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: >-
+        {$or: [{name: {{search_category_tv.value !== ""? {$regex:
+        search_category_tv.value, $options: 'i'}: {$exists: true} }} },
+        {"child_categories.name": {{search_category_tv.value !== ""? {$regex:
+        search_category_tv.value, $options: 'i'}: {$exists: true} }} }] }
+
+         
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - update: ''
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - useRawCollectionName: false
+    - data: null
+    - operations: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - projection: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - sortBy: '{name: 1}'
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - src: add_category_modal.close();
+            - waitType: debounce
+            - waitMs: '0'
+    - insert: >-
+        {name_en: "{{cat_name_eng_tv.value}}", name_id:
+        "{{cat_name_id_tv.value}}" ,
+         "image_url": [{{ image_url }}],
+         "abbreviation": "{{abbreviation_tv.value}}",
+
+         child_categories: {{newCategory.child_categories}}
+        }
+    - queryTimeout: '10000'
+    - field: ''
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - limit: ''
+    - enableCaching: false
+    - allowedGroups: []
+    - options: ''
+    - collection: category
+    - skip: ''
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-06-02T14:05:15.212Z

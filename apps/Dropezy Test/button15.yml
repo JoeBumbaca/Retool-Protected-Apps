@@ -1,0 +1,45 @@
+id: button15
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Add Sub Category
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered: []
+    - styleVariant: outline
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - src: addSubCategoryModal.open();
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: categoriesTable
+    subcontainer: Custom Column 2
+    row: 3.3999999999999995
+    col: 3
+    height: 1
+    width: 6
+createdAt: 2022-06-05T06:04:45.469Z

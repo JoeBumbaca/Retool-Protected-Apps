@@ -1,0 +1,84 @@
+id: editSubCategoriesQuery
+type: datasource
+subtype: NoSqlQuery
+resourceName: abe48b65-6cfe-4fe5-8b65-543b061c463d
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: updateOne
+    - lastReceivedFromResourceAt: null
+    - aggregation: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: >-
+        {_id: {$oid:  {{ categoriesTable.selectedRow.data._id }} },
+        child_categories: { $elemMatch: { _id: {$oid:  {{ id }} }}} }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - update: >
+        {$set: { "child_categories.$.name_en": {{ name }},
+        "child_categories.$.name_id": {{ name_id }} }}
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - useRawCollectionName: false
+    - data: null
+    - operations: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - projection: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - sortBy: ''
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - insert: ''
+    - queryTimeout: '10000'
+    - field: ''
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - limit: ''
+    - enableCaching: false
+    - allowedGroups: []
+    - options: ''
+    - collection: category
+    - skip: ''
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-06-05T17:08:04.560Z

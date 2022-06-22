@@ -1,0 +1,30 @@
+id: must_have_subcategory_tv
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: 'true'
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: All categories should have at least one sub category
+    - style:
+        ordered:
+          - color: danger
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    rowGroup: footer
+    row: 1.4
+    height: 0.6
+    width: 5
+createdAt: 2022-06-14T19:12:35.578Z

@@ -1,0 +1,19 @@
+id: header1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: header
+    - pageUuid: 9f4773b2-1dac-41e7-b679-979137a54aa5
+    - nav_position: ''
+    - childNamespace: header1
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    height: 0.4
+    width: 12
+createdAt: 2022-05-26T05:44:24.450Z

@@ -1,0 +1,258 @@
+id: subCategoriesTable
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - child_categories:
+              ordered: []
+          - image_url:
+              ordered: []
+    - columnWidths: []
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - image_url: icon
+          - name: Sub Category Name (ENG)
+          - Custom Column 1: Sub Category Name (ID)
+          - _id: ID
+          - name_id: Sub Category Name (ID)
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - filaName: ''
+          - level: ''
+          - image_url: ''
+          - name: ''
+          - abbreviation: ''
+          - name_id: ''
+          - _id: ''
+          - file: ''
+          - name_en: ''
+          - child_categories: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - child_categories: ModalDataCell
+          - image_url: ImageDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - _id: true
+          - level: false
+    - _columnSummaryTypes:
+        ordered:
+          - child_categories: ''
+          - image_url: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ categoriesTable.selectedRow.data.child_categories}}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - child_categories: left
+          - image_url: left
+    - columnSummaries:
+        object: {}
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - headerBackground: rgba(247, 247, 247, 0)
+          - border: rgba(209, 209, 209, 0)
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - child_categories: ''
+          - image_url: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: saveChanges
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - src: >-
+                      var rows = subCategoriesTable.recordUpdates;
+
+                      var errors = "";
+
+                      var total = rows.length;
+
+
+                      function runQuery(i) {
+                        // Update the Status text
+                      //  Status.setValue("Progress: " + (i.toString() + "/" +
+                      total.toString()));
+                        
+                        console.log("runnning query "+i);
+
+                        if (i >= rows.length) {
+                          console.log("Finished running all queries");
+                          getCategoriesQuery.trigger();
+                          return;
+                        }
+
+                        console.log("Running query for row", i);
+                        
+                        console.log(rows[i]._id +" "+rows[i].name)
+
+                        editSubCategoriesQuery.trigger({
+                         additionalScope: { i: i,
+                                          id: rows[i]._id,
+                                          name: rows[i].name,
+                                          name_id: rows[i].name_id}, // This is where we override the `i` variable
+                          // You can use the argument to get the data with the onSuccess function
+                          onSuccess: function (data) {
+                            console.log("success query "+i);
+                            console.log(data);
+                            runQuery(i + 1);
+                             
+                          },
+                          onFailure: function (error) {
+                            console.log("error query "+i);
+                            // Update the Errors text
+                            errors += "Found error at line " + i.toString() + ":  " + error + "\n\n";
+                          //  Errors.setValue(errors);
+                            runQuery(i + 1);
+                          },
+                        });
+                      }
+
+
+                      runQuery(0);
+            - waitType: debounce
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - child_categories: false
+          - name: true
+          - name_id: true
+          - image_url: true
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - child_categories: '{{self[''0''].name}}, {{ self[''1''].name}} {{self[''2''].name}}'
+          - image_url: >-
+              https://storage.googleapis.com/{{retoolContext.environment ==
+              "production"? "svc-prod-ap-se1-bucket":
+              "svc-preprod-ap-se1-bucket"
+              }}/storefront/categories/subcategories/{{self[0] }}
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - _id
+        - level
+        - image_url
+        - name
+    - sortByRawValue:
+        ordered:
+          - name_id: false
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: categoriesTable
+    subcontainer: child_categories
+    row: 1.6000000000000005
+    height: 8
+    width: 12
+createdAt: 2022-05-30T14:19:05.549Z

@@ -1,0 +1,63 @@
+id: form1
+type: widget
+subtype: FormWidget2
+template:
+  ordered:
+    - disableSubmit: false
+    - heightType: auto
+    - resetAfterSubmit: true
+    - submitting: false
+    - hidden: false
+    - data:
+        object: {}
+    - showHeader: true
+    - hoistFetching: true
+    - initialData: null
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - border: rgba(209, 209, 209, 0)
+    - invalid: false
+    - showFooter: true
+    - events:
+        - ordered:
+            - event: submit
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - src: |2+
+                        uploadCategoryImageQuery.trigger({
+                         additionalScope: { }, // This is where we override the `i` variable
+                          // You can use the argument to get the data with the onSuccess function
+                          onSuccess: function (data) {
+                            console.log("success query ");
+                            console.log(data);
+                           },
+                          onFailure: function (error) {
+                            console.log("error query ");
+                            // Update the Errors text
+                               console.log(error);
+                          },
+                        });
+
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: ''
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - requireValidation: true
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: add_category_modal
+    height: 0.2
+    width: 12
+createdAt: 2022-06-02T14:34:11.455Z

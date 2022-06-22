@@ -1,0 +1,98 @@
+id: button9
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Save
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - borderRadius: 0px
+          - background: rgba(0, 0, 0, 1)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - src: |2
+                         
+
+                        var fileName = textInput5.value;
+                          var ext = subCategoryFileDropzone.files[0].name.split('.').pop();
+
+                          fileName = fileName.replace(/\s/g, '')+"."+ext;
+                        
+                      button9.setDisabled(true);
+                        
+                        
+                        uploadSubCategoryImageQuery.trigger({
+                         additionalScope: {fileName: fileName, file : subCategoryFileDropzone.value[0] },  
+                          onSuccess: function (data) { 
+                            addSubCategoryToNewCategoryModal.close();
+                       
+                            
+                            addNewSubCategoryQuery.trigger({
+                               additionalScope: { "image_url": fileName },  
+                                onSuccess: function (data) {
+                                  console.log("success query ");
+                                  console.log(data);
+
+                                  addSubCategoryModal.close();
+                                  getCategoriesQuery.trigger();
+
+                                  textInput5.setValue("");
+                                  textInput6.setValue("");
+
+                                  console.log(newCategory);
+
+                       
+
+                                 },
+                                onFailure: function (error) {
+                                  console.log("error query ");
+                                  // Update the Errors text
+                                     console.log(error);
+
+                                },
+                              });
+
+                       
+                           },
+                          onFailure: function (error) {
+                            console.log("error query "+i);
+                            // Update the Errors text
+                               console.log(error);
+                            
+                            button9.setDisabled(false);
+                            
+                          },
+                        });
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: addSubCategoryModal
+    row: 9.800000000000033
+    col: 9
+    height: 1
+    width: 2
+createdAt: 2022-05-25T19:13:26.477Z

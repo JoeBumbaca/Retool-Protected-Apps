@@ -1,0 +1,35 @@
+id: edit_sub_categories_btn
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Delete Category (TBD)
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered: []
+    - styleVariant: outline
+    - submit: false
+    - iconBefore: ''
+    - events:
+        ordered: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: categoriesTable
+    subcontainer: Custom Column 2
+    row: 4.999999999999999
+    col: 3
+    height: 1
+    width: 6
+createdAt: 2022-06-05T07:01:00.506Z

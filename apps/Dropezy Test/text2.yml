@@ -1,0 +1,32 @@
+id: text2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '##### Product Categories'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: eaa74
+    height: 0.6
+    width: 3
+mobilePosition2:
+  position2:
+    container: container1
+    subcontainer: eaa74
+    height: 0.6
+    width: 3
+createdAt: 2022-05-25T09:11:40.459Z

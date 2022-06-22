@@ -1,0 +1,99 @@
+id: button13
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Save
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - borderRadius: 0px
+          - background: rgba(0, 0, 0, 1)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - src: |+
+
+                      if(fileDropzone3.value.length > 0 ){
+                          text16.setHidden(true);
+
+                        
+                        var fileName = sub_cat_name_eng_tv.value;
+                        var ext =  fileDropzone3.files[0].name.split('.').pop();
+
+                       fileName = fileName.replace(/\s/g, '')+"."+ext;
+                        
+
+
+                            
+                              var sub_cat_name = sub_cat_name_eng_tv.value;
+                              var sub_cat_name_id = sub_cat_name_id_tv.value;
+                        
+                        
+                              var sub_category = {
+                                "name_en": sub_cat_name,
+                                "name_id": sub_cat_name_id,
+                                "fileName": fileName,
+                                "file": fileDropzone3.value[0],
+                                "image_url": [fileName]
+                              }
+                              newCategory.child_categories.push(sub_category);
+
+                              addSubCategoryToNewCategoryModal.close();
+
+                              sub_cat_name_eng_tv.setValue("");
+                              sub_cat_name_id_tv.setValue("");
+
+                              console.log(newCategory);
+
+                              new_subcategories_table.setData(newCategory.child_categories);
+                              
+                              
+                        must_have_subcategory_tv.setHidden(true);
+                             
+                      } else {
+                        text16.setHidden(false);
+                      }
+
+
+
+
+
+
+
+
+
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: >-
+                {{sub_cat_name_eng_tv.value !== "" && sub_cat_name_id_tv.value
+                !== ""}}
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: addSubCategoryToNewCategoryModal
+    row: 11.199999999999989
+    col: 9
+    height: 1
+    width: 2
+createdAt: 2022-06-03T05:47:58.668Z

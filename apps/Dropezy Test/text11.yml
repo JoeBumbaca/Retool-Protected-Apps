@@ -1,0 +1,28 @@
+id: text11
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: center
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### {{categoriesTable.selectedRow.data.name}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: categoriesTable
+    subcontainer: Custom Column 2
+    row: 0.6000000000000005
+    col: 2
+    height: 0.6
+    width: 8
+createdAt: 2022-06-05T06:02:40.172Z

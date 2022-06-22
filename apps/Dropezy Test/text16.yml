@@ -1,0 +1,29 @@
+id: text16
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: 'true'
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: Image is required
+    - style:
+        ordered:
+          - color: danger
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: addSubCategoryToNewCategoryModal
+    row: 6.4
+    height: 0.6
+    width: 4
+createdAt: 2022-06-07T18:58:56.124Z

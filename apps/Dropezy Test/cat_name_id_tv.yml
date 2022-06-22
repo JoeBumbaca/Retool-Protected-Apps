@@ -1,0 +1,57 @@
+id: cat_name_id_tv
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - labelCaption: ''
+    - hideLabel: false
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: Enter value
+    - label: Category Name (ID) *
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: false
+    - labelPosition: top
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 2.9999999999999987
+    col: 7
+    height: 1
+    width: 5
+createdAt: 2022-05-25T11:36:27.368Z

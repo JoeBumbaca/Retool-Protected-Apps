@@ -1,0 +1,21 @@
+version: 43.0.9
+pageUuid: 712462c4-dc00-11ec-ac6a-f317aa0d465d
+appTemplate:
+  preloadedAppJavaScript: >+
+    var newCategory = {};
+
+    var child_categories = []
+
+    newCategory.child_categories = child_categories;
+
+
+    var gcsUrl = "https://storage.googleapis.com/";
+
+    var bucketName = retoolContext.environment == "production"?
+    "svc-prod-ap-se1-bucket" : "svc-preprod-ap-se1-bucket";
+
+    var rootImageUrl = gcsUrl + bucketName+"/";
+
+  rootScreen: null
+  version: 2.94.3
+  markdownLinkBehavior: auto

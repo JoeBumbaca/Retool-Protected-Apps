@@ -1,0 +1,31 @@
+id: deviceListView
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: fixed
+    - showBorder: true
+    - hidden: '{{getCognitoDevices.isFetching}}'
+    - data: ''
+    - showDropShadow: true
+    - scroll: true
+    - rowKeys: >-
+        {{getCognitoDevices.data?.result.Devices ?
+        _.map(getCognitoDevices.data.result.Devices, (i) => { return i.DeviceKey
+        } ) : [] }}
+    - formDataKey: '{{ self.id }}'
+    - dynamicHeightsEnabled: true
+    - itemHeight: '3'
+    - overflowType: scroll
+    - instances: >-
+        {{getCognitoDevices.data ? getCognitoDevices.data.result.Devices.length
+        : 0}}
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    row: 1.4000000000000006
+    height: 15.200000000000005
+    width: 7
+createdAt: 2021-09-07T15:12:15.966Z

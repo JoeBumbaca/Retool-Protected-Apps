@@ -1,0 +1,9 @@
+version: 43.0.9
+pageUuid: 4fa290da-3b33-11ec-8fc4-67d72db8d5ea
+appTemplate:
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+      skipDepCycleCheckingEnabled: false
+  rootScreen: null
+  version: 2.92.10

@@ -1,0 +1,44 @@
+id: refreshButton
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Load Devices
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgba(60, 146, 222, 0.23)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: reload
+    - events:
+        - ordered:
+            - method: trigger
+            - enabled: ''
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: getCognitoDevices
+            - waitType: debounce
+            - event: click
+            - type: datasource
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    row: 0.20000000000000018
+    height: 0.8
+    width: 2
+createdAt: 2022-05-02T17:41:46.381Z

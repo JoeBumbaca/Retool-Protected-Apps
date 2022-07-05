@@ -1,0 +1,24 @@
+id: listView1
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: auto
+    - showBorder: true
+    - hidden: '{{query1.isFetching}}'
+    - data: ''
+    - showDropShadow: true
+    - formDataKey: '{{ self.id }}'
+    - dynamicHeightsEnabled: true
+    - itemHeight: '3'
+    - overflowType: scroll
+    - instances: '{{query1.data.testResponse.length}}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    row: 1.5999999999999996
+    height: 5
+    width: 6
+createdAt: 2022-07-05T20:49:24.229Z

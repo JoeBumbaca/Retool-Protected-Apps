@@ -1,0 +1,35 @@
+id: text2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        **Created:**
+        {{getCognitoDevices.data.result.Devices[i].DeviceCreateDate}} 
+
+
+        **Last Modified:**
+        {{getCognitoDevices.data.result.Devices[i].DeviceLastModifiedDate}}
+
+
+        **Last Authenticated Date:**
+        {{getCognitoDevices.data.result.Devices[i].DeviceLastAuthenticatedDate}}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    height: 2.2
+    width: 12
+createdAt: 2021-09-07T15:16:26.722Z

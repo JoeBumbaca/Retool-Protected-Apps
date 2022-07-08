@@ -1,0 +1,12 @@
+id: GetCurrentlySelectedCountry
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >-
+        {{ GET_ListCountries.data.countries.forEach(country => country.name ===
+        country.value)}}
+
+        return x.id
+    - value: ''
+createdAt: 2022-06-23T08:07:19.466Z

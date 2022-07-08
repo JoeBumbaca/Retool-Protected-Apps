@@ -1,0 +1,97 @@
+id: hq
+type: widget
+subtype: SelectWidget2
+template:
+  ordered:
+    - imageByIndex: ''
+    - _disabledByIndex: []
+    - showSelectionIndicator: true
+    - _values: []
+    - iconByIndex: ''
+    - values: '{{ item.name }}'
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex: []
+    - inputValue: ''
+    - hidden: false
+    - customValidation: ''
+    - data: '{{ GET_ListCountries.data.countries }}'
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex: ''
+    - textBefore: ''
+    - _fallbackTextByIndex: []
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - hiddenByIndex: ''
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex: []
+    - placeholder: ''
+    - _captionByIndex: []
+    - itemAdornmentSize: auto
+    - label: HQ
+    - _hasMigratedNestedItems: true
+    - captionByIndex: ''
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex: []
+    - _colorByIndex: []
+    - tooltipByIndex: ''
+    - iconBefore: ''
+    - colorByIndex: ''
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - event: change
+            - type: state
+            - method: setValue
+            - pluginId: applicantChangedKeys
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '{{ new Set([...applicantChangedKeys.value,"hq"]) }}'
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids: []
+    - emptyMessage: ''
+    - overlayMaxHeight: 375
+    - loading: false
+    - disabled: >-
+        {{!editApplicant_swtch.value  ||
+        !getUserPermissions.data.permissions.includes("EditApplicantInfo")}}
+    - labelPosition: top
+    - _labels: []
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex: ''
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex: []
+    - required: false
+    - labels: '{{ item.name }}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: frmApplicationInfo
+    row: 2.8
+    height: 1
+    width: 6
+createdAt: 2022-05-19T01:14:00.483Z

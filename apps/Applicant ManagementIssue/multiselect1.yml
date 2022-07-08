@@ -1,0 +1,156 @@
+id: multiselect1
+type: widget
+subtype: MultiselectWidget2
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - showSelectionIndicator: true
+    - _values:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - wrapTags: true
+    - selectedIndexes:
+        array: []
+    - selectedItems:
+        array: []
+    - inputValue: ''
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - maxCount: null
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue:
+        array: []
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: |-
+        {{  GET_ApplicationInfo_.data.hq?.toLowerCase() === "mexico" ?[
+                      3,4
+                      ]
+                    :  GET_ApplicationInfo_.data.hq?.toLowerCase() === "colombia" ||
+                      GET_ApplicationInfo_.data.hq?.toLowerCase() === "peru" ||
+                      GET_ApplicationInfo_.data.hq?.toLowerCase() === "chile" ||
+                       GET_ApplicationInfo_.data.hq?.toLowerCase() === "panama" ? [4]
+                    : [1]
+        }} 
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - placeholder: Select options
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - itemAdornmentSize: auto
+    - label: Supported Issuers
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - events:
+        ordered: []
+    - _ids:
+        - b8129
+        - 9d1d1
+        - 3493a
+        - b9b9f
+    - emptyMessage: ''
+    - selectedLabels:
+        array: []
+    - overlayMaxHeight: 375
+    - loading: false
+    - disabled: false
+    - labelPosition: top
+    - minCount: null
+    - _labels:
+        - Stripe
+        - Marqeta
+        - Cacao
+        - Galileo
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 13.200000000000001
+    height: 1
+    width: 5
+createdAt: 2022-06-26T13:05:29.416Z

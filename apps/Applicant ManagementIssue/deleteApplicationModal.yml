@@ -1,0 +1,32 @@
+id: deleteApplicationModal
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: auto
+    - tooltipText: ''
+    - style:
+        ordered:
+          - primary-surface: rgb(255, 255, 255)
+          - accent-background: rgb(239, 238, 238)
+    - modalHeight: 400px
+    - onModalOpen: ''
+    - modalWidth: 600px
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Delete Application
+style:
+  ordered: []
+position2:
+  position2:
+    container: frmApplicationInfo
+    rowGroup: footer
+    row: 0.20000000000000284
+    col: 4
+    height: 1
+    width: 2
+createdAt: 2022-06-23T09:54:12.996Z

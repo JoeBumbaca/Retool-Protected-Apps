@@ -1,0 +1,7 @@
+id: legalRepData
+type: state
+subtype: State
+template:
+  ordered:
+    - value: null
+createdAt: 2022-06-26T10:59:12.583Z

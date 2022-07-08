@@ -1,0 +1,28 @@
+id: text3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: top
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: |
+        ## Create SAT Link
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal1
+    row: 4.440892098500626e-16
+    col: 3
+    height: 0.6
+    width: 7
+createdAt: 2022-06-23T09:58:38.032Z

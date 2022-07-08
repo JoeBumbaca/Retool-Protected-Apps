@@ -1,0 +1,26 @@
+id: text6
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: center
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '### Do you want to delete this application?'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: deleteApplicationModal
+    row: 0.40000000000000013
+    height: 0.6
+    width: 12
+createdAt: 2022-06-23T10:28:40.156Z

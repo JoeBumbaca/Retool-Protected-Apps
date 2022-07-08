@@ -1,0 +1,7 @@
+id: cities
+type: state
+subtype: State
+template:
+  ordered:
+    - value: null
+createdAt: 2022-06-23T16:39:37.520Z

@@ -1,0 +1,32 @@
+id: reOpenModal
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: auto
+    - tooltipText: ''
+    - style:
+        ordered:
+          - primary-surface: rgb(255, 255, 255)
+          - accent-background: rgb(239, 238, 238)
+    - modalHeight: 300px
+    - onModalOpen: ''
+    - modalWidth: 700px
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Re-open Application
+style:
+  ordered: []
+position2:
+  position2:
+    container: frmApplicationInfo
+    rowGroup: footer
+    row: 0.2000000000000009
+    col: 2
+    height: 1
+    width: 2
+createdAt: 2022-06-23T09:54:11.914Z

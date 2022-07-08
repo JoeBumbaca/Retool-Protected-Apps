@@ -1,0 +1,114 @@
+id: prepareEditApplicantData
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: >2-
+
+          let addressKeys = [
+              "street_address_input",
+              "country",
+              "postal_code",
+              "city",
+              "state",
+            ];
+        let changedData ={}
+
+        let keys =[...applicantChangedKeys.value]
+
+        let addressChangeFlag =false
+         keys.forEach(key => {
+           if(addressKeys.includes(key)){
+             addressChangeFlag= true
+           }
+           changedData={...changedData,[key] : frmApplicationInfo.data[key]}}) 
+        changedData={...changedData,user_id:
+        GET_ApplicationInfo_.data.users[0].user_id }
+
+
+        if(addressChangeFlag){
+          changedData={...changedData,country:frmApplicationInfo.data.country,street_address_input:frmApplicationInfo.data.street_address_input}
+          if(getStates.data.states.length ){
+            changedData={...changedData,state:frmApplicationInfo.data.state}
+          }
+          if(getCities.data.cities.length ){
+            changedData={...changedData,city:frmApplicationInfo.data.city}
+          }
+        }
+
+        prepareEditApplicantData.data = changedData
+
+
+        return changedData
+         
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: PUT_EditApplicantInfo
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-06-23T17:02:53.914Z

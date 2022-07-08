@@ -1,0 +1,67 @@
+id: email
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: ''
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: email
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: you@example.com
+    - label: Email
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: bold/mail-send-envelope
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        - ordered:
+            - event: change
+            - type: state
+            - method: setValue
+            - pluginId: legalRebChangedKeys
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '{{ new Set([...legalRebChangedKeys.value,"email"]) }}'
+            - waitType: debounce
+            - waitMs: '0'
+    - autoCapitalize: none
+    - loading: false
+    - disabled: >-
+        {{!editSwitch.value ||
+        !getUserPermissions.data.permissions.includes("EditApplicantInfo")}}
+    - labelPosition: top
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: legalRebForm
+    row: 2.9999999999999996
+    height: 1
+    width: 8
+createdAt: 2022-06-26T10:24:50.205Z

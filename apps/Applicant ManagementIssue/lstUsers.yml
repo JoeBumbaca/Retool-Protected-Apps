@@ -1,0 +1,26 @@
+id: lstUsers
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: fixed
+    - showBorder: true
+    - data: ''
+    - showDropShadow: true
+    - scroll: false
+    - rowKeys: ''
+    - formDataKey: '{{ self.id }}'
+    - dynamicHeightsEnabled: true
+    - itemHeight: '3'
+    - overflowType: visible
+    - instances: '{{GET_ApplicationInfo_.data.users.length}}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: frmUpdateRep
+    rowGroup: header
+    row: 0.6000000000000001
+    height: 15.6
+    width: 12
+createdAt: 2022-05-19T15:09:15.567Z

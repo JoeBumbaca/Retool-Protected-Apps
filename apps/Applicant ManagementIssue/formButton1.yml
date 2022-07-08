@@ -1,0 +1,30 @@
+id: formButton1
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: form1
+    - hidden: false
+    - text: Save
+    - showInEditor: false
+    - tooltipText: ''
+    - submit: true
+    - iconBefore: ''
+    - events: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: '{{errorMsgForIssuers.value}}'
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    rowGroup: footer
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2022-06-02T15:44:35.462Z

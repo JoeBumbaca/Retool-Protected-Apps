@@ -1,0 +1,36 @@
+id: editSwitch
+type: widget
+subtype: SwitchWidget2
+template:
+  ordered:
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: false
+    - labelCaption: ''
+    - label: edit
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: ''
+    - labelPosition: right
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: legalRebForm
+    row: 0.3999999999999999
+    col: 10
+    height: 0.6
+    width: 2
+createdAt: 2022-06-26T11:10:38.381Z

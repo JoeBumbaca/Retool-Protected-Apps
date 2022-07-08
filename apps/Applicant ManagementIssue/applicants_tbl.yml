@@ -1,0 +1,318 @@
+id: applicants_tbl
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - id:
+              ordered: []
+    - columnWidths: []
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - id: Company ID
+          - name: Applicants
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - users: ''
+          - name: ''
+          - '0': ''
+          - '1': ''
+          - value: ''
+          - '2': ''
+          - test: ''
+          - status: ''
+          - '3': ''
+          - allow_suspension: ''
+          - '4': ''
+          - id: ''
+          - companies: ''
+          - is_active: ''
+    - columnFrozenAlignments:
+        ordered:
+          - id: null
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - id: TextDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: false
+    - _columnVisibility:
+        ordered:
+          - users: true
+          - name: true
+          - '0': true
+          - '1': true
+          - value: true
+          - '2': true
+          - test: true
+          - status: true
+          - '3': true
+          - allow_suspension: true
+          - '4': true
+          - id: false
+          - companies: true
+          - is_active: true
+    - _columnSummaryTypes:
+        ordered:
+          - id: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - users: true
+          - name: true
+          - '0': true
+          - '1': true
+          - value: true
+          - '2': true
+          - test: true
+          - status: true
+          - '3': true
+          - allow_suspension: true
+          - '4': true
+          - id: false
+          - companies: true
+          - is_active: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - hidden: >-
+        {{search_txtbx.value == "" || applicants_tbl.selectedRow.data !=
+        undefined}}
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{transformer1.value.applicants}}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: null
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - id: left
+          - name: center
+    - columnSummaries:
+        object: {}
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showInEditor: true
+    - showRefreshButton: false
+    - pageSize: 6
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - toolbarAccent: ''
+          - toolbarText: ''
+          - toolbarBackground: ''
+          - border: ''
+          - cellAccent: ''
+          - hoverRowBackground: ''
+          - selectedRowBackground: ''
+          - alternateRowBackground: ''
+          - background: ''
+          - cellText: ''
+          - editedAccent: ''
+          - headerAccent: ''
+          - headerText: ''
+          - headerBackground: ''
+          - borderRadius: ''
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - id: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: false
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: rowSelectChange
+            - type: datasource
+            - method: trigger
+            - pluginId: GET_ApplicationInfo_
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: rowSelectChange
+            - type: state
+            - method: setValue
+            - pluginId: states
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '[]'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: rowSelectChange
+            - type: state
+            - method: setValue
+            - pluginId: cities
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '[]'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - method: trigger
+            - enabled: '{{GET_KYCVerification.data.types.length ==0}}'
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: GET_KYCVerification
+            - waitType: debounce
+            - event: saveChanges
+            - type: datasource
+            - waitMs: '0'
+        - ordered:
+            - method: trigger
+            - enabled: '{{GET_ListCountries.data.countries.length ==0}}'
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: GET_ListCountries
+            - waitType: debounce
+            - event: saveChanges
+            - type: datasource
+            - waitMs: '0'
+        - ordered:
+            - method: trigger
+            - enabled: ''
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: GET_ListIndustries
+            - waitType: debounce
+            - event: saveChanges
+            - type: datasource
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - name
+        - test
+        - value
+        - companies
+        - users
+        - status
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - is_active
+        - allow_suspension
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - id
+        - name
+        - test
+        - value
+        - companies
+        - users
+        - status
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - is_active
+        - allow_suspension
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container2
+    subcontainer: e35b4
+    row: 1.799999999999999
+    col: 3
+    height: 6.8
+    width: 5
+createdAt: 2022-05-19T00:45:07.723Z

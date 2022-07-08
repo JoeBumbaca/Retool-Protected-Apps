@@ -1,0 +1,33 @@
+id: link1
+type: widget
+subtype: LinkWidget
+template:
+  ordered:
+    - horizontalAlign: center
+    - clickable: false
+    - iconAfter: ''
+    - hidden: false
+    - text: '{{CreateSatLink.data.sat_url}}'
+    - showUnderline: hover
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - text: rgb(0, 0, 0)
+    - allowWrap: true
+    - iconBefore: ''
+    - events:
+        ordered: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal1
+    row: 3.5999999999999996
+    height: 0.6
+    width: 12
+createdAt: 2022-06-23T10:12:25.122Z

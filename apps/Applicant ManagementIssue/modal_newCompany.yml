@@ -1,0 +1,73 @@
+id: modal_newCompany
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: '{{GET_ApplicationInfo_.data.hq === "Columbia"}}'
+    - onModalClose: ''
+    - modalHeightType: auto
+    - tooltipText: ''
+    - style:
+        ordered:
+          - accent-foreground: '#ffffff'
+    - modalHeight: 824px
+    - onModalOpen: ''
+    - events:
+        - ordered:
+            - event: open
+            - type: datasource
+            - method: trigger
+            - pluginId: GET_ApplicationInfo_
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+            - eventParams:
+                ordered:
+                  - onlyRespondToUserInteraction: true
+            - enabled: ''
+        - ordered:
+            - method: openApp
+            - enabled: '{{GET_ApplicationInfo_.data.hq === "Colombia"}}'
+            - params:
+                ordered:
+                  - uuid: 85c97d54-ef74-11ec-9240-373cade10102
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: ApplicationInfo
+                                - value: >-
+                                    {{JSON.stringify(GET_ApplicationInfo_.data)}}
+                            - ordered:
+                                - key: ''
+                                - value: ''
+                        - newTab: true
+            - targetId: null
+            - pluginId: ''
+            - waitType: debounce
+            - event: open
+            - type: util
+            - waitMs: '0'
+            - eventParams:
+                ordered:
+                  - onlyRespondToUserInteraction: true
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Approve Company
+style:
+  ordered: []
+position2:
+  position2:
+    container: Company_tbdCntr
+    rowGroup: header
+    row: 0.2
+    col: 8
+    height: 1
+    width: 2
+createdAt: 2022-05-19T20:04:45.818Z

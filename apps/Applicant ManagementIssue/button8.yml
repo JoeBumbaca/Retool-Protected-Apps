@@ -1,0 +1,44 @@
+id: button8
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Back
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgba(59, 145, 219, 0)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: bold/interface-arrows-button-left
+    - events:
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: legalRepData
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '{}'
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container3
+    subcontainer: 7516d
+    height: 1
+    width: 1
+createdAt: 2022-06-26T12:13:22.660Z

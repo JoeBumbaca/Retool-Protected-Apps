@@ -1,0 +1,144 @@
+id: POST_CreateCompany
+type: datasource
+subtype: RESTQuery
+resourceName: REST-WithoutResource
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"payment_term","value":"{{payment_term_modal.value}}"},{"key":"send_email","value":"{{welcome_email_modal.value}}"},{"key":"enable_tribal_pay","value":"{{enable_tribal_pay_modal.value}}"},{"key":"company_data","value":"{       
+        \"name\": {{company_name_modal.value}},        \"headquarters\":
+        {{GET_ApplicationInfo_.data.hq}},        \"incorporation\":
+        {{incorporation_modal.value}},        \"company_legal_name\":
+        {{startup_name.value}},        \"profile\": {            \"first_name\":
+        {{GET_ApplicationInfo_.data.users[0].first_name}},           
+        \"last_name\": {{GET_ApplicationInfo_.data.users[0].last_name}},   
+        \"email\": {{GET_ApplicationInfo_.data.users[0].email}},       
+        \"title\": {{GET_ApplicationInfo_.data.users[0].title}} ,        
+        \"mobile_code\": {{country_code_create_modal.value}},        
+        \"mobile_number\":{{mobile_number_create_modal.value}},                 
+        \"user_id\": {{GET_ApplicationInfo_.data.users[0].user_id}}       
+        },        \"operational_hq\": {{operation_hq_modal.value}}   
+        }"},{"key":"extra_data","value":"{    \"limit\":
+        {{limit_modal.value}},    \"userLimit\":
+        {{limit_modal.value}},\"address\": [{\"country\":\"US\", \"city\":\"San
+        Francisco\", \"state\":\"CA\", \"line1\":\"44 Montgomery St.\",
+        \"line2\":null, \"postal_code\":\"94104\"}], \"docusign_agreement\": {
+        \"documnet_id\":\"ef15fab4-5b1c-4553-823d-feb49532997a\",
+        \"action_type_id\":0}, \"currencies\": [{{currency_modal.value}}],   
+        \"enable_wallets\": true,        \"Password\":
+        \"QvrdGFdW%~^Y;5UY;b6rfWs)}E>Yq\",    \"confirm_password\":
+        \"QvrdGFdW%~^Y;5UY;b6rfWs)}E>Yq\",     \"department\":
+        \"Management\",         \"CompanyMode\": 1,    \"CompanyType\": 1,   
+        \"CompanyCode\": \"CODE\",    \"suppoted_providers\":
+        [{{supported_issuers_modal.value}}],         \"company_rfc\":
+        {{rfc.value}},    \"legal_address\": {        \"country\":
+        {{GET_ApplicationInfo_.data.country}},        \"city\":
+        {{GET_ApplicationInfo_.data.city}},        \"state\":
+        {{GET_ApplicationInfo_.data.state}},        \"line1\":
+        {{GET_ApplicationInfo_.data.street_address}},            \"line2\":
+        {{GET_ApplicationInfo_.data.street_address_optional}},       
+        \"postal_code\": {{GET_ApplicationInfo_.data.postal_code}}   
+        }}"},{"key":"industry_id","value":"{{industry_modal.value}}"},{"key":"exposure_status_id","value":"{{exposure_status_modal.value}}"},{"key":"language_id","value":"{{GET_ApplicationInfo_.data.language_id}}"}]
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: |
+        Company Created Successfully
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: '[{"key":"","value":""}]'
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: >-
+        https://staging-b.tribal.credit/Admin/api/company/create?key=YHaqasYderuZY7A9
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - cookies: '[]'
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: widget
+            - method: close
+            - pluginId: modal_newCompany
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: setHidden
+            - pluginId: Company_tbdCntr
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: clearValue
+            - pluginId: search_txtbx
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '60000'
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: >-
+        [{"condition":"{{!POST_CreateCompany.data.status.is_success}}","message":"{{POST_CreateCompany.data.status.error_code
+        + \": \" + POST_CreateCompany.data.status.error_message}}"}]
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: json
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: '5'
+createdAt: 2022-05-19T22:35:50.502Z

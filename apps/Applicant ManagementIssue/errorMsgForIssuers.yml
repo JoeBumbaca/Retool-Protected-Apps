@@ -1,0 +1,40 @@
+id: errorMsgForIssuers
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        {{
+
+        !issuersTransformer.value.includes(GET_ApplicationInfo_.data.hq.toLowerCase())
+        && multiselect1.value.includes(1) &&  multiselect1.value.includes(4) ?
+        `Galileo is not supported in ${GET_ApplicationInfo_?.data?.hq} yet.` :
+        issuersTransformer.value.includes(GET_ApplicationInfo_.data.hq.toLowerCase())
+        && multiselect1.value.includes(1) &&  multiselect1.value.includes(4) ?
+        "Please select Galileo or Stripe":""
+
+
+        }}
+    - style:
+        ordered:
+          - color: rgb(255, 0, 0)
+    - disableMarkdown: true
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 14.2
+    height: 0.6
+    width: 8
+createdAt: 2022-06-26T14:49:54.345Z

@@ -1,0 +1,94 @@
+id: industry_modal
+type: widget
+subtype: SelectWidget2
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex: []
+    - showSelectionIndicator: true
+    - _values: []
+    - iconByIndex:
+        array: []
+    - values: '{{item.id}}'
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex: []
+    - inputValue: ''
+    - hidden: false
+    - customValidation: ''
+    - data: '{{ GET_ListIndustries.data.industries_info }}'
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex: []
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{_.find(GET_ListIndustries.data.industries_info,{name:GET_ApplicationInfo_.data.industry})["id"]}}
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex: []
+    - placeholder: Select an option
+    - _captionByIndex: []
+    - itemAdornmentSize: auto
+    - label: Industry
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex: []
+    - _colorByIndex: []
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids: []
+    - emptyMessage: ''
+    - overlayMaxHeight: 375
+    - loading: false
+    - disabled: false
+    - labelPosition: top
+    - _labels: []
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex: []
+    - required: true
+    - labels: '{{item.name}}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 1.4000000000000017
+    height: 1
+    width: 5
+createdAt: 2022-05-19T21:57:27.439Z

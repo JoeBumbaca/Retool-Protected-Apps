@@ -1,0 +1,44 @@
+id: button6
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Send rejection email
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgba(0, 0, 0, 1)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: rejectCompany
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: rejectCompanyModal
+    row: 1.8
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2022-06-23T14:34:31.996Z

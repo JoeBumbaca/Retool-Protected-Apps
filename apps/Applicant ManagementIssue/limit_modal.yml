@@ -1,0 +1,58 @@
+id: limit_modal
+type: widget
+subtype: NumberInputWidget
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: null
+    - hidden: false
+    - customValidation: >-
+        {{limit_modal.value <= 0 ? 'Please input a value greater than zero' :
+        ''}}
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - allowNull: false
+    - showClear: false
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: 0
+    - labelCaption: ''
+    - min: null
+    - labelWidth: '33'
+    - placeholder: Enter value
+    - showStepper: true
+    - label: Limit
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: decimal
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: top
+    - decimalPlaces: null
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 2.4
+    height: 1
+    width: 4
+createdAt: 2022-05-19T21:51:41.448Z

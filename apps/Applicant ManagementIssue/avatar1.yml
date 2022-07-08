@@ -1,0 +1,34 @@
+id: avatar1
+type: widget
+subtype: AvatarWidget
+template:
+  ordered:
+    - fallback: >-
+        {{GET_ApplicationInfo_.data.users[i].first_name + ' '
+        +GET_ApplicationInfo_.data.users[i].last_name }}
+    - src: ''
+    - hidden: false
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - style:
+        ordered:
+          - background: automatic
+    - labelCaption: '{{GET_ApplicationInfo_.data.users[i].email}}'
+    - hideLabel: false
+    - label: >-
+        {{GET_ApplicationInfo_.data.users[i].first_name + ' '
+        +GET_ApplicationInfo_.data.users[i].last_name }}
+    - imageSize: 48
+    - labelPosition: right
+    - labelWrap: true
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: lstUsers
+    row: 0.4
+    height: 0.2
+    width: 12
+createdAt: 2022-05-19T15:09:27.284Z

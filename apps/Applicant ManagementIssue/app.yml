@@ -8,5 +8,5 @@ appTemplate:
       serverDepGraphEnabled: false
   rootScreen: null
   isFetching: true
-  version: 2.91.11
+  version: 2.92.10
   markdownLinkBehavior: auto

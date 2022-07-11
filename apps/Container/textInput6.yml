@@ -1,0 +1,55 @@
+id: textInput6
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: url
+    - hideValidationMessage: false
+    - textBefore: https://
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: profilePhotoUrl
+    - value: ''
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: retool.com
+    - label: Profile photo URL
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 10
+    height: 1
+    width: 12
+createdAt: 2022-07-11T15:38:37.732Z

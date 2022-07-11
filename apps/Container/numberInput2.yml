@@ -1,0 +1,56 @@
+id: numberInput2
+type: widget
+subtype: NumberInputWidget
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: null
+    - hidden: false
+    - customValidation: ''
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - allowNull: false
+    - showClear: false
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: left
+    - formDataKey: organizationId
+    - value: 0
+    - labelCaption: ''
+    - min: null
+    - labelWidth: '33'
+    - placeholder: Enter value
+    - showStepper: true
+    - label: Organization ID
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: decimal
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - decimalPlaces: null
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 9
+    height: 1
+    width: 12
+createdAt: 2022-07-11T15:38:37.623Z

@@ -1,0 +1,56 @@
+id: dateTime2
+type: widget
+subtype: DateTimeWidget
+template:
+  ordered:
+    - minDate: ''
+    - minuteStep: 15
+    - readOnly: false
+    - iconAfter: ''
+    - timeFormat: ''
+    - datePlaceholder: '{{ self.dateFormat.toUpperCase() }}'
+    - dateFormat: MMM d, yyyy
+    - timePlaceholder: ''
+    - valueTimeZone: ''
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: updatedAt
+    - value: '{{ new Date() }}'
+    - maxTime: ''
+    - labelCaption: ''
+    - maxDate: ''
+    - labelWidth: '33'
+    - label: Updated at
+    - formattedValue: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: bold/interface-calendar
+    - events:
+        ordered: []
+    - displayTimeZone: ''
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - manageTimeZone: false
+    - labelWrap: false
+    - minTime: ''
+    - maintainSpaceWhenHidden: false
+    - required: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 6
+    height: 1
+    width: 12
+createdAt: 2022-07-11T15:38:37.236Z

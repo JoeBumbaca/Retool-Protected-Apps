@@ -1,4 +1,4 @@
-databaseName: hammerhead_production
+databaseName: '{{ environment.variables.internal_db_name }}'
 databaseUsername: retool_internal_user
 displayName: Internal DB
 dynamicallyQueryable: false

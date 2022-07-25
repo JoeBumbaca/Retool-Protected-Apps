@@ -1,0 +1,119 @@
+id: products_search
+type: datasource
+subtype: GraphQLQuery
+resourceName: GraphQL-WithoutResource
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |
+        query ($filters: ProductFilters, $location: Location) {
+          products(filters: $filters) {
+            count
+            edges {
+              id
+              name
+              archivedAt
+              price(location: $location)
+              buyingPrice(location: $location)
+              category {
+                id
+                name
+                __typename
+              }
+              buyStats {
+                sellRate
+                __typename
+              }
+              ncm
+              image {
+                id
+                url(width: 100, height: 100, fitIn: true)
+                __typename
+              }
+              available
+              stockQuantity(location: $location)
+              __typename
+            }
+            __typename
+          }
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"Authorization","value":"Bearer
+        eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJQYXRyaWNrIEJhc3N1dCIsInBob25lTnVtYmVyIjoiKzU1MjE5NzA0NDYzNTQiLCJlbWFpbCI6InBhdHJpY2tiYXNzdXRAaG90bWFpbC5jb20iLCJwcmljaW5nU2NvcmUiOiJMT1ciLCJiYWxhbmNlIjowLCJjcGYiOiIxNTQzMzI1MjcwMSIsImJpcnRoZGF0ZSI6IjE5OTItMDItMTBUMDM6MDA6MDAuMDAwWiIsInNpZ251cERhdGUiOiIyMDE5LTAxLTI1VDE4OjQzOjUzLjU2MloiLCJpZCI6ImNqcmNlYWRlaTAzczAwNzY4bTF1YnNsMDgiLCJwaG9uZVZlcmlmaWVkIjoiMjAyMS0wNC0xN1QxNzoyMzozNy4wMDBaIiwibXVzdENoYW5nZVBhc3N3b3JkIjpmYWxzZSwicGlsZ3JpbUluc3RhbGxJRCI6ImQ4ZjdmYWMzLWE4MjMtNDBhNC1iMTBkLWVjN2IyOWQ3NTgyNyIsImJsb2NrZWQiOm51bGwsInByaWNpbmdTY29yZUxhc3RVcGRhdGVkIjoiMjAyMS0wOC0yOVQxMToxNzo0OS4wMDBaIiwiZ2VuZGVyIjoiTUFMRSJ9LCJpYXQiOjE2MzAyMzY2OTN9.l6EkWhl8bhT5m3hasi2hdPC6ZRExILMnyahxCcVCKWw"}]
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: https://graphql.martfy.com.br/
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - graphQLVariables: >-
+        [{"key":"filters","value":"{  \"first\": 20,  \"skip\": 0,  \"q\":
+        \"\",  \"status\": \"ALL\",  \"archived\":
+        false}"},{"key":"location","value":"{  \"store\": {    \"id\":
+        \"ckh9ig705icev0703wik2igcz\"  }}"}]
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - cookies: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        //Use the variables data, metadata, and errors to reference these fields
+        from your query's results
+
+        if (Array.isArray(errors) && errors.length > 0) {
+          return errors[0].message;
+        } else {
+          return false
+        }
+            
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - graphQLErrors: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-07-13T06:45:33.310Z

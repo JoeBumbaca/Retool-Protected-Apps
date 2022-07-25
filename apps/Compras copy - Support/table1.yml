@@ -1,0 +1,369 @@
+id: table1
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - price:
+              ordered:
+                - showSeparators: true
+                - currency: BRL
+                - padDecimal: true
+          - quantity:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+          - name:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: auto
+                - allowCustomValue: true
+                - optionLabels: ''
+                - optionColors: []
+                - optionValues: []
+          - buyingPrice:
+              ordered:
+                - showSeparators: true
+                - currency: BRL
+                - padDecimal: true
+          - buyStats:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+                - decimalPlaces: '2'
+          - Custom Column 10:
+              ordered: []
+          - Custom Column 11:
+              ordered: []
+          - image:
+              ordered: []
+          - Custom Column 7:
+              ordered:
+                - optionData: '{{ products_search.data }}'
+                - colorMode: auto
+                - allowCustomValue: false
+                - optionLabels: '{{ item.name }}'
+                - optionColors: []
+                - optionValues: '{{ item.id }}'
+          - Custom Column 8:
+              ordered:
+                - optionData: '["CX", "FRD", "UN"]'
+                - colorMode: auto
+                - allowCustomValue: true
+                - optionLabels: '{{ item }}'
+                - optionColors: []
+                - optionValues: '{{ item }}'
+    - columnWidths:
+        - object:
+            id: Custom Column 8
+            value: 78
+        - object:
+            id: name
+            value: 380.859375
+        - object:
+            id: image
+            value: 160.5234375
+        - object:
+            id: buyStats
+            value: 125.3203125
+        - object:
+            id: Custom Column 7
+            value: 155
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - Custom Column 7: Produto
+          - quantity: Quantidade
+          - Custom Column 8: Tipo
+          - Custom Column 10: ID
+          - Custom Column 11: Imagem
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - '11': ''
+          - stockQuantity: ''
+          - '12': ''
+          - '13': ''
+          - '14': ''
+          - '15': ''
+          - __typename: ''
+          - '16': ''
+          - '17': ''
+          - '18': ''
+          - '19': ''
+          - price: ''
+          - available: ''
+          - number: ''
+          - quantity: ''
+          - name: ''
+          - buyingPrice: ''
+          - '0': ''
+          - '1': ''
+          - q: ''
+          - '2': ''
+          - '3': ''
+          - '4': ''
+          - tipo: ''
+          - '5': ''
+          - archivedAt: ''
+          - '6': ''
+          - Custom Column 1: ''
+          - '7': ''
+          - Custom Column 2: ''
+          - '8': ''
+          - ncm: ''
+          - Custom Column 3: ''
+          - '9': ''
+          - Custom Column 4: ''
+          - buyStats: ''
+          - Custom Column 10: ''
+          - Custom Column 5: ''
+          - id: ''
+          - Custom Column 11: ''
+          - image: ''
+          - Custom Column 6: ''
+          - Custom Column 7: ''
+          - Custom Column 8: ''
+          - category: ''
+          - '10': ''
+    - columnFrozenAlignments:
+        ordered:
+          - Custom Column 7: left
+          - Custom Column 11: left
+          - name: left
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - Custom Column 7: SingleTagDataCell
+          - quantity: NumberDataCell
+          - Custom Column 8: SingleTagDataCell
+          - Custom Column 10: TextDataCell
+          - Custom Column 11: ImageDataCell
+          - buyStats: NumberDataCell
+          - image: ImageDataCell
+          - price: CurrencyDataCell
+          - buyingPrice: CurrencyDataCell
+          - name: SingleTagDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: false
+    - _columnVisibility:
+        ordered:
+          - stockQuantity: true
+          - __typename: false
+          - available: false
+          - archivedAt: false
+          - ncm: false
+          - buyStats: true
+          - Custom Column 10: false
+          - id: false
+          - image: true
+          - Custom Column 7: true
+          - category: false
+    - _columnSummaryTypes:
+        ordered:
+          - Custom Column 7: ''
+          - quantity: sum
+          - Custom Column 8: ''
+          - Custom Column 10: ''
+          - Custom Column 11: ''
+          - buyStats: sum
+          - image: ''
+          - price: sum
+          - buyingPrice: sum
+          - name: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: false
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: false
+    - serverPaginated: true
+    - data: '{{ products_search.data.products.edges }}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: +
+            - actionButtonType: runQuery
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - price: right
+          - quantity: right
+          - name: left
+          - buyingPrice: right
+          - buyStats: right
+          - Custom Column 10: left
+          - Custom Column 11: left
+          - image: center
+          - Custom Column 7: left
+          - Custom Column 8: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: false
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - Custom Column 7: ''
+          - quantity: ''
+          - Custom Column 8: ''
+          - Custom Column 10: ''
+          - Custom Column 11: ''
+          - buyStats: ''
+          - image: ''
+          - price: ''
+          - buyingPrice: ''
+          - name: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: false
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: '["name", "price", "buyingPrice", "buyStats", "image", "stockQuantity"]'
+    - events: []
+    - totalRowCount: '{{ products_search.data.products.count }}'
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: ''
+    - columnEditable:
+        ordered:
+          - stockQuantity: false
+          - __typename: false
+          - price: false
+          - available: false
+          - name: false
+          - buyingPrice: false
+          - archivedAt: false
+          - ncm: false
+          - buyStats: false
+          - id: false
+          - image: false
+          - category: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered:
+          - image: true
+    - columnMappers:
+        ordered:
+          - Custom Column 7: ''
+          - Custom Column 8: ''
+          - quantity: '{{ }}'
+          - Custom Column 10: '{{ }}'
+          - buyStats: '{{ self.sellRate }}'
+          - image: '{{ self.url }}'
+          - name: ''
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: true
+    - sort: null
+    - _columns:
+        - id
+        - name
+        - archivedAt
+        - price
+        - buyingPrice
+        - category
+        - buyStats
+        - ncm
+        - image
+        - available
+        - stockQuantity
+        - __typename
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+        - Custom Column 2
+        - Custom Column 3
+        - Custom Column 4
+        - Custom Column 5
+        - Custom Column 6
+        - Custom Column 7
+        - Custom Column 8
+        - Custom Column 10
+        - Custom Column 11
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    height: 13
+    width: 12
+createdAt: 2022-07-13T06:16:07.969Z

@@ -1,0 +1,29 @@
+databaseName: retoolDB
+databaseUsername: root
+displayName: MySQL-GoogleCloud
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: 35.230.82.91
+options:
+  client_cert: null
+  client_key: null
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  gcpConnectWithSelfSignedCertificate: false
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+  version: SqlQueryUnified
+port: '3306'
+ssl: false
+type: mysql
+uuid: f92e82dc-07a4-4ee8-9bc0-e090b294e43e
+version: 1.0.0

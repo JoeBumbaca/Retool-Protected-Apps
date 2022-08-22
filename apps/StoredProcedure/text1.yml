@@ -1,0 +1,25 @@
+id: text1
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: 'Results from stored procedure: {{query4.data[''@userCount'']}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 9
+    col: 4
+    height: 0.6
+    width: 3
+createdAt: 2022-08-22T22:24:22.495Z

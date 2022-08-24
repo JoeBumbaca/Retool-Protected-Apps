@@ -1,0 +1,30 @@
+id: button1
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: ''
+    - text: Please choose a time within 4 hours
+    - showInEditor: false
+    - tooltipText: ''
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: bold/interface-alert-warning-triangle-alternate
+    - events: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: ''
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeSensitiveAlert
+    row: 1
+    height: 1.0000000000000002
+    width: 12
+createdAt: 2022-08-04T18:42:23.175Z

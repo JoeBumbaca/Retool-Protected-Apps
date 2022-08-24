@@ -1,0 +1,27 @@
+id: pendingCycleTextSO
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: '{{tableStateSO.value}}'
+    - imageWidth: fit
+    - showInEditor: true
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: 'Number of records chaged based on **"contract ID"**: '
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer4
+    subcontainer: c0f42
+    row: 6.8
+    height: 0.6
+    width: 7
+createdAt: 2022-08-11T20:01:36.566Z

@@ -1,0 +1,92 @@
+id: taskTabsSA
+type: widget
+subtype: TabsWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - _values:
+        - Rebatch Payments
+        - Activate/ Deactivate Fees
+        - SO Stuck Applications
+        - Update MID
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - alignment: justify
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - hidden: false
+    - data:
+        array: []
+    - targetContainerId: tabbedContainerCreateTaskSA
+    - selectedItem: null
+    - showInEditor: false
+    - _defaultValue: null
+    - navigateContainer: true
+    - value: '{{ self.values[0] }}'
+    - style:
+        ordered:
+          - selectedText: rgb(110, 46, 191)
+          - selectedBackground: rgba(243, 242, 233, 0.7)
+          - unselectedText: rgb(41, 29, 33)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - _hasMigratedNestedItems: true
+    - itemMode: static
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events: []
+    - _ids:
+        - 3909c
+        - 588a9
+        - dc817
+        - e8b5c
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+        - ''
+        - left
+    - disabled: false
+    - linePosition: bottom
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainerCreateTaskSA
+    rowGroup: header
+    row: 0.19999999999999973
+    height: 0.8
+    width: 12
+createdAt: 2022-07-27T23:55:31.934Z

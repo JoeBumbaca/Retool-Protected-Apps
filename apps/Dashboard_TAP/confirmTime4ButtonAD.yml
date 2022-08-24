@@ -1,0 +1,92 @@
+id: confirmTime4ButtonAD
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: ''
+    - text: Confirm time
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(18, 181, 115)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: setHidden
+            - pluginId: jiraTextAD
+            - targetId: null
+            - params:
+                ordered:
+                  - hidden: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{ zoneEntry.value != null}}'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: buttonState
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{ zoneEntry.value != null}}'
+        - ordered:
+            - event: click
+            - type: widget
+            - method: setHidden
+            - pluginId: selectEntityAD
+            - targetId: null
+            - params:
+                ordered:
+                  - hidden: false
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: subSubmitApproval
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: submitApproval
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: '{{ zoneEntryAD.value == null}}'
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsAD
+    subcontainer: c0f42
+    row: 0.8
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2022-07-05T20:57:09.230Z

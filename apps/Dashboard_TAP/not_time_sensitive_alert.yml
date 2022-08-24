@@ -1,0 +1,109 @@
+id: not_time_sensitive_alert
+type: datasource
+subtype: RESTQuery
+resourceName: REST-WithoutResource
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |-
+        {
+            "payload": {
+              "summary": "Ticket {{submitTicketRebatch.data.key}} for {{taskTabs.value}}",
+              "source": "retool.com",
+              "severity": "info",
+              "component": "the part of the affected system that is broken",
+              "group": "jira and retool issue",
+              "class": "deploy",
+              "custom_details": {
+                "Issue": "This is not a urgent task, {{fourTransformer.value.transID}}"
+              }
+            },
+            "routing_key": "1e6b724b7322450cd0500d16b0a62b93",
+            "dedup_key": "{{fourTransformer.value.jiraNOC}}",
+            "images": [
+              {
+                "src": "https://www.yapstone.com/assets/images/primary-logo.svg",
+                "href": "https://www.yapstone.com/",
+                "alt": "go to yapstone.com"
+              }
+            ],
+            "links": [
+              {
+                "href": "https://yapjira.atlassian.net/jira/software/c/projects/TAP/boards/722/backlog?view=detail&selectedIssue=TAP-34&issueLimit=100",
+                "text": "Go to Jira"
+              }
+            ],
+            "event_action": "trigger",
+            "client": "new retool integration example",
+            "client_url": "retool.com"
+          }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: '{{retoolContext.environment != "production"}}'
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: ''
+    - showFailureToaster: false
+    - paginationEnabled: false
+    - query: https://events.pagerduty.com/v2/enqueue
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: false
+    - cacheKeyTtl: ''
+    - cookies: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-06-27T19:49:05.062Z
+folder: alerts

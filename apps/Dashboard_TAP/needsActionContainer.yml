@@ -1,0 +1,85 @@
+id: needsActionContainer
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+    - heightType: fixed
+    - currentViewKey: null
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+    - hidden: false
+    - showHeader: false
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - border: rgba(209, 209, 209, 0)
+          - borderRadius: '5'
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+    - currentViewIndex: null
+    - _hasMigratedNestedItems: true
+    - transition: none
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - View 1
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: setValue
+            - pluginId: navPanel
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '"Submitted tickets"'
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - f98c0
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+    - loading: false
+    - overflowType: hidden
+    - disabled: false
+    - _labels:
+        - ''
+    - styleContext:
+        ordered:
+          - borderRadius: '20'
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: mainContainer
+    subcontainer: cdbfb
+    row: 0.9999999999999994
+    col: 9
+    height: 4.4
+    width: 3
+createdAt: 2022-06-24T23:10:12.608Z

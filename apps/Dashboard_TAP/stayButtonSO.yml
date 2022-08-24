@@ -1,0 +1,47 @@
+id: stayButtonSO
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: ''
+    - text: No, stay
+    - showInEditor: true
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: surfacePrimary
+          - borderRadius: 23px
+          - label: rgb(255, 145, 171)
+          - border: rgb(255, 145, 171)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: line/interface-delete-1
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: close
+            - pluginId: alertModal
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: alertModal
+    row: 1.4
+    col: 1
+    height: 0.8
+    width: 5
+createdAt: 2022-07-12T06:09:06.121Z

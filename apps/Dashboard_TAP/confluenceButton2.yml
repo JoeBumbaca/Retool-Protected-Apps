@@ -1,0 +1,48 @@
+id: confluenceButton2
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: line/interface-arrows-right
+    - submitTargetId: null
+    - hidden: false
+    - text: Confluence
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - borderRadius: '20'
+          - background: rgb(255, 255, 255)
+          - label: rgb(110, 46, 191)
+          - border: rgb(204, 204, 204)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - url: https://yapconfluence.atlassian.net/wiki/home
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: quickLinksContainerSA
+    subcontainer: 545fb
+    row: 2.6
+    height: 1
+    width: 12
+createdAt: 2022-07-19T23:45:35.904Z

@@ -1,0 +1,19 @@
+id: insightSpacer
+type: widget
+subtype: SpacerWidget
+template:
+  ordered:
+    - hidden: false
+    - maintainSpaceWhenHidden: false
+    - showInEditor: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: insightContainer
+    subcontainer: f98c0
+    row: 2.6000000000000005
+    col: 1
+    height: 0.2
+    width: 10
+createdAt: 2022-06-24T23:01:31.186Z

@@ -1,0 +1,106 @@
+id: confirmTimeSpecificButtonSO
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: ''
+    - text: Confirm time
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(18, 181, 115)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: setHidden
+            - pluginId: jiraTextSpecificSO
+            - targetId: null
+            - params:
+                ordered:
+                  - hidden: false
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: ''
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: buttonStateSOSpecific
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{zoneEntrySpecificSO.value != null}}'
+        - ordered:
+            - event: click
+            - type: widget
+            - method: setHidden
+            - pluginId: contractIDTextSpecificSO
+            - targetId: null
+            - params:
+                ordered:
+                  - hidden: false
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: ''
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: subSubmitApproval
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: submitApproval
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: timeSOSubmitApproval
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: >-
+        {{timeEntrySOSpecificTimestamp.value - nowTimestamp.value < 4 * 60 * 60
+        * 1000 || zoneEntrySpecificSO.value == null}}
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer4
+    subcontainer: 7a699
+    row: 0.8
+    col: 9
+    height: 1
+    width: 3
+createdAt: 2022-08-11T20:02:14.981Z

@@ -1,0 +1,30 @@
+id: activeText1
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### View your active tickets'
+    - style:
+        ordered:
+          - color: rgb(38, 38, 38)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: activeTicketsContainer
+    subcontainer: f98c0
+    row: 1.6
+    height: 0.8
+    width: 12
+createdAt: 2022-06-24T23:07:34.416Z

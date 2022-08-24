@@ -1,0 +1,31 @@
+id: entityLabel5
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: right
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '{{entitySelectionMIDSA.value}}'
+    - style:
+        ordered:
+          - background: surfacePrimary
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: amexContainerSA
+    subcontainer: 631b8
+    row: 0.6
+    col: 10
+    height: 0.6
+    width: 2
+createdAt: 2022-08-02T00:49:35.035Z

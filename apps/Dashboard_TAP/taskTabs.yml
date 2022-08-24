@@ -1,0 +1,102 @@
+id: taskTabs
+type: widget
+subtype: TabsWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - _values:
+        - Rebatch Payments
+        - Activate / Deactivate Fees
+        - SO Stuck Applications
+        - Update MID
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - alignment: justify
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - hidden: false
+    - data:
+        array: []
+    - targetContainerId: tabbedContainer
+    - selectedItem: null
+    - showInEditor: false
+    - _defaultValue: null
+    - navigateContainer: false
+    - value: ''
+    - style:
+        ordered:
+          - selectedText: rgb(110, 46, 191)
+          - selectedBackground: rgba(243, 242, 233, 0.7)
+          - unselectedText: rgb(41, 29, 33)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - _hasMigratedNestedItems: true
+    - itemMode: static
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: subNavigate
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - 3909c
+        - 588a9
+        - dc817
+        - e8b5c
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+        - ''
+        - left
+    - disabled: false
+    - linePosition: bottom
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer
+    rowGroup: header
+    row: 5.329070518200751e-15
+    height: 0.8
+    width: 12
+createdAt: 2022-06-16T23:42:38.049Z

@@ -1,0 +1,91 @@
+id: navPanelSA
+type: widget
+subtype: TabsWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - _values:
+        - Dashboard
+        - Create tasks
+        - Submitted tickets
+        - Notifications
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - alignment: justify
+    - _iconByIndex:
+        - line/interface-dashboard-layout-3
+        - line/interface-add-circle
+        - line/entertainment-ticket
+        - line/phone-notification-alarm-2
+    - hidden: false
+    - data:
+        array: []
+    - targetContainerId: mainContainerSA
+    - selectedItem: null
+    - showInEditor: true
+    - _defaultValue: null
+    - navigateContainer: true
+    - value: '{{ self.values[0] }}'
+    - style:
+        ordered:
+          - selectedText: rgb(110, 46, 191)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - _hasMigratedNestedItems: true
+    - itemMode: static
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events: []
+    - _ids:
+        - ee56f
+        - de452
+        - '13991'
+        - 1311e
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - left
+        - left
+        - left
+        - left
+    - disabled: false
+    - linePosition: bottom
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: mainContainerSA
+    rowGroup: header
+    row: 1
+    col: 4
+    height: 0.8
+    width: 8
+createdAt: 2022-07-19T21:35:54.495Z

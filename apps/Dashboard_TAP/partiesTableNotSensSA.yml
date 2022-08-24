@@ -1,0 +1,222 @@
+id: partiesTableNotSensSA
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: auto
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: partyType
+            value: 106.84954833984375
+        - object:
+            id: version
+            value: 95.60186767578125
+        - object:
+            id: createdOn
+            value: 105.91898345947266
+        - object:
+            id: name
+            value: 93.29864501953125
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - createdOn: Date Created
+          - version: Version
+          - name: Name
+          - partyType: Party Type
+          - id: ID
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - partyType: ''
+          - partyId: ''
+          - addresses: ''
+          - meta: ''
+          - createdOn: ''
+          - individualDetails: ''
+          - parentRef: ''
+          - externalRefs: ''
+          - name: ''
+          - sales: ''
+          - displayText: ''
+          - status: ''
+          - scope: ''
+          - version: ''
+          - additionalProperties: ''
+          - id: ''
+          - email: ''
+          - description: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - meta: false
+          - additionalProperties: false
+          - individualDetails: false
+          - addresses: false
+          - displayText: false
+          - status: false
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - hidden: '{{tableState.value}}'
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ parties_list.data.items }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showInEditor: true
+    - showRefreshButton: true
+    - pageSize: '5'
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - toolbarAccent: rgb(110, 46, 191)
+          - toolbarText: rgb(41, 29, 33)
+          - border: rgba(41, 29, 33, 0)
+          - cellAccent: rgb(110, 46, 191)
+          - hoverRowBackground: rgba(110, 46, 191, 0.1)
+          - selectedRowBackground: rgba(110, 46, 191, 0.1)
+          - alternateRowBackground: rgb(244, 244, 244)
+          - cellText: rgb(41, 29, 33)
+          - summaryAccent: rgb(110, 46, 191)
+          - summaryText: rgb(41, 29, 33)
+          - editedAccent: rgb(110, 46, 191)
+          - headerAccent: rgb(110, 46, 191)
+          - headerText: rgb(41, 29, 33)
+          - headerBackground: rgb(243, 242, 233)
+          - borderRadius: 10px
+    - actionButtonPosition: left
+    - dynamicRowHeights: true
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - createdOn
+        - version
+        - meta
+        - additionalProperties
+        - name
+        - displayText
+        - partyType
+        - individualDetails
+        - status
+        - id
+        - addresses
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsSA
+    subcontainer: a997f
+    row: 5.2
+    height: 2
+    width: 12
+createdAt: 2022-08-01T22:14:55.852Z

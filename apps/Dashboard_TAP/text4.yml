@@ -1,0 +1,27 @@
+id: text4
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: Describe the task process and the desired outcome
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainerCreateTaskSA
+    subcontainer: cf441
+    row: 2.4
+    height: 0.6
+    width: 6
+createdAt: 2022-08-04T16:12:33.045Z

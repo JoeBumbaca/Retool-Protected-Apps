@@ -1,0 +1,11 @@
+id: timeEntrySOTimestamp
+type: state
+subtype: State
+template:
+  ordered:
+    - _persistedValueGetter: null
+    - _persistedValueSetter: null
+    - persistValue: false
+    - persistedValueKey: ''
+    - value: '{{ new Date(timeEntrySO.value).getTime()}}'
+createdAt: 2022-08-04T15:22:05.765Z

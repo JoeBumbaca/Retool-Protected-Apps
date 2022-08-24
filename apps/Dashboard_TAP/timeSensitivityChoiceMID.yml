@@ -1,0 +1,161 @@
+id: timeSensitivityChoiceMID
+type: widget
+subtype: RadioGroupWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+    - _values:
+        - fourChoice
+        - specificChoice
+        - notSensChoice
+    - values:
+        array: []
+    - groupLayout: multiColumn
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - hideValidationMessage: false
+    - selectedItem: null
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - style:
+        ordered:
+          - checkedBackground: rgb(110, 46, 191)
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+    - label: Is this a time sensitive task?
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - method: setCurrentViewIndex
+            - enabled: '{{ timeSensitivityChoiceMID.value == "fourChoice"}}'
+            - params:
+                ordered:
+                  - viewIndex: '0'
+            - targetId: null
+            - pluginId: timeTabsMID
+            - waitType: debounce
+            - event: change
+            - type: widget
+            - waitMs: '0'
+        - ordered:
+            - method: setCurrentViewIndex
+            - enabled: '{{ timeSensitivityChoiceMID.value == "specificChoice"}}'
+            - params:
+                ordered:
+                  - viewIndex: '1'
+            - targetId: null
+            - pluginId: timeTabsMID
+            - waitType: debounce
+            - event: change
+            - type: widget
+            - waitMs: '0'
+        - ordered:
+            - method: setCurrentViewIndex
+            - enabled: '{{ timeSensitivityChoiceMID.value == "notSensChoice"}}'
+            - params:
+                ordered:
+                  - viewIndex: '2'
+            - targetId: null
+            - pluginId: timeTabsMID
+            - waitType: debounce
+            - event: change
+            - type: widget
+            - waitMs: '0'
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: clearFields
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: change
+            - type: state
+            - method: setValue
+            - pluginId: tableState
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'true'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - method: setValue
+            - enabled: '{{ transidTextSpecific.hidden == true}}'
+            - params:
+                ordered:
+                  - value: 'true'
+            - targetId: null
+            - pluginId: buttonState
+            - waitType: debounce
+            - event: change
+            - type: state
+            - waitMs: '0'
+    - _ids:
+        - c1522
+        - baea6
+        - 36f96
+    - disabled: false
+    - labelPosition: top
+    - _labels:
+        - Within 4 hours
+        - Specific date and time
+        - Not time sensitive
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer
+    subcontainer: '75e17'
+    row: 1
+    height: 0.6
+    width: 11
+createdAt: 2022-07-01T19:41:19.506Z

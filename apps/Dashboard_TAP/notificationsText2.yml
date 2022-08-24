@@ -1,0 +1,27 @@
+id: notificationsText2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: Isha Marie didn’t approve your query submission -  see feedback.
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: notifications2
+    subcontainer: c92d4
+    col: 2
+    height: 0.6
+    width: 10
+createdAt: 2022-06-24T23:56:22.622Z

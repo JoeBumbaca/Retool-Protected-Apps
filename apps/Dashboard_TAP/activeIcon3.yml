@@ -1,0 +1,27 @@
+id: activeIcon3
+type: widget
+subtype: IconWidget
+template:
+  ordered:
+    - horizontalAlign: center
+    - clickable: false
+    - hidden: false
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - color: rgb(38, 38, 38)
+    - altText: ''
+    - icon: line/legal-justice-hammer
+    - events:
+        ordered: []
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: needsApprovalContainerSA
+    subcontainer: f98c0
+    height: 1.2
+    width: 3
+createdAt: 2022-07-26T15:18:41.256Z

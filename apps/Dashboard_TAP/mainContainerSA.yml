@@ -1,0 +1,104 @@
+id: mainContainerSA
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - heightType: auto
+    - currentViewKey: '{{ self.viewKeys[0] }}'
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - line/interface-dashboard-layout-3
+        - line/interface-add-circle
+        - line/entertainment-ticket
+        - line/phone-notification-alarm-2
+    - hidden: false
+    - showHeader: true
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - border: rgb(209, 209, 209)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - currentViewIndex: null
+    - _hasMigratedNestedItems: true
+    - transition: slide
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - Dashboard SA
+        - Create tasks SA
+        - Submitted tickets SA
+        - Notifications SA
+    - events:
+        - ordered:
+            - event: change
+            - type: widget
+            - method: setValue
+            - pluginId: taskTabsSA
+            - targetId: null
+            - params:
+                ordered:
+                  - value: Rebatch Payments
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - cdbfb
+        - cb7d5
+        - '72248'
+        - 48d4e
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - left
+        - left
+        - left
+        - left
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - _labels:
+        - Dashboard
+        - Create tasks
+        - Submitted tickets
+        - Notifications
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: roleContainer
+    subcontainer: bcb72
+    row: 0.39999999999999997
+    height: 21
+    width: 12
+createdAt: 2022-07-19T21:35:35.389Z

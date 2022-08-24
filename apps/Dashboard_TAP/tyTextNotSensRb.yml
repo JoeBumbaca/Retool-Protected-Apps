@@ -1,0 +1,26 @@
+id: tyTextNotSensRb
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '**Thank you**'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: approvalModalNotSens
+    col: 2
+    height: 0.6
+    width: 6
+createdAt: 2022-06-23T16:58:51.880Z

@@ -1,0 +1,27 @@
+id: ticketsNeedingActionText3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: TAP-QTN-5678012
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: ticketsNeedingAction2
+    subcontainer: c92d4
+    col: 2
+    height: 0.6
+    width: 5
+createdAt: 2022-06-24T23:46:22.186Z

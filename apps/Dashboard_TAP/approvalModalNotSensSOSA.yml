@@ -1,0 +1,65 @@
+id: approvalModalNotSensSOSA
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: '{{tableState.value}}'
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - showInEditor: true
+    - tooltipText: ''
+    - style:
+        ordered:
+          - accent-background: rgb(110, 46, 191)
+          - border-radius: 20px
+    - modalHeight: 230px
+    - onModalOpen: ''
+    - events:
+        - ordered:
+            - event: open
+            - type: datasource
+            - method: trigger
+            - pluginId: submitTicketRebatch
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: close
+            - type: state
+            - method: setValue
+            - pluginId: tableState
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: close
+            - type: datasource
+            - method: trigger
+            - pluginId: clearFields
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - modalWidth: 50%
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Get approval
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsSOSA
+    subcontainer: a997f
+    row: 13
+    height: 1
+    width: 3
+createdAt: 2022-08-02T00:17:58.237Z

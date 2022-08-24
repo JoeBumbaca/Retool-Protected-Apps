@@ -1,0 +1,33 @@
+id: yapstoneLogo2
+type: widget
+subtype: ImageWidget2
+template:
+  ordered:
+    - heightType: fixed
+    - horizontalAlign: left
+    - srcWidth: null
+    - clickable: false
+    - src: >-
+        https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_8f350d03ff402e3059c91ac6cba80f43/yapstone.png
+    - hidden: false
+    - srcHeight: null
+    - showInEditor: false
+    - tooltipText: ''
+    - fit: contain
+    - aspectRatio: ''
+    - storageBlobId: ''
+    - altText: yapstoneLogo
+    - dbBlobId: 5bf15c14-7e78-43dc-9895-e10386054c71
+    - events: []
+    - srcType: dbBlobId
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: mainContainerSA
+    rowGroup: header
+    row: 0.4
+    height: 1.2
+    width: 2
+createdAt: 2022-07-19T21:36:49.276Z

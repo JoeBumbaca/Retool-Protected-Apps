@@ -1,0 +1,83 @@
+id: rolesTab
+type: widget
+subtype: TabsWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+    - _values:
+        - Tab 1
+        - Tab 2
+        - Tab 3
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - alignment: left
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - hidden: 'true'
+    - data:
+        array: []
+    - targetContainerId: roleContainer
+    - selectedItem: null
+    - showInEditor: true
+    - _defaultValue: null
+    - navigateContainer: true
+    - value: '{{ self.values[0] }}'
+    - style:
+        ordered:
+          - selectedText: rgb(110, 46, 191)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+    - _hasMigratedNestedItems: true
+    - itemMode: static
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids:
+        - d20e3
+        - 0bd0f
+        - 4daf8
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+        - ''
+    - disabled: false
+    - linePosition: bottom
+    - _labels:
+        - ''
+        - ''
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: roleContainer
+    rowGroup: header
+    row: 0.3999999999999999
+    height: 0.8
+    width: 11
+createdAt: 2022-07-18T23:33:14.524Z

@@ -1,0 +1,128 @@
+id: groupADNotSens
+type: widget
+subtype: RadioGroupWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+    - _values:
+        - Active
+        - Inactive
+    - values:
+        array: []
+    - groupLayout: multiColumn
+    - hidden: 'true'
+    - customValidation: ''
+    - data:
+        array: []
+    - hideValidationMessage: false
+    - selectedItem: null
+    - validationMessage: ''
+    - showInEditor: true
+    - _defaultValue: null
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - style:
+        ordered:
+          - checkedBackground: rgb(110, 46, 191)
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+    - _captionByIndex:
+        - ''
+        - ''
+    - label: ''
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - event: change
+            - type: widget
+            - method: setHidden
+            - pluginId: feeTableTextADNotSens
+            - targetId: null
+            - params:
+                ordered:
+                  - hidden: false
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: change
+            - type: state
+            - method: setValue
+            - pluginId: feeTableStateNotSens
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: change
+            - type: widget
+            - method: setHidden
+            - pluginId: dryRunButtonADNotSens
+            - targetId: null
+            - params:
+                ordered:
+                  - hidden: false
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: getFees
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - e8137
+        - aece5
+    - disabled: false
+    - labelPosition: top
+    - _labels:
+        - Active
+        - Inactive
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsAD
+    subcontainer: a997f
+    row: 4.199999999999999
+    height: 0.6
+    width: 12
+createdAt: 2022-07-07T20:32:23.243Z

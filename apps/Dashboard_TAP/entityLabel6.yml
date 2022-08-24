@@ -1,0 +1,31 @@
+id: entityLabel6
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: right
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '{{entitySelectionMIDSA.value}}'
+    - style:
+        ordered:
+          - background: surfacePrimary
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: discoverContainerSA
+    subcontainer: 631b8
+    row: 0.2
+    col: 10
+    height: 0.6
+    width: 2
+createdAt: 2022-08-02T00:50:13.175Z

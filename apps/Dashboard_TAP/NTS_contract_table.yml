@@ -1,0 +1,285 @@
+id: NTS_contract_table
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: auto
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: version
+            value: 95.60186767578125
+        - object:
+            id: createdOn
+            value: 105.91898345947266
+        - object:
+            id: partyType
+            value: 173.83102416992188
+        - object:
+            id: name
+            value: 127.29861450195312
+        - object:
+            id: id
+            value: 282.59375
+        - object:
+            id: Custom Column 4
+            value: 433.40625
+        - object:
+            id: status
+            value: 261.609375
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - partyType: Before
+          - marketName: Marketplace Name
+          - createdOn: Date Created
+          - name: After
+          - new_status: New Status
+          - version: Version
+          - current_status: Current Status
+          - Custom Column 4: marketPlaceName
+          - Custom Column 5: new status
+          - id: Contract ID
+          - Custom Column 8: current status
+          - Custom Column 9: new status
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - partyType: ''
+          - items: ''
+          - partyId: ''
+          - addresses: ''
+          - assets: ''
+          - parties: ''
+          - meta: ''
+          - marketName: ''
+          - createdOn: ''
+          - individualDetails: ''
+          - parentRef: ''
+          - externalRefs: ''
+          - name: ''
+          - merchants: ''
+          - sales: ''
+          - displayText: ''
+          - new_status: ''
+          - status: ''
+          - scope: ''
+          - Custom Column 1: ''
+          - Custom Column 2: ''
+          - version: ''
+          - current_status: ''
+          - Custom Column 3: ''
+          - tags: ''
+          - Custom Column 4: ''
+          - additionalProperties: ''
+          - Custom Column 5: ''
+          - type: ''
+          - id: ''
+          - Custom Column 6: ''
+          - Custom Column 7: ''
+          - email: ''
+          - description: ''
+          - assetListings: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - addresses: false
+          - assets: false
+          - parties: false
+          - meta: false
+          - createdOn: false
+          - individualDetails: false
+          - externalRefs: false
+          - merchants: false
+          - displayText: false
+          - status: true
+          - version: false
+          - tags: false
+          - additionalProperties: false
+          - type: false
+          - id: true
+          - assetListings: false
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - hidden: '{{tableStateSO.value}}'
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ marketPlaceListNTS.data}}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showInEditor: true
+    - showRefreshButton: true
+    - pageSize: '5'
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - toolbarAccent: rgb(110, 46, 191)
+          - toolbarText: rgb(41, 29, 33)
+          - border: rgba(41, 29, 33, 0)
+          - cellAccent: rgb(110, 46, 191)
+          - hoverRowBackground: rgba(110, 46, 191, 0.1)
+          - selectedRowBackground: rgba(110, 46, 191, 0.1)
+          - alternateRowBackground: rgb(244, 244, 244)
+          - cellText: rgb(41, 29, 33)
+          - summaryAccent: rgb(110, 46, 191)
+          - summaryText: rgb(41, 29, 33)
+          - editedAccent: rgb(110, 46, 191)
+          - headerAccent: rgb(110, 46, 191)
+          - headerText: rgb(41, 29, 33)
+          - headerBackground: rgb(243, 242, 233)
+          - borderRadius: 10px
+    - actionButtonPosition: left
+    - dynamicRowHeights: true
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events: []
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: ''
+    - columnEditable:
+        ordered:
+          - assets: true
+          - parties: true
+          - meta: true
+          - createdOn: true
+          - externalRefs: true
+          - merchants: true
+          - status: true
+          - version: true
+          - tags: true
+          - Custom Column 4: true
+          - additionalProperties: true
+          - Custom Column 5: true
+          - type: true
+          - id: true
+          - Custom Column 6: false
+          - Custom Column 7: false
+          - assetListings: true
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - parties: ''
+          - Custom Column 4: '{{marketPlaceList.data.items[0].name}}'
+          - Custom Column 5: APPROVED
+          - Custom Column 8: '{{cu}}'
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: none
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - id
+        - marketName
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+        - Custom Column 2
+        - Custom Column 3
+        - Custom Column 4
+        - Custom Column 5
+        - Custom Column 6
+        - Custom Column 7
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer4
+    subcontainer: a997f
+    row: 5.6
+    height: 3.2
+    width: 12
+createdAt: 2022-08-11T20:02:52.635Z

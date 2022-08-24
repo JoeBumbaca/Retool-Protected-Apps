@@ -1,0 +1,15 @@
+id: fourTransformerSO
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: |-
+        return {
+          time: {{ timeEntrySO.value }},
+
+          contractID: {{contractIDText.value}},
+          jiraNOC: {{ jiraTextSO.value }},
+        }
+    - value: ''
+createdAt: 2022-06-28T20:45:16.359Z
+folder: transformers

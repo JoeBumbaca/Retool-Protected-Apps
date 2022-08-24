@@ -1,0 +1,26 @@
+id: soStuckApplications
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: 'false'
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### Staged onboarding stuck applications'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer
+    subcontainer: '39102'
+    height: 0.8
+    width: 9
+createdAt: 2022-06-27T19:02:07.644Z

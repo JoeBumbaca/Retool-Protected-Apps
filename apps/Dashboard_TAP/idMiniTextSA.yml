@@ -1,0 +1,29 @@
+id: idMiniTextSA
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: 'true'
+    - imageWidth: fit
+    - showInEditor: true
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        If you want to add multiple transaction IDs, please separate each entry
+        with a comma.
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsSA
+    subcontainer: c0f42
+    row: 3.2
+    height: 0.6
+    width: 11
+createdAt: 2022-08-01T22:14:22.326Z

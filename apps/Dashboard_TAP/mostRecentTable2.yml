@@ -1,0 +1,196 @@
+id: mostRecentTable2
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - dateSubmitted:
+              ordered:
+                - manageTimeZone: true
+                - dateFormat: MMM d, yyyy
+                - valueTimeZone: '00:00'
+                - displayTimeZone: local
+                - timeFormat: h:mm a
+          - statusReport:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: mapped
+                - allowCustomValue: true
+                - optionLabels: null
+                - optionColors: ' {{ item === "Open" ? "#12B573" : "#FF91AB"}}'
+                - optionValues: null
+    - columnWidths: []
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - approver: Approver
+          - jiraNOC: Ticket ID
+          - queryType: SQL query type
+          - dateSubmitted: Date submitted
+          - statusReport: Status/Edit
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - approver: ''
+          - jiraNOC: ''
+          - queryType: ''
+          - dateSubmitted: ''
+          - sensitivity: ''
+          - statusReport: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - dateSubmitted: DateTimeDataCell
+          - statusReport: SingleTagDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: false
+    - _columnVisibility:
+        ordered:
+          - sensitivity: false
+    - _columnSummaryTypes:
+        ordered:
+          - dateSubmitted: ''
+          - statusReport: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ submittedTickets.data }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: dateSubmitted
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - dateSubmitted: left
+          - statusReport: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: false
+    - pageSize: '4'
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - headerBackground: rgb(221, 220, 209)
+          - alternateRowBackground: rgb(244, 244, 244)
+          - headerText: rgb(41, 29, 33)
+          - toolbarText: rgb(41, 29, 33)
+          - summaryLabel: rgb(41, 29, 33)
+          - editedAccent: rgb(110, 46, 191)
+    - actionButtonPosition: left
+    - dynamicRowHeights: true
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - dateSubmitted: ''
+          - statusReport: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: false
+    - selectedIndex: null
+    - defaultSortDescending: true
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No tickets submitted
+    - columnEditable:
+        ordered:
+          - statusReport: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - statusReport: ''
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns: []
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: true
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: recentTicketsContainerSA
+    subcontainer: 545fb
+    row: 1
+    height: 3.8
+    width: 12
+createdAt: 2022-07-19T23:48:19.873Z

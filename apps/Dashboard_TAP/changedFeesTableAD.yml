@@ -1,0 +1,227 @@
+id: changedFeesTableAD
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: auto
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: version
+            value: 95.60186767578125
+        - object:
+            id: createdOn
+            value: 105.91898345947266
+        - object:
+            id: id
+            value: 467.594970703125
+        - object:
+            id: partyType
+            value: 173.83102416992188
+        - object:
+            id: name
+            value: 127.29861450195312
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - createdOn: Date Created
+          - version: Version
+          - name: After
+          - partyType: Before
+          - id: Transaction ID
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - partyType: ''
+          - partyId: ''
+          - addresses: ''
+          - meta: ''
+          - createdOn: ''
+          - individualDetails: ''
+          - parentRef: ''
+          - externalRefs: ''
+          - name: ''
+          - sales: ''
+          - displayText: ''
+          - status: ''
+          - scope: ''
+          - version: ''
+          - additionalProperties: ''
+          - id: ''
+          - email: ''
+          - description: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - meta: false
+          - additionalProperties: false
+          - individualDetails: false
+          - addresses: false
+          - displayText: false
+          - status: false
+          - createdOn: false
+          - version: false
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '1'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - hidden: '{{tableState.value}}'
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: true
+    - data: '{{feeTableAD.selectedRow.data}}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showInEditor: true
+    - showRefreshButton: true
+    - pageSize: '5'
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - toolbarAccent: rgb(110, 46, 191)
+          - toolbarText: rgb(41, 29, 33)
+          - border: rgba(41, 29, 33, 0)
+          - cellAccent: rgb(110, 46, 191)
+          - hoverRowBackground: rgba(110, 46, 191, 0.1)
+          - selectedRowBackground: rgba(110, 46, 191, 0.1)
+          - alternateRowBackground: rgb(244, 244, 244)
+          - cellText: rgb(41, 29, 33)
+          - summaryAccent: rgb(110, 46, 191)
+          - summaryText: rgb(41, 29, 33)
+          - editedAccent: rgb(110, 46, 191)
+          - headerAccent: rgb(110, 46, 191)
+          - headerText: rgb(41, 29, 33)
+          - headerBackground: rgb(243, 242, 233)
+          - borderRadius: 10px
+    - actionButtonPosition: left
+    - dynamicRowHeights: true
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: 0 records found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: none
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - createdOn
+        - version
+        - meta
+        - additionalProperties
+        - displayText
+        - individualDetails
+        - status
+        - id
+        - partyType
+        - name
+        - addresses
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsAD
+    subcontainer: c0f42
+    row: 17.599999999999998
+    height: 8
+    width: 12
+createdAt: 2022-07-05T20:56:55.898Z

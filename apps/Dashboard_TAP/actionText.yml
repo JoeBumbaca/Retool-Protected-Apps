@@ -1,0 +1,32 @@
+id: actionText
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '###### Needs Action'
+    - style:
+        ordered:
+          - color: rgb(38, 38, 38)
+          - links: rgb(110, 46, 191)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: needsActionContainer
+    subcontainer: f98c0
+    row: 0.2
+    col: 3
+    height: 0.8
+    width: 8
+createdAt: 2022-06-24T23:10:14.255Z

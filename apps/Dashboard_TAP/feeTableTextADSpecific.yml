@@ -1,0 +1,29 @@
+id: feeTableTextADSpecific
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: 'true'
+    - imageWidth: fit
+    - showInEditor: true
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        Select the fees you wish to change to **'{{groupADSpecific.value ===
+        "Active" ? "inactive" : "active"}}'** below
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsAD
+    subcontainer: 7a699
+    row: 7.4
+    height: 0.6
+    width: 12
+createdAt: 2022-07-07T20:31:58.261Z

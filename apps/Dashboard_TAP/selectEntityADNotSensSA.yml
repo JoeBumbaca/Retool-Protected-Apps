@@ -1,0 +1,162 @@
+id: selectEntityADNotSensSA
+type: widget
+subtype: SelectWidget2
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+    - showSelectionIndicator: true
+    - _values:
+        - Asset
+        - Merchant
+        - Marketplace
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - allowDeselect: true
+    - inputValue: ''
+    - hidden: 'false'
+    - customValidation: ''
+    - data:
+        array: []
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: true
+    - _defaultValue: null
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: null
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+    - placeholder: '-- Select an entity type --'
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+    - itemAdornmentSize: auto
+    - label: ''
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - event: change
+            - type: widget
+            - method: setHidden
+            - pluginId: transidTextADNotSensSA
+            - targetId: null
+            - params:
+                ordered:
+                  - hidden: false
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: change
+            - type: widget
+            - method: setHidden
+            - pluginId: jiraTextADNotSens
+            - targetId: null
+            - params:
+                ordered:
+                  - hidden: false
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: change
+            - type: widget
+            - method: setHidden
+            - pluginId: groupADNotSens
+            - targetId: null
+            - params:
+                ordered:
+                  - hidden: false
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - 3ac41
+        - a5d50
+        - 6d399
+    - emptyMessage: ''
+    - overlayMaxHeight: 375
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - _labels:
+        - Asset
+        - Merchant
+        - Marketplace
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsADSA
+    subcontainer: a997f
+    height: 1
+    width: 12
+createdAt: 2022-08-01T23:05:58.627Z

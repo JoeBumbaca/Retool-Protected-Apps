@@ -1,0 +1,27 @@
+id: welcomeBackTextSA
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### Welcome back, {{ current_user.firstName}}!'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: mainContainerSA
+    subcontainer: cdbfb
+    row: 6.661338147750939e-16
+    height: 0.8
+    width: 3
+createdAt: 2022-07-19T21:36:46.124Z

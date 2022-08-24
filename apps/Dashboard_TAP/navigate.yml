@@ -1,0 +1,101 @@
+id: navigate
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: false
+    - query: >-
+        /* 
+
+        Relies on three temp state variables:
+         - currentNavState (str): current state of the tab controls, prior to navigating
+         - desiredNavState (str): state that the user clicked on, to cause the navigation
+         - submitApproval (bool): is there an in-progress task configuration?
+        */
+
+
+        // get all of the the states
+
+        const old_state = currentNavState.value;
+
+        const new_state = navPanel.value;
+
+        const approvalState = submitApproval.value;
+
+
+        // set desiredNavState with the new_state
+
+        desiredNavState.setValue(new_state);
+
+
+
+        if (approvalState) { // if there are no unsubmitted tasks, then navigate
+          mainContainer.setCurrentView(new_state);
+          currentNavState.setValue(new_state);
+        } else { // there are unsubmitted tasks, so prevent navigation and pop
+        modal
+          navPanel.setValue(old_state); // change the tab state back to what was prior to click
+          alertModal.open(); // open the modal
+        }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: false
+    - cacheKeyTtl: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-07-12T06:05:42.681Z
+folder: leave_task_notification

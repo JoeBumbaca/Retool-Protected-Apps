@@ -1,0 +1,54 @@
+id: timeEntrySpecificMIDSA
+type: widget
+subtype: TimeWidget
+template:
+  ordered:
+    - minuteStep: 15
+    - readOnly: false
+    - iconAfter: ''
+    - timeFormat: h:mm a
+    - timePlaceholder: Select a time
+    - valueTimeZone: local
+    - hidden: ''
+    - customValidation: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: true
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ new Date() }}'
+    - maxTime: ''
+    - labelCaption: ''
+    - labelWidth: '33'
+    - label: ''
+    - formattedValue: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: line/interface-time-clock-circle
+    - events:
+        ordered: []
+    - displayTimeZone: local
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - manageTimeZone: true
+    - labelWrap: false
+    - minTime: ''
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsMIDSA
+    subcontainer: 7a699
+    row: 0.8
+    col: 3
+    height: 1
+    width: 3
+createdAt: 2022-08-02T00:48:53.838Z

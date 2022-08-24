@@ -1,0 +1,76 @@
+id: approvalModalSO2
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: '{{tableStateSOSpecific.value}}'
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - showInEditor: true
+    - tooltipText: ''
+    - style:
+        ordered:
+          - accent-background: rgb(110, 46, 191)
+          - border-radius: 20px
+    - modalHeight: 230px
+    - onModalOpen: ''
+    - events:
+        - ordered:
+            - event: open
+            - type: datasource
+            - method: trigger
+            - pluginId: submitTicketRebatch
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: close
+            - type: state
+            - method: setValue
+            - pluginId: buttonStateSOSpecific
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: close
+            - type: state
+            - method: setValue
+            - pluginId: tableStateSOSpecific
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'true'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: close
+            - type: datasource
+            - method: trigger
+            - pluginId: clearFieldsSO
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - modalWidth: 50%
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Get approval
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer4
+    subcontainer: 7a699
+    row: 11.8
+    height: 1
+    width: 3
+createdAt: 2022-08-11T20:02:18.413Z

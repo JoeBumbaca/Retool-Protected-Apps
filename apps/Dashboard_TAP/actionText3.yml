@@ -1,0 +1,30 @@
+id: actionText3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### 3 tickets need new action'
+    - style:
+        ordered:
+          - color: rgb(38, 38, 38)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: needsActionContainerSA
+    subcontainer: f98c0
+    row: 1.6
+    height: 1.2
+    width: 12
+createdAt: 2022-07-26T14:58:47.913Z

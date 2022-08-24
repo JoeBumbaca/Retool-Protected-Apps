@@ -1,0 +1,30 @@
+id: newTaskText5
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### Create a new task'
+    - style:
+        ordered:
+          - color: rgb(255, 255, 255)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: newAddTaskContainerSA
+    subcontainer: f98c0
+    row: 1.6
+    height: 0.8
+    width: 12
+createdAt: 2022-07-26T15:09:57.235Z

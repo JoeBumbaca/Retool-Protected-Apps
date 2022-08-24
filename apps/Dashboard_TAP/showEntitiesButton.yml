@@ -1,0 +1,68 @@
+id: showEntitiesButton
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: '{{midButtonController.value}}'
+    - text: Show entities
+    - showInEditor: true
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(110, 46, 191)
+          - borderRadius: '23'
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: buttonState
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: midButtonController
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'true'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: midPrefState
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsMID
+    subcontainer: c0f42
+    row: 6.4
+    height: 1
+    width: 2
+createdAt: 2022-07-07T22:01:21.089Z

@@ -1,0 +1,80 @@
+id: dryRunButtonAD
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: 'true'
+    - text: >-
+        {{groupAD.value === "Active" ? "Deactivate" : "Activate"}} selected fees
+        in dry run
+    - showInEditor: true
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(110, 46, 191)
+          - border: rgb(110, 46, 191)
+          - borderRadius: 20px
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: parties_list
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: tableState
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: widget
+            - method: close
+            - pluginId: approvalModalAD
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: buttonState
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'true'
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: '{{ feeTableAD.selectedRow.data == 0}}'
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsAD
+    subcontainer: c0f42
+    row: 15.599999999999998
+    height: 1
+    width: 4
+createdAt: 2022-07-05T20:57:07.313Z

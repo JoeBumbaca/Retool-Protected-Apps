@@ -1,0 +1,102 @@
+id: timeSONavigate
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: >-
+        /* 
+
+        Relies on three temp state variables:
+         - subCurrentNavState (str): current state of the tab controls, prior to navigating
+         - subDesiredNavState (str): state that the user clicked on, to cause the navigation
+         - subSubmitApproval (bool): is there an in-progress task configuration?
+        */
+
+
+        // get all of the the states
+
+        const timeSO_old_state = timeSOCurrentNavState.value;
+
+        const timeSO_new_state = timeChoiceSO.value;
+
+        const timeSOApprovalState = timeSOSubmitApproval.value;
+
+
+        // set timeSODesiredNavState with the timeSO_new_state
+
+        timeSODesiredNavState.setValue(timeSO_new_state);
+
+
+
+        if (timeSOApprovalState) { // if there are no unsubmitted tasks, then
+        navigate
+          tabbedContainer4.setCurrentView(timeSO_new_state);
+          timeSOCurrentNavState.setValue(timeSO_new_state);
+        } else { // there are unsubmitted tasks, so prevent navigation and pop
+        modal
+          timeChoiceSO.setValue(timeSO_old_state); // change the tab state back to what was prior to click
+          alertModal.open(); // open the modal
+        }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: false
+    - cacheKeyTtl: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-08-05T02:40:02.953Z
+folder: leave_task_notification

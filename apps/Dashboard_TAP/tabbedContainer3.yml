@@ -1,0 +1,97 @@
+id: tabbedContainer3
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - heightType: auto
+    - currentViewKey: ''
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - hidden: false
+    - showHeader: true
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - border: rgba(209, 209, 209, 0)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - currentViewIndex: null
+    - _hasMigratedNestedItems: true
+    - transition: none
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - Submitted Tickets
+        - Active Tickets
+        - Needs Action
+        - Completed
+    - events:
+        ordered: []
+    - _ids:
+        - bd016
+        - eb200
+        - 5bfee
+        - 8327d
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+        - ''
+        - left
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - _labels:
+        - Submitted Tickets
+        - Active Tickets
+        - Needs Action
+        - Completed
+    - styleContext:
+        ordered:
+          - primary: rgb(110, 46, 191)
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: mainContainer
+    subcontainer: '72248'
+    row: -2.7755575615628914e-16
+    height: 0.2
+    width: 12
+createdAt: 2022-06-24T23:32:06.368Z

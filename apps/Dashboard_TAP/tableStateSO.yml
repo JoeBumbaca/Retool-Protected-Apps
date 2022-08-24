@@ -1,0 +1,11 @@
+id: tableStateSO
+type: state
+subtype: State
+template:
+  ordered:
+    - _persistedValueGetter: null
+    - _persistedValueSetter: null
+    - persistValue: false
+    - persistedValueKey: ''
+    - value: 'true'
+createdAt: 2022-08-02T17:28:25.071Z

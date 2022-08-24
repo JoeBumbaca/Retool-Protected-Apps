@@ -1,0 +1,30 @@
+id: pendingCycleTextADNotSens
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: '{{tableState.value}}'
+    - imageWidth: fit
+    - showInEditor: true
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        Fees updated from **'{{groupADNotSens.value === "Active" ? "active" :
+        "inactive"}}'** to **'{{groupADNotSens.value === "Active" ? "inactive" :
+        "active"}}'**: {{feeTableADNotSens.selectedRow.data.length}}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsAD
+    subcontainer: a997f
+    row: 14.8
+    height: 0.6
+    width: 7
+createdAt: 2022-07-05T20:58:08.539Z

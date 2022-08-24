@@ -1,0 +1,30 @@
+id: insightText3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: 45 Completed
+    - style:
+        ordered:
+          - color: surfacePrimary
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: insightContainer
+    subcontainer: f98c0
+    row: 2
+    height: 0.6
+    width: 12
+createdAt: 2022-06-24T23:00:04.596Z

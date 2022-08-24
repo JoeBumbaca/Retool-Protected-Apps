@@ -1,0 +1,34 @@
+id: modalTextSpecificAD2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        Your ticket
+        [{{submitTicketRebatch.data.key}}](http://yapjira.atlassian.net/browse/{{submitTicketRebatch.data.key}})
+        has been submitted for approval. 
+
+
+        Once your ticket has either been approved or not approved in Jira, you
+        will receive a notification with your next steps.
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: approvalModalSpecificADSA
+    row: 0.8
+    col: 2
+    height: 0.6
+    width: 9
+createdAt: 2022-08-01T23:07:08.312Z

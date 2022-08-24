@@ -1,0 +1,50 @@
+id: approvalModalNewTask
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: ''
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - showInEditor: true
+    - tooltipText: ''
+    - style:
+        ordered:
+          - accent-background: rgb(110, 46, 191)
+          - border-radius: 23px
+          - primary-foreground: rgb(106, 106, 106)
+          - secondary-surface: rgb(255, 255, 255)
+          - border-color: rgb(110, 46, 191)
+          - primary-background: rgb(237, 237, 237)
+    - modalHeight: 280px
+    - onModalOpen: ''
+    - events:
+        - ordered:
+            - event: close
+            - type: datasource
+            - method: trigger
+            - pluginId: clearFieldsNewTask
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - modalWidth: 30%
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: >-
+        {{(newTaskTextEditor.value === "") || (newTaskTextEditor.value === " ")
+        || (newTaskTitle.value === "") || (newTaskTitle.value.length > 100)}}
+    - buttonText: Get approval
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainerCreateTaskSA
+    subcontainer: cf441
+    row: 9.800000000000002
+    height: 1
+    width: 2
+createdAt: 2022-07-28T16:28:31.526Z

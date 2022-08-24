@@ -1,0 +1,26 @@
+id: fourQuestionMID
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: 'false'
+    - imageWidth: fit
+    - showInEditor: true
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: What time does this task need to be completed?
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsMID
+    subcontainer: c0f42
+    height: 0.6
+    width: 12
+createdAt: 2022-07-01T19:47:05.026Z

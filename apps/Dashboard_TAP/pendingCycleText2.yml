@@ -1,0 +1,27 @@
+id: pendingCycleText2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: '{{midPrefState.value}}'
+    - imageWidth: fit
+    - showInEditor: true
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: 'Records available to change for **‘MID’**:'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsMID
+    subcontainer: c0f42
+    row: 7.6000000000000005
+    height: 0.6
+    width: 7
+createdAt: 2022-07-01T19:48:32.110Z

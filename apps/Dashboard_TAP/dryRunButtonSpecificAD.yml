@@ -1,0 +1,79 @@
+id: dryRunButtonSpecificAD
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: 'true'
+    - text: >-
+        {{groupADSpecific.value === "Active" ? "Deactivate" : "Activate"}}
+        selected fees in dry run
+    - showInEditor: true
+    - tooltipText: ''
+    - style:
+        ordered:
+          - borderRadius: '20'
+          - background: rgb(110, 46, 191)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: close
+            - pluginId: approvalModalADSpecific
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: tableState
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'false'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: buttonState
+            - targetId: null
+            - params:
+                ordered:
+                  - value: 'true'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: parties_list
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: '{{ feeTableADSpecific.selectedRow.data == 0}}'
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsAD
+    subcontainer: 7a699
+    row: 15.6
+    height: 1
+    width: 3
+createdAt: 2022-07-05T20:57:33.896Z

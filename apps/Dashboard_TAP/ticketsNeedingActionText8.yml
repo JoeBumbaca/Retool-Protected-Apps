@@ -1,0 +1,27 @@
+id: ticketsNeedingActionText8
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: right
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: Needs Approval
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: ticketsNeedingAction4
+    subcontainer: c92d4
+    col: 7
+    height: 0.6
+    width: 5
+createdAt: 2022-07-19T21:49:48.088Z

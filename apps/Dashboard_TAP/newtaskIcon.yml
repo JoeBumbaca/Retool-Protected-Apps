@@ -1,0 +1,27 @@
+id: newtaskIcon
+type: widget
+subtype: IconWidget
+template:
+  ordered:
+    - horizontalAlign: center
+    - clickable: false
+    - hidden: false
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - color: rgb(255, 255, 255)
+    - altText: ''
+    - icon: line/interface-add-circle
+    - events:
+        ordered: []
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: newTaskContainer
+    subcontainer: f98c0
+    height: 1.2
+    width: 3
+createdAt: 2022-06-24T23:04:51.077Z

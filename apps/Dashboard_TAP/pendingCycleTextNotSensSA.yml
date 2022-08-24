@@ -1,0 +1,29 @@
+id: pendingCycleTextNotSensSA
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: '{{tableState.value}}'
+    - imageWidth: fit
+    - showInEditor: true
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        Number of records changed to **"pending cycle"**:
+        {{partiesTableNotSensSA.pageSize}}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsSA
+    subcontainer: a997f
+    row: 4.4
+    height: 0.6
+    width: 7
+createdAt: 2022-08-01T22:15:05.946Z

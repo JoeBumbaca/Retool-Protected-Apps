@@ -1,0 +1,30 @@
+id: pendingCycleTextADSA
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: '{{tableState.value}}'
+    - imageWidth: fit
+    - showInEditor: true
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        Fees updated from **'{{groupADSA.value === "Active" ? "active" :
+        "inactive"}}'** to **'{{groupADSA.value === "Active" ? "inactive" :
+        "active"}}'**: {{feeTableAD.selectedRow.data.length}}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: timeTabsADSA
+    subcontainer: c0f42
+    row: 17
+    height: 0.6
+    width: 7
+createdAt: 2022-08-01T23:05:34.232Z

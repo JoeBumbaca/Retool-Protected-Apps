@@ -1,0 +1,84 @@
+id: submittedTicketsTabs
+type: widget
+subtype: TabsWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+    - _values:
+        - Tab 1
+        - Tab 2
+        - Tab 3
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - alignment: justify
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - hidden: false
+    - data:
+        array: []
+    - targetContainerId: tabbedContainer3
+    - selectedItem: null
+    - showInEditor: false
+    - _defaultValue: null
+    - navigateContainer: true
+    - value: '{{ self.values[0] }}'
+    - style:
+        ordered:
+          - selectedText: rgb(110, 46, 191)
+          - selectedBackground: rgba(243, 242, 233, 0.7)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+    - _hasMigratedNestedItems: true
+    - itemMode: static
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids:
+        - 5b59c
+        - '42094'
+        - 8c4bb
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+        - ''
+    - disabled: false
+    - linePosition: bottom
+    - _labels:
+        - ''
+        - ''
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer3
+    rowGroup: header
+    col: 1
+    height: 0.8
+    width: 8
+createdAt: 2022-06-24T23:32:07.585Z

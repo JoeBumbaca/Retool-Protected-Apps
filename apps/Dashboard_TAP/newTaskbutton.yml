@@ -1,0 +1,56 @@
+id: newTaskbutton
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Add a New Task
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - borderRadius: 40px
+          - background: rgb(18, 181, 115)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: bold/interface-edit-write-2
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: setCurrentView
+            - pluginId: tabbedContainerCreateTaskSA
+            - targetId: null
+            - params:
+                ordered:
+                  - viewKey: Add a New Task
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: clearFieldsNewTask
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: mainContainerSA
+    subcontainer: cb7d5
+    col: 10
+    height: 1
+    width: 2
+createdAt: 2022-07-27T23:58:47.335Z

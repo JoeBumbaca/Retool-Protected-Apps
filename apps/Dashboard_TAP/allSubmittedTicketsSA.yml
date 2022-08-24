@@ -1,0 +1,276 @@
+id: allSubmittedTicketsSA
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - dateSubmitted:
+              ordered:
+                - manageTimeZone: true
+                - dateFormat: MMM d, yyyy
+                - valueTimeZone: '00:00'
+                - displayTimeZone: local
+                - timeFormat: h:mm a
+          - statusReport:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: mapped
+                - allowCustomValue: true
+                - optionLabels: null
+                - optionColors: ' {{ item === "Completed" ? "#12B573" : (item === "Needs Approval" ? "6E2EBF" : (item === "Ready To Run" ? "006EF2" : "#FF91AB"))}}'
+                - optionValues: null
+    - columnWidths: []
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - approver: Approver
+          - jiraNOC: Ticket ID
+          - queryType: SQL query type
+          - dateSubmitted: Time Sensitivity
+          - statusReport: Status/Edit
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - partyType: ''
+          - querytype: ''
+          - queryType: ''
+          - 'Transaction ': ''
+          - addresses: ''
+          - Transid: ''
+          - transID: ''
+          - statusRe: ''
+          - meta: ''
+          - approver: ''
+          - statusReport: ''
+          - createdOn: ''
+          - trans: ''
+          - individualDetails: ''
+          - name: ''
+          - sales: ''
+          - dateSubmitted: ''
+          - Jira NOC ticket number: ''
+          - displayText: ''
+          - TransIS: ''
+          - status: ''
+          - S: ''
+          - jiraNOC: ''
+          - Custom Column 1: ''
+          - Custom Column 2: ''
+          - version: ''
+          - timeZone: ''
+          - additionalProperties: ''
+          - id: ''
+          - Submitted by: ''
+          - Submitted By: ''
+          - email: ''
+          - Transaction ID: ''
+          - Transaction id: ''
+          - sensitivity: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - dateSubmitted: DateTimeDataCell
+          - statusReport: SingleTagDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - partyType: false
+          - addresses: false
+          - meta: false
+          - createdOn: false
+          - individualDetails: false
+          - displayText: false
+          - status: false
+          - version: false
+          - additionalProperties: false
+          - sensitivity: false
+    - _columnSummaryTypes:
+        ordered:
+          - dateSubmitted: ''
+          - statusReport: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: false
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: true
+    - data: |-
+        [{"Submitted by":"generated", 
+          "jiraNOC":"TAPT-105", 
+          queryType:"Rebatch Payments",
+          dateSubmitted:"06/27/2022",
+          statusReport: "Needs Approval"},
+         {"Submitted by":"generated", 
+          "jiraNOC":"TAPT-104", 
+          queryType:"Rebatch Payments",
+          dateSubmitted:"06/27/2022",
+          statusReport: "Needs Approval"},
+        {"Submitted by":"generated", 
+          "jiraNOC":"TAPT-103", 
+          queryType:"Rebatch Payments",
+          dateSubmitted:"06/28/2022",
+          statusReport: "Not Approved"},
+         {"Submitted by":"generated", 
+          "jiraNOC":"TAPT-102", 
+          queryType:"Rebatch Payments",
+          dateSubmitted:"06/28/2022",
+          statusReport: "Ready To Run"},
+        {"Submitted by":"generated", 
+          "jiraNOC":"TAPT-101", 
+          queryType:"Rebatch Payments",
+          dateSubmitted:"06/29/2022",
+          statusReport: "Completed"}]
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: dateSubmitted
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - dateSubmitted: left
+          - statusReport: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - toolbarAccent: rgb(110, 46, 191)
+          - toolbarText: rgb(41, 29, 33)
+          - border: rgba(209, 209, 209, 0)
+          - cellAccent: rgb(110, 46, 191)
+          - hoverRowBackground: rgba(110, 46, 191, 0.03)
+          - selectedRowBackground: rgba(110, 46, 191, 0.1)
+          - alternateRowBackground: rgb(244, 244, 244)
+          - summaryAccent: rgb(110, 46, 191)
+          - editedAccent: rgb(110, 46, 191)
+          - headerAccent: rgb(110, 46, 191)
+          - headerText: rgb(41, 29, 33)
+          - headerBackground: rgb(221, 220, 209)
+          - borderRadius: '5'
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - dateSubmitted: ''
+          - statusReport: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: true
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events: []
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No submitted tickets
+    - columnEditable:
+        ordered:
+          - approver: false
+          - jiraNOC: false
+          - querytype: false
+          - dateSubmitted: false
+          - sensitivity: false
+          - statusReport: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered:
+          - dateSubmitted: false
+    - columnMappers:
+        ordered:
+          - statusReport: ''
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: none
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns: []
+    - sortByRawValue:
+        ordered:
+          - dateSubmitted: true
+    - calculatedColumns:
+        - Custom Column 1
+        - Custom Column 2
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer5
+    subcontainer: bd016
+    row: -1.1102230246251565e-16
+    height: 8.4
+    width: 12
+createdAt: 2022-07-27T20:58:38.634Z

@@ -1,0 +1,18 @@
+id: testSyncModule1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: testSyncModule
+    - pageUuid: aadaaef8-2550-11ed-8366-bfa2d38cc8fe
+    - childNamespace: testSyncModule1
+style:
+  ordered: []
+position2:
+  position2:
+    col: 1
+    height: 2.4
+    width: 10
+createdAt: 2022-08-26T15:06:56.827Z

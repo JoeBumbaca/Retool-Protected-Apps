@@ -2,7 +2,7 @@ id: query1
 type: datasource
 subtype: RESTQuery
 resourceName: 7082dcc0-c4ff-4c33-bdcb-a89b6633a397
-resourceDisplayName: basic
+resourceDisplayName: basic2.1
 template:
   ordered:
     - queryRefreshTime: ''
@@ -22,6 +22,7 @@ template:
     - query: ''
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
@@ -46,6 +47,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - showLatestVersionUpdatedWarning: false

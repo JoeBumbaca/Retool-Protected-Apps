@@ -16,6 +16,7 @@ template:
     - validationMessage: ''
     - showInEditor: false
     - _defaultValue: ''
+    - pattern: ''
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: googleToken
@@ -29,6 +30,7 @@ template:
     - labelWidthUnit: '%'
     - invalid: false
     - minLength: null
+    - inputTooltip: ''
     - events:
         ordered: []
     - autoCapitalize: none

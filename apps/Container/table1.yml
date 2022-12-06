@@ -9,6 +9,7 @@ template:
     - _filteredSortedRenderedDataWithTypes: null
     - heightType: fixed
     - normalizedData: null
+    - rowHeight: standard
     - saveChangesDisabled: ''
     - columnTypeProperties:
         ordered: []
@@ -91,6 +92,7 @@ template:
         ordered: []
     - columnSummaries:
         object: {}
+    - showBoxShadow: true
     - sortedDesc: false
     - customButtonName: ''
     - columnMappersRenderAsHTML:
@@ -143,6 +145,7 @@ template:
     - doubleClickToEdit: true
     - overflowType: pagination
     - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
     - selectedCell:
         object:
           index: null

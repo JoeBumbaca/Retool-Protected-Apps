@@ -1,67 +1,78 @@
-id: container1
+id: tabs1
 type: widget
-subtype: ContainerWidget2
+subtype: TabsWidget2
 template:
   ordered:
     - _disabledByIndex:
         - ''
-    - heightType: auto
-    - currentViewKey: null
+        - ''
+        - ''
+    - _values:
+        - Tab 1
+        - Tab 2
+        - Tab 3
     - iconByIndex:
         array: []
-    - clickable: false
+    - values:
+        array: []
+    - alignment: left
     - _iconByIndex:
         - ''
+        - ''
+        - ''
     - hidden: false
-    - showHeader: true
-    - hoistFetching: true
-    - views:
+    - data:
         array: []
+    - targetContainerId: tabbedContainer1
+    - selectedItem: null
     - showInEditor: false
-    - tooltipText: ''
+    - navigateContainer: true
+    - value: '{{ self.values[0] }}'
     - hiddenByIndex:
         array: []
     - _hiddenByIndex:
         - ''
-    - currentViewIndex: null
+        - ''
+        - ''
     - _hasMigratedNestedItems: true
-    - transition: none
     - itemMode: static
+    - selectedIndex: null
     - _tooltipByIndex:
+        - ''
+        - ''
         - ''
     - tooltipByIndex:
         array: []
-    - showFooter: false
-    - _viewKeys:
-        - View 1
+    - selectedLabel: ''
     - events:
         ordered: []
     - _ids:
-        - 154da
-    - viewKeys:
-        array: []
+        - f2dda
+        - bd110
+        - f4930
     - iconPositionByIndex:
         array: []
     - _iconPositionByIndex:
         - ''
-    - hovered: false
-    - loading: false
-    - overflowType: scroll
+        - ''
+        - ''
     - disabled: false
+    - linePosition: bottom
     - _labels:
+        - ''
+        - ''
         - ''
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false
-    - showBody: true
     - labels:
         array: []
 style:
   ordered: []
 position2:
   position2:
-    row: 4.6
-    col: 6
-    height: 7.4
-    width: 6
-createdAt: 2022-04-01T23:11:45.154Z
+    container: tabbedContainer1
+    rowGroup: header
+    height: 0.8
+    width: 12
+createdAt: 2022-12-06T15:45:31.829Z

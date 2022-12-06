@@ -1,18 +1,69 @@
 id: tabbedContainer1
 type: widget
-subtype: TabbedContainerWidget
+subtype: ContainerWidget2
 template:
   ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
     - heightType: fixed
-    - spinWhenChildrenAreFetching: true
-    - unmountInactiveTabs: false
-    - tabNames: '["Tab One", "Tab Two"]'
-    - selectedTabIndex: 0
-    - selectedTab: '"0"'
-    - showTabBar: true
-    - disableAnimation: false
+    - currentViewKey: 0
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+    - hidden: null
+    - showHeader: true
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: null
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+    - currentViewIndex: 0
+    - _hasMigratedNestedItems: true
+    - transition: slide
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - 0
+        - 1
+    - events:
+        ordered: []
+    - _ids:
+        - '0'
+        - '1'
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+    - hovered: false
+    - loading: false
     - overflowType: hidden
     - disabled: ''
+    - _labels:
+        - Tab One
+        - Tab Two
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: null
+    - showBody: true
+    - labels:
+        array: []
 style:
   ordered: []
 position2:

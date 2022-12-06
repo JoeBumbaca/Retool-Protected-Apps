@@ -1,0 +1,10 @@
+version: 43.0.9
+pageUuid: 9132283e-4e34-11ed-92b2-672e37ce5e2c
+appTemplate:
+  queryStatusVisibility: false
+  rootScreen: null
+  version: 2.103.7
+  markdownLinkBehavior: auto
+  experimentalStabilityFeatures:
+    object:
+      lockModelForUpdates: true

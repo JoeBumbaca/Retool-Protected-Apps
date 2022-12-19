@@ -1,0 +1,39 @@
+id: filepicker1
+type: widget
+subtype: FilePickerWidget
+template:
+  ordered:
+    - parsedValue: ''
+    - directorySelectable: false
+    - color: '#5b9dab'
+    - multipleSelectable: false
+    - text: Upload Image
+    - tooltipText: ''
+    - style:
+        ordered:
+          - accent-background: '#5b9dab'
+    - label: ''
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: false
+    - events:
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: query1
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - file: null
+    - disabled: ''
+    - onFilePick: uploadDishImageAsset
+style:
+  ordered: []
+position2:
+  position2:
+    row: 6.199999999999999
+    col: 7
+    height: 1
+    width: 2
+createdAt: 2022-12-19T15:53:42.375Z

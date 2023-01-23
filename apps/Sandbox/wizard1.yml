@@ -1,0 +1,59 @@
+id: wizard1
+type: widget
+subtype: WizardWidget
+template:
+  ordered:
+    - spinWhenChildrenAreFetching: true
+    - currentStep: h0onc1UJZ
+    - steps:
+        ordered:
+          - h0onc1UJZ:
+              ordered:
+                - name: Step 1
+                - navButtons: []
+                - visualizationXCoordinate: 40
+                - visualizationYCoordinate: 536
+          - 6og6bTy7F:
+              ordered:
+                - name: Step 2
+                - navButtons: []
+                - visualizationXCoordinate: 424
+                - visualizationYCoordinate: 536
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: false
+          - wLSr3SmWu:
+              ordered:
+                - name: Step 3
+                - navButtons: []
+                - visualizationXCoordinate: 696
+                - visualizationYCoordinate: 536
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: false
+          - RFKPfaxs9:
+              ordered:
+                - name: Step 4
+                - navButtons: []
+                - visualizationXCoordinate: 984
+                - visualizationYCoordinate: 520
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: false
+    - stepHistory: []
+    - hidden: false
+    - customInitialStepName: ''
+    - scroll: false
+    - initialStep: h0onc1UJZ
+    - onReset: ''
+    - onStepChange: ''
+    - hideResetButton: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 70.8
+    col: 4
+    height: 8
+    width: 6
+createdAt: 2023-01-09T21:51:14.753Z

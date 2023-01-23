@@ -1,0 +1,47 @@
+id: queryBuilder1
+type: widget
+subtype: QueryBuilderWidget
+template:
+  ordered:
+    - value: ''
+    - fields: |-
+        [
+          {
+            "name": "status",
+            "label": "Status",
+            "enum": [
+              "happy",
+              "sad",
+              "neutral"
+            ],
+            "enumNames": [
+              "Happy",
+              "Sad",
+              "So-so"
+            ]
+          },
+          {
+            "name": "firstName",
+            "label": "First Name"
+          },
+          {
+            "name": "lastName",
+            "label": "Last Name"
+          },
+          {
+            "name": "email",
+            "label": "Email"
+          }
+        ]
+    - asSql: ''
+    - heightType: auto
+    - overflowType: scroll
+style:
+  ordered: []
+position2:
+  position2:
+    row: 85.60000000000001
+    col: 7
+    height: 1.4
+    width: 3
+createdAt: 2023-01-10T18:42:07.950Z

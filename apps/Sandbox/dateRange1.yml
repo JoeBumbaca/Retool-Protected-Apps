@@ -1,0 +1,53 @@
+id: dateRange1
+type: widget
+subtype: DateRangeWidget
+template:
+  ordered:
+    - minDate: ''
+    - readOnly: false
+    - iconAfter: ''
+    - dateFormat: MMM d, yyyy
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value:
+        ordered:
+          - start: '{{ moment().startOf("isoweek").format("YYYY-MM-DD") }}'
+          - end: '{{ moment().endOf("isoweek").format("YYYY-MM-DD") }}'
+    - startPlaceholder: Start date
+    - labelCaption: ''
+    - maxDate: ''
+    - labelWidth: '33'
+    - label: Label
+    - formattedValue: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: bold/interface-calendar-remove
+    - endPlaceholder: End date
+    - events:
+        ordered: []
+    - textBetween: '-'
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 28.6
+    col: 3
+    height: 1
+    width: 4
+createdAt: 2023-01-09T16:09:55.740Z

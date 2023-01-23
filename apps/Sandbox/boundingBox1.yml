@@ -1,0 +1,40 @@
+id: boundingBox1
+type: widget
+subtype: BoundingBoxWidget
+template:
+  ordered:
+    - imageUrl: https://drivinginstructorblog.com/wp-content/uploads/2013/03/k.jpg
+    - mode: boundingbox
+    - boundingBoxes: |-
+        [
+          {
+            "x": 364.33285687062585,
+            "y": 455.1241526664781,
+            "height": 234.01870447637899,
+            "width": 460.11987944778207,
+            "label": "Car"
+          },
+          {
+            "x": 913.6813524877781,
+            "y": 379.67898685000057,
+            "height": 97.41991424890055,
+            "width": 214.32030588701454,
+            "label": "Car"
+          },
+          {
+            "x": 1329.3946932006634,
+            "y": 388.4448721768223,
+            "height": 126.93974320779306,
+            "width": 172.20563847429517,
+            "label": "Car"
+          }
+        ]
+    - labels: '["Car", "Pedestrian", "Traffic Sign"]'
+style:
+  ordered: []
+position2:
+  position2:
+    row: 18.4
+    height: 7.4
+    width: 7
+createdAt: 2023-01-06T16:47:19.098Z

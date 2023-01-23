@@ -1,0 +1,28 @@
+id: video1
+type: widget
+subtype: VideoWidget
+template:
+  ordered:
+    - src: https://www.youtube.com/watch?v=or5aSGjbOLc
+    - loop: false
+    - hidden: false
+    - playing: false
+    - showInEditor: false
+    - tooltipText: ''
+    - duration: 0
+    - hideControls: false
+    - events:
+        ordered: []
+    - volume: 1
+    - playbackRate: 1
+    - currentTimeStamp: 0
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 49.8
+    col: 2
+    height: 7
+    width: 4
+createdAt: 2023-01-09T21:16:18.636Z

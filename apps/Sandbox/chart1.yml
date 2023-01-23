@@ -1,0 +1,47 @@
+id: chart1
+type: widget
+subtype: PlotlyChartWidget
+template:
+  ordered:
+    - dataseries:
+        ordered: []
+    - isDataTemplateDirty: false
+    - datasource: ''
+    - isJsonTemplateDirty: false
+    - groupByDropdown: ''
+    - datasourceInputMode: javascript
+    - datasourceDataType: null
+    - layout: ''
+    - xAxisDropdown: ''
+    - data: ''
+    - isStackSeriesEnabled: false
+    - xAxisTickFormat: ''
+    - skipDatasourceUpdate: true
+    - datasourceJS: '{{query2.data.data}}'
+    - yAxisTickFormat: ''
+    - datasourcePluginType: null
+    - xAxisType: default
+    - datasourcePluginId: null
+    - legendAlignment: bottom
+    - isLayoutJsonDirty: false
+    - chartType: bar
+    - title: ''
+    - xAxis: ''
+    - groupByMode: dropdown
+    - onPointSelectQuery: ''
+    - xAxisMode: dropdown
+    - shouldShowLegend: true
+    - yAxisTitle: ''
+    - selectedPoints:
+        array: []
+    - xAxisTitle: ''
+    - groupByJS: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: 90.6
+    col: 5
+    height: 7.2
+    width: 6
+createdAt: 2023-01-12T17:38:35.646Z

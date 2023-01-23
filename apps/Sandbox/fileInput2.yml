@@ -1,0 +1,67 @@
+id: fileInput2
+type: widget
+subtype: FileInputWidget
+template:
+  ordered:
+    - parsedValue:
+        array: []
+    - iconAfter: ''
+    - parseFiles: false
+    - maxSize: ''
+    - appendNewSelection: false
+    - selectionType: single
+    - accept:
+        array: []
+    - hidden: false
+    - customValidation: ''
+    - maxCount: null
+    - hideValidationMessage: false
+    - textBefore: Browse
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - parsing: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - minSize: ''
+    - placeholder: ''
+    - label: Label
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - files:
+        array: []
+    - iconBefore: bold/programming-browser-search
+    - events:
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: query1
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - minCount: null
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 88
+    col: 7
+    height: 1
+    width: 4
+createdAt: 2023-01-11T17:38:02.966Z

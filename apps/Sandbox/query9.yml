@@ -1,0 +1,89 @@
+id: query9
+type: datasource
+subtype: NoSqlQuery
+resourceName: 48db5ab2-dd33-48fa-af58-8d3af7ff9ca0
+resourceDisplayName: Joe Mongo
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: find
+    - lastReceivedFromResourceAt: null
+    - aggregation: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: '{"githubusername": "JoeBumbaca"}'
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - update: ''
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - useRawCollectionName: false
+    - data: null
+    - operations: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - projection: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: ''
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - sortBy: ''
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - insert: ''
+    - queryTimeout: '10000'
+    - field: ''
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - database: ''
+    - changesetIsObject: false
+    - limit: ''
+    - enableCaching: false
+    - allowedGroups: []
+    - options: ''
+    - collection: profiles
+    - skip: ''
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-01-03T21:24:04.834Z

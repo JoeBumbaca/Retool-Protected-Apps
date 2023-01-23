@@ -1,0 +1,27 @@
+id: html1
+type: widget
+subtype: HTMLWidget
+template:
+  ordered:
+    - hidden: false
+    - maintainSpaceWhenHidden: false
+    - showInEditor: false
+    - tooltipText: ''
+    - css: |-
+        .myClass {
+          text-align: center;
+        }
+    - html: |-
+        <video width="540" height="310" controls>
+          <source src="your video url here" type="video/mp4">
+        </video>
+    - clickable: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 59.599999999999994
+    col: 2
+    height: 0.2
+    width: 5
+createdAt: 2023-01-09T22:18:27.490Z

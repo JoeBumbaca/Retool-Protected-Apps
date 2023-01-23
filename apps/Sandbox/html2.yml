@@ -1,0 +1,24 @@
+id: html2
+type: widget
+subtype: HTMLWidget
+template:
+  ordered:
+    - hidden: false
+    - maintainSpaceWhenHidden: false
+    - showInEditor: false
+    - tooltipText: ''
+    - css: |-
+        .myClass {
+          text-align: center;
+        }
+    - html: '{{ query13.data }}'
+    - clickable: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 116.80000000000001
+    col: 10
+    height: 0.2
+    width: 2
+createdAt: 2023-01-20T15:44:30.272Z

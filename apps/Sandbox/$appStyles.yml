@@ -1,9 +1,0 @@
-id: $appStyles
-type: setting
-subtype: AppStyles
-template:
-  ordered:
-    - value: >-
-        #table-table1 > div > div > div:nth-child(2) > div > div >
-        div:nth-child(1) > div {display: none;}
-createdAt: 2022-12-01T22:44:16.396Z

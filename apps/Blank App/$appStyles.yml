@@ -1,0 +1,10 @@
+id: $appStyles
+type: setting
+subtype: AppStyles
+template:
+  ordered:
+    - value: |-
+        .rt-thead *{
+          -webkit-user-drag: none !important;
+        }
+createdAt: 2022-04-12T00:14:14.348Z

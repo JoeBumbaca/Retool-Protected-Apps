@@ -1,0 +1,13 @@
+version: 43.0.9
+pageUuid: ccf90f38-9c17-11ec-a52a-a3b8c533cf21
+appTemplate:
+  preloadedAppJavaScript: |-
+    window.test2 = function() {
+     return 'test1'
+    }
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+  rootScreen: null
+  version: 2.101.2
+  markdownLinkBehavior: auto

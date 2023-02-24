@@ -1,0 +1,55 @@
+id: urlCustomerOrderNumber
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: '{{/^(\d)+$/.test(self.value) ? '''' : ''number only''}}'
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{urlparams.hash.customerOrderNumber}}'
+    - labelCaption: ''
+    - labelWidth: '55'
+    - autoFill: ''
+    - placeholder: Enter customer order number
+    - label: Customer order number
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: urlParamsStore
+    subcontainer: d5e50
+    col: 7
+    height: 1
+    width: 3
+createdAt: 2023-02-06T18:20:14.884Z

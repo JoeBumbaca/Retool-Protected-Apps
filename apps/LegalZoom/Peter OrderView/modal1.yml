@@ -1,0 +1,32 @@
+id: modal1
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - style:
+        ordered:
+          - border-radius: 40px
+    - modalHeight: 504px
+    - onModalOpen: ''
+    - events: []
+    - modalWidth: 90%
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Add Orco
+style:
+  ordered: []
+position2:
+  position2:
+    container: container3
+    subcontainer: 09a1c
+    row: 6.106226635438361e-16
+    col: 11
+    height: 1
+    width: 1
+createdAt: 2022-11-10T21:57:57.403Z

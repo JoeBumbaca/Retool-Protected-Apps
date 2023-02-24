@@ -1,0 +1,27 @@
+version: 43.0.9
+pageUuid: e1a4786a-b2fe-11ed-b8b4-5bf4630ab5a5
+appTemplate:
+  urlFragmentDefinitions:
+    - ordered:
+        - name: processingNumber
+        - value: '{{urlProcessingNumber.value}}'
+    - ordered:
+        - name: customerOrderNumber
+        - value: '{{urlCustomerOrderNumber.value}}'
+    - ordered:
+        - name: departmentName
+        - value: '{{urlDepartmentName.value}}'
+  pageLoadValueOverrides:
+    - ordered:
+        - name: ProductSelect.value
+        - value: '{{urlparams.hash.processingNumber}}'
+  queryStatusVisibility: false
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+      skipDepCycleCheckingEnabled: false
+      serverDepGraphEnabled: false
+      useRuntimeV2: false
+  rootScreen: null
+  version: 2.108.3
+  markdownLinkBehavior: auto

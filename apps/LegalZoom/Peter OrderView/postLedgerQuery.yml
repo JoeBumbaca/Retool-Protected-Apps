@@ -1,0 +1,106 @@
+id: postLedgerQuery
+type: datasource
+subtype: RESTQuery
+resourceName: 45be196c-58f0-4819-b650-5c48826d4aac
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |-
+        {
+            "objectType": "{{objectType}}",
+            "processingNumber": {{processingNumber}},
+            "customerOrderNumber": {{customerOrderNumber}},
+            "description": "{{description}}",
+            "createdBy": "{{userAlias}}"
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: '[{"key":"Bearer","value":"OAUTH2_TOKEN"}]'
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: ''
+    - playgroundQueryUuid: 8ceddb67-c302-4483-9f36-b54580c57530
+    - playgroundQueryId: 52
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - retoolVersion: 2.105.1
+    - importedQueryInputs:
+        ordered:
+          - objectType: '{{ noteCaseSelect.selectedItem.value}}'
+          - processingNumber: '{{urlProcessingNumber.value}}'
+          - customerOrderNumber: '{{ urlCustomerOrderNumber.value}}'
+          - description: '{{ descriptionText.value}}'
+          - userAlias: '{{getAliasQuery.data}}'
+    - isImported: true
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: true
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: getLedgerQuery
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-02-06T18:26:18.822Z

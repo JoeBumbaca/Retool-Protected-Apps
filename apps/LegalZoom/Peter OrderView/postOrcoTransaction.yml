@@ -1,0 +1,107 @@
+id: postOrcoTransaction
+type: datasource
+subtype: RESTQuery
+resourceName: REST-WithoutResource
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |-
+        {
+          "transactionID": 0,
+          "createdBy": "{{current_user.firstName + " "+ current_user.lastName}}",
+          "closedBy": "",
+          "category1": "{{category1.selectedLabel}}",
+          "category2": "{{category2.selectedLabel}}",
+          "category3": "{{category3.selectedLabel}}",
+          "category4": "{{category4.selectedLabel}}",
+          "c1Reason1": "{{reason1.selectedLabel}}",
+          "c1Reason2": "{{reason2.selectedLabel}}",
+          "c2Reason3": "{{reason3.selectedLabel}}",
+          "c2Reason4": "{{reason4.selectedLabel}}",
+          "c3Reason5": "{{reason5.selectedLabel}}",
+          "c3Reason6": "{{reason6.selectedLabel}}",
+          "c4Reason7": "{{reason7.selectedLabel}}",
+          "c4Reason8": "{{reason8.selectedLabel}}",
+          "dateAdded": "{{ moment(new Date()).format("YYYY-MM-DDTHH:mm:ss[Z]")}}",
+          "dateClosed": "",
+          "departmentID": {{getDepartmentID.data}},
+          "departmentName": "{{urlDepartmentName.value}}",
+           "orcoStatus": "Open",
+          "fkuserorder": {{urlProcessingNumber.value}}
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: '[{"key":"Content-Type","value":"application/json"}]'
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: >-
+        https://dev.fulfillment-orco.dev.aws-01.legalzoom.com/fulfillmentorco/v1/orco/transactions
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-02-15T16:21:14.143Z

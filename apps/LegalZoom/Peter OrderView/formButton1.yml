@@ -1,0 +1,126 @@
+id: formButton1
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: form1
+    - hidden: false
+    - text: Submit
+    - showInEditor: false
+    - tooltipText: ''
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - method: showNotification
+            - enabled: >-
+                {{(  category1.value == null && category2.value == null &&
+                category4.value == null && category4.value == null ) || (
+                category1.value != null && reason1.value == null &&
+                reason2.value == null ) || ( category2.value != null &&
+                reason3.value == null && reason4.value == null ) || (
+                category3.value != null && reason6.value == null &&
+                reason6.value == null ) || ( category4.value != null &&
+                reason7.value == null && reason8.value == null )
+
+
+
+                }}
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - notificationType: error
+                        - title: Please Enter Atleast one Category and Reason
+                        - duration: '2'
+            - targetId: null
+            - pluginId: ''
+            - waitType: debounce
+            - event: click
+            - type: util
+            - waitMs: '0'
+        - ordered:
+            - method: trigger
+            - enabled: >-
+                {{ !( (  category1.value == null && category2.value == null &&
+                category4.value == null && category4.value == null ) || (
+                category1.value != null && reason1.value == null &&
+                reason2.value == null ) || ( category2.value != null &&
+                reason3.value == null && reason4.value == null ) || (
+                category3.value != null && reason6.value == null &&
+                reason6.value == null ) || ( category4.value != null &&
+                reason7.value == null && reason8.value == null )
+
+                )
+
+
+                }}
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: postOrcoTransaction
+            - waitType: debounce
+            - event: click
+            - type: datasource
+            - waitMs: '0'
+        - ordered:
+            - method: trigger
+            - enabled: >-
+                {{ !( (  category1.value == null && category2.value == null &&
+                category4.value == null && category4.value == null ) || (
+                category1.value != null && reason1.value == null &&
+                reason2.value == null ) || ( category2.value != null &&
+                reason3.value == null && reason4.value == null ) || (
+                category3.value != null && reason6.value == null &&
+                reason6.value == null ) || ( category4.value != null &&
+                reason7.value == null && reason8.value == null )
+
+                )
+
+
+                }}
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: resetQuery
+            - waitType: debounce
+            - event: click
+            - type: datasource
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: tableRefresh
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: modalClose
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    rowGroup: footer
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2023-02-15T15:46:36.229Z

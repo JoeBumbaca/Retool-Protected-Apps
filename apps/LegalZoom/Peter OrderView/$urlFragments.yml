@@ -1,0 +1,11 @@
+id: $urlFragments
+type: setting
+subtype: UrlFragments
+template:
+  ordered:
+    - value:
+        ordered:
+          - processingNumber: '{{urlProcessingNumber.value}}'
+          - customerOrderNumber: '{{urlCustomerOrderNumber.value}}'
+          - departmentName: '{{urlDepartmentName.value}}'
+createdAt: 2023-01-31T23:26:06.297Z

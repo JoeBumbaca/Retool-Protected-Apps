@@ -1,0 +1,35 @@
+id: icon2
+type: widget
+subtype: IconWidget
+template:
+  ordered:
+    - horizontalAlign: center
+    - clickable: false
+    - hidden: false
+    - showInEditor: false
+    - tooltipText: ''
+    - altText: ''
+    - icon: line/interface-add-square
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: confetti
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: b97da
+    row: 0.5999999999999999
+    col: 6
+    height: 0.5999999999999999
+    width: 6
+createdAt: 2022-11-29T21:16:34.923Z

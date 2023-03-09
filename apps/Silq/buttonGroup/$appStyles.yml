@@ -1,0 +1,10 @@
+id: $appStyles
+type: setting
+subtype: AppStyles
+template:
+  ordered:
+    - value: >-
+        div._retool-ContainerWidget2 > div > div > div > div > div > span > div
+        > section > div > div > div > div > div:nth-child(-n+3) > div {padding:
+        0px;}
+createdAt: 2022-11-30T15:11:17.606Z

@@ -9,6 +9,7 @@ template:
     - _filteredSortedRenderedDataWithTypes: null
     - heightType: fixed
     - normalizedData: null
+    - rowHeight: standard
     - saveChangesDisabled: ''
     - columnTypeProperties:
         ordered:
@@ -158,6 +159,7 @@ template:
     - doubleClickToEdit: true
     - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
     - selectedCell:
         object:
           index: null

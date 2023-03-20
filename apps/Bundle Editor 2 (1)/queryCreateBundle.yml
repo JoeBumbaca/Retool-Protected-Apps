@@ -56,7 +56,6 @@ template:
     - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
-    - isClonedDemoQuery: true
     - showLatestVersionUpdatedWarning: false
     - paginationDataField: ''
     - timestamp: 0

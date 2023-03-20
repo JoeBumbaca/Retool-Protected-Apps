@@ -1,0 +1,34 @@
+id: checkbox_includeProductLineItem2
+type: widget
+subtype: CheckboxWidget2
+template:
+  ordered:
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: false
+    - labelCaption: ''
+    - hideLabel: true
+    - label: Label
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: false
+    - labelPosition: right
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: listView_includedLineItems2
+    height: 0.6
+    width: 1
+createdAt: 2022-10-10T20:09:40.691Z

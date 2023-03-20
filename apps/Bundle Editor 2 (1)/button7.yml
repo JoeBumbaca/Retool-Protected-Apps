@@ -1,0 +1,47 @@
+id: button7
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: 'Add Bundle '
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(228, 236, 255)
+          - label: rgb(41, 101, 246)
+          - border: rgb(41, 101, 246)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: queryCreateBundle
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: collapsibleContainer2
+    subcontainer: 391b9
+    row: 6.199999999999999
+    col: 10
+    height: 1
+    width: 2
+createdAt: 2022-10-13T21:49:08.802Z

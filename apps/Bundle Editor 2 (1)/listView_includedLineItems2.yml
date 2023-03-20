@@ -1,0 +1,24 @@
+id: listView_includedLineItems2
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: auto
+    - showBorder: true
+    - data: ''
+    - showDropShadow: true
+    - formDataKey: '{{ self.id }}'
+    - dynamicHeightsEnabled: true
+    - itemHeight: '3'
+    - overflowType: scroll
+    - instances: '{{ queryVariationsView.data.available[ri[0]]?.children?.length }}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: collapsibleContainer_includedProducts2
+    subcontainer: 635fc
+    col: 1
+    height: 5
+    width: 11
+createdAt: 2022-10-10T20:09:38.443Z

@@ -1,0 +1,24 @@
+id: collapsibleTitle_includedLineItemName2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '#### {{ queryVariationsView.data[ri[0]]?.children[ri[1]]?.name }}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: listView_includedLineItems2
+    col: 1
+    width: 6
+createdAt: 2022-10-10T20:09:40.296Z

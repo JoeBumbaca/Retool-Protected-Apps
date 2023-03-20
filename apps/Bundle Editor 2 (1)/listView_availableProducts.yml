@@ -1,0 +1,27 @@
+id: listView_availableProducts
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: auto
+    - showBorder: false
+    - hidden: ''
+    - data: ''
+    - showDropShadow: false
+    - rowKeys: ''
+    - formDataKey: '{{ self.id }}'
+    - dynamicHeightsEnabled: true
+    - itemHeight: '3'
+    - overflowType: scroll
+    - instances: '{{ queryVariationsView.data.available.length }}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: container2
+    subcontainer: 4d594
+    row: 5.600000000000038
+    col: 6
+    height: 0.9999999999999991
+    width: 6
+createdAt: 2022-10-10T20:09:36.464Z

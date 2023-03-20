@@ -1,0 +1,46 @@
+id: button_backToVariations
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Back to Variations
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(228, 236, 255)
+          - border: rgb(41, 101, 246)
+          - label: rgb(41, 101, 246)
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: bold/interface-arrows-left-alternate
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: setCurrentView
+            - pluginId: container2
+            - targetId: null
+            - params:
+                ordered:
+                  - viewKey: view
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container2
+    subcontainer: 4d594
+    height: 1
+    width: 2
+createdAt: 2022-10-10T20:35:06.811Z

@@ -1,0 +1,57 @@
+id: modal_bundleEditor
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: 'true'
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: 700px
+    - onModalOpen: ''
+    - events:
+        - ordered:
+            - event: open
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - src: >+
+
+                      const included = stateBundleIndex.value.included?.map(i =>
+                      i.name);
+
+                      const available = stateBundleIndex.value.available?.map(i
+                      => i.name);
+
+
+
+                      checkboxTree_includedProducts.setChecked([]);
+
+                      checkboxTree_availableProducts.setChecked([]);
+
+
+                      checkboxTree_includedProducts.setChecked(included);
+
+                      checkboxTree_availableProducts.setChecked(available);
+
+            - waitType: debounce
+            - waitMs: '0'
+    - modalWidth: 70%
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Open Modal
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.9999999999999964
+    col: 9
+    height: 1
+    width: 3
+createdAt: 2022-10-01T07:01:56.436Z

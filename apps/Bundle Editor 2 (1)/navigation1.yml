@@ -1,0 +1,114 @@
+id: navigation1
+type: widget
+subtype: NavigationWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+    - heightType: auto
+    - iconByIndex:
+        array: []
+    - srcWidth: null
+    - _iconByIndex:
+        - bold/shipping-box-2
+        - bold/interface-help-question-circle
+    - src: https://www.legalzoom.com/resources/img/lzr/nav/lz-logo.svg
+    - overflowMode: scroll
+    - _parentKeyByIndex:
+        - ''
+        - ''
+    - _highlightByIndex:
+        - 'true'
+        - ''
+    - parentKeyByIndex:
+        array: []
+    - highlightByIndex:
+        array: []
+    - _appTargetByIndex:
+        - ''
+        - ''
+    - appTargetByIndex:
+        array: []
+    - hidden: false
+    - data:
+        array: []
+    - srcHeight: null
+    - itemTypeByIndex:
+        array: []
+    - showInEditor: false
+    - _itemTypeByIndex:
+        - custom
+        - app
+    - orientation: horizontal
+    - tooltipText: ''
+    - style:
+        ordered:
+          - highlightText: rgb(0, 102, 255)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+    - storageBlobId: ''
+    - _captionByIndex:
+        - ''
+        - ''
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - altText: ''
+    - itemMode: static
+    - dbBlobId: ''
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - _automaticallyHighlightedIndices:
+        array: []
+    - tooltipByIndex:
+        array: []
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: 55a89
+            - params:
+                ordered:
+                  - uuid: 9f417850-4b12-11ed-95fe-bf0f6273d27c
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - 55a89
+        - '27569'
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - left
+        - left
+    - _keyByIndex:
+        - ''
+        - ''
+    - disabled: false
+    - keyByIndex:
+        array: []
+    - _labels:
+        - Package Groups
+        - Help
+    - srcType: src
+    - disabledByIndex:
+        array: []
+    - horizontalAlignment: left
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    row: 3.552713678800501e-15
+    height: 1
+    width: 8
+createdAt: 2022-10-14T16:12:26.135Z

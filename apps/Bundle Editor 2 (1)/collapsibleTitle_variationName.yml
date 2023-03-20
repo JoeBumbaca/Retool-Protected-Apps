@@ -1,0 +1,26 @@
+id: collapsibleTitle_variationName
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '#### {{ getVariations.data[i].name }}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: collapsibleContainer2
+    rowGroup: header
+    row: -2.7755575615628914e-16
+    height: 0.8
+    width: 2
+createdAt: 2022-10-05T18:01:39.250Z

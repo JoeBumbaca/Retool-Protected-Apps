@@ -1,0 +1,26 @@
+id: text_variationName
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '## Variation: {{ queryVariationsView.data.variationName }}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container2
+    subcontainer: 4d594
+    row: 1.7999999999999998
+    height: 1.2
+    width: 5
+createdAt: 2022-10-10T22:07:16.503Z

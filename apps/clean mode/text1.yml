@@ -1,0 +1,36 @@
+id: text1
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - value: >-
+        <style>._37GzR, ._1kVZf  {
+          visibility: {{switch1.value ? 'hidden' : 'visible'}};
+        } 
+
+
+        {{ switch1.value ? '.retool-canvas-container { margin-top: 0px
+        !important; }' : '' }}
+
+
+        header {
+          margin-bottom:0px !important;
+        }
+
+        </style>
+    - renderAsMarkdown: false
+    - renderAsHtml: true
+    - scrollOverflow: false
+    - truncateOverflow: false
+    - tooltipText: ''
+    - horizontalAlign: left
+    - verticalAlign: center
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    col: 9
+    height: 1
+    width: 3
+createdAt: 2022-08-22T18:13:08.914Z

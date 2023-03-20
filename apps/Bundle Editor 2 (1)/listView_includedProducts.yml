@@ -1,0 +1,26 @@
+id: listView_includedProducts
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: auto
+    - showBorder: false
+    - hidden: ''
+    - data: ''
+    - showDropShadow: false
+    - rowKeys: ''
+    - formDataKey: '{{ self.id }}'
+    - dynamicHeightsEnabled: true
+    - itemHeight: '3'
+    - overflowType: scroll
+    - instances: '{{ queryVariationsView.data.included.length }}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: container2
+    subcontainer: 4d594
+    row: 5.600000000000027
+    height: 1
+    width: 6
+createdAt: 2022-10-10T17:30:21.500Z

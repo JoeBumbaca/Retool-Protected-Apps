@@ -1,0 +1,25 @@
+id: listView_bundles
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: auto
+    - showBorder: false
+    - hidden: '{{Object.keys(getVariations.data[i].bundles).length === 0}}'
+    - data: ''
+    - showDropShadow: false
+    - formDataKey: '{{ self.id }}'
+    - dynamicHeightsEnabled: true
+    - itemHeight: '3'
+    - overflowType: scroll
+    - instances: '{{ Object.keys(getVariations.data[i].bundles).length}}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: collapsibleContainer2
+    subcontainer: 391b9
+    row: 1.2000000000000002
+    height: 5
+    width: 12
+createdAt: 2022-10-05T18:05:30.553Z

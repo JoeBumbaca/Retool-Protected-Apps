@@ -1,0 +1,27 @@
+id: collapsibleTitle_includedProductName
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '{{ queryVariationsView.data.included[i].name }}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: collapsibleContainer_includedProducts
+    rowGroup: header
+    row: 0.2
+    col: 1
+    height: 0.8
+    width: 7
+createdAt: 2022-10-10T17:31:47.770Z

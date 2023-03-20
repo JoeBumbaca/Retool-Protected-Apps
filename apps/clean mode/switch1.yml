@@ -1,0 +1,34 @@
+id: switch1
+type: widget
+subtype: SwitchWidget2
+template:
+  ordered:
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: 'true'
+    - labelCaption: ''
+    - label: Clean mode
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: false
+    - labelPosition: right
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    row: 5.551115123125783e-17
+    height: 0.6
+    width: 9
+createdAt: 2022-08-22T18:11:51.498Z

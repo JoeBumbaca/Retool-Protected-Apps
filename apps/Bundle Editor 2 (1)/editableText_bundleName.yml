@@ -1,0 +1,66 @@
+id: editableText_bundleName
+type: widget
+subtype: EditableTextWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - editIcon: bold/interface-edit-write-1
+    - inputValue: ''
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textSize: default
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ getVariations.data[ri[0]].bundles[ri[1]].name}}'
+    - labelCaption: ''
+    - hideLabel: true
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: |
+        Enter Bundle Name
+    - label: Label
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: '`Enter` to save, `Esc` to cancel'
+    - events:
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: queryUpdateBundle
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - autoCapitalize: none
+    - loading: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: '64428'
+    height: 0.6
+    width: 2
+createdAt: 2022-10-05T22:09:13.564Z

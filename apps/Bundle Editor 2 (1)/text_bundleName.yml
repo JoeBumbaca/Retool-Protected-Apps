@@ -1,0 +1,27 @@
+id: text_bundleName
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        ##
+        {{getVariations.data[stateVariationIndex.value].bundles[stateBundleIndex.value].name}}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal_bundleEditor
+    row: 8.493206138382448e-15
+    height: 0.6
+    width: 11
+createdAt: 2022-10-01T07:44:20.894Z

@@ -1,0 +1,70 @@
+databaseName: null
+databasePassword: ''
+databaseUsername: null
+dynamicallyQueryable: false
+editPrivilege: null
+environment: production
+host: null
+options:
+  amazon_secret_access_key: ''
+  api_key: ''
+  application_key: ''
+  athena_secret_access_key: ''
+  auth0_access_token: ''
+  auth0_clientID: ''
+  auth0_clientSecret: ''
+  auth0_custom_audience: ''
+  auth0_domain: ''
+  authentication: ''
+  aws_secret_access_key: ''
+  baseURL: https://httpbin.org
+  basic_password: ''
+  basic_username: ''
+  ca_cert: ''
+  client_cert: ''
+  client_cert_and_key: ''
+  client_key: ''
+  connectionString: ''
+  cookiesToForward: []
+  digest_password: ''
+  digest_server_auth_header_response: ''
+  digest_username: ''
+  dynamo_secret_access_key: ''
+  extraBodyKeyValues:
+    - - ''
+      - ''
+  forwardAllCookies: false
+  googleToken: ''
+  headers:
+    - - ''
+      - ''
+  oauth1_consumer_key: ''
+  oauth1_consumer_secret: ''
+  oauth1_realm_parameter: ''
+  oauth1_signature_method: HMAC-SHA1
+  oauth1_token_key: ''
+  oauth1_token_secret: ''
+  oauth2_access_token: ''
+  oauth2_access_token_url: ''
+  oauth2_auth_url: ''
+  oauth2_callback_url: '{{ env.BASE_DOMAIN }}/oauth/user/oauthcallback'
+  oauth2_client_id: ''
+  oauth2_client_secret: ''
+  oauth2_refresh_token: ''
+  oauth2_scope: ''
+  privateKey: ''
+  privateKeyPass: ''
+  s3_secret_access_key_id: ''
+  serviceAccountKey: ''
+  session_cookie_name: ''
+  sshPassword: ''
+  urlparams:
+    - - ''
+      - ''
+  user_auth_key: ''
+  verify_session_url: ''
+port: null
+ssl: null
+type: restapi
+uuid: fedbbec3-0773-419c-b27b-93c145919189
+version: 1.0.0

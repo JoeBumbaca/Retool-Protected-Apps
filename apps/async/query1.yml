@@ -7,9 +7,12 @@ template:
     - queryRefreshTime: ''
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
     - showFailureToaster: true
@@ -44,7 +47,9 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - requestSentTimestamp: null
     - metadata: null
+    - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -53,6 +58,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -77,11 +83,13 @@ template:
         return data
     - events: []
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
-    - queryFailureConditions: ''
+    - queryFailureConditions: '[]'
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

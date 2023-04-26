@@ -9,7 +9,7 @@ template:
     - showCharacterCount: false
     - autoComplete: false
     - maxLength: null
-    - hidden: 'false'
+    - hidden: 'true'
     - customValidation: ''
     - patternType: ''
     - hideValidationMessage: false

@@ -75,6 +75,7 @@ template:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
+    - playgroundQueryName: GetLanguages
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -97,5 +98,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-    - playgroundQueryName: GetLanguages
 createdAt: 2023-04-27T22:59:57.678Z

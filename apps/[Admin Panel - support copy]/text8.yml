@@ -1,0 +1,29 @@
+id: text8
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: center
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '**Override Image tag**'
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: JobRunAdvancedForm
+    row: 1.8
+    col: 3
+    height: 0.6
+    width: 5
+createdAt: 2021-11-11T14:08:32.423Z

@@ -1,0 +1,146 @@
+id: ImportFromJson
+type: datasource
+subtype: GraphQLQuery
+resourceName: GraphQL-WithoutResource
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: >
+        mutation ($name: String!, $collection_type: String!, $feed:
+        feeds_obj_rel_insert_input) {
+          insert_workspaces_one(object: {collection_type: $collection_type, name: $name, feed: $feed}) {
+            id
+          }
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: >-
+        {{!IsDataViewerRole.data || !["Workspaces",
+        "Signals"].includes(tabs.labels[tabs.currentViewIndex])}}
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"authorization","value":"Bearer
+        {{tokenInput.value}}"},{"key":"x-role","value":"{{role.value}}"},{"key":"x-tenant-id","value":"{{tenantIdPicker.value}}"}]
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: https://api.{{stamp.value}}.sightfull.com/v1/graphql
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - graphQLVariables: >-
+        [{"key":"name","value":"{{workspaceImportName.value}}"},{"key":"collection_type","value":"{{importedJsonWorkspace.parsedValue[0].collection_type}}"},{"key":"feed","value":"{{importedJsonWorkspace.parsedValue[0].feed}}"}]
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        //Use the variables data, metadata, and errors to reference these fields
+        from your query's results
+
+        if (Array.isArray(errors) && errors.length > 0) {
+          return errors[0].message;
+        } else {
+          return false
+        }
+            
+    - finished: null
+    - confirmationMessage: |-
+        Are you sure you want to upload: 
+        "{{workspaceImportName.value}}" 
+        workspace?
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - graphQLErrors: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: ''
+    - events:
+        - ordered:
+            - event: success
+            - type: util
+            - method: confetti
+            - pluginId: ''
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: close
+            - pluginId: importWorkspace
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: clearValue
+            - pluginId: importedJsonWorkspace
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: clearValue
+            - pluginId: workspaceImportName
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: GetAllWorkspaces
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: true
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2021-11-24T13:25:44.929Z
+folder: Workspaces

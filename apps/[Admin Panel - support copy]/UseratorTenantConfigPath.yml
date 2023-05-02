@@ -1,0 +1,67 @@
+id: UseratorTenantConfigPath
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: '{{!IsStaffRole.data}}'
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{GetJobsConfig.data.jobs.filter(x=>x.name=="userator")[0]?.config?.configFilePath
+        ??GetJobsConfig.data.jobs.filter(x=>x.name=="sherlock")[0]?.config?.configFilePath
+        ?? `/schemas/${TenantCodeName.value}/config.yaml`}}
+    - style:
+        ordered:
+          - background: >-
+              {{GetJobsConfig.data.jobs.filter(x=>x.name=="userator")[0]?.config?.configFilePath
+              ??GetJobsConfig.data.jobs.filter(x=>x.name=="sherlock")[0]?.config?.configFilePath
+              == UseratorTenantConfigPath.value ? "#FFFFFF" : "#696969"}}
+    - labelCaption: ''
+    - labelWidth: '37'
+    - autoFill: ''
+    - placeholder: Enter value
+    - _disclosedFields:
+        array:
+          - background
+    - label: Tenant Config Path
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: ''
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: UseratorConfigForm
+    row: 0.2
+    height: 1
+    width: 4
+createdAt: 2022-05-01T13:13:54.629Z

@@ -1,0 +1,288 @@
+id: usersEmailTable
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: compact
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - subscribed_to_tags:
+              ordered: []
+    - columnWidths:
+        - object:
+            id: first_name
+            value: 133.359375
+        - object:
+            id: last_name
+            value: 120.875
+        - object:
+            id: sub
+            value: 288.171875
+        - object:
+            id: is_subscribed_all
+            value: 175.703125
+        - object:
+            id: email
+            value: 168.203125
+        - object:
+            id: subscribe_to_new_insights
+            value: 44.203125
+        - object:
+            id: subscribed_to_tags
+            value: 234
+        - object:
+            id: id
+            value: 128.796875
+        - object:
+            id: name
+            value: 194.03125
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - Custom Column 1: Full name
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - subscribed_to: ''
+          - sub: ''
+          - subscribe_to_new_insights: ''
+          - name: ''
+          - is_subscribed_all: ''
+          - last_name: ''
+          - subscribed_to_tags: ''
+          - tags: ''
+          - first_name: ''
+          - id: ''
+          - email: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - is_subscribed_all: boolean
+          - first_name: string
+          - last_name: string
+          - email: string
+          - sub: string
+          - Custom Column 1: string
+          - subscribed_to_tags: default
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - subscribed_to: true
+          - sub: true
+          - subscribe_to_new_insights: false
+          - name: true
+          - is_subscribed_all: true
+          - last_name: false
+          - subscribed_to_tags: false
+          - tags: false
+          - first_name: false
+          - id: true
+          - email: true
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: true
+    - _unfilteredSelectedIndex: ''
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - subscribed_to: true
+          - sub: true
+          - subscribe_to_new_insights: true
+          - name: true
+          - is_subscribed_all: true
+          - last_name: false
+          - subscribed_to_tags: true
+          - tags: false
+          - first_name: false
+          - id: false
+          - email: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - columnSummaryTypes:
+        ordered: []
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ UsersWithTags.data }}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Welcome Email
+            - actionButtonType: runQuery
+            - actionButtonQuery: SendWelcomeEmail
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+        - ordered:
+            - actionButtonText: Trial Expires Soon Email
+            - actionButtonType: runQuery
+            - actionButtonQuery: SendTrialExpiresSoon
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: '{{CurrentTenant.data.tenants_by_pk.trial_end == null}}'
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: sub
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - is_subscribed_all: center
+          - first_name: left
+          - last_name: left
+          - email: left
+          - sub: left
+          - Custom Column 1: left
+          - subscribed_to_tags: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 18
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - columnSummaryValues:
+        ordered: []
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: false
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: true
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: saveNew
+            - type: datasource
+            - method: trigger
+            - pluginId: CreateUser
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - Custom Column 1: false
+          - subscribed_to_tags: true
+          - email: true
+          - name: true
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - Custom Column 1: '{{ currentRow.first_name }} {{ currentRow.last_name }}'
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - first_name
+        - last_name
+        - id
+        - email
+        - sub
+        - is_subscribed_all
+        - tags
+        - name
+        - subscribed_to
+        - subscribe_to_new_insights
+        - subscribed_to_tags
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: true
+    - sort: null
+    - _columns:
+        - first_name
+        - last_name
+        - email
+        - sub
+        - tags
+        - id
+        - name
+        - subscribe_to_new_insights
+        - subscribed_to_tags
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs2
+    subcontainer: 9ec1e
+    row: 0.3999999999999977
+    height: 15.799999999999999
+    width: 12
+createdAt: 2022-06-15T15:47:47.151Z

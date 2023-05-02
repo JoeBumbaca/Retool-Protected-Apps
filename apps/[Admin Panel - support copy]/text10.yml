@@ -1,0 +1,41 @@
+id: text10
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        #### 📗 Configuration how to
+
+
+        Metric tester works in hierarchical configuration groups. A metric's
+        configuration is the first group it matches its patterns.
+
+
+        For the tester to not run a metric, add it to the **dont_run** group.
+
+
+        To see the default config -
+        sightcode/infra/tools/metric_tester/config/default_config.yaml
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: MetricTesterConfigForm
+    row: 2.8
+    col: 6
+    height: 0.6
+    width: 3
+createdAt: 2022-06-01T15:12:24.644Z

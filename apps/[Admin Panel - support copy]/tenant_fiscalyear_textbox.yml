@@ -1,0 +1,61 @@
+id: tenant_fiscalyear_textbox
+type: widget
+subtype: NumberInputWidget
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: '11'
+    - preventScroll: false
+    - inputValue: null
+    - hidden: false
+    - customValidation: ''
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - allowNull: false
+    - showClear: false
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{CurrentTenant.data.tenants_by_pk.fiscal_year_start}}'
+    - labelCaption: ''
+    - min: '-11'
+    - labelWidth: '75'
+    - placeholder: ''
+    - _disclosedFields:
+        array: []
+    - showStepper: true
+    - label: Fiscal Year Start
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: decimal
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - decimalPlaces: '0'
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsForm
+    row: 2.6
+    col: 1
+    height: 1
+    width: 8
+createdAt: 2021-10-27T20:54:21.668Z

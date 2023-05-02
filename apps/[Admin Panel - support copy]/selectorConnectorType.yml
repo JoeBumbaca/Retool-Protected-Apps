@@ -1,0 +1,132 @@
+id: selectorConnectorType
+type: widget
+subtype: SelectWidget2
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex:
+        - ''
+        - ''
+        - false
+    - showSelectionIndicator: true
+    - _values:
+        - salesforce
+        - salesforce_sandbox
+        - hubspot
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - overlayMinWidth: null
+    - allowDeselect: false
+    - inputValue: ''
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: true
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: salesforce
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - false
+    - placeholder: Select connector
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+    - _disclosedFields:
+        array: []
+    - itemAdornmentSize: auto
+    - label: Select connector type
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids:
+        - bcbd8
+        - a8191
+        - 56cde
+    - emptyMessage: ''
+    - overlayMaxHeight: 375
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - _labels:
+        - Salesforce Production
+        - Salesforce Sandbox
+        - Hubspot
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: NewFivetranConenctorModal
+    row: 0.2
+    height: 1
+    width: 12
+createdAt: 2022-10-28T22:53:16.630Z

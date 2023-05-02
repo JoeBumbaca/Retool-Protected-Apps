@@ -1,0 +1,108 @@
+id: GetAllInsights
+type: datasource
+subtype: GraphQLQuery
+resourceName: GraphQL-WithoutResource
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |-
+        query MyQuery {
+          insight_types(order_by: {display_name: asc}) {
+            id
+            auto_approve_default
+            auto_approve_override
+            auto_approve
+            display_name
+            visible
+            visible_default
+            visible_override
+            tags {
+              tag_id
+            }
+          }
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: >-
+        {{!IsStaffRole.data ||
+        !["Sherlock"].includes(tabs.labels[tabs.currentViewIndex])}}
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"authorization","value":"Bearer
+        {{tokenInput.value}}"},{"key":"x-role","value":"{{role.value}}"},{"key":"x-tenant-id","value":"{{tenantIdPicker.value}}"}]
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: https://api.{{stamp.value}}.sightfull.com/v1/graphql
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - graphQLVariables: '[]'
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        //Use the variables data, metadata, and errors to reference these fields
+        from your query's results
+
+        if (Array.isArray(errors) && errors.length > 0) {
+          return errors[0].message;
+        } else {
+          return false
+        }
+            
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - graphQLErrors: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: true
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: |-
+        return data.insight_types.map((insight) => {
+          return insight;
+        })
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-02-23T15:47:30.255Z
+folder: Sherlock

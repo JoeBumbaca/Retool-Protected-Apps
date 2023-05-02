@@ -1,0 +1,49 @@
+id: resumeButton3
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Resume
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(247, 202, 113)
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: ResumeCronByTabName
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: >-
+        {{!(GetJobsConfig.data.argo_cron.filter(x =>
+        x.name?.startsWith(TenantSettingsTabs.labels[TenantSettingsTabs.currentViewIndex].toLowerCase()
+        + '-tenant'))[0]?.isSuspended ?? false) || !IsStaffRole.data}}
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: MetricTesterConfigForm
+    rowGroup: footer
+    col: 1
+    height: 1
+    width: 1
+createdAt: 2022-06-15T12:10:08.912Z

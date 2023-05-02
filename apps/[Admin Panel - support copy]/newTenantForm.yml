@@ -1,0 +1,46 @@
+id: newTenantForm
+type: widget
+subtype: FormWidget2
+template:
+  ordered:
+    - disableSubmit: '{{newTenantNameTextbox.value=="" || newTenantIDTextbox.value == ""}}'
+    - heightType: fixed
+    - resetAfterSubmit: true
+    - submitting: false
+    - hidden: null
+    - data:
+        object: {}
+    - showHeader: false
+    - hoistFetching: true
+    - initialData: null
+    - showInEditor: null
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - invalid: false
+    - showFooter: true
+    - events:
+        - ordered:
+            - event: submit
+            - type: datasource
+            - method: trigger
+            - pluginId: CreateNewTenant
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - overflowType: hidden
+    - disabled: false
+    - requireValidation: true
+    - maintainSpaceWhenHidden: null
+    - showBody: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: newTenantModal
+    row: -5.551115123125783e-17
+    height: 5.000000000000001
+    width: 11
+createdAt: 2021-11-10T18:08:13.039Z

@@ -1,0 +1,331 @@
+id: jobsStatusTable
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered:
+          - started_at: true
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: compact
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - Custom Column 2:
+              ordered: []
+    - columnWidths:
+        - object:
+            id: last_successful_started_at
+            value: 101
+        - object:
+            id: name
+            value: 150.09375
+        - object:
+            id: statusPretty
+            value: 47.53125
+        - object:
+            id: progress
+            value: 78.34375
+        - object:
+            id: started_at
+            value: 181.03125
+        - object:
+            id: config
+            value: 221.828125
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - last_successful_finished_at: Last Success (finish)
+          - statusPretty: '" "'
+          - name: Name
+          - progress: Progress
+          - last_successful_started_at: Last Success (started)
+          - started_at: Started
+          - status: Status
+          - Custom Column 1: Duration
+          - Custom Column 2: Config
+          - updated_at: Duration
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - config: ''
+          - server: ''
+          - last_successful_finished_at: ''
+          - apigw-requestid: ''
+          - statusPretty: >-
+              {{ currentRow.status == 'started' ? 'yellow' : currentRow.status
+              == 'finished' ? 'green' : 'red' }}
+          - created_at: ''
+          - name: ''
+          - progress: ''
+          - last_successful_started_at: ''
+          - content-type: ''
+          - date: ''
+          - tid: ''
+          - started_at: ''
+          - status: >-
+              {{ currentRow.status == 'started' ? 'yellow' : currentRow.status
+              == 'finished' ? 'green' : 'red' }}
+          - jobs: ''
+          - Custom Column 1: ''
+          - Custom Column 2: ''
+          - updated_at: ''
+          - version: ''
+          - content-length: ''
+          - connection: ''
+    - columnFrozenAlignments:
+        ordered:
+          - statusPretty: null
+          - name: null
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - progress: percent
+          - Custom Column 2: TextDataCell
+          - updated_at: string
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - config: true
+          - server: true
+          - last_successful_finished_at: false
+          - apigw-requestid: true
+          - statusPretty: true
+          - created_at: false
+          - name: true
+          - progress: true
+          - last_successful_started_at: true
+          - content-type: true
+          - date: true
+          - tid: false
+          - started_at: true
+          - status: false
+          - jobs: true
+          - Custom Column 1: false
+          - updated_at: true
+          - version: false
+          - content-length: true
+          - connection: true
+    - _columnSummaryTypes:
+        ordered:
+          - Custom Column 2: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - config: true
+          - server: true
+          - last_successful_finished_at: false
+          - apigw-requestid: true
+          - statusPretty: true
+          - created_at: false
+          - name: true
+          - progress: true
+          - last_successful_started_at: false
+          - content-type: true
+          - date: true
+          - tid: false
+          - started_at: true
+          - status: false
+          - jobs: true
+          - Custom Column 1: false
+          - updated_at: true
+          - version: false
+          - content-length: true
+          - connection: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Incremental Actions
+    - columnSummaryTypes:
+        ordered: []
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ GetJobs.data }}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Reset
+            - actionButtonType: runQuery
+            - actionButtonQuery: ResetJobLastSuccessful
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: '{{!currentRow.name.startsWith("DB2Graph-")}}'
+        - ordered:
+            - actionButtonText: Back 2 Weeks
+            - actionButtonType: runQuery
+            - actionButtonQuery: ResetJobLastSuccessfull2W
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: >-
+                {{!currentRow.name.startsWith("DB2Graph-") && currentRow.name !=
+                "Tailor"}}
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: updated_at
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - progress: center
+          - status: center
+          - statusPretty: center
+          - Custom Column 2: left
+          - updated_at: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered:
+          - status: true
+          - statusPretty: true
+    - showRefreshButton: true
+    - pageSize: 18
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - columnSummaryValues:
+        ordered: []
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - Custom Column 2: ''
+    - checkboxRowSelect: false
+    - _disclosedFields:
+        array: []
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: false
+    - selectedIndex: null
+    - defaultSortDescending: true
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events: []
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - Custom Column 2: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered:
+          - Custom Column 2: true
+    - columnMappers:
+        ordered:
+          - status: '""'
+          - progress: '{{ self / 100.0 }}'
+          - statusPretty: '{{self || "❓"}}'
+          - Custom Column 1: '{{ elapsedTime(currentRow.started_at, currentRow.updated_at)}}'
+          - last_successful_finished_at: >-
+              {{currentRow.last_successful_finished_at == null ? "" :
+              elapsedTime(currentRow.last_successful_finished_at, new Date()) +
+              " ago"}}
+          - started_at: >-
+              {{currentRow.started_at == null ? "" :
+              elapsedTime(currentRow.started_at, new Date()) + " ago"}}
+          - Custom Column 2: '{{JSON.stringify(currentRow.config) }}'
+          - updated_at: '{{ elapsedTime(currentRow.started_at, currentRow.updated_at)}}'
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - status
+        - statusPretty
+        - name
+        - started_at
+        - progress
+        - Custom Column 1
+        - updated_at
+        - last_successful_started_at
+        - last_successful_finished_at
+        - tid
+        - version
+        - created_at
+        - config
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: true
+    - sort: null
+    - _columns:
+        - status
+        - statusPretty
+        - name
+        - started_at
+        - progress
+        - Custom Column 1
+        - updated_at
+        - last_successful_finished_at
+        - tid
+        - version
+        - created_at
+        - config
+        - last_successful_started_at
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: JobsTabs
+    subcontainer: '0'
+    height: 12.799999999999999
+    width: 8
+createdAt: 2021-10-27T08:10:34.308Z

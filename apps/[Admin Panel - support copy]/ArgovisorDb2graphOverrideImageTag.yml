@@ -1,0 +1,60 @@
+id: ArgovisorDb2graphOverrideImageTag
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: ''
+    - hidden: false
+    - customValidation: ''
+    - patternType: regex
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: true
+    - pattern: (latest|sha-[a-z0-9]{7})
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{GetJobsConfig.data.jobs.filter(x=>x.name=="argovisor")[0]?.config.db2graphConfig.overrideImageTag
+        ?? ""}}
+    - labelCaption: ''
+    - labelWidth: '50'
+    - autoFill: ''
+    - placeholder: sha-x | latest
+    - _disclosedFields:
+        array: []
+    - label: db2graph
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: ''
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: '{{!EditArgovisorOverrideTags.value}}'
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: ArgohConfigForm
+    row: 5.2
+    col: 3
+    height: 1
+    width: 3
+createdAt: 2021-11-12T08:35:01.958Z

@@ -1,0 +1,33 @@
+id: updateTablefishConf
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: TablefishForm
+    - hidden: ''
+    - text: Submit
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - submit: true
+    - iconBefore: ''
+    - events:
+        ordered: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: TablefishForm
+    rowGroup: footer
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2023-03-08T13:05:56.648Z

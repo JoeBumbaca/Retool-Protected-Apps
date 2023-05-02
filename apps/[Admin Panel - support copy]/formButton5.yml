@@ -1,0 +1,33 @@
+id: formButton5
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: TenantSettingsForm
+    - hidden: false
+    - text: Submit
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - submit: true
+    - iconBefore: ''
+    - events:
+        ordered: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsForm
+    rowGroup: footer
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2022-06-01T11:10:14.421Z

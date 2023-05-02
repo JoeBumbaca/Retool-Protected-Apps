@@ -1,0 +1,32 @@
+id: ColorPaletteRepresentation
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        {{tenant_color_palette_textbox.value.split(',').map((color, index) =>
+        '<span style="background-color:#'+ color + '">Color' + (index+1) +
+        '</span>').join(' ')}}
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsForm
+    row: 6.600000000000001
+    col: 4
+    height: 0.6
+    width: 5
+createdAt: 2022-01-18T13:50:01.911Z

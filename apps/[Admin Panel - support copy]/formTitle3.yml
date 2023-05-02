@@ -1,0 +1,27 @@
+id: formTitle3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '#### Tablefish Config'
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: TablefishForm
+    rowGroup: header
+    height: 0.6
+    width: 12
+createdAt: 2023-03-08T13:05:56.473Z

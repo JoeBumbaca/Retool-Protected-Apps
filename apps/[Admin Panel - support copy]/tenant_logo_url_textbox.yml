@@ -1,0 +1,59 @@
+id: tenant_logo_url_textbox
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: true
+    - pattern: ''
+    - tooltipText: |-
+        https://logo.clearbit.com/{name}
+        https://dopiaza.org/tools/datauri/index.php
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{CurrentTenant.data.tenants_by_pk.logo_url??""}}'
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: Enter logo url
+    - _disclosedFields:
+        array: []
+    - label: Logo URL
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsForm
+    row: 1.6
+    col: 1
+    height: 1
+    width: 8
+createdAt: 2021-10-27T10:32:37.247Z

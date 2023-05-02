@@ -1,0 +1,57 @@
+id: RunValidatorOverrideImageTag
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: ''
+    - hidden: false
+    - customValidation: ''
+    - patternType: regex
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: true
+    - pattern: ^(latest)|(sha-[a-f0-9]{7})$
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - labelCaption: ''
+    - labelWidth: '40'
+    - autoFill: ''
+    - placeholder: sha-x | latest
+    - _disclosedFields:
+        array: []
+    - label: validator
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: ''
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: ''
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: JobRunAdvancedForm
+    row: 5.3999999999999995
+    height: 1
+    width: 8
+createdAt: 2021-11-12T13:25:26.570Z

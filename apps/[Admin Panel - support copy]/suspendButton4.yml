@@ -1,0 +1,49 @@
+id: suspendButton4
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Suspend
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgba(247, 202, 113, 1)
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: SuspendCronByTabName
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: >-
+        {{(GetJobsConfig.data.argo_cron.filter(x =>
+        x.name?.startsWith(TenantSettingsTabs.labels[TenantSettingsTabs.currentViewIndex].toLowerCase()
+        + '-tenant'))[0]?.isSuspended ?? true) || !IsStaffRole.data}}
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: UseratorConfigForm
+    rowGroup: footer
+    row: -1.6653345369377348e-16
+    height: 1
+    width: 1
+createdAt: 2022-06-15T12:12:02.477Z

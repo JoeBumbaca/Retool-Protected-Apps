@@ -1,0 +1,304 @@
+id: featureFlagsTable
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: compact
+    - saveChangesDisabled: '{{ featureFlagsTable.recordUpdates.length > 1 }}'
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: user_id
+            value: 318.546875
+        - object:
+            id: key
+            value: 609.0625
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered:
+          - key:
+              ordered:
+                - dropdownValues: '{{ GetPotentialFeatureFlags.data}}'
+          - user_id:
+              ordered:
+                - dropdownValues: >-
+                    {{
+                    ["00000000-0000-0000-0000-000000000000"].concat(GetAllUsers.data.users.map(u
+                    => u.id)) }}
+                - dropdownLabels: >-
+                    {{ ["All users"].concat(GetAllUsers.data.users.map(u =>
+                    `${u.first_name} ${u.last_name} (${u.email})`)) }}
+          - Custom Column 1:
+              ordered:
+                - dropdownValues: >-
+                    {{
+                    ["00000000-0000-0000-0000-000000000000"].concat(GetAllUsers.data.users.map(u
+                    => u.id)) }}
+                - dropdownLabels: >-
+                    {{ ["All users"].concat(GetAllUsers.data.users.map(u =>
+                    `${u.first_name} ${u.last_name} (${u.email})`)) }}
+          - Custom Column 2:
+              ordered:
+                - dropdownValues: >-
+                    ["pulse.metrics.charts.showLegendInThumbnail",
+                    "pulse.metrics.charts.showTitleInThumbnail","pulse.metrics.executiveViewEnabled","pulse.metrics.executiveViewDefault","pulse.dataHygiene.enabled"]
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - Custom Column 1: User
+          - Custom Column 2: Key
+          - Custom Column 3: Value
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - created_at: ''
+          - name: ''
+          - sales: ''
+          - tid: ''
+          - user_id: ''
+          - value: ''
+          - updated_at: ''
+          - id: ''
+          - email: ''
+          - features: ''
+          - key: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - user_id: dropdown
+          - key: dropdown
+          - value: boolean
+          - Custom Column 1: dropdown
+          - Custom Column 2: dropdown
+          - Custom Column 3: checkbox
+    - columnRestrictedEditing:
+        ordered:
+          - key: ''
+          - user_id: ''
+          - value: ''
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - created_at: false
+          - name: true
+          - sales: true
+          - tid: false
+          - user_id: true
+          - value: true
+          - updated_at: false
+          - id: true
+          - email: true
+          - features: true
+          - key: true
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: true
+    - _unfilteredSelectedIndex: ''
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - created_at: false
+          - name: true
+          - sales: true
+          - tid: false
+          - user_id: true
+          - value: true
+          - updated_at: false
+          - id: true
+          - email: true
+          - features: true
+          - key: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - columnSummaryTypes:
+        ordered: []
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: >-
+        {{ (GetFeatureFlags.data == null || 
+        GetFeatureFlags.data.features.length == 0) ? [{
+          "user_id": "",
+          "key": "Click here to create the first feature flag",
+          "value": null
+        }] : GetFeatureFlags.data.features }}
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Delete
+            - actionButtonType: runQuery
+            - actionButtonQuery: DeleteFeatureFlag
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: '{{ currentRow.user_id == "" }}'
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: false
+    - defaultSortByColumn: user_id
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - value: center
+          - user_id: left
+          - key: left
+          - Custom Column 1: center
+          - Custom Column 2: left
+          - Custom Column 3: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered:
+          - Custom Column 1: true
+    - showRefreshButton: true
+    - pageSize: 21
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - columnSummaryValues:
+        ordered: []
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: false
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: false
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: |-
+        [
+          {
+            "name": "user_id",
+            "type": "dropdown"
+          },
+          {
+            "name": "key",
+            "type": "dropdown",
+          },
+          {
+            "name": "value",
+            "type": "checkbox"
+          }
+        ]
+    - events:
+        - ordered:
+            - event: saveNew
+            - type: datasource
+            - method: trigger
+            - pluginId: UpsertFeatureFlag
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: saveChanges
+            - type: datasource
+            - method: trigger
+            - pluginId: UpsertFeatureFlag
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - value: true
+          - user_id: true
+          - key: true
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - user_id: ''
+          - Custom Column 1: '{{ currentRow.user_id }}'
+          - Custom Column 2: '{{ currentRow.key }}'
+          - Custom Column 3: '{{ currentRow.value }}'
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - created_at
+        - tid
+        - user_id
+        - key
+        - updated_at
+        - value
+    - defaultSelectedRow: none
+    - freezeActionButtonColumns: true
+    - sort: null
+    - _columns:
+        - user_id
+        - key
+        - value
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs
+    subcontainer: '3'
+    height: 14.8
+    width: 11
+createdAt: 2021-10-27T23:12:39.573Z

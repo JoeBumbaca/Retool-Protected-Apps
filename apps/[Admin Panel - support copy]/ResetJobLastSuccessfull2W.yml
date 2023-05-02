@@ -1,0 +1,104 @@
+id: ResetJobLastSuccessfull2W
+type: datasource
+subtype: GraphQLQuery
+resourceName: GraphQL-WithoutResource
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |-
+        mutation($name: String!, $last_successful_started_at: timestamptz) {
+          update_jobs(where: {name: {_eq: $name}}, _set: {last_successful_started_at: $last_successful_started_at}) {
+            affected_rows
+          }
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: '{{!IsStaffRole.data}}'
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"authorization","value":"Bearer
+        {{tokenInput.value}}"},{"key":"x-role","value":"{{role.value}}"},{"key":"x-tenant-id","value":"{{tenantIdPicker.value}}"}]
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: https://api.{{stamp.value}}.sightfull.com/v1/graphql
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - graphQLVariables: >-
+        [{"key":"name","value":"{{jobsStatusTable.selectedRow.data.name}}"},{"key":"last_successful_started_at","value":"{{
+        now_days_delta(-14).toISOString() }}"},{"key":"","value":""}]
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        //Use the variables data, metadata, and errors to reference these fields
+        from your query's results
+
+        if (Array.isArray(errors) && errors.length > 0) {
+          return errors[0].message;
+        } else {
+          return false
+        }
+            
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - graphQLErrors: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: true
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: ''
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: GetJobs
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: true
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-01-04T13:57:40.506Z
+folder: Jobs

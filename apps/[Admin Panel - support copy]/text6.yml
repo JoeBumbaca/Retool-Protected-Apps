@@ -1,0 +1,29 @@
+id: text6
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: center
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### {{ ArgoRun.data.argoRun.msg }}'
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: JobRunnerForm
+    row: 5.799999999999999
+    col: 10
+    height: 0.6
+    width: 2
+createdAt: 2021-10-28T18:46:39.857Z

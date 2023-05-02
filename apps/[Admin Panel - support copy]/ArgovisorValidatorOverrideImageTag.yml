@@ -1,0 +1,60 @@
+id: ArgovisorValidatorOverrideImageTag
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: ''
+    - hidden: false
+    - customValidation: ''
+    - patternType: regex
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: true
+    - pattern: (latest|sha-[a-z0-9]{7})
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{GetJobsConfig.data.jobs.filter(x=>x.name=="argovisor")[0]?.config.validatorConfig.overrideImageTag
+        ?? ""}}
+    - labelCaption: ''
+    - labelWidth: '50'
+    - autoFill: ''
+    - placeholder: sha-x | latest
+    - _disclosedFields:
+        array: []
+    - label: validator
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: ''
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: '{{!EditArgovisorOverrideTags.value}}'
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: ArgohConfigForm
+    row: 6.2
+    col: 6
+    height: 1
+    width: 3
+createdAt: 2021-11-12T13:06:04.268Z

@@ -1,0 +1,61 @@
+id: stepModeSwitch
+type: widget
+subtype: SegmentedControlWidget
+template:
+  ordered:
+    - _disabledByIndex: []
+    - _values: []
+    - iconByIndex:
+        array: []
+    - values: '{{ item }}'
+    - _iconByIndex: []
+    - _data: []
+    - hidden: false
+    - customValidation: ''
+    - data: '[''From'', ''Step'']'
+    - hideValidationMessage: false
+    - selectedItem: null
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: From
+    - labelCaption: ''
+    - hideLabel: true
+    - labelWidth: '33'
+    - deprecatedLabels: ''
+    - _disclosedFields:
+        array:
+          - required
+    - label: ''
+    - _hasMigratedNestedItems: true
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - invalid: false
+    - selectedIndex: null
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids: []
+    - iconPositionByIndex: null
+    - _iconPositionByIndex: []
+    - disabled: false
+    - labelPosition: left
+    - _labels: []
+    - labelWrap: false
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: true
+    - labels: '{{ [''Run from'', ''Run step''][i] }}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: JobRunnerForm
+    height: 0.8
+    width: 3
+createdAt: 2021-10-28T17:26:20.156Z

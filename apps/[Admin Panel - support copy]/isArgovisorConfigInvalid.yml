@@ -1,0 +1,17 @@
+id: isArgovisorConfigInvalid
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >-
+        let isScheduleInvalid = {{ ArgovisorSchedule.value === "" ||
+        ArgovisorSchedule.value === undefined }}
+
+        let isSchemaRevisionInvalid = {{ ArgovisorSchemaRevision.value === "" ||
+        ArgovisorSchemaRevision.value === undefined }}
+          
+        return {{ isJobConfigDataInvalid.value }} || isSchemaRevisionInvalid ||
+        isScheduleInvalid || {{ isUnAuthorizedForUpsert.value }}
+    - value: ''
+createdAt: 2023-04-23T13:05:53.913Z
+folder: upsertValidations

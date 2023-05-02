@@ -1,0 +1,125 @@
+id: GetAllDetections
+type: datasource
+subtype: GraphQLQuery
+resourceName: GraphQL-WithoutResource
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |
+        query {
+          detections {
+            display_name
+            id
+            config
+            execution_options
+            require_oversight
+            schedule
+            state
+            type
+            timeout_seconds
+            job {
+              started_at
+              status
+              progress
+              last_successful_started_at
+              last_successful_finished_at
+            }
+          }
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: >-
+        {{!IsStaffRole.data ||
+        !["Sherlock"].includes(tabs.labels[tabs.currentViewIndex])}}
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"authorization","value":"Bearer
+        {{tokenInput.value}}"},{"key":"x-role","value":"{{role.value}}"},{"key":"x-tenant-id","value":"{{tenantIdPicker.value}}"}]
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: https://api.{{stamp.value}}.sightfull.com/v1/graphql
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - graphQLVariables: '[]'
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        //Use the variables data, metadata, and errors to reference these fields
+        from your query's results
+
+        if (Array.isArray(errors) && errors.length > 0) {
+          return errors[0].message;
+        } else {
+          return false
+        }
+            
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - graphQLErrors: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: true
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data.detections.map((o) => {
+          o["job.started_at"] = o?.job?.started_at;
+          o["job.status"] = o?.job?.status;
+          o["job.progress"] = o?.job?.progress;
+          o["job.last_successful_started_at"] = o?.job?.last_successful_started_at;
+          o["job.last_successful_finished_at"] = o?.job?.last_successful_finished_at;
+          o["config"] = JSON.stringify(o?.config ?? {});
+          delete o.job;
+          return o;
+        })
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2021-10-11T14:38:20.928Z
+folder: Sherlock

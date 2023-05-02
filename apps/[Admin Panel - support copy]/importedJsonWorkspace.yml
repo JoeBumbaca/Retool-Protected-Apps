@@ -1,0 +1,57 @@
+id: importedJsonWorkspace
+type: widget
+subtype: FileDropzoneWidget
+template:
+  ordered:
+    - parsedValue:
+        array: []
+    - parseFiles: true
+    - maxSize: ''
+    - appendNewSelection: false
+    - selectionType: single
+    - accept:
+        array: []
+    - hidden: false
+    - customValidation: ''
+    - maxCount: null
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - parsing: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value:
+        array: []
+    - labelCaption: ''
+    - hideLabel: false
+    - labelWidth: '33'
+    - minSize: ''
+    - placeholder: Drop exported workspace json file
+    - _disclosedFields:
+        array: []
+    - label: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - files:
+        array: []
+    - iconBefore: bold/programming-browser-search
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: top
+    - minCount: null
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    row: 3.3306690738754696e-16
+    height: 2.8000000000000003
+    width: 5
+createdAt: 2021-11-24T13:20:26.311Z

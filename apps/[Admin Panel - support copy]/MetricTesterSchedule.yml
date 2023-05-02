@@ -1,0 +1,68 @@
+id: MetricTesterSchedule
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: '{{!IsStaffRole.data}}'
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: regex
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: false
+    - pattern: ^((((\d+,)+\d+|(\d+(\/|-)\d+)|\d+|\*) ?){5})$
+    - tooltipText: https://crontab.guru/#{{ArgovisorSchedule.value}}
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{GetJobsConfig.data.argo_cron.filter(x =>
+        x.name?.startsWith('metric-tester-tenant'))[0]?.schedule ??'0 4 * * *'}}
+    - style:
+        ordered:
+          - background: >-
+              {{GetJobsConfig.data.argo_cron.filter(x =>
+              x.name?.startsWith('metric-tester-tenant'))[0]?.schedule ==
+              MetricTesterSchedule.value ? "#FFFFFF" : "#696969"}}
+    - labelCaption: ''
+    - labelWidth: '37'
+    - autoFill: ''
+    - placeholder: Enter value
+    - _disclosedFields:
+        array:
+          - pattern
+          - background
+          - tooltipText
+          - patternType
+    - label: Schedule
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: ''
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: MetricTesterConfigForm
+    height: 1
+    width: 4
+createdAt: 2022-01-06T18:30:29.208Z

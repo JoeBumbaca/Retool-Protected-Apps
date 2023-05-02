@@ -1,0 +1,50 @@
+id: deleteButton
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: DELETE
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: danger
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: DeleteCronByTabName
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: >-
+        {{!(GetJobsConfig.data.argo_cron.filter(x =>
+        x.name?.startsWith(TenantSettingsTabs.labels[TenantSettingsTabs.currentViewIndex].toLowerCase()
+        + '-tenant'))[0] ?? false) || !IsStaffRole.data}}
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: SherlockConfigForm
+    rowGroup: footer
+    row: 2.7755575615628914e-16
+    col: 3
+    height: 1
+    width: 1
+createdAt: 2022-04-06T11:12:40.027Z

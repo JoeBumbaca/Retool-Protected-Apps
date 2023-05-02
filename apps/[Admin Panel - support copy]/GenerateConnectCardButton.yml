@@ -1,0 +1,43 @@
+id: GenerateConnectCardButton
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Generate Connect Card
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: CreateConnector
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: ''
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: NewFivetranConenctorModal
+    row: 1.6
+    col: 1
+    height: 1
+    width: 10
+createdAt: 2022-07-27T10:23:04.222Z

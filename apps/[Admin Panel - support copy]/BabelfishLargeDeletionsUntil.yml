@@ -1,0 +1,63 @@
+id: BabelfishLargeDeletionsUntil
+type: widget
+subtype: DateTimeWidget
+template:
+  ordered:
+    - minDate: ''
+    - minuteStep: 15
+    - readOnly: false
+    - iconAfter: ''
+    - timeFormat: ''
+    - datePlaceholder: '{{ self.dateFormat.toUpperCase() }}'
+    - dateFormat: MMM d, yyyy
+    - timePlaceholder: ''
+    - valueTimeZone: ''
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{new
+        Date(GetJobsConfig.data.jobs.filter(x=>x.name=="Babelfish")[0]?.config?.largeDeletionsUntil
+        ?? new Date())}}
+    - maxTime: ''
+    - labelCaption: ''
+    - maxDate: ''
+    - labelWidth: '33'
+    - _disclosedFields:
+        array:
+          - iconBefore
+    - label: Allow Large Deletions Until
+    - formattedValue: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - firstDayOfWeek: 0
+    - invalid: false
+    - iconBefore: bold/interface-calendar
+    - events:
+        ordered: []
+    - displayTimeZone: ''
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - manageTimeZone: false
+    - labelWrap: false
+    - minTime: ''
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: BabelfishConfigForm
+    row: 2
+    height: 1
+    width: 6
+createdAt: 2023-04-11T13:36:55.654Z

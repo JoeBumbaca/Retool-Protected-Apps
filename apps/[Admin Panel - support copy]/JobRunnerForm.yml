@@ -1,0 +1,46 @@
+id: JobRunnerForm
+type: widget
+subtype: FormWidget2
+template:
+  ordered:
+    - disableSubmit: '{{!IsStaffRole.data}}'
+    - heightType: fixed
+    - resetAfterSubmit: false
+    - submitting: false
+    - hidden: null
+    - data:
+        object: {}
+    - showHeader: false
+    - hoistFetching: true
+    - initialData: null
+    - showInEditor: null
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - invalid: false
+    - showFooter: true
+    - events:
+        - ordered:
+            - event: submit
+            - type: datasource
+            - method: trigger
+            - pluginId: ArgoRun
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: '{{ ArgoRun.isFetching }}'
+    - overflowType: hidden
+    - disabled: ''
+    - requireValidation: true
+    - maintainSpaceWhenHidden: null
+    - showBody: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: newWorkflowModal
+    row: -1.7763568394002505e-15
+    height: 11.399999999999997
+    width: 12
+createdAt: 2021-10-28T17:21:08.171Z

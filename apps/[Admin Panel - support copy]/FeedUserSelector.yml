@@ -1,0 +1,96 @@
+id: FeedUserSelector
+type: widget
+subtype: SelectWidget2
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex: []
+    - showSelectionIndicator: true
+    - _values: []
+    - iconByIndex:
+        array: []
+    - values: '{{item.id}}'
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex: []
+    - overlayMinWidth: null
+    - allowDeselect: true
+    - inputValue: ''
+    - hidden: false
+    - customValidation: ''
+    - data: '{{ GetAllUsers.data.users  }}'
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex: []
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: null
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex: []
+    - placeholder: Select an option
+    - _captionByIndex: []
+    - _disclosedFields:
+        array: []
+    - itemAdornmentSize: auto
+    - label: User
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex: []
+    - _colorByIndex: []
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids: []
+    - emptyMessage: ''
+    - overlayMaxHeight: 375
+    - loading: false
+    - disabled: '{{!IsDataViewerRole.data}}'
+    - labelPosition: left
+    - _labels: []
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex: ''
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex: []
+    - required: false
+    - labels: '{{`${item["first_name"]} ${item["last_name"]}(${item["email"]})`}}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs
+    subcontainer: '10'
+    height: 1
+    width: 4
+createdAt: 2022-04-18T17:42:09.326Z

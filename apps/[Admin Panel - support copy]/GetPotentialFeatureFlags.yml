@@ -1,0 +1,116 @@
+id: GetPotentialFeatureFlags
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: |-
+        return [
+          "pulse.metrics.charts.showLegendInThumbnail",
+          "pulse.metrics.charts.showTitleInThumbnail",
+          "pulse.metrics.chart.shouldAttachRelativePeriod",
+          "pulse.metrics.executiveViewEnabled",
+          "pulse.metrics.showTargetsEnabled",
+          "pulse.metrics.showSuggestionsEnabled",
+          "pulse.metrics.showGridExportButtonEnabled",
+          "pulse.metrics.calcMetricInGraphQL",
+          "pulse.workspaces.executiveViewDefault",
+          "pulse.dataHygiene.enabled",
+          "pulse.dataHygieneExtended.enabled",
+          "pulse.workspaces.signalMaximizeEnabled",
+          "pulse.badges.dataHygiene.enabled",
+          "pulse.badges.feed.enabled",
+          "pulse.trial.showTrialLabel",
+          "pulse.metrics.weeksIsNewBackend",
+          "pulse.workspaces.workspaceLayout3Columns",
+          "pulse.workspaces.workspaceExecViewEnabled",
+          "pulse.metrics.showStatisticsBar",
+          "pulse.metrics.showMetricsList",
+          "pulse.metrics.showSubscriptionsCog",
+          "pulse.node.overrideEnabled",
+          "pulse.dashboards.dashboardsEditEnabled",
+          "pulse.dashboards.enabled",
+          "pulse.metrics.useNewApiForFilters",
+          "pulse.metrics.sendVerboseQueriesToBizapits",
+          "pulse.react.enable",
+          "pulse.react.metricCatalog.enable",
+          "pulse.react.metricChart.enable",
+          "pulse.react.dashboard.enable",
+          "pulse.react.workspace.enable",
+          "pulse.react.exportLiveData.enable",
+          "pulse.react.exportLiveData.nameRanges",
+          "pulse.react.metrics.longLoading",
+          "pulse.react.dashboard.globalFilters",
+          "pulse.react.selfServiceConfig"
+        ]
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: true
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: '[]'
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2021-11-02T23:25:52.336Z
+folder: FeatureFlags

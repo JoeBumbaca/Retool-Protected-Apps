@@ -1,0 +1,36 @@
+id: runTinyTenantCheckbox
+type: widget
+subtype: CheckboxWidget2
+template:
+  ordered:
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: false
+    - labelCaption: ''
+    - _disclosedFields:
+        array: []
+    - label: Run Tiny Tenant
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: false
+    - labelPosition: right
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: JobRunnerForm
+    row: 6
+    height: 0.6
+    width: 3
+createdAt: 2023-04-18T13:21:22.697Z

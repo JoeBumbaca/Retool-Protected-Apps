@@ -1,0 +1,222 @@
+id: usersTable
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: compact
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - sub:
+              ordered:
+                - falseDisplayValue: empty
+          - Custom Column 1:
+              ordered:
+                - falseDisplayValue: x
+          - Custom Column 2:
+              ordered: []
+    - columnWidths:
+        - object:
+            id: sub
+            value: 345.671875
+        - object:
+            id: Custom Column 1
+            value: 156.46875
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - sub: has logged in
+          - Custom Column 1: Onboarded?
+          - Custom Column 2: state
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - sub: ''
+          - users: ''
+          - internal_metadata: ''
+          - last_name: ''
+          - Custom Column 1: ''
+          - Custom Column 2: ''
+          - first_name: ''
+          - id: ''
+          - email: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - sub: CheckboxDataCell
+          - Custom Column 1: CheckboxDataCell
+          - Custom Column 2: TextDataCell
+    - columnRestrictedEditing:
+        ordered:
+          - Custom Column 1: ''
+          - Custom Column 2: ''
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - id: false
+          - internal_metadata: false
+    - _columnSummaryTypes:
+        ordered:
+          - sub: checkedCount
+          - Custom Column 1: checkedCount
+          - Custom Column 2: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{GetUsersForCS.data.users}}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - sub: center
+          - Custom Column 1: center
+          - Custom Column 2: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - sub: ''
+          - Custom Column 1: ''
+          - Custom Column 2: ''
+    - checkboxRowSelect: true
+    - _disclosedFields:
+        array: []
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: saveChanges
+            - type: datasource
+            - method: trigger
+            - pluginId: UpdateUserMetadataForAll
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - Custom Column 1: true
+          - Custom Column 2: true
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - sub: '{{ self ? true : false}}'
+          - Custom Column 1: '{{ currentRow?.internal_metadata?.isOnboarded}}'
+          - Custom Column 2: '{{ currentRow?.internal_metadata?.state}}'
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: true
+    - sort: null
+    - _columns:
+        - first_name
+        - id
+        - last_name
+        - email
+        - sub
+        - Custom Column 1
+        - Custom Column 2
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+        - Custom Column 2
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs
+    subcontainer: 905ef
+    row: 0.2
+    height: 12.6
+    width: 12
+createdAt: 2022-10-27T10:47:16.181Z

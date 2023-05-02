@@ -1,0 +1,29 @@
+id: text7
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: center
+    - hidden: '{{newTenantIDTextbox.value==""}}'
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '{{`0x${parseInt(newTenantIDTextbox.value).toString(16)}`}}'
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: true
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: newTenantForm
+    row: 1
+    col: 8
+    height: 0.6
+    width: 3
+createdAt: 2021-11-10T19:42:14.552Z

@@ -1,0 +1,116 @@
+id: UnpinSignalFromFeed
+type: datasource
+subtype: GraphQLQuery
+resourceName: GraphQL-WithoutResource
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |-
+        mutation UnpinSignalFromEverywhere($signal_id: uuid!, $feed_id: uuid!) {
+          delete_feed_signals(where: {signal_id: {_eq: $signal_id}, feed_id: {_eq: $feed_id}}) {
+            returning {
+              feed {
+                user {
+                  email
+                }
+                workspace {
+                  name
+                }
+              }
+            }
+            affected_rows
+          }
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: You are not allowed to do that
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: Unpinned from {{FeedUserSelector.selectedItem.email}}
+    - queryDisabled: '{{!IsDataViewerRole.data}}'
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"authorization","value":"Bearer
+        {{tokenInput.value}}"},{"key":"x-role","value":"{{role.value}}"},{"key":"x-tenant-id","value":"{{tenantIdPicker.value}}"}]
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: https://api.{{stamp.value}}.sightfull.com/v1/graphql
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - graphQLVariables: >-
+        [{"key":"signal_id","value":"{{FeedSignalsTable.selectedRow.data.signal_id}}"},{"key":"feed_id","value":"{{FeedSignalsTable.selectedRow.data.feed_id}}"}]
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        //Use the variables data, metadata, and errors to reference these fields
+        from your query's results
+
+        if (Array.isArray(errors) && errors.length > 0) {
+          return errors[0].message;
+        } else {
+          return false
+        }
+            
+    - finished: null
+    - confirmationMessage: >-
+        Are you sure you want to unpin this signal from all feeds and
+        workspaces?
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - graphQLErrors: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: ''
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: GetAllSignals
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: true
+    - type: POST
+    - queryFailureConditions: '[{"condition":"","message":""}]'
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: '6'
+createdAt: 2022-11-09T12:56:09.819Z
+folder: Signals

@@ -1,0 +1,31 @@
+id: NewFivetranConenctorModal
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: '400'
+    - onModalOpen: ''
+    - events: []
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: >-
+        {{((GetJobs.data?.filter(x=>x.name=="DB2Graph-Salesforce")[0]?.last_successful_finished_at
+        ?? null) != null  || GetJobs.data == null) && false}}
+    - buttonText: Create New Fivetran Connector
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsTabs
+    subcontainer: '0'
+    row: 0.20000000000000018
+    col: 8
+    height: 0.7999999999999996
+    width: 4
+createdAt: 2022-07-23T17:49:17.579Z

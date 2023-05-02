@@ -1,0 +1,33 @@
+id: alert1
+type: widget
+subtype: AlertWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - hidden: '{{ tokenInput.value != "" }}'
+    - exportFileType: csv
+    - buttonType: action
+    - url: ''
+    - newWindow: false
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - title: No token
+    - events: []
+    - type: warning
+    - exportFileName: ''
+    - description: Click one of the buttons above to get a token
+    - buttonText: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs
+    subcontainer: '0'
+    row: 6.000000000000002
+    col: 3
+    height: 1.6
+    width: 6
+createdAt: 2021-10-30T20:16:50.809Z

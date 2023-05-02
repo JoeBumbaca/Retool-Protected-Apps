@@ -1,0 +1,113 @@
+id: UpsertTenant
+type: datasource
+subtype: GraphQLQuery
+resourceName: GraphQL-WithoutResource
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: >+
+        mutation UpsertTenant($fiscal_year_start: Int, $logo_url: String, $name:
+        String,$graph_colors: String, $decimal_digits: Int, $trial_end:
+        timestamptz, $last_sync: timestamptz) {
+          insert_tenants_one(object: {fiscal_year_start: $fiscal_year_start, logo_url: $logo_url, name: $name, graph_colors: $graph_colors, decimal_digits: $decimal_digits, trial_end: $trial_end, last_etl_synced: $last_sync}, on_conflict: {constraint: tenants_pkey, update_columns: [logo_url, name, graph_colors, decimal_digits, trial_end, last_etl_synced]}) {
+            name
+          }
+        }
+
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: '{{!IsStaffRole.data}}'
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"authorization","value":"Bearer
+        {{tokenInput.value}}"},{"key":"x-role","value":"{{role.value}}"},{"key":"x-tenant-id","value":"{{tenantIdPicker.value}}"}]
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: https://api.{{stamp.value}}.sightfull.com/v1/graphql
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - graphQLVariables: >-
+        [{"key":"fiscal_year_start","value":"{{
+        tenant_fiscalyear_textbox.value}}"},{"key":"logo_url","value":"{{tenant_logo_url_textbox.value}}"},{"key":"name","value":"{{tenant_name_textbox.value}}"},{"key":"graph_colors","value":"{{tenant_color_palette_textbox.value
+        && undefined}}"},{"key":"decimal_digits","value":"{{
+        tenant_decimal_digits.value ||
+        undefined}}"},{"key":"trial_end","value":"{{ (tenant_trial_end.value !=
+        \"\") ? (new Date(tenant_trial_end.value)).toISOString() : undefined 
+        }}"},{"key":"last_sync","value":"{{ (tenant_last_sync.value != \"\") ?
+        (new Date(tenant_last_sync.value)).toISOString() : undefined  }}"}]
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        //Use the variables data, metadata, and errors to reference these fields
+        from your query's results
+
+        if (Array.isArray(errors) && errors.length > 0) {
+          return errors[0].message;
+        } else {
+          return false
+        }
+            
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - graphQLErrors: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: ''
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: CurrentTenant
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: true
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2021-10-27T10:41:21.916Z
+folder: Tenant

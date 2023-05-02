@@ -1,0 +1,40 @@
+id: tenant_logo_settings
+type: widget
+subtype: ImageWidget2
+template:
+  ordered:
+    - heightType: fixed
+    - horizontalAlign: center
+    - srcWidth: null
+    - clickable: false
+    - flipVertical: false
+    - src: >-
+        {{tenant_logo_url_textbox.value??
+        CurrentTenant.data.tenants_by_pk.logo_url ??
+        "https://cdn.icon-icons.com/icons2/2385/PNG/512/image_broken_icon_144282.png"}}
+    - hidden: false
+    - srcHeight: null
+    - showInEditor: false
+    - tooltipText: ''
+    - fit: contain
+    - flipHorizontal: false
+    - aspectRatio: null
+    - storageBlobId: ''
+    - _disclosedFields:
+        array: []
+    - altText: Tenant Logo
+    - dbBlobId: ''
+    - events:
+        ordered: []
+    - srcType: src
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsForm
+    row: 0.8
+    col: 10
+    height: 2
+    width: 2
+createdAt: 2021-10-27T10:21:28.845Z

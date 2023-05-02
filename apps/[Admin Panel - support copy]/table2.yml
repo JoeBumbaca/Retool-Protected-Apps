@@ -1,0 +1,247 @@
+id: table2
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: compact
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: severity
+            value: 71.359375
+        - object:
+            id: object_type
+            value: 100.953125
+        - object:
+            id: issue_group_name
+            value: 374.78125
+        - object:
+            id: object_current_value
+            value: 136.015625
+        - object:
+            id: detection_status
+            value: 113.875
+        - object:
+            id: user_action
+            value: 94.78125
+        - object:
+            id: object_name
+            value: 377.453125
+        - object:
+            id: dimension
+            value: 124.78125
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - Custom Column 1: iouoiu
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - dimension: ''
+          - user_action: ''
+          - object_current_value: ''
+          - object_name: ''
+          - detection_status: ''
+          - data_issues: ''
+          - user_id: ''
+          - value: ''
+          - issue_group_name: ''
+          - issue_extra_message: ''
+          - object_type: ''
+          - object_id: ''
+          - features: ''
+          - severity: ''
+          - key: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - dimension: true
+          - user_action: true
+          - object_current_value: true
+          - object_name: true
+          - detection_status: true
+          - data_issues: true
+          - user_id: true
+          - value: true
+          - issue_group_name: true
+          - issue_extra_message: false
+          - object_type: true
+          - object_id: false
+          - features: true
+          - severity: true
+          - key: true
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - dimension: true
+          - user_action: true
+          - object_current_value: true
+          - object_name: true
+          - detection_status: true
+          - data_issues: true
+          - user_id: true
+          - value: true
+          - issue_group_name: true
+          - issue_extra_message: false
+          - object_type: true
+          - object_id: false
+          - features: true
+          - severity: true
+          - key: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - columnSummaryTypes:
+        ordered: []
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ GetAllDataHygieneIssues.data.data_issues }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: false
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 19
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - columnSummaryValues:
+        ordered: []
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: false
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - Custom Column 1: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - severity
+        - object_id
+        - object_type
+        - object_name
+        - dimension
+        - issue_group_name
+        - issue_extra_message
+        - object_current_value
+        - detection_status
+        - user_action
+    - defaultSelectedRow: none
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - severity
+        - object_id
+        - object_type
+        - object_name
+        - dimension
+        - issue_group_name
+        - issue_extra_message
+        - object_current_value
+        - detection_status
+        - user_action
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs
+    subcontainer: '4'
+    height: 13.8
+    width: 12
+createdAt: 2021-11-03T21:50:12.464Z

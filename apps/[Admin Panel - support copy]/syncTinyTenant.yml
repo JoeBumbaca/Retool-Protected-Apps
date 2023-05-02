@@ -1,0 +1,42 @@
+id: syncTinyTenant
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: ''
+    - hidden: ''
+    - text: Sync Tiny Tenant
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: SyncTinyTenant
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsTabs
+    subcontainer: 3c95f
+    row: 2.8
+    height: 1
+    width: 4
+createdAt: 2023-04-18T12:07:19.423Z

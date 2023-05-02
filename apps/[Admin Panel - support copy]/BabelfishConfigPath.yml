@@ -1,0 +1,65 @@
+id: BabelfishConfigPath
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{GetJobsConfig.data.jobs.filter(x=>x.name=="Babelfish")[0]?.config?.specific_config_path
+        ?? `/schemas/${TenantCodeName.value}/babel`}}
+    - style:
+        ordered:
+          - background: >-
+              {{GetJobsConfig.data.jobs.filter(x=>x.name=="Babelfish")[0]?.config?.specific_config_path
+              == BabelfishConfigPath.value ? "#FFFFFF" : "#696969"}}
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: ''
+    - _disclosedFields:
+        array:
+          - background
+    - label: Specific config path
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: BabelfishConfigForm
+    row: 1
+    height: 1
+    width: 6
+createdAt: 2021-11-11T08:23:23.556Z

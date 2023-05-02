@@ -1,0 +1,49 @@
+id: btnOpenSightfull
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: '{{stamp.value=="" || tenantIdPicker.value==""}}'
+    - text: Open Sightfull
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - url: >-
+                      https://latest.app.sightfull.com/#?_stamp={{stamp.value}}&_tenant={{tenantIdPicker.value}}
+                  - options:
+                      ordered:
+                        - newTab: true
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs
+    subcontainer: '0'
+    row: 5
+    col: 8
+    height: 1
+    width: 1
+createdAt: 2022-11-04T19:53:34.668Z

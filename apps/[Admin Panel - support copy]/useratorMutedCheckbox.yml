@@ -1,0 +1,41 @@
+id: useratorMutedCheckbox
+type: widget
+subtype: CheckboxWidget2
+template:
+  ordered:
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{GetJobsConfig.data.jobs.filter(x=>x.name=="userator")[0]?.config?.isDryRun
+        ?? false}}
+    - labelCaption: ''
+    - _disclosedFields:
+        array: []
+    - label: |
+        Is Dry Run ?
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: false
+    - labelPosition: right
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: UseratorConfigForm
+    row: 0.6000000000000001
+    col: 8
+    height: 0.6
+    width: 3
+createdAt: 2022-05-01T14:49:30.302Z

@@ -1,0 +1,58 @@
+id: button7
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Change tenant to "Deprecated"
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: warning
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: setValue
+            - pluginId: tenant_name_textbox
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '{{CurrentTenant.data.tenants_by_pk.name??""}} (Deprecated)'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: UpsertTenant
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '50'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsTabs
+    subcontainer: '3e138'
+    row: 3.0000000000000004
+    col: 1
+    height: 1.4
+    width: 2
+createdAt: 2022-07-03T13:06:27.721Z

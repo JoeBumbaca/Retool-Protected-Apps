@@ -1,0 +1,75 @@
+id: useratorSchemaRepo
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{ GetJobsConfig.data.argo_params.filter(x =>
+        x.name?.startsWith('userator-tenant'))[0]?.extra_params?.filter(x =>
+        x.name == 'schemaRevision')[0]?.value ||
+        GetJobsConfig.data.argo_params.filter(x =>
+        x.name?.startsWith('sherlock-tenant'))[0]?.extra_params?.filter(x =>
+        x.name == 'schemaRevision')[0]?.value || 'HEAD'}}
+    - style:
+        ordered:
+          - background: >-
+              {{GetJobsConfig.data.argo_params.filter(x =>
+              x.name?.startsWith('userator-tenant'))[0]?.extra_params?.filter(x
+              => x.name == 'schemaRevision')[0]?.value ||
+              GetJobsConfig.data.argo_params.filter(x =>
+              x.name?.startsWith('sherlock-tenant'))[0]?.extra_params?.filter(x
+              => x.name == 'schemaRevision')[0]?.value ==
+              useratorSchemaRepo.value ? "#FFFFFF" : "#696969"}}
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: '{{ArgovisorSchemaRevision.value ?? "fork/default-no-op"}}'
+    - _disclosedFields:
+        array:
+          - background
+    - label: Schema Repo Revision
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: UseratorConfigForm
+    row: 0.19999999999999996
+    col: 4
+    height: 1
+    width: 4
+createdAt: 2022-05-01T13:13:58.013Z

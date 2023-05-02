@@ -1,0 +1,57 @@
+id: specificObjectNames
+type: widget
+subtype: TextAreaWidget
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - autoResize: false
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: >-
+        {{ self.value.split(/\r?\n/).every((line) => RegExp(/^(?=.{3,60}$)\*?
+        ?\w+( \w+)* ?\*?$/g).test(line)) ? "" : "Invalid char" }}
+    - hideValidationMessage: false
+    - minLines: '4'
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: List of specific objects{{"\n"}}Separated by new lines
+    - _disclosedFields:
+        array: []
+    - label: Specific object names
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - maxLines: null
+    - loading: false
+    - disabled: '{{ specificObjectsTo.value == undefined }}'
+    - labelPosition: top
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: '{{ specificObjectsTo.value != undefined }}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: runSpecificContainer
+    row: 5.551115123125783e-17
+    col: 4
+    height: 1
+    width: 8
+createdAt: 2021-10-30T19:41:35.005Z

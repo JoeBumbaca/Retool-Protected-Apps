@@ -1,0 +1,17 @@
+id: isBabelfishConfigInvalid
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >-
+        let isBabelfishDepsConfigInvalid = {{BabelfishDepsConfigPath.value ===
+        "" || BabelfishDepsConfigPath.value === undefined}}
+
+        let isBabelfishConfigPathInvalid = {{BabelfishConfigPath.value === "" ||
+        BabelfishConfigPath.value === undefined}}
+            
+        return isBabelfishDepsConfigInvalid || isBabelfishConfigPathInvalid ||
+        {{isUnAuthorizedForUpsert.value}} || {{ isJobConfigDataInvalid.value }}
+    - value: ''
+createdAt: 2023-04-20T13:40:42.588Z
+folder: upsertValidations

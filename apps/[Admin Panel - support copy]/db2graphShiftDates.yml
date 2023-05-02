@@ -1,0 +1,38 @@
+id: db2graphShiftDates
+type: widget
+subtype: SwitchWidget2
+template:
+  ordered:
+    - hidden: ''
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - _defaultValue: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{GetChosenDB2GraphConfig.data.jobs[0]?.config?.shift_dates ?? false}}'
+    - labelCaption: ''
+    - _disclosedFields:
+        array: []
+    - label: Shift dates
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: '{{IsProduction.data && stamp.value != "preprod"}}'
+    - labelPosition: right
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: DB2GraphConfig
+    row: 1.1999999999999997
+    col: 7
+    height: 0.6
+    width: 2
+createdAt: 2023-02-14T13:41:41.191Z

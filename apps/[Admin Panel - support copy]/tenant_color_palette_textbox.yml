@@ -1,0 +1,62 @@
+id: tenant_color_palette_textbox
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: >-
+        {{ tenant_color_palette_textbox.value == ''   ||
+        tenant_color_palette_textbox.value.split(',').map(x=> x.length ==
+        6).reduce((x,y) => x&& y) ? "" : "The format is:
+        FAFAFA,C1C1C1,10CE1D..."}}
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: ''
+    - showClear: true
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{CurrentTenant.data.tenants_by_pk.graph_colors??""}}'
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: FF1800,353D40,D9D9D9,A1A5A6,F2B138,F2B138,D9AE79
+    - _disclosedFields:
+        array:
+          - customValidation
+    - label: Color Palette
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsForm
+    row: 5.6
+    col: 1
+    height: 1
+    width: 8
+createdAt: 2022-01-18T12:12:53.095Z

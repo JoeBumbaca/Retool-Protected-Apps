@@ -1,0 +1,64 @@
+id: tenant_decimal_digits
+type: widget
+subtype: NumberInputWidget
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: null
+    - preventScroll: false
+    - inputValue: null
+    - hidden: false
+    - customValidation: >-
+        {{ tenant_color_palette_textbox.value == ''   ||
+        tenant_color_palette_textbox.value.split(',').map(x=> x.length ==
+        6).reduce((x,y) => x&& y) ? "" : "The format is:
+        FAFAFA,C1C1C1,10CE1D..."}}
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - allowNull: true
+    - showClear: true
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - labelCaption: ''
+    - min: null
+    - labelWidth: '33'
+    - placeholder: Enforces decimal digits throughout pulse
+    - _disclosedFields:
+        array: []
+    - showStepper: true
+    - label: Decimal Digits
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: decimal
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - decimalPlaces: null
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsForm
+    row: 7.2
+    col: 1
+    height: 1
+    width: 8
+createdAt: 2022-01-26T11:35:48.779Z

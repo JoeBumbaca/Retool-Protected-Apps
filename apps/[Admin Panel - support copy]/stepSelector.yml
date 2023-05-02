@@ -1,0 +1,92 @@
+id: stepSelector
+type: widget
+subtype: ListboxWidget
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex: []
+    - showSelectionIndicator: true
+    - _values: []
+    - iconByIndex:
+        array: []
+    - values: '{{ item }}'
+    - _iconByIndex: []
+    - allowDeselect: false
+    - _data: []
+    - hidden: false
+    - customValidation: ''
+    - data: >-
+        ['tablefish','db2graph', 'babelfish', 'tailor','cacher', 'seeder',
+        'validator']
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - _fallbackTextByIndex: []
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - showInEditor: false
+    - _defaultValue: null
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{stepSelector.data[1]}}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels: ''
+    - _hiddenByIndex: []
+    - _captionByIndex: []
+    - _disclosedFields:
+        array:
+          - required
+    - itemAdornmentSize: auto
+    - searchTerm: ''
+    - label: ''
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - circularImages: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex: []
+    - _colorByIndex: []
+    - tooltipByIndex:
+        array: []
+    - colorByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids: []
+    - emptyMessage: ''
+    - disabled: ''
+    - labelPosition: top
+    - _labels: []
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex: []
+    - required: true
+    - labels: >-
+        {{ ['Tablefish','DB2Graph', 'Babelfish', 'Tailor',
+        'Cacher','GlobalFiltersSeeder','Validator'][i] }}
+style:
+  ordered: []
+position2:
+  position2:
+    container: JobRunnerForm
+    row: 0.8
+    height: 4.000000000000001
+    width: 3
+createdAt: 2021-10-28T17:21:59.360Z

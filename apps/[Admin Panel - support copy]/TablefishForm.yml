@@ -1,0 +1,47 @@
+id: TablefishForm
+type: widget
+subtype: FormWidget2
+template:
+  ordered:
+    - disableSubmit: '{{isTablefishConfigInvalid.value}}'
+    - heightType: auto
+    - resetAfterSubmit: true
+    - submitting: false
+    - hidden: false
+    - data:
+        object: {}
+    - showHeader: true
+    - hoistFetching: true
+    - initialData: null
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - invalid: false
+    - showFooter: true
+    - events:
+        - ordered:
+            - event: submit
+            - type: datasource
+            - method: trigger
+            - pluginId: UpsertTablefishConfig
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - requireValidation: true
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsTabs
+    subcontainer: cf8f8
+    height: 2.0000000000000004
+    width: 12
+createdAt: 2023-03-08T13:05:56.156Z

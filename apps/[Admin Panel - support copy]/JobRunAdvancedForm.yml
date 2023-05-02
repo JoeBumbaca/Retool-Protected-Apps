@@ -1,0 +1,38 @@
+id: JobRunAdvancedForm
+type: widget
+subtype: FormWidget2
+template:
+  ordered:
+    - disableSubmit: false
+    - heightType: fixed
+    - resetAfterSubmit: false
+    - submitting: false
+    - hidden: null
+    - data:
+        object: {}
+    - showHeader: false
+    - hoistFetching: true
+    - initialData: null
+    - showInEditor: null
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - invalid: false
+    - showFooter: false
+    - events:
+        ordered: []
+    - loading: false
+    - overflowType: hidden
+    - disabled: false
+    - requireValidation: true
+    - maintainSpaceWhenHidden: null
+    - showBody: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: JobRunnerAdvanedModal
+    row: 0.2
+    height: 7.800000000000001
+    width: 12
+createdAt: 2021-11-11T13:59:01.225Z

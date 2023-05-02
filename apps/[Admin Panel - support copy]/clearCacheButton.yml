@@ -1,0 +1,47 @@
+id: clearCacheButton
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Clear Cache
+    - showInEditor: false
+    - tooltipText: >-
+        Clear cache to see updated metrics, done by changing
+        last_successfull_run_ts (HACK)
+    - _disclosedFields:
+        array:
+          - tooltipText
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: PartialTailorSetLastSuccesfullRunTsToNow
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: JobsTabs
+    subcontainer: '1'
+    row: 12.800000000000013
+    col: 10
+    height: 1
+    width: 2
+createdAt: 2022-07-04T13:03:18.241Z

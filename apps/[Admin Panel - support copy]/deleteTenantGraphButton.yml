@@ -1,0 +1,44 @@
+id: deleteTenantGraphButton
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: Deletes the graph. Stop ETL first
+    - style:
+        ordered:
+          - accent-background: hsl(4, 57%, 52%)
+    - modalHeight: 280px
+    - onModalOpen: ''
+    - events:
+        - ordered:
+            - event: open
+            - type: widget
+            - method: clearValue
+            - pluginId: tenantNameForApproval
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - modalWidth: ''
+    - closeOnOutsideClick: true
+    - loading: ''
+    - disabled: >-
+        {{GetJobsConfig.data.argo_cron.filter(x =>
+        x.name?.startsWith('argovisor-tenant')).length != 0 ?? false}}
+    - buttonText: Delete Tenant Graph
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsTabs
+    subcontainer: '3e138'
+    row: 8.600000000000001
+    col: 1
+    height: 2
+    width: 2
+createdAt: 2022-07-03T09:22:25.115Z

@@ -1,0 +1,46 @@
+id: SendActivationMails
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Send mail
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: SendActivationMail
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: >-
+        {{(CreateConnector.data?.fivetran_create_connector?.result?.url ?? null)
+        == null || ActivationEmailInput.value == "" ||
+        ActivationEmailInputName.value == ""}}
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: NewFivetranConenctorModal
+    row: 6.999999999999999
+    col: 2
+    height: 1
+    width: 9
+createdAt: 2022-07-27T10:25:36.116Z

@@ -1,0 +1,69 @@
+id: MetricTesterNumThreads
+type: widget
+subtype: NumberInputWidget
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: null
+    - preventScroll: false
+    - inputValue: 0
+    - hidden: false
+    - customValidation: ''
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - allowNull: false
+    - showClear: false
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{GetJobsConfig.data.jobs.filter(x=>x.name=="metric-tester")[0]?.config?.num_threads
+        ?? 2}}
+    - style:
+        ordered:
+          - background: >-
+              {{GetJobsConfig.data.jobs.filter(x=>x.name=="metric-tester")[0]?.config?.num_threads
+              == MetricTesterNumThreads.value ? "#FFFFFF" : "#696969"}}
+    - labelCaption: ''
+    - min: null
+    - labelWidth: '33'
+    - placeholder: Enter value
+    - _disclosedFields:
+        array:
+          - background
+    - showStepper: true
+    - label: Number of Threads
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: decimal
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: >-
+        {{stamp.value != "preprod" && stamp.value != "staging" &&
+        !stamp.value.startsWith("dev")}}
+    - labelPosition: left
+    - decimalPlaces: null
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: MetricTesterConfigForm
+    col: 7
+    height: 1
+    width: 4
+createdAt: 2022-07-20T15:38:37.876Z

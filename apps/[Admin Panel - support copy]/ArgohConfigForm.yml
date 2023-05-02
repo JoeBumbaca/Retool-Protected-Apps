@@ -1,0 +1,47 @@
+id: ArgohConfigForm
+type: widget
+subtype: FormWidget2
+template:
+  ordered:
+    - disableSubmit: '{{isArgovisorConfigInvalid.value}}'
+    - heightType: fixed
+    - resetAfterSubmit: false
+    - submitting: false
+    - hidden: null
+    - data:
+        object: {}
+    - showHeader: false
+    - hoistFetching: true
+    - initialData: null
+    - showInEditor: null
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - invalid: false
+    - showFooter: true
+    - events:
+        - ordered:
+            - event: submit
+            - type: datasource
+            - method: trigger
+            - pluginId: UpsertArgovisorConfig
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{IsStaffRole.data && GetJobsConfig.data != undefined}}'
+    - loading: false
+    - overflowType: hidden
+    - disabled: '{{!IsStaffRole.data || GetJobsConfig.data == undefined}}'
+    - requireValidation: true
+    - maintainSpaceWhenHidden: null
+    - showBody: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: TenantSettingsTabs
+    subcontainer: '4'
+    height: 12.599999999999998
+    width: 11
+createdAt: 2021-11-11T09:46:33.390Z

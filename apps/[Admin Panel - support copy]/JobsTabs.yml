@@ -1,0 +1,97 @@
+id: JobsTabs
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+    - heightType: fixed
+    - currentViewKey: 0
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+    - hidden: null
+    - showHeader: true
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: null
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+    - _disclosedFields:
+        array: []
+    - currentViewIndex: 0
+    - _hasMigratedNestedItems: true
+    - transition: slide
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - 0
+        - 1
+    - events:
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: ArgoList
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '30'
+            - enabled: ''
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: GetJobs
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '30'
+            - enabled: ''
+    - _ids:
+        - '0'
+        - '1'
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+    - hovered: false
+    - loading: false
+    - overflowType: hidden
+    - disabled: ''
+    - _labels:
+        - Status
+        - Argo
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: null
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs
+    subcontainer: '2'
+    row: 0.2
+    height: 23.199999999999996
+    width: 12
+createdAt: 2021-10-27T08:03:56.609Z

@@ -1,0 +1,22 @@
+id: isSherlockConfigInvalid
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >-
+        let isTenantConfigPathInvalid = {{ SherlockTenantConfigPath.value === ""
+        || SherlockTenantConfigPath.value === undefined }}
+
+
+        let isScheduleInvalid = {{ SherlockSchedule.value === "" ||
+        SherlockSchedule.value === undefined }}
+
+        let isSchemaRevisionInvalid = {{schemaRepoRevision.value === "" ||
+        schemaRepoRevision.value === undefined }}
+            
+        return {{isJobConfigDataInvalid.value}} || isTenantConfigPathInvalid ||
+        isScheduleInvalid || isSchemaRevisionInvalid ||
+        {{isUnAuthorizedForUpsert.value}}
+    - value: ''
+createdAt: 2023-04-23T13:13:52.227Z
+folder: upsertValidations

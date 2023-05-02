@@ -1,0 +1,35 @@
+id: alert3
+type: widget
+subtype: AlertWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - hidden: '{{ tokenInput.value == "" || CurrentTenant.data == null }}'
+    - exportFileType: csv
+    - buttonType: action
+    - showInEditor: false
+    - url: ''
+    - newWindow: false
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - title: Great job
+    - events: []
+    - type: success
+    - exportFileName: ''
+    - description: You are all good to go! {{CurrentTenant.data.tenants_by_pk.name}}
+    - maintainSpaceWhenHidden: false
+    - buttonText: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs
+    subcontainer: '0'
+    row: 10.799999999999999
+    col: 3
+    height: 1.6
+    width: 6
+createdAt: 2021-10-30T20:52:15.395Z

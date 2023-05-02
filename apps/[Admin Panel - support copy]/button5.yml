@@ -1,0 +1,46 @@
+id: button5
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Delete Tenant Data
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: danger
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: RunGraphDeleter
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: '{{CurrentTenant.data.tenants_by_pk.name != tenantNameForApproval.value}}'
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: deleteTenantGraphButton
+    row: 3.9999999999999982
+    col: 7
+    height: 1
+    width: 5
+createdAt: 2022-07-03T10:18:04.897Z

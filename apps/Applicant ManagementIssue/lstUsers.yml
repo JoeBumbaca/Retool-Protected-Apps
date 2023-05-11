@@ -4,16 +4,20 @@ subtype: ListViewWidget
 template:
   ordered:
     - heightType: fixed
+    - layoutType: list
     - showBorder: true
     - data: ''
     - showDropShadow: true
     - scroll: false
     - rowKeys: ''
     - formDataKey: '{{ self.id }}'
+    - itemWidth: ''
     - dynamicHeightsEnabled: true
+    - numColumns: '3'
     - itemHeight: '3'
     - overflowType: visible
     - instances: '{{GET_ApplicationInfo_.data.users.length}}'
+    - direction: vertical
 style:
   ordered: []
 position2:

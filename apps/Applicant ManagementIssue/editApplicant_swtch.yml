@@ -14,6 +14,8 @@ template:
     - formDataKey: '{{ self.id }}'
     - value: false
     - labelCaption: ''
+    - _disclosedFields:
+        array: []
     - label: Edit
     - _validate: false
     - invalid: false

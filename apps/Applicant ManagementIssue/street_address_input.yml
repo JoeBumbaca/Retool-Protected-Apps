@@ -28,6 +28,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value
+    - _disclosedFields:
+        array: []
     - label: Business Street Address
     - _validate: false
     - labelWidthUnit: '%'

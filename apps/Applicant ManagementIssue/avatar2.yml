@@ -13,7 +13,10 @@ template:
         ordered:
           - background: automatic
     - labelCaption: '{{ current_user.email }}'
+    - _disclosedFields:
+        array: []
     - label: '{{ current_user.fullName }}'
+    - icon: ''
     - imageSize: 32
     - labelPosition: right
     - labelWrap: false

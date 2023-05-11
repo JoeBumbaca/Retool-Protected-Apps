@@ -9,6 +9,7 @@ template:
     - _filteredSortedRenderedDataWithTypes: null
     - heightType: fixed
     - normalizedData: null
+    - rowHeight: compact
     - saveChangesDisabled: ''
     - columnTypeProperties:
         ordered:
@@ -119,6 +120,7 @@ template:
           - name: center
     - columnSummaries:
         object: {}
+    - showBoxShadow: true
     - sortedDesc: false
     - customButtonName: ''
     - columnMappersRenderAsHTML:
@@ -256,6 +258,7 @@ template:
     - doubleClickToEdit: false
     - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
     - selectedCell:
         object:
           index: null

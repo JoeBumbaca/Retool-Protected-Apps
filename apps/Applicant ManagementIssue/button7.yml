@@ -15,6 +15,8 @@ template:
         ordered:
           - background: canvas
           - label: rgba(0, 0, 0, 1)
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: ''

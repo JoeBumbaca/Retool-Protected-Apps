@@ -28,6 +28,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: you@example.com
+    - _disclosedFields:
+        array: []
     - label: Email
     - _validate: false
     - labelWidthUnit: '%'

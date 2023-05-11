@@ -15,11 +15,13 @@ template:
     - iconAfter: ''
     - _iconByIndex: []
     - wrapTags: true
+    - overlayMinWidth: null
     - selectedIndexes:
         array: []
     - selectedItems:
         array: []
     - inputValue: ''
+    - persistSearchTerm: false
     - hidden: false
     - customValidation: ''
     - data: '{{ GET_ListCurrencies.data.supported_currencies }}'
@@ -30,6 +32,7 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex: []
+    - minLines: null
     - validationMessage: ''
     - automaticItemColors: false
     - itemAdornmentShape: circle
@@ -69,6 +72,8 @@ template:
     - _hiddenByIndex: []
     - placeholder: Select options
     - _captionByIndex: []
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Currencies
     - _hasMigratedNestedItems: true
@@ -93,6 +98,7 @@ template:
     - selectedLabels:
         array: []
     - overlayMaxHeight: 375
+    - maxLines: null
     - loading: false
     - disabled: false
     - labelPosition: top

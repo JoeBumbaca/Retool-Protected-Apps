@@ -12,6 +12,8 @@ template:
     - _defaultValue: ''
     - tooltipText: ''
     - value: 👋 **Welcome Back, {{ current_user.firstName || 'friend' }}!**
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

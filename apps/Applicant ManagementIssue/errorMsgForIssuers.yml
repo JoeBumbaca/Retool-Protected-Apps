@@ -26,6 +26,8 @@ template:
     - style:
         ordered:
           - color: rgb(255, 0, 0)
+    - _disclosedFields:
+        array: []
     - disableMarkdown: true
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

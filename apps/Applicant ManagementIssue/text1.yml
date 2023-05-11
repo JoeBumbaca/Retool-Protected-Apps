@@ -12,6 +12,8 @@ template:
     - _defaultValue: ''
     - tooltipText: ''
     - value: '{{GET_ApplicationInfo_.data.users[i].phone_number}}'
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

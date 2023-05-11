@@ -28,11 +28,13 @@ template:
         - ''
         - ''
     - wrapTags: true
+    - overlayMinWidth: null
     - selectedIndexes:
         array: []
     - selectedItems:
         array: []
     - inputValue: ''
+    - persistSearchTerm: false
     - hidden: false
     - customValidation: ''
     - data:
@@ -48,6 +50,7 @@ template:
         - ''
         - ''
         - ''
+    - minLines: null
     - validationMessage: ''
     - automaticItemColors: false
     - itemAdornmentShape: circle
@@ -86,6 +89,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Supported Issuers
     - _hasMigratedNestedItems: true
@@ -122,6 +127,7 @@ template:
     - selectedLabels:
         array: []
     - overlayMaxHeight: 375
+    - maxLines: null
     - loading: false
     - disabled: false
     - labelPosition: top

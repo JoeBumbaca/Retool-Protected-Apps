@@ -13,6 +13,8 @@ template:
     - tooltipText: ''
     - value: |
         ## Create SAT Link
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

@@ -28,6 +28,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: ''
+    - _disclosedFields:
+        array: []
     - label: Legal Name
     - _validate: false
     - labelWidthUnit: '%'

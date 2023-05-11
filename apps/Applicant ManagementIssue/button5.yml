@@ -11,6 +11,8 @@ template:
     - text: Delete
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: ''

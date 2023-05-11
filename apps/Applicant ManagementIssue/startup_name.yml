@@ -28,6 +28,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: ''
+    - _disclosedFields:
+        array: []
     - label: Company Name
     - _validate: false
     - labelWidthUnit: '%'

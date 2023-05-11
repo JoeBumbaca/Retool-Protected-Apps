@@ -30,6 +30,8 @@ template:
           }
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - invalid: false
     - showFooter: true
     - events:

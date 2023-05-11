@@ -14,6 +14,8 @@ template:
     - style:
         ordered:
           - background: warning
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: ''

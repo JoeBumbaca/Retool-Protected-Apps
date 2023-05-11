@@ -14,6 +14,8 @@ template:
     - formDataKey: '{{ self.id }}'
     - value: 'true'
     - labelCaption: ''
+    - _disclosedFields:
+        array: []
     - label: Send Welcome Email
     - _validate: false
     - invalid: false

@@ -23,6 +23,8 @@ template:
         array: []
     - _hiddenByIndex:
         - ''
+    - _disclosedFields:
+        array: []
     - currentViewIndex: null
     - _hasMigratedNestedItems: true
     - transition: none
@@ -44,6 +46,7 @@ template:
         array: []
     - _iconPositionByIndex:
         - ''
+    - hovered: false
     - loading: false
     - overflowType: scroll
     - disabled: false

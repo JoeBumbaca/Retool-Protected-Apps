@@ -43,10 +43,13 @@ template:
         }}"},{"key":"industry_id","value":"{{industry_modal.value}}"},{"key":"exposure_status_id","value":"{{exposure_status_modal.value}}"},{"key":"language_id","value":"{{GET_ApplicationInfo_.data.language_id}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: |
         Company Created Successfully
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
     - paginationPaginationField: ''
@@ -57,6 +60,7 @@ template:
         https://staging-b.tribal.credit/Admin/api/company/create?key=YHaqasYderuZY7A9
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
@@ -65,8 +69,10 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - requestSentTimestamp: null
     - cookies: '[]'
     - metadata: null
+    - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -75,11 +81,13 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - showLatestVersionUpdatedWarning: false
@@ -129,6 +137,7 @@ template:
             - waitType: debounce
             - waitMs: '0'
     - queryTimeout: '60000'
+    - workflowId: null
     - requireConfirmation: false
     - type: POST
     - queryFailureConditions: >-
@@ -138,6 +147,7 @@ template:
     - enableCaching: false
     - allowedGroups: []
     - bodyType: json
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: '5'

@@ -21,6 +21,8 @@ template:
     - _iconByIndex:
         - ''
         - ''
+    - overlayMinWidth: null
+    - allowDeselect: true
     - inputValue: ''
     - hidden: false
     - customValidation: ''
@@ -59,6 +61,8 @@ template:
     - _captionByIndex:
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Exposure Status
     - _hasMigratedNestedItems: true

@@ -6,6 +6,8 @@ template:
     - readOnly: false
     - iconAfter: ''
     - max: null
+    - preventScroll: false
+    - inputValue: null
     - hidden: false
     - customValidation: >-
         {{limit_modal.value <= 0 ? 'Please input a value greater than zero' :
@@ -28,6 +30,8 @@ template:
     - min: null
     - labelWidth: '33'
     - placeholder: Enter value
+    - _disclosedFields:
+        array: []
     - showStepper: true
     - label: Limit
     - _validate: false

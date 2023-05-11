@@ -13,6 +13,8 @@ template:
     - tooltipText: ''
     - style:
         ordered: []
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: true
     - iconBefore: ''

@@ -11,6 +11,8 @@ template:
     - text: Re-Open
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: true
     - iconBefore: ''

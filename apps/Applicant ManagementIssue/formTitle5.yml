@@ -14,6 +14,8 @@ template:
     - value: >-
         #### {{legalRepData.value.first_name +" "
         +legalRepData.value.last_name}}
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

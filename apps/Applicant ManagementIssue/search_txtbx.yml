@@ -29,6 +29,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter Search Query for Applicants
+    - _disclosedFields:
+        array: []
     - label: Search Query
     - _validate: false
     - labelWidthUnit: '%'

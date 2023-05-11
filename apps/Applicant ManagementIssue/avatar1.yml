@@ -16,9 +16,12 @@ template:
           - background: automatic
     - labelCaption: '{{GET_ApplicationInfo_.data.users[i].email}}'
     - hideLabel: false
+    - _disclosedFields:
+        array: []
     - label: >-
         {{GET_ApplicationInfo_.data.users[i].first_name + ' '
         +GET_ApplicationInfo_.data.users[i].last_name }}
+    - icon: ''
     - imageSize: 48
     - labelPosition: right
     - labelWrap: true

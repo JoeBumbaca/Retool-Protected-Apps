@@ -12,6 +12,8 @@ template:
     - _defaultValue: ''
     - tooltipText: ''
     - value: '#### Approve Company'
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

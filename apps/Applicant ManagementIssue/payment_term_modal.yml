@@ -27,6 +27,8 @@ template:
         - ''
         - ''
         - ''
+    - overlayMinWidth: null
+    - allowDeselect: true
     - inputValue: ''
     - hidden: false
     - customValidation: ''
@@ -71,6 +73,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Payment Term
     - _hasMigratedNestedItems: true

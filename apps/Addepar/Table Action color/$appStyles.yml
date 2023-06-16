@@ -1,0 +1,15 @@
+id: $appStyles
+type: setting
+subtype: AppStyles
+template:
+  ordered:
+    - value: >-
+        #rt-table-table1 > div.rt-tbody > div:nth-child(n) > div >
+        div:nth-child(5) > div > div > button:nth-child(1) {background-color:
+        lightblue}
+
+
+        #rt-table-table1 > div.rt-tbody > div:nth-child(n) > div >
+        div:nth-child(5) > div > div > button:nth-child(2) {background-color:
+        yellow}
+createdAt: 2023-05-16T16:00:15.385Z

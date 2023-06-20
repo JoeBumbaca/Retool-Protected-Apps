@@ -1,0 +1,78 @@
+id: tabs1
+type: widget
+subtype: TabsWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+    - _values:
+        - Tab 1
+        - Tab 2
+        - Tab 3
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - alignment: left
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - hidden: false
+    - data:
+        array: []
+    - targetContainerId: tabbedContainer1
+    - selectedItem: null
+    - showInEditor: false
+    - navigateContainer: true
+    - value: '{{ self.values[0] }}'
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+    - _hasMigratedNestedItems: true
+    - itemMode: static
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids:
+        - f3a70
+        - b0788
+        - 6aa1e
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+        - ''
+    - disabled: false
+    - linePosition: bottom
+    - _labels:
+        - ''
+        - ''
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    rowGroup: header
+    height: 0.8
+    width: 12
+createdAt: 2023-06-20T14:18:02.279Z

@@ -1,0 +1,198 @@
+id: table1
+type: widget
+subtype: TableWidget2
+template:
+  ordered:
+    - selectedRowKey: null
+    - _nextAfterCursor: ''
+    - _columnBackgroundColor:
+        ordered:
+          - b0c25: ''
+    - _defaultSort: null
+    - _clearChangesetOnSave: true
+    - disableEdits: false
+    - _rowHeight: small
+    - _columnIds:
+        - b0c25
+    - _isSaving: false
+    - _actionIds: []
+    - _clearChangeset: false
+    - caseSensitiveFiltering: false
+    - _limitOffsetRowCount: null
+    - selectedSourceRow: null
+    - disableSave: false
+    - _columnEditableOptions:
+        ordered:
+          - b0c25:
+              ordered: []
+    - _toolbarPosition: bottom
+    - _toolbarButtonLabel:
+        ordered:
+          - 1a: Filter
+          - 3c: Download
+          - 4d: Refresh
+    - _nextBeforeCursor: ''
+    - _persistRowSelection: false
+    - _toolbarButtonIcon:
+        ordered:
+          - 1a: bold/interface-text-formatting-filter-2
+          - 3c: bold/interface-download-button-2
+          - 4d: bold/interface-arrows-round-left
+    - changesetArray:
+        array: []
+    - _toolbarButtonType:
+        ordered:
+          - 1a: filter
+          - 3c: custom
+          - 4d: custom
+    - _columnOptionList:
+        ordered:
+          - b0c25:
+              ordered: []
+    - _columnValueOverride:
+        ordered:
+          - b0c25: ''
+    - _showBorder: true
+    - _templatePageSize: null
+    - _showHeader: true
+    - _currentPage: 0
+    - _columnKey:
+        ordered:
+          - b0c25: b
+    - hidden: false
+    - _toolbarButtonIds:
+        - 1a
+        - 3c
+        - 4d
+    - data: '{{ query1.data.parsedXml.p }}'
+    - _cellSelection: none
+    - _serverPaginated: false
+    - _linkedFilterId: null
+    - searchMode: fuzzy
+    - _columnCellTooltip:
+        ordered:
+          - b0c25: '{{ item }}'
+    - _columnFormat:
+        ordered:
+          - b0c25: string
+    - _cursorCache:
+        object: {}
+    - _calculatedPageSize: null
+    - _primaryKeyColumnId: ''
+    - selectedDataIndex: null
+    - _columnAlignment:
+        ordered:
+          - b0c25: left
+    - _actionIcon:
+        ordered: []
+    - _columnTooltip:
+        ordered:
+          - b0c25: ''
+    - _columnIcon:
+        ordered:
+          - b0c25: ''
+    - _pageSize: null
+    - showInEditor: false
+    - selectedSourceRows:
+        array: []
+    - _columnSortDisabled:
+        ordered:
+          - b0c25: false
+    - filterStack: null
+    - changesetObject: null
+    - _actionDisabled:
+        ordered: []
+    - _columnReferenceId:
+        ordered:
+          - b0c25: ''
+    - _rowSelection: single
+    - _columnCaption:
+        ordered:
+          - b0c25: ''
+    - _dynamicRowHeights: false
+    - _columnFormatOptions:
+        ordered:
+          - b0c25:
+              ordered: []
+    - _afterCursor: ''
+    - selectedRowKeys:
+        array: []
+    - _beforeCursor: ''
+    - searchTerm: ''
+    - selectedRows:
+        array: []
+    - _disabledVirtualization: false
+    - _showColumnBorders: false
+    - _columnSize:
+        ordered:
+          - b0c25: 100
+    - _serverPaginationType: limitOffsetBased
+    - _showFooter: true
+    - _virtualizeStartIndex: 0
+    - _defaultFilters:
+        ordered: []
+    - events:
+        - ordered:
+            - type: widget
+            - waitMs: '0'
+            - waitType: debounce
+            - event: clickToolbar
+            - method: exportData
+            - pluginId: table1
+            - targetId: 3c
+        - ordered:
+            - type: widget
+            - waitMs: '0'
+            - waitType: debounce
+            - event: clickToolbar
+            - method: refresh
+            - pluginId: table1
+            - targetId: 4d
+    - _columnEditable:
+        ordered:
+          - b0c25: ''
+    - pagination: null
+    - selectedDataIndexes:
+        array: []
+    - sortArray:
+        array: []
+    - _selectedCell: null
+    - overflowType: scroll
+    - selectedCell: null
+    - _defaultSelectedRow:
+        ordered:
+          - mode: index
+          - indexType: display
+          - index: 0
+    - _hasNextPage: false
+    - _columnPosition:
+        ordered:
+          - b0c25: center
+    - _enableSaveActions: true
+    - _columnPlaceholder:
+        ordered:
+          - b0c25: Enter value
+    - _defaultFilterOperator: and
+    - _actionLabel:
+        ordered: []
+    - _virtualizeEndIndex: 0
+    - selectedRow: null
+    - _actionHidden:
+        ordered: []
+    - maintainSpaceWhenHidden: false
+    - _columnHidden:
+        ordered:
+          - b0c25: ''
+    - _columnLabel:
+        ordered:
+          - b0c25: B
+    - _showToolbar: true
+style:
+  ordered: []
+position2:
+  position2:
+    row: 4.8
+    col: 5
+    height: 8
+    width: 7
+createdAt: 2023-06-26T15:24:15.448Z

@@ -1,0 +1,30 @@
+id: html1
+type: widget
+subtype: HTMLWidget
+template:
+  ordered:
+    - clickable: false
+    - css: |-
+        .myClass {
+          text-align: center;
+        }
+    - hidden: false
+    - html: |-
+        <div class="myClass">
+          Hello World
+        </div>
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - events:
+        ordered: []
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 51
+    col: 9
+    height: 0.2
+createdAt: 2023-04-20T16:37:46.623Z

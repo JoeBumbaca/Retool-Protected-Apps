@@ -1,0 +1,492 @@
+id: virtualizedTable1
+type: widget
+subtype: TableWidget2
+template:
+  ordered:
+    - selectedRowKey: null
+    - _nextAfterCursor: ''
+    - _columnBackgroundColor:
+        ordered:
+          - '68e74': ''
+          - '60886': ''
+          - ec690: ''
+          - aa5e4: ''
+          - a49f5: ''
+          - e0a34: ''
+    - _defaultSort: null
+    - _clearChangesetOnSave: false
+    - disableEdits: false
+    - _rowHeight: small
+    - _columnIds:
+        - '68e74'
+        - '60886'
+        - ec690
+        - aa5e4
+        - a49f5
+        - e0a34
+    - _isSaving: false
+    - _actionIds: []
+    - _clearChangeset: false
+    - caseSensitiveFiltering: false
+    - _limitOffsetRowCount: null
+    - selectedSourceRow: null
+    - disableSave: false
+    - _columnEditableOptions:
+        ordered:
+          - '68e74':
+              ordered: []
+          - '60886':
+              ordered: []
+          - ec690:
+              ordered: []
+          - aa5e4:
+              ordered: []
+          - a49f5:
+              ordered: []
+          - e0a34:
+              ordered: []
+    - _toolbarPosition: top
+    - _groupByColumns: []
+    - _toolbarButtonLabel:
+        ordered: []
+    - _nextBeforeCursor: ''
+    - _persistRowSelection: false
+    - _toolbarButtonIcon:
+        ordered: []
+    - changesetArray:
+        array: []
+    - _toolbarButtonType:
+        ordered: []
+    - _columnOptionList:
+        ordered:
+          - '60886':
+              ordered: []
+          - a49f5:
+              ordered:
+                - manualData: []
+    - _columnValueOverride:
+        ordered:
+          - '68e74': ''
+          - '60886': ''
+          - ec690: ''
+          - aa5e4: ''
+          - a49f5: '{{ _.startCase(item) }}'
+          - e0a34: ''
+    - _showBorder: true
+    - _templatePageSize: null
+    - _showHeader: true
+    - _currentPage: null
+    - _columnKey:
+        ordered:
+          - '68e74': id
+          - '60886': first_name
+          - ec690: last_name
+          - aa5e4: email
+          - a49f5: role
+          - e0a34: enabled
+    - hidden: false
+    - _toolbarButtonIds: []
+    - data: >-
+        [{"id":1,"first_name":"Betta","last_name":"Jelliman","email":"bjelliman0@fema.gov","role":"editor","enabled":false},
+
+        {"id":2,"first_name":"Desdemona","last_name":"Skates","email":"dskates1@berkeley.edu","role":"admin","enabled":true},
+
+        {"id":3,"first_name":"Richmond","last_name":"Grisard","email":"rgrisard2@pagesperso-orange.fr","role":"editor","enabled":false},
+
+        {"id":4,"first_name":"Nedi","last_name":"Scad","email":"nscad3@marriott.com","role":"editor","enabled":true},
+
+        {"id":5,"first_name":"Shaylah","last_name":"Doble","email":"sdoble4@mac.com","role":"admin","enabled":true},
+
+        {"id":6,"first_name":"Keane","last_name":"Tallon","email":"ktallon5@webnode.com","role":"editor","enabled":false},
+
+        {"id":7,"first_name":"Lexis","last_name":"Meynell","email":"lmeynell6@pen.io","role":"admin","enabled":false},
+
+        {"id":8,"first_name":"Joana","last_name":"Hellcat","email":"jhellcat7@stumbleupon.com","role":"viewer","enabled":false},
+
+        {"id":9,"first_name":"Di","last_name":"Renish","email":"drenish8@yellowpages.com","role":"admin","enabled":false},
+
+        {"id":10,"first_name":"Amberly","last_name":"Dooher","email":"adooher9@amazon.com","role":"editor","enabled":false},
+
+        {"id":11,"first_name":"Bennett","last_name":"Whitelock","email":"bwhitelocka@t.co","role":"viewer","enabled":true},
+
+        {"id":12,"first_name":"Gael","last_name":"Crut","email":"gcrutb@craigslist.org","role":"viewer","enabled":true},
+
+        {"id":13,"first_name":"Dorian","last_name":"Cosham","email":"dcoshamc@ted.com","role":"editor","enabled":false},
+
+        {"id":14,"first_name":"Arley","last_name":"Edgson","email":"aedgsond@walmart.com","role":"editor","enabled":true},
+
+        {"id":15,"first_name":"Joan","last_name":"Aynscombe","email":"jaynscombee@nba.com","role":"viewer","enabled":false},
+
+        {"id":16,"first_name":"Karon","last_name":"Lindback","email":"klindbackf@chron.com","role":"viewer","enabled":false},
+
+        {"id":17,"first_name":"Anica","last_name":"Stood","email":"astoodg@seattletimes.com","role":"viewer","enabled":false},
+
+        {"id":18,"first_name":"Goldy","last_name":"Osipov","email":"gosipovh@wp.com","role":"editor","enabled":false},
+
+        {"id":19,"first_name":"Carolin","last_name":"Pioli","email":"cpiolii@posterous.com","role":"viewer","enabled":false},
+
+        {"id":20,"first_name":"Clim","last_name":"Balog","email":"cbalogj@slate.com","role":"viewer","enabled":false},
+
+        {"id":21,"first_name":"Bertrando","last_name":"Moult","email":"bmoultk@tripadvisor.com","role":"editor","enabled":false},
+
+        {"id":22,"first_name":"Jonathon","last_name":"Lounds","email":"jloundsl@nba.com","role":"editor","enabled":true},
+
+        {"id":23,"first_name":"Philomena","last_name":"Ansteys","email":"pansteysm@indiatimes.com","role":"editor","enabled":false},
+
+        {"id":24,"first_name":"Igor","last_name":"Nana","email":"inanan@marketwatch.com","role":"admin","enabled":true},
+
+        {"id":25,"first_name":"Tracey","last_name":"Cissen","email":"tcisseno@cam.ac.uk","role":"editor","enabled":true},
+
+        {"id":26,"first_name":"Ulysses","last_name":"Antonioni","email":"uantonionip@archive.org","role":"viewer","enabled":false},
+
+        {"id":27,"first_name":"Cullan","last_name":"Sedgeman","email":"csedgemanq@sfgate.com","role":"admin","enabled":true},
+
+        {"id":28,"first_name":"Griswold","last_name":"Franceschielli","email":"gfranceschiellir@yahoo.co.jp","role":"admin","enabled":false},
+
+        {"id":29,"first_name":"Fawn","last_name":"Crop","email":"fcrops@hud.gov","role":"viewer","enabled":false},
+
+        {"id":30,"first_name":"Aurel","last_name":"O'Griffin","email":"aogriffint@opera.com","role":"editor","enabled":true},
+
+        {"id":31,"first_name":"Barrie","last_name":"Thaim","email":"bthaimu@paginegialle.it","role":"viewer","enabled":true},
+
+        {"id":32,"first_name":"Chic","last_name":"Nowlan","email":"cnowlanv@gravatar.com","role":"editor","enabled":false},
+
+        {"id":33,"first_name":"Sallee","last_name":"Dowker","email":"sdowkerw@meetup.com","role":"viewer","enabled":false},
+
+        {"id":34,"first_name":"Madlin","last_name":"Tierny","email":"mtiernyx@disqus.com","role":"editor","enabled":false},
+
+        {"id":35,"first_name":"Pepito","last_name":"Stit","email":"pstity@usa.gov","role":"admin","enabled":true},
+
+        {"id":36,"first_name":"Evelina","last_name":"Sylvester","email":"esylvesterz@nifty.com","role":"editor","enabled":true},
+
+        {"id":37,"first_name":"Ingeberg","last_name":"Cassedy","email":"icassedy10@rakuten.co.jp","role":"viewer","enabled":false},
+
+        {"id":38,"first_name":"Mildred","last_name":"Ranyell","email":"mranyell11@ucoz.ru","role":"admin","enabled":false},
+
+        {"id":39,"first_name":"Elinore","last_name":"Bielfelt","email":"ebielfelt12@tiny.cc","role":"admin","enabled":true},
+
+        {"id":40,"first_name":"Nanon","last_name":"Babar","email":"nbabar13@bizjournals.com","role":"editor","enabled":false},
+
+        {"id":41,"first_name":"Corabella","last_name":"Spratt","email":"cspratt14@fc2.com","role":"editor","enabled":false},
+
+        {"id":42,"first_name":"Torin","last_name":"Fender","email":"tfender15@toplist.cz","role":"admin","enabled":true},
+
+        {"id":43,"first_name":"Dillie","last_name":"Goodayle","email":"dgoodayle16@tumblr.com","role":"editor","enabled":false},
+
+        {"id":44,"first_name":"Joly","last_name":"Arcase","email":"jarcase17@4shared.com","role":"admin","enabled":true},
+
+        {"id":45,"first_name":"Claire","last_name":"Kinman","email":"ckinman18@123-reg.co.uk","role":"admin","enabled":false},
+
+        {"id":46,"first_name":"Roda","last_name":"Simka","email":"rsimka19@msn.com","role":"admin","enabled":false},
+
+        {"id":47,"first_name":"Tabitha","last_name":"Kasper","email":"tkasper1a@smugmug.com","role":"editor","enabled":true},
+
+        {"id":48,"first_name":"Sybille","last_name":"Wilden","email":"swilden1b@chicagotribune.com","role":"editor","enabled":true},
+
+        {"id":49,"first_name":"Brandie","last_name":"Maro","email":"bmaro1c@drupal.org","role":"admin","enabled":false},
+
+        {"id":50,"first_name":"Jud","last_name":"Whewell","email":"jwhewell1d@nba.com","role":"editor","enabled":true},
+
+        {"id":51,"first_name":"Malissia","last_name":"Routham","email":"mroutham1e@cisco.com","role":"viewer","enabled":false},
+
+        {"id":52,"first_name":"Claus","last_name":"Cutress","email":"ccutress1f@apple.com","role":"editor","enabled":false},
+
+        {"id":53,"first_name":"Cassandre","last_name":"Speers","email":"cspeers1g@networksolutions.com","role":"editor","enabled":true},
+
+        {"id":54,"first_name":"Kenton","last_name":"O'Kinneally","email":"kokinneally1h@simplemachines.org","role":"admin","enabled":true},
+
+        {"id":55,"first_name":"Marj","last_name":"Powers","email":"mpowers1i@weebly.com","role":"editor","enabled":false},
+
+        {"id":56,"first_name":"Fianna","last_name":"Medler","email":"fmedler1j@mapy.cz","role":"admin","enabled":false},
+
+        {"id":57,"first_name":"Bradney","last_name":"MacAskie","email":"bmacaskie1k@senate.gov","role":"admin","enabled":false},
+
+        {"id":58,"first_name":"Bellina","last_name":"Footitt","email":"bfootitt1l@livejournal.com","role":"viewer","enabled":false},
+
+        {"id":59,"first_name":"Rolando","last_name":"Cuer","email":"rcuer1m@seattletimes.com","role":"editor","enabled":true},
+
+        {"id":60,"first_name":"Odell","last_name":"Freda","email":"ofreda1n@apple.com","role":"viewer","enabled":true},
+
+        {"id":61,"first_name":"Leonid","last_name":"Froment","email":"lfroment1o@oakley.com","role":"editor","enabled":false},
+
+        {"id":62,"first_name":"Gnni","last_name":"Woltering","email":"gwoltering1p@jigsy.com","role":"viewer","enabled":false},
+
+        {"id":63,"first_name":"Augy","last_name":"Whittall","email":"awhittall1q@goodreads.com","role":"viewer","enabled":false},
+
+        {"id":64,"first_name":"Syman","last_name":"Worling","email":"sworling1r@blinklist.com","role":"editor","enabled":true},
+
+        {"id":65,"first_name":"Malvina","last_name":"Narramor","email":"mnarramor1s@youtube.com","role":"editor","enabled":true},
+
+        {"id":66,"first_name":"Lamont","last_name":"Denison","email":"ldenison1t@google.de","role":"admin","enabled":true},
+
+        {"id":67,"first_name":"Stanly","last_name":"Edser","email":"sedser1u@cloudflare.com","role":"admin","enabled":true},
+
+        {"id":68,"first_name":"Herminia","last_name":"Fairweather","email":"hfairweather1v@addtoany.com","role":"admin","enabled":true},
+
+        {"id":69,"first_name":"Deck","last_name":"Conybear","email":"dconybear1w@livejournal.com","role":"editor","enabled":false},
+
+        {"id":70,"first_name":"Etheline","last_name":"Pipworth","email":"epipworth1x@360.cn","role":"viewer","enabled":false},
+
+        {"id":71,"first_name":"Germain","last_name":"Reeds","email":"greeds1y@reference.com","role":"editor","enabled":false},
+
+        {"id":72,"first_name":"Bernardo","last_name":"Fierro","email":"bfierro1z@barnesandnoble.com","role":"editor","enabled":false},
+
+        {"id":73,"first_name":"Job","last_name":"Fittis","email":"jfittis20@utexas.edu","role":"viewer","enabled":false},
+
+        {"id":74,"first_name":"Lorant","last_name":"Siberry","email":"lsiberry21@cnet.com","role":"viewer","enabled":false},
+
+        {"id":75,"first_name":"Bree","last_name":"Pilfold","email":"bpilfold22@macromedia.com","role":"admin","enabled":false},
+
+        {"id":76,"first_name":"Valentina","last_name":"Vignaux","email":"vvignaux23@exblog.jp","role":"editor","enabled":true},
+
+        {"id":77,"first_name":"Rachelle","last_name":"Colt","email":"rcolt24@irs.gov","role":"admin","enabled":true},
+
+        {"id":78,"first_name":"Ainslie","last_name":"Lundie","email":"alundie25@arizona.edu","role":"viewer","enabled":false},
+
+        {"id":79,"first_name":"Leonore","last_name":"Aldiss","email":"laldiss26@nifty.com","role":"editor","enabled":true},
+
+        {"id":80,"first_name":"Kingsly","last_name":"O'
+        Clovan","email":"koclovan27@ca.gov","role":"viewer","enabled":true},
+
+        {"id":81,"first_name":"Price","last_name":"Cluet","email":"pcluet28@weibo.com","role":"admin","enabled":false},
+
+        {"id":82,"first_name":"Noelle","last_name":"Woollends","email":"nwoollends29@imgur.com","role":"editor","enabled":true},
+
+        {"id":83,"first_name":"Shellie","last_name":"Whittick","email":"swhittick2a@php.net","role":"viewer","enabled":true},
+
+        {"id":84,"first_name":"Keen","last_name":"Bythway","email":"kbythway2b@rakuten.co.jp","role":"admin","enabled":false},
+
+        {"id":85,"first_name":"Marcie","last_name":"Gaddas","email":"mgaddas2c@livejournal.com","role":"viewer","enabled":false},
+
+        {"id":86,"first_name":"Mendel","last_name":"Gregson","email":"mgregson2d@deviantart.com","role":"viewer","enabled":true},
+
+        {"id":87,"first_name":"Marillin","last_name":"Dorkins","email":"mdorkins2e@redcross.org","role":"viewer","enabled":false},
+
+        {"id":88,"first_name":"Anastasie","last_name":"Ivanovic","email":"aivanovic2f@xing.com","role":"viewer","enabled":true},
+
+        {"id":89,"first_name":"Bary","last_name":"Gurko","email":"bgurko2g@ebay.com","role":"editor","enabled":true},
+
+        {"id":90,"first_name":"Erinna","last_name":"Hein","email":"ehein2h@cloudflare.com","role":"editor","enabled":true},
+
+        {"id":91,"first_name":"Abbe","last_name":"Jobey","email":"ajobey2i@github.com","role":"viewer","enabled":false},
+
+        {"id":92,"first_name":"Tye","last_name":"O'Toole","email":"totoole2j@liveinternet.ru","role":"admin","enabled":false},
+
+        {"id":93,"first_name":"Simon","last_name":"Pashbee","email":"spashbee2k@imgur.com","role":"admin","enabled":true},
+
+        {"id":94,"first_name":"Roy","last_name":"Blase","email":"rblase2l@usda.gov","role":"editor","enabled":false},
+
+        {"id":95,"first_name":"Lottie","last_name":"Wiburn","email":"lwiburn2m@odnoklassniki.ru","role":"viewer","enabled":true},
+
+        {"id":96,"first_name":"Jennette","last_name":"McConigal","email":"jmcconigal2n@ox.ac.uk","role":"viewer","enabled":false},
+
+        {"id":97,"first_name":"Geoffrey","last_name":"Hanlon","email":"ghanlon2o@usnews.com","role":"editor","enabled":false},
+
+        {"id":98,"first_name":"Carie","last_name":"Batt","email":"cbatt2p@csmonitor.com","role":"admin","enabled":true},
+
+        {"id":99,"first_name":"Audy","last_name":"Wildman","email":"awildman2q@ft.com","role":"editor","enabled":false},
+
+        {"id":100,"first_name":"Arleen","last_name":"Tackes","email":"atackes2r@slideshare.net","role":"editor","enabled":false}]
+    - _cellSelection: none
+    - _serverPaginated: false
+    - _linkedFilterId: null
+    - searchMode: fuzzy
+    - _columnCellTooltip:
+        ordered:
+          - a49f5: ''
+    - _columnFormat:
+        ordered:
+          - '68e74': decimal
+          - '60886': string
+          - ec690: string
+          - aa5e4: link
+          - a49f5: tag
+          - e0a34: boolean
+    - _paginationOffset: null
+    - _cursorCache:
+        object: {}
+    - _calculatedPageSize: null
+    - _primaryKeyColumnId: '68e74'
+    - selectedDataIndex: null
+    - _columnAlignment:
+        ordered:
+          - '68e74': right
+          - '60886': left
+          - ec690: left
+          - aa5e4: left
+          - a49f5: left
+          - e0a34: left
+    - _actionIcon:
+        ordered: []
+    - _columnTooltip:
+        ordered:
+          - '68e74': ''
+          - '60886': ''
+          - ec690: ''
+          - aa5e4: ''
+          - a49f5: test
+          - e0a34: ''
+    - _columnIcon:
+        ordered:
+          - '68e74': ''
+          - '60886': ''
+          - ec690: ''
+          - aa5e4: ''
+          - a49f5: ''
+          - e0a34: ''
+    - _pageSize: null
+    - showInEditor: false
+    - selectedSourceRows:
+        array: []
+    - hideHeader: false
+    - _columnSortDisabled:
+        ordered:
+          - '60886': false
+          - a49f5: false
+    - filterStack: null
+    - _currentPageClamped: 0
+    - changesetObject: null
+    - _actionDisabled:
+        ordered: []
+    - _columnReferenceId:
+        ordered:
+          - '68e74': ''
+          - '60886': ''
+          - ec690: ''
+          - aa5e4: ''
+          - a49f5: ''
+          - e0a34: ''
+    - _rowSelection: single
+    - _columnCaption:
+        ordered:
+          - '68e74': ''
+          - '60886': ''
+          - ec690: ''
+          - aa5e4: ''
+          - a49f5: ''
+          - e0a34: ''
+    - _dynamicRowHeights: false
+    - _columnFormatOptions:
+        ordered:
+          - '68e74':
+              ordered:
+                - showSeparators: true
+          - '60886':
+              ordered: []
+          - ec690:
+              ordered: []
+          - aa5e4:
+              ordered:
+                - showUnderline: hover
+          - a49f5:
+              ordered:
+                - automaticColors: true
+          - e0a34:
+              ordered: []
+    - _afterCursor: ''
+    - selectedRowKeys:
+        array: []
+    - _disclosedFields:
+        array: []
+    - _beforeCursor: ''
+    - showColumnBorders: false
+    - searchTerm: ''
+    - selectedRows:
+        array: []
+    - _disabledVirtualization: false
+    - _showColumnBorders: false
+    - _columnSize:
+        ordered:
+          - '68e74': 100
+          - '60886': 100
+          - ec690: 100
+          - aa5e4: 100
+          - a49f5: 100
+          - e0a34: 100
+    - _serverPaginationType: limitOffsetBased
+    - _showFooter: true
+    - _groupedColumnConfig:
+        ordered: []
+    - _virtualizeStartIndex: 0
+    - _defaultFilters:
+        ordered: []
+    - events:
+        - ordered:
+            - event: clickCell
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: aa5e4
+            - params:
+                ordered:
+                  - url: mailto:{{ item }}
+            - waitType: debounce
+            - waitMs: '0'
+    - _columnEditable:
+        ordered:
+          - '68e74': false
+          - '60886': 'true'
+          - ec690: false
+          - aa5e4: false
+          - a49f5: 'false'
+          - e0a34: false
+    - _totalRowCount: null
+    - pagination: null
+    - selectedDataIndexes:
+        array: []
+    - sortArray:
+        array: []
+    - _selectedCell: null
+    - overflowType: scroll
+    - hideFooter: false
+    - selectedCell: null
+    - _defaultSelectedRow:
+        ordered: []
+    - _hasNextPage: false
+    - _columnPosition:
+        ordered:
+          - '68e74': center
+          - '60886': center
+          - ec690: center
+          - aa5e4: center
+          - a49f5: center
+          - e0a34: center
+    - _enableSaveActions: false
+    - sort: null
+    - _columnPlaceholder:
+        ordered:
+          - '60886': ''
+          - a49f5: ''
+    - _defaultFilterOperator: and
+    - _actionLabel:
+        ordered: []
+    - _virtualizeEndIndex: 0
+    - selectedRow: null
+    - _actionHidden:
+        ordered: []
+    - maintainSpaceWhenHidden: false
+    - _columnHidden:
+        ordered:
+          - '68e74': ''
+          - '60886': ''
+          - ec690: ''
+          - aa5e4: ''
+          - a49f5: ''
+          - e0a34: ''
+    - _columnLabel:
+        ordered:
+          - '68e74': ID
+          - '60886': First name
+          - ec690: Last name
+          - aa5e4: Email
+          - a49f5: Role
+          - e0a34: Enabled
+    - _showToolbar: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.20000000000000062
+    height: 8
+    width: 8
+createdAt: 2023-04-04T17:17:40.566Z

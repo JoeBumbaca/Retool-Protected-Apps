@@ -1,0 +1,139 @@
+id: multiselect1
+type: widget
+subtype: MultiselectWidget2
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+    - showSelectionIndicator: true
+    - _values:
+        - Option 1
+        - Option 2
+        - Option 3
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - readOnly: ''
+    - iconAfter: ''
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - wrapTags: true
+    - overlayMinWidth: null
+    - selectedIndexes:
+        array: []
+    - selectedItems:
+        array: []
+    - inputValue: ''
+    - persistSearchTerm: false
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - maxCount: null
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+    - minLines: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: true
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '["Option 1"]'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+    - placeholder: Select options
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+    - _disclosedFields:
+        array: []
+    - itemAdornmentSize: auto
+    - label: Label
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - events:
+        ordered: []
+    - _ids:
+        - 71bc4
+        - 6633c
+        - 4d2a6
+    - emptyMessage: No options
+    - selectedLabels:
+        array: []
+    - overlayMaxHeight: 375
+    - maxLines: null
+    - loading: false
+    - disabled: 'true'
+    - labelPosition: left
+    - minCount: null
+    - _labels:
+        - ''
+        - ''
+        - ''
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.2
+    col: 9
+    height: 1
+createdAt: 2023-05-19T17:11:06.468Z

@@ -69,7 +69,7 @@ template:
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
-    - runWhenPageLoads: false
+    - runWhenPageLoads: true
     - transformer: >-
         // type your code here
 

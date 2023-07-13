@@ -11,6 +11,8 @@ template:
     - text: Previous
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - styleVariant: outline
     - submit: false
     - iconBefore: bold/interface-arrows-left-alternate

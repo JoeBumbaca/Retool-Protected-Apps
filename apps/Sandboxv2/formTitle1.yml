@@ -11,6 +11,8 @@ template:
     - verticalAlign: center
     - tooltipText: ''
     - value: '#### Form title'
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

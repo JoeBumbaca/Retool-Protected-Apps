@@ -11,6 +11,8 @@ template:
     - text: Next
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - submit: false
     - iconBefore: ''
     - events:

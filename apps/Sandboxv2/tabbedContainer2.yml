@@ -29,6 +29,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - currentViewIndex: null
     - _hasMigratedNestedItems: true
     - transition: none
@@ -79,4 +81,5 @@ position2:
     row: 26.6
     col: 9
     height: 0.2
+    width: 3
 createdAt: 2023-06-06T19:13:52.221Z

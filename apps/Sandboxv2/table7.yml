@@ -146,6 +146,7 @@ template:
     - showInEditor: false
     - selectedSourceRows:
         array: []
+    - hideHeader: false
     - _columnSortDisabled:
         ordered:
           - d1fda: false
@@ -196,7 +197,10 @@ template:
     - _afterCursor: ''
     - selectedRowKeys:
         array: []
+    - _disclosedFields:
+        array: []
     - _beforeCursor: ''
+    - showColumnBorders: false
     - searchTerm: ''
     - selectedRows:
         array: []
@@ -233,6 +237,7 @@ template:
         array: []
     - _selectedCell: null
     - overflowType: scroll
+    - hideFooter: false
     - selectedCell: null
     - _defaultSelectedRow:
         ordered:
@@ -249,6 +254,8 @@ template:
           - acc25: center
           - '94355': center
     - _enableSaveActions: true
+    - sort:
+        array: []
     - _columnPlaceholder:
         ordered:
           - d1fda: Enter value

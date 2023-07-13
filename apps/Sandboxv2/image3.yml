@@ -1,4 +1,4 @@
-id: image1
+id: image3
 type: widget
 subtype: ImageWidget2
 template:
@@ -29,8 +29,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 83
-    col: 7
+    row: 151.8
+    col: 2
     height: 3
-    width: 4
-createdAt: 2023-06-09T18:07:48.946Z
+    width: 2
+createdAt: 2023-07-13T20:49:22.571Z

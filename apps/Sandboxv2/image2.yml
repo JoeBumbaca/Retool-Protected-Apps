@@ -17,6 +17,8 @@ template:
     - flipHorizontal: false
     - aspectRatio: null
     - storageBlobId: ''
+    - _disclosedFields:
+        array: []
     - altText: ''
     - dbBlobId: 012ea3a9-776d-4d6b-9705-0b11e4ed36c9
     - events:

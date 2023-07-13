@@ -11,6 +11,8 @@ template:
     - text: Submit
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - submit: true
     - iconBefore: ''
     - events:

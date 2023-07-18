@@ -1,0 +1,112 @@
+id: chart1
+type: widget
+subtype: PlotlyChartWidget
+template:
+  ordered:
+    - dataseries:
+        ordered:
+          - '0':
+              ordered:
+                - label: id
+                - datasource: '{{query2.data[''id'']}}'
+                - chartType: pie
+                - aggregationType: sum
+                - color: null
+                - colors:
+                    ordered:
+                      - '0': '#033663'
+                      - '1': '#247BC7'
+                - visible: true
+                - hovertemplate: '<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>'
+          - '1':
+              ordered:
+                - label: pageId
+                - datasource: '{{query2.data[''pageId'']}}'
+                - chartType: pie
+                - aggregationType: sum
+                - color: null
+                - colors:
+                    ordered:
+                      - '0': '#033663'
+                      - '1': '#247BC7'
+                - visible: false
+                - hovertemplate: '<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>'
+          - '2':
+              ordered:
+                - label: userId
+                - datasource: '{{query2.data[''userId'']}}'
+                - chartType: pie
+                - aggregationType: sum
+                - color: null
+                - colors:
+                    ordered:
+                      - '0': '#033663'
+                      - '1': '#247BC7'
+                - visible: false
+                - hovertemplate: '<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>'
+          - '3':
+              ordered:
+                - label: branchId
+                - datasource: '{{query2.data[''branchId'']}}'
+                - chartType: pie
+                - aggregationType: sum
+                - color: null
+                - colors:
+                    ordered:
+                      - '0': '#033663'
+                      - '1': '#247BC7'
+                - visible: false
+                - hovertemplate: '<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>'
+          - '4':
+              ordered:
+                - label: checksum
+                - datasource: '{{query2.data[''checksum'']}}'
+                - chartType: pie
+                - aggregationType: sum
+                - color: null
+                - colors:
+                    ordered:
+                      - '0': '#033663'
+                      - '1': '#247BC7'
+                - visible: false
+                - hovertemplate: '<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>'
+    - isDataTemplateDirty: false
+    - datasource: ''
+    - isJsonTemplateDirty: false
+    - groupByDropdown: ''
+    - datasourceInputMode: javascript
+    - datasourceDataType: object
+    - layout: ''
+    - xAxisDropdown: createdAt
+    - data: ''
+    - isStackSeriesEnabled: false
+    - xAxisTickFormat: ''
+    - skipDatasourceUpdate: true
+    - datasourceJS: '{{query2.data}}'
+    - yAxisTickFormat: ''
+    - datasourcePluginType: null
+    - xAxisType: default
+    - datasourcePluginId: null
+    - legendAlignment: bottom
+    - isLayoutJsonDirty: false
+    - chartType: pie
+    - title: ''
+    - xAxis: '{{query2.data.createdAt}}'
+    - groupByMode: dropdown
+    - onPointSelectQuery: ''
+    - xAxisMode: dropdown
+    - shouldShowLegend: true
+    - yAxisTitle: ''
+    - selectedPoints:
+        array: []
+    - xAxisTitle: ''
+    - groupByJS: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.3999999999999995
+    col: 1
+    height: 14.4
+    width: 6
+createdAt: 2023-04-20T20:58:01.480Z

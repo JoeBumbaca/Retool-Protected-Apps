@@ -1,0 +1,13 @@
+version: 43.0.9
+pageUuid: 063e9660-dfbe-11ed-9c62-c7b1f010e11d
+appTemplate:
+  mobileAppSettings:
+    object:
+      mobileOfflineModeEnabled: false
+      mobileOfflineModeDelaySync: false
+      displaySetting:
+        object:
+          landscapeMode: false
+          tabletMode: false
+  version: 2.116.2
+  experimentalDataTabEnabled: true

@@ -1,0 +1,29 @@
+id: text34
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **Push notifications:** {{query_get_product.data.push_enabled == true ?
+        'Yes' : 'No'}}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: 8be98
+    row: 3.3999999999999955
+    col: 3
+    height: 0.6
+createdAt: 2022-06-09T09:43:12.892Z

@@ -1,0 +1,27 @@
+id: text72
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '**Created Via:** {{query_get_product.data.created_via}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: 8be98
+    row: 6.6
+    col: 3
+    height: 0.6
+createdAt: 2023-02-14T09:40:00.156Z

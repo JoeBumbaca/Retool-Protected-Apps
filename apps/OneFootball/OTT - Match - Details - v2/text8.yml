@@ -1,0 +1,29 @@
+id: text8
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **Competition:** {{query_get_product.data.match.competition.name}}
+        ({{query_get_product.data.match.competition.id}})
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: 8be98
+    row: 1.8000000000000014
+    col: 3
+    height: 0.6
+createdAt: 2022-06-07T10:41:53.894Z

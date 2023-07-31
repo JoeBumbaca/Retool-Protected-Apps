@@ -1,0 +1,28 @@
+id: text41
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **Sales disabled:** {{query_get_product.data.sales_disabled == true ?
+        'Yes' : 'No'}} 
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: 8be98
+    row: 2.5999999999999934
+    height: 0.6
+createdAt: 2022-06-09T10:44:01.415Z

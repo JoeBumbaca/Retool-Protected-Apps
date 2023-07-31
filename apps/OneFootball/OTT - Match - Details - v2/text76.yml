@@ -1,0 +1,31 @@
+id: text76
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **Encoding start time offset:** {{
+        query_get_product.data.encoding_build_up_minutes }}m ({{
+        query_get_product.data.encoding_start_time.toLocaleString() }})
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: 77a1c
+    row: 0.3999999999999999
+    col: 5
+    height: 0.6
+    width: 4
+createdAt: 2023-02-14T15:09:06.412Z

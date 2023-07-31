@@ -1,0 +1,290 @@
+id: table7
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: standard
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: path
+            value: 163.5625
+        - object:
+            id: health
+            value: 129.109375
+        - object:
+            id: Timestamp
+            value: 195.78125
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - health: Status
+          - path: Path
+          - reason: Reason
+          - details: Details
+          - status: Status
+          - timestamp: Timestamp
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - team_home: ''
+          - period: ''
+          - details: ''
+          - video_avg_frame_rate: ''
+          - rights_id: ''
+          - season: ''
+          - reason: ''
+          - path: ''
+          - score_away_first_half: ''
+          - coverage: ''
+          - kickoff: ''
+          - group_name: ''
+          - video_height: ''
+          - away_team_id: ''
+          - score_home: ''
+          - home_team_name: ''
+          - team_away: ''
+          - provider: ''
+          - status: '{{ self === ''ok'' ? ''green'' : ''red'' }}'
+          - minute: ''
+          - score_home_first_half: ''
+          - video_bit_rate: ''
+          - Timestamp: ''
+          - timestamp: ''
+          - minute_display: ''
+          - matchday: ''
+          - type: ''
+          - score_away: ''
+          - id: ''
+          - health: '{{self == ''error'' ? ''red'' : ''green''}}'
+          - away_team_name: ''
+          - sku: ''
+          - home_team_id: ''
+          - stadium: ''
+          - competition: ''
+          - ts: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - team_home: true
+          - period: true
+          - details: true
+          - video_avg_frame_rate: false
+          - rights_id: false
+          - season: true
+          - reason: true
+          - path: true
+          - score_away_first_half: true
+          - coverage: true
+          - kickoff: false
+          - group_name: true
+          - video_height: false
+          - away_team_id: false
+          - score_home: true
+          - home_team_name: false
+          - team_away: true
+          - provider: false
+          - minute: true
+          - score_home_first_half: true
+          - video_bit_rate: false
+          - Timestamp: true
+          - minute_display: true
+          - matchday: true
+          - type: true
+          - score_away: true
+          - id: false
+          - health: true
+          - away_team_name: false
+          - sku: false
+          - home_team_id: false
+          - stadium: true
+          - competition: true
+          - ts: true
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - team_home: true
+          - period: true
+          - details: true
+          - video_avg_frame_rate: true
+          - rights_id: false
+          - season: true
+          - reason: true
+          - path: true
+          - score_away_first_half: true
+          - coverage: true
+          - kickoff: false
+          - group_name: true
+          - video_height: true
+          - away_team_id: false
+          - score_home: true
+          - home_team_name: false
+          - team_away: true
+          - provider: false
+          - minute: true
+          - score_home_first_half: true
+          - video_bit_rate: true
+          - Timestamp: true
+          - minute_display: true
+          - matchday: true
+          - type: true
+          - score_away: true
+          - id: false
+          - health: true
+          - away_team_name: false
+          - sku: false
+          - home_team_id: false
+          - stadium: true
+          - competition: true
+          - ts: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ query_get_health_checks.data.stream }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: false
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 21
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - timestamp: '{{new Date(Date.parse(self)).toLocaleString()}}'
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - Timestamp
+        - type
+        - health
+        - path
+        - reason
+        - details
+        - video_height
+        - video_bit_rate
+        - video_avg_frame_rate
+    - defaultSelectedRow: none
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - timestamp
+        - status
+        - path
+        - reason
+        - details
+        - video_height
+        - video_bit_rate
+        - video_avg_frame_rate
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: 0f157
+    row: -3.885780586188048e-16
+    height: 24.6
+    width: 12
+createdAt: 2023-02-10T16:32:05.637Z

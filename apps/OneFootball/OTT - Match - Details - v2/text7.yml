@@ -1,0 +1,31 @@
+id: text7
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        #### ⚽️ Kickoff
+
+        **{{new
+        Date(Date.parse(query_get_product.data.match.kickoff)).toLocaleString()}}**
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    row: -3.219646771412954e-15
+    col: 6
+    height: 0.6
+    width: 2
+createdAt: 2022-06-07T10:40:23.781Z

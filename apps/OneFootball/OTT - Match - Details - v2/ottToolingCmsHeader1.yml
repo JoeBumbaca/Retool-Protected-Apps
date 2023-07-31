@@ -1,0 +1,18 @@
+id: ottToolingCmsHeader1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: OTT Tooling CMS - Header
+    - pageUuid: 7cc06262-aaf8-478c-b6c5-21558fd0045a
+    - childNamespace: ottToolingCmsHeader1
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    height: 0.4
+    width: 12
+createdAt: 2022-11-30T17:57:02.087Z

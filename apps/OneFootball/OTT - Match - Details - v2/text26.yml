@@ -1,0 +1,32 @@
+id: text26
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **Source Type:** {{
+
+        {srt:"SRT-Caller(SRT)", udp:"SRT-Listener(UDP)", rtmp:
+        "RTMP"}[query_get_product.data.source_type]
+
+        }}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: 77a1c
+    row: 2.8000000000000154
+    height: 0.6
+createdAt: 2022-06-08T09:24:42.498Z

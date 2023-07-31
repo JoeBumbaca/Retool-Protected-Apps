@@ -1,0 +1,205 @@
+id: tablePurchases
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: standard
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - Apple:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+    - columnWidths: []
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - store: Store
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - test2: ''
+          - Store: ''
+          - store: ''
+          - Coupon: ''
+          - name: ''
+          - TotalPurchases: ''
+          - Count: ''
+          - Android: ''
+          - '0': ''
+          - '1': ''
+          - '2': ''
+          - test: ''
+          - '3': ''
+          - '4': ''
+          - '5': ''
+          - Custom Column 1: ''
+          - Custom Column 2: ''
+          - Custom Column 3: ''
+          - Custom Column 4: ''
+          - Custom Column 5: ''
+          - type: ''
+          - Apple: ''
+          - Custom Column 6: ''
+          - Adyen: ''
+    - columnFrozenAlignments:
+        ordered:
+          - Coupon: right
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - Apple: NumberDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: false
+    - _columnVisibility:
+        ordered:
+          - Coupon: true
+    - _columnSummaryTypes:
+        ordered:
+          - Apple: sum
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: >-
+        [{"Store": "Android", "Count": {{
+        query_count_purchases.data.purchases.store.android}} },{"Store":
+        "Apple", "Count": {{ query_count_purchases.data.purchases.store.apple}}
+        },{"Store": "Adyen", "Count": {{
+        query_count_purchases.data.purchases.store.adyen}} },{"Store": "Coupon",
+        "Count": {{ query_count_purchases.data.purchases.store.coupon}} }]
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: Store
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - TotalPurchases: left
+          - store: left
+          - Apple: right
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: false
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - Apple: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: false
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: ''
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - Android: '0'
+          - Apple: '1'
+          - Adyen: '2'
+          - Coupon: '3'
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: none
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns: []
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+        - Custom Column 2
+        - Custom Column 3
+        - Custom Column 4
+        - Custom Column 5
+        - Custom Column 6
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: fd93d
+    row: 1
+    height: 8.4
+createdAt: 2023-01-12T11:52:56.247Z

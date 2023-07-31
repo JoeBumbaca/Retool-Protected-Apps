@@ -1,0 +1,29 @@
+id: text13
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **Partner:** {{ query_get_product.data.partner.key }} - {{
+        query_get_product.data.partner.display_name }}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: 8be98
+    row: 0.20000000000000112
+    col: 3
+    height: 0.6
+createdAt: 2022-06-07T11:00:18.983Z

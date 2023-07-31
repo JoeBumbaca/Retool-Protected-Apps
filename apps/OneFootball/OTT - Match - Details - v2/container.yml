@@ -1,0 +1,135 @@
+id: container
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - false
+        - ''
+        - false
+        - false
+        - ''
+        - false
+        - false
+    - heightType: auto
+    - currentViewKey: '{{ self.viewKeys[0] }}'
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - marginType: normal
+    - hidden: false
+    - showHeader: true
+    - hoistFetching: true
+    - paddingType: normal
+    - views:
+        array: []
+    - showInEditor: false
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - false
+        - ''
+        - false
+        - false
+        - ''
+        - false
+        - false
+    - currentViewIndex: null
+    - _hasMigratedNestedItems: true
+    - transition: none
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - Product Info
+        - Localization
+        - Content Technical Info
+        - Content QoS Checks
+        - Live Stream
+        - Match Statistics
+        - Emergency Contacts
+        - Audit Logs
+    - events:
+        - ordered:
+            - method: trigger
+            - enabled: '{{ generalTabs.selectedIndex == 5 }}'
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: query_new_relic_data
+            - waitType: debounce
+            - event: change
+            - type: datasource
+            - waitMs: '0'
+    - _ids:
+        - 8be98
+        - 9c761
+        - 77a1c
+        - c27c6
+        - a9adf
+        - fd93d
+        - a9e56
+        - c7807
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - left
+        - ''
+        - left
+        - left
+        - ''
+        - left
+        - left
+    - hovered: false
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    row: 6.400000000000006
+    height: 0.2
+    width: 12
+createdAt: 2022-12-06T10:31:17.057Z

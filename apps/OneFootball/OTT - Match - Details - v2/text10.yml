@@ -1,0 +1,27 @@
+id: text10
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '**Content Id:** {{query_get_product.data.content_id}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: 77a1c
+    row: 2.000000000000014
+    height: 0.6
+    width: 2
+createdAt: 2022-06-07T10:43:01.217Z

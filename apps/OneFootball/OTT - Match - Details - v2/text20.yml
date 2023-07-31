@@ -1,0 +1,26 @@
+id: text20
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '**Path:** {{query_get_product.data.path}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: 77a1c
+    row: 3.600000000000017
+    height: 0.6
+createdAt: 2022-06-08T09:14:27.607Z

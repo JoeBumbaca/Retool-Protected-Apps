@@ -1,0 +1,30 @@
+id: listView1
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: auto
+    - layoutType: list
+    - marginType: normal
+    - showBorder: false
+    - data: ''
+    - paddingType: normal
+    - showDropShadow: false
+    - rowKeys: '{{query_get_product.data.merchant}}'
+    - formDataKey: '{{ self.id }}'
+    - itemWidth: ''
+    - dynamicHeightsEnabled: true
+    - numColumns: '3'
+    - itemHeight: '3'
+    - overflowType: scroll
+    - instances: '{{query_get_product.data.merchant.length }}'
+    - direction: vertical
+style:
+  ordered: []
+position2:
+  position2:
+    container: container
+    subcontainer: 8be98
+    row: 1.5999999999999943
+    height: 1
+createdAt: 2023-01-09T16:56:01.799Z

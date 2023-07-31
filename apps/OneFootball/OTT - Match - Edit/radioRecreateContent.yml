@@ -1,0 +1,83 @@
+id: radioRecreateContent
+type: widget
+subtype: RadioGroupWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+    - _values:
+        - 'false'
+        - 'true'
+    - values:
+        array: []
+    - marginType: normal
+    - groupLayout: singleColumn
+    - hidden: ''
+    - customValidation: ''
+    - data:
+        array: []
+    - hideValidationMessage: false
+    - selectedItem: null
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ self.values[0] }}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: only for OF sourced content
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+    - _captionByIndex:
+        - ''
+        - ''
+    - label: Recreate Content in Stream Video Provider
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids:
+        - 5207f
+        - f1cc2
+    - disabled: '{{getProductBySKU.data.source_of_truth === ''external''}}'
+    - labelPosition: left
+    - _labels:
+        - 'No'
+        - 'Yes'
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    subcontainer: 30ec8
+    row: 11.999999999999979
+    height: 0.6
+    width: 12
+createdAt: 2022-09-22T08:30:26.960Z

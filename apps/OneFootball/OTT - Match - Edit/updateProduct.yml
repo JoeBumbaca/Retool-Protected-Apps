@@ -1,0 +1,130 @@
+id: updateProduct
+type: datasource
+subtype: RESTQuery
+resourceName: a68a7599-719e-4f08-be6c-d72a7f5de798
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"commentary_languages","value":"{{selectCommentaryLanguage.value}}"},{"key":"countries_of_purchase","value":"{{textInputCountriesOfPurchase.value}}"},{"key":"countries_of_consumption","value":"{{textInputCountriesOfConsumption.value}}"},{"key":"push_enabled","value":"{{radioPushNotifications.value.toString()}}"},{"key":"price_tier","value":"{{selectPrice.value}}"},{"key":"merchant","value":"{{checkboxMerchant.value.join()}}"},{"key":"content_id","value":"{{radioRecreateContent.value
+        == true ? \"unknown\" : \"\"
+        }}"},{"key":"drm_enabled","value":"{{checkboxDRMEnabled.value}}"},{"key":"live_wrap_up_minutes","value":"{{select_live_after_mins.value}}"},{"key":"live_build_up_minutes","value":"{{select_live_before_mins.value}}"},{"key":"encoding_wrap_up_minutes","value":"{{select_encoding_after_mins.value}}"},{"key":"encoding_build_up_minutes","value":"{{select_encoding_before_mins.value}}"},{"key":"path","value":"{{(getProductBySKU.data.source_type
+        === 'rtmp') ? selectRtmp.value.trim() : getProductBySKU.data.source_type
+        === 'hls' || getProductBySKU.data.source_type === 'srt' ?
+        selectPathHlsOrSrt.value.trim() : ''
+        }}"},{"key":"sales_disabled","value":"{{checkboxSalesDisabled.value}}"},{"key":"thumbnail_url","value":"{{
+        (query_save_thumbnail.data && query_save_thumbnail.data.url) ?
+        query_save_thumbnail.data.url : ((select_thumbnail_url.value !== \"\") ?
+        select_thumbnail_url.value : null) }}"}]
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: ''
+    - workflowRunId: null
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: admin/v1/products/{{urlparams.sku}}
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - workflowActionType: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: util
+            - method: showNotification
+            - pluginId: ''
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - notificationType: success
+                        - title: Product saved successfully
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: failure
+            - type: util
+            - method: showNotification
+            - pluginId: ''
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - notificationType: error
+                        - title: Error saving Product
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '200000'
+    - workflowId: null
+    - requireConfirmation: false
+    - type: PUT
+    - queryFailureConditions: >-
+        [{"condition":"{{ status !== 400 && data.hasOwnProperty('validation')
+        }}","message":"{{ Object.keys(data.validation).map((e, i) => e + \" \" +
+        Object.values(data.validation)[i])[0]
+        }}"},{"condition":"","message":""},{"condition":"","message":""}]
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - bodyType: json
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-03-02T10:25:50.392Z

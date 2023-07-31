@@ -1,0 +1,65 @@
+id: radioPushNotifications
+type: widget
+subtype: RadioGroupWidget2
+template:
+  ordered:
+    - _disabledByIndex: []
+    - _values: []
+    - values: '{{ item }}'
+    - marginType: normal
+    - groupLayout: singleColumn
+    - hidden: false
+    - customValidation: ''
+    - data: '[true, false, null]'
+    - hideValidationMessage: false
+    - selectedItem: null
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{getProductBySKU.data.push_enabled}}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels: ''
+    - _hiddenByIndex: []
+    - _captionByIndex: []
+    - label: Push Notifications
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex: []
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids: []
+    - disabled: false
+    - labelPosition: left
+    - _labels: []
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels: '{{ [''Enabled'', ''Disabled'', ''Inherit from Competition''][i] }}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    subcontainer: 30ec8
+    row: 9.999999999999993
+    height: 0.6
+    width: 12
+createdAt: 2022-05-12T13:27:43.944Z

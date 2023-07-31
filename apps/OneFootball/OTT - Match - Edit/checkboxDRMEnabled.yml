@@ -1,0 +1,114 @@
+id: checkboxDRMEnabled
+type: widget
+subtype: RadioGroupWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+    - _values:
+        - 'false'
+        - 'true'
+    - values: '{{item}}'
+    - marginType: normal
+    - groupLayout: singleColumn
+    - hidden: false
+    - customValidation: ''
+    - data: '[false, true]'
+    - hideValidationMessage: false
+    - selectedItem: null
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ getProductBySKU.data.drm_enabled }}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+    - _captionByIndex:
+        - ''
+        - ''
+    - label: DRM protected
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - method: showNotification
+            - enabled: >-
+                {{ !radioRecreateContent.disabled && !radioRecreateContent.value
+                }}
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - notificationType: warning
+                        - duration: '4'
+                        - title: >-
+                            Please set recreate content to true and read notes
+                            to change DRM
+            - targetId: null
+            - pluginId: ''
+            - waitType: debounce
+            - event: change
+            - type: util
+            - waitMs: '0'
+        - ordered:
+            - method: run
+            - enabled: >-
+                {{ !radioRecreateContent.disabled && !radioRecreateContent.value
+                }}
+            - params:
+                ordered:
+                  - src: >-
+                      checkboxDRMEnabled.setValue(getProductBySKU.data.drm_enabled)
+            - targetId: null
+            - pluginId: ''
+            - waitType: debounce
+            - event: change
+            - type: script
+            - waitMs: '0'
+    - _ids:
+        - 5207f
+        - f1cc2
+    - disabled: false
+    - labelPosition: left
+    - _labels:
+        - 'No'
+        - 'Yes'
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels: '{{[''No'', ''Yes''][i]}}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    subcontainer: 30ec8
+    row: 13.399999999999999
+    height: 0.6
+    width: 12
+createdAt: 2023-01-17T12:55:36.178Z

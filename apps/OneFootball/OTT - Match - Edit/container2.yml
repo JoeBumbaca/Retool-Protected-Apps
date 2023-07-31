@@ -1,0 +1,93 @@
+id: container2
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - false
+        - false
+        - false
+    - selectedView: View 1
+    - heightType: auto
+    - currentViewKey: '{{ self.viewKeys[0] }}'
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - marginType: normal
+    - hidden: null
+    - showHeader: true
+    - hoistFetching: true
+    - paddingType: normal
+    - views:
+        array: []
+    - showInEditor: null
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - false
+        - false
+        - false
+    - currentViewIndex: null
+    - _hasMigratedNestedItems: true
+    - transition: none
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: true
+    - _viewKeys:
+        - Product Info
+        - Localization
+        - Content Technical Info
+        - Thumbnail
+    - events:
+        ordered: []
+    - _ids:
+        - ''
+        - fc349
+        - '7e184'
+        - '63472'
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - left
+        - left
+        - left
+    - hovered: false
+    - loading: false
+    - overflowType: hidden
+    - disabled: ''
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: null
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.7999999999999999
+    height: 2.000000000000007
+    width: 12
+createdAt: 2022-05-12T13:15:46.589Z

@@ -1,0 +1,55 @@
+id: select_thumbnail
+type: widget
+subtype: FileDropzoneWidget
+template:
+  ordered:
+    - parsedValue:
+        array: []
+    - parseFiles: false
+    - maxSize: ''
+    - appendNewSelection: true
+    - selectionType: single
+    - accept:
+        array: []
+    - marginType: normal
+    - hidden: false
+    - customValidation: ''
+    - maxCount: null
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - parsing: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value:
+        array: []
+    - labelCaption: .png only, max 128KB
+    - labelWidth: '33'
+    - minSize: ''
+    - placeholder: Select or drag and drop
+    - label: Thumbnail
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - files:
+        array: []
+    - iconBefore: upload
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - minCount: null
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: b9fd9
+    height: 2.4
+    width: 12
+createdAt: 2023-05-17T13:41:31.766Z

@@ -1,0 +1,74 @@
+id: checkboxMerchant
+type: widget
+subtype: CheckboxGroupWidget2
+template:
+  ordered:
+    - _disabledByIndex: []
+    - _values: []
+    - values: '{{ item }}'
+    - selectedIndexes:
+        array: []
+    - selectedItems:
+        array: []
+    - marginType: normal
+    - groupLayout: singleColumn
+    - hidden: false
+    - customValidation: ''
+    - data: >-
+        ['apple', 'google', 'web', 'tv-os', 'google-tv', 'fire-tv', 'web-tv',
+        'distributed']
+    - maxCount: null
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{getProductBySKU.data.merchant}}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels: ''
+    - _hiddenByIndex: []
+    - _captionByIndex: []
+    - label: Match available in
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - invalid: false
+    - _tooltipByIndex: []
+    - tooltipByIndex:
+        array: []
+    - events:
+        ordered: []
+    - _ids: []
+    - selectedLabels:
+        array: []
+    - disabled: false
+    - labelPosition: left
+    - minCount: null
+    - _labels: []
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels: >-
+        {{ ['Apple', 'Google', 'Web', 'Apple TV', 'Google TV', 'Fire TV', 'Web
+        TV (Samsung, LG, etc..)', 'Distributed'][i] }}
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    subcontainer: 30ec8
+    row: 4.999999999999993
+    height: 0.6
+    width: 12
+createdAt: 2022-04-27T13:32:38.416Z

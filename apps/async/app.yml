@@ -4,14 +4,11 @@ appTemplate:
   mobileAppSettings:
     object:
       mobileOfflineModeEnabled: false
-  queryStatusVisibility: false
   experimentalPerfFeatures:
     object:
       serverDepGraphEnabled: false
       useRuntimeV2: false
-  rootScreen: null
-  version: 2.116.2
-  markdownLinkBehavior: auto
+  version: 3.6.5
   experimentalStabilityFeatures:
     object:
       lockModelForUpdates: true

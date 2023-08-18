@@ -15,6 +15,7 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - workflowRunId: null
     - showFailureToaster: true
     - query: >-
         let videosToAdd = [];
@@ -52,16 +53,19 @@ template:
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
     - importedQueryInputs:
         ordered: []
+    - _additionalScope: []
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
     - requestSentTimestamp: null
     - metadata: null
+    - workflowActionType: null
     - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -102,6 +106,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false

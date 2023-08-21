@@ -1,7 +1,8 @@
 id: xRaPlanNames
 type: datasource
 subtype: SqlQueryUnified
-resourceName: ce44e9c2-9491-493b-88a4-2cdc32af10d1
+resourceName: 9702cb48-7019-4413-a3b8-6c1a5751cea0
+resourceDisplayName: Internal DB
 template:
   ordered:
     - queryRefreshTime: ''
@@ -17,13 +18,9 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
-    - query: |-
-        select 
-          rp.name 
-        from ra_products rp 
-          inner join benefits b on rp.benefit_id = b.id 
-        where b.name = {{planName.value}};
+    - query: select * from users
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -43,6 +40,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -90,6 +88,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false

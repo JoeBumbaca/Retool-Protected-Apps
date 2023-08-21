@@ -26,6 +26,7 @@ template:
     - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
+    - marginType: normal
     - hidden: '{{planName.value.includes(''FSA'')}}'
     - customValidation: ''
     - data: '{{ xRaPlanNames.data }}'

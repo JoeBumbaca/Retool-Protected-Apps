@@ -24,6 +24,7 @@ template:
     - overlayMinWidth: null
     - allowDeselect: true
     - inputValue: ''
+    - marginType: normal
     - hidden: '{{select2.value !== ''t''}}'
     - customValidation: ''
     - data:

@@ -24,6 +24,7 @@ template:
     - overlayMinWidth: null
     - allowDeselect: true
     - inputValue: ''
+    - marginType: normal
     - hidden: '{{planName.value.includes(''FSA'')}}'
     - customValidation: ''
     - data:

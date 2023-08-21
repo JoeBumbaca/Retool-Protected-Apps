@@ -10,5 +10,5 @@ appTemplate:
       useRuntimeV2: true
       runtimeV2OptOut: false
   isGlobalWidget: true
-  version: 2.123.1
+  version: 3.6.5
   experimentalDataTabEnabled: true

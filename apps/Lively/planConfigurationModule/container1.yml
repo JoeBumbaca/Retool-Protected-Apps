@@ -12,12 +12,15 @@ template:
     - clickable: false
     - _iconByIndex:
         - ''
+    - marginType: normal
     - hidden: '{{!toggleLink1.value}}'
     - showHeader: false
     - hoistFetching: false
+    - paddingType: normal
     - views:
         array: []
     - showInEditor: true
+    - footerPaddingType: normal
     - tooltipText: ''
     - hiddenByIndex:
         array: []
@@ -50,6 +53,7 @@ template:
     - disabled: false
     - _labels:
         - ''
+    - headerPaddingType: normal
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false

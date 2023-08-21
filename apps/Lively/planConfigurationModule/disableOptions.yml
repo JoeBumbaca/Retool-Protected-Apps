@@ -1,0 +1,15 @@
+id: disableOptions
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: |-
+        if ({{planName.value.includes('FSA')}}) {
+          return true;
+        }
+        else if ({{select9.value === null}}) {
+          return true;
+        }
+        return false;
+    - value: ''
+createdAt: 2023-08-10T00:16:21.588Z

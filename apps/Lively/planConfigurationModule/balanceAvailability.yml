@@ -1,0 +1,7 @@
+id: balanceAvailability
+type: globalwidgetoutput
+subtype: GlobalWidgetOutput
+template:
+  ordered:
+    - value: '{{select8.value}}'
+createdAt: 2023-08-04T23:59:31.114Z

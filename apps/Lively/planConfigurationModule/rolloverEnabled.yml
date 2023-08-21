@@ -1,0 +1,7 @@
+id: rolloverEnabled
+type: globalwidgetoutput
+subtype: GlobalWidgetOutput
+template:
+  ordered:
+    - value: '{{select2.value}}'
+createdAt: 2023-08-04T22:53:22.656Z

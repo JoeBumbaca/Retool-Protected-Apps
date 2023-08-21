@@ -1,0 +1,7 @@
+id: gracePeriodEnabled
+type: globalwidgetoutput
+subtype: GlobalWidgetOutput
+template:
+  ordered:
+    - value: '{{select1.value}}'
+createdAt: 2023-08-04T22:53:21.952Z

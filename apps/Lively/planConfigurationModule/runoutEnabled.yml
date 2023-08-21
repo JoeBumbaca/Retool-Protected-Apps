@@ -1,0 +1,7 @@
+id: runoutEnabled
+type: globalwidgetoutput
+subtype: GlobalWidgetOutput
+template:
+  ordered:
+    - value: '{{select4.value}}'
+createdAt: 2023-08-04T22:53:27.516Z

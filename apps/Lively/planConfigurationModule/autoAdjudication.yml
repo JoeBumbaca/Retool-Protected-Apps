@@ -1,0 +1,7 @@
+id: autoAdjudication
+type: globalwidgetoutput
+subtype: GlobalWidgetOutput
+template:
+  ordered:
+    - value: '{{select6.value}}'
+createdAt: 2023-08-04T23:57:32.227Z

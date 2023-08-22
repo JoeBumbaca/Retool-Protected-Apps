@@ -47,7 +47,7 @@ template:
         array: []
     - _iconPositionByIndex:
         - ''
-    - hovered: false
+    - hovered: true
     - loading: false
     - overflowType: scroll
     - disabled: false

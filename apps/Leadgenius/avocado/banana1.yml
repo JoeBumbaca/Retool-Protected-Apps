@@ -1,0 +1,19 @@
+id: banana1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: banana
+    - pageUuid: 20bf3054-41f1-11ee-bb6f-574ac401c30f
+    - childNamespace: banana1
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.2
+    col: 3
+    height: 2.4
+    width: 9
+createdAt: 2023-08-23T20:11:01.175Z

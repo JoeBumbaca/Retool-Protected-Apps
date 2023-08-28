@@ -1,0 +1,68 @@
+<App>
+  <Include src="./functions.rsx" />
+  <Table
+    id="table1"
+    cellSelection="none"
+    clearChangesetOnSave={true}
+    data="{{ query1.data.parsedXml.p }}"
+    defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
+    enableSaveActions={true}
+    showBorder={true}
+    showFooter={true}
+    showHeader={true}
+    toolbarPosition="bottom"
+  >
+    <Column
+      id="b0c25"
+      alignment="left"
+      cellTooltip="{{ item }}"
+      format="string"
+      key="b"
+      label="B"
+      placeholder="Enter value"
+      position="center"
+      size={100}
+    />
+    <ToolbarButton
+      id="1a"
+      icon="bold/interface-text-formatting-filter-2"
+      label="Filter"
+      type="filter"
+    />
+    <ToolbarButton
+      id="3c"
+      icon="bold/interface-download-button-2"
+      label="Download"
+      type="custom"
+    >
+      <Event
+        event="clickToolbar"
+        method="exportData"
+        pluginId="table1"
+        type="widget"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </ToolbarButton>
+    <ToolbarButton
+      id="4d"
+      icon="bold/interface-arrows-round-left"
+      label="Refresh"
+      type="custom"
+    >
+      <Event
+        event="clickToolbar"
+        method="refresh"
+        pluginId="table1"
+        type="widget"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </ToolbarButton>
+  </Table>
+  <Image
+    id="image1"
+    horizontalAlign="center"
+    src="https://placekitten.com/400/300"
+  />
+</App>

@@ -1,0 +1,29 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "979f9258-d30c-11ed-8d72-afa63cb40f79",
+  "appTemplate": {
+    "mobileAppSettings": {
+      "object": {
+        "mobileOfflineModeEnabled": false,
+        "mobileOfflineModeDelaySync": false,
+        "displaySetting": {
+          "object": { "landscapeMode": false, "tabletMode": false }
+        }
+      }
+    },
+    "preloadedAppJavaScript": "window.formatPhoneNumber = function(value) {\n  if (!value) return value;\n  const phoneNumber = value.replace(/[^\\d]/g, '');\n  const phoneNumberLength = phoneNumber.length;\n  if (phoneNumberLength < 4) return phoneNumber;\n  if (phoneNumberLength < 7) {\n    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;\n  }\n  return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3,6)}-${phoneNumber.slice(6, 10)}`;\n}",
+    "experimentalPerfFeatures": {
+      "object": {
+        "serverDepGraphEnabled": false,
+        "useRuntimeV2": true,
+        "runtimeV2OptOut": false
+      }
+    },
+    "preloadedAppJSLinks": {
+      "array": ["https://cdn.jsdelivr.net/npm/graphql-request@6.0.0/+esm"]
+    },
+    "version": "3.8.1",
+    "experimentalDataTabEnabled": true
+  }
+}

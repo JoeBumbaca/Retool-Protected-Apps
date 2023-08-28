@@ -1,0 +1,22 @@
+{
+  "button1": {
+    "container": "moduleContainer",
+    "row": 3.2,
+    "col": 9,
+    "height": 1
+  },
+  "button2": {
+    "container": "moduleContainer",
+    "row": 6.8,
+    "col": 9,
+    "height": 1
+  },
+  "image1": {
+    "container": "moduleContainer",
+    "row": 5.8,
+    "col": 4,
+    "height": 3,
+    "width": 2
+  },
+  "moduleContainer": { "height": 12, "width": 12 }
+}

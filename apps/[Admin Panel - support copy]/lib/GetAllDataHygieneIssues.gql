@@ -1,0 +1,14 @@
+query {
+  data_issues {
+    severity
+    object_type
+    object_name
+    dimension
+    issue_group_name
+    issue_extra_message
+    object_id
+    object_current_value
+    detection_status
+    user_action
+  }
+}

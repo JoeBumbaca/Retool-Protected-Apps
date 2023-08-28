@@ -1,0 +1,1496 @@
+{
+  "ActivationEmailInput": {
+    "container": "NewFivetranConenctorModal",
+    "row": 4.2,
+    "col": 1,
+    "height": 1,
+    "width": 11
+  },
+  "ActivationEmailInputName": {
+    "container": "NewFivetranConenctorModal",
+    "row": 5.2,
+    "col": 1,
+    "height": 1,
+    "width": 11
+  },
+  "AddMetricToCaherConfigModal": {
+    "container": "CacherConfigForm",
+    "row": 7.2,
+    "col": 6,
+    "height": 1
+  },
+  "AddURLCacherButton": {
+    "container": "AddMetricToCaherConfigModal",
+    "row": 3,
+    "col": 1,
+    "height": 1,
+    "width": 10
+  },
+  "AlerterSubmitButton": {
+    "container": "MetricTesterConfigForm",
+    "rowGroup": "footer",
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "ArgohConfigForm": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "4",
+    "height": 12.6,
+    "width": 11
+  },
+  "ArgovisorBabelfishOverrideImageTag": {
+    "container": "ArgohConfigForm",
+    "row": 6.2,
+    "col": 3,
+    "height": 1
+  },
+  "ArgovisorDb2graphOverrideImageTag": {
+    "container": "ArgohConfigForm",
+    "row": 5.2,
+    "col": 3,
+    "height": 1
+  },
+  "ArgovisorSchedule": {
+    "container": "ArgohConfigForm",
+    "row": 1.4,
+    "col": 1,
+    "height": 1
+  },
+  "ArgovisorSchemaRevision": {
+    "container": "ArgohConfigForm",
+    "row": 2.6,
+    "col": 1,
+    "height": 1
+  },
+  "ArgovisorTailorOverrideImageTag": {
+    "container": "ArgohConfigForm",
+    "row": 1.8,
+    "col": 7,
+    "height": 1,
+    "width": 1
+  },
+  "ArgovisorValidatorOverrideImageTag": {
+    "container": "ArgohConfigForm",
+    "row": 6.2,
+    "col": 6,
+    "height": 1
+  },
+  "BabelfishConfigForm": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "2",
+    "row": 0,
+    "height": 10,
+    "width": 11
+  },
+  "BabelfishConfigPath": {
+    "container": "BabelfishConfigForm",
+    "row": 1,
+    "height": 1,
+    "width": 6
+  },
+  "BabelfishDepsConfigPath": {
+    "container": "BabelfishConfigForm",
+    "height": 1,
+    "width": 6
+  },
+  "BabelfishLargeDeletionsUntil": {
+    "container": "BabelfishConfigForm",
+    "row": 2,
+    "height": 1,
+    "width": 6
+  },
+  "CacherAsyncWorkers": {
+    "container": "CacherConfigForm",
+    "row": 0.8,
+    "col": 6,
+    "height": 1,
+    "width": 4
+  },
+  "CacherConfigForm": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "30cb7",
+    "height": 6,
+    "width": 12
+  },
+  "CacherDefaultRangeJsonConfig": {
+    "container": "CacherConfigForm",
+    "row": 2.4,
+    "col": 6,
+    "height": 3.8,
+    "width": 4
+  },
+  "CacherJsonConfig": {
+    "container": "CacherConfigForm",
+    "row": 0.4,
+    "col": 1,
+    "height": 8,
+    "width": 4
+  },
+  "CacherPulseURLtoAdd": {
+    "container": "AddMetricToCaherConfigModal",
+    "row": 0.6,
+    "col": 1,
+    "height": 1,
+    "width": 10
+  },
+  "CacherSubmitButton": {
+    "container": "CacherConfigForm",
+    "rowGroup": "footer",
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "ChosenDB2Graph": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "1",
+    "row": 0.6,
+    "height": 0.6,
+    "width": 4
+  },
+  "ColorPaletteRepresentation": {
+    "container": "TenantSettingsForm",
+    "row": 6.6,
+    "col": 4,
+    "height": 0.6,
+    "width": 5
+  },
+  "CopyToClipBoard": {
+    "container": "NewFivetranConenctorModal",
+    "row": 2.8,
+    "col": 3,
+    "height": 0.8,
+    "width": 6
+  },
+  "DB2GraphConfig": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "1",
+    "row": 1.2,
+    "height": 6,
+    "width": 12
+  },
+  "DataOverrideHistoryModal": {
+    "container": "tabs",
+    "subcontainer": "5",
+    "row": 3.2,
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "DataOverrideHistoryTable": {
+    "container": "DataOverrideHistoryModal",
+    "row": 0.6,
+    "height": 9.4,
+    "width": 12
+  },
+  "DataOverridesTable": {
+    "container": "tabs",
+    "subcontainer": "5",
+    "row": 0,
+    "height": 12.4,
+    "width": 11
+  },
+  "DataOverridesUploadCsvButton": {
+    "container": "ImportOverridesFromCsvModal",
+    "row": 1,
+    "col": 5,
+    "height": 1.4,
+    "width": 4
+  },
+  "DefaultRangeConfigText": {
+    "container": "CacherConfigForm",
+    "row": 1.8,
+    "col": 6,
+    "height": 0.6
+  },
+  "DownloadCsvButton": {
+    "container": "tabs",
+    "subcontainer": "5",
+    "row": 1.6,
+    "col": 11,
+    "height": 1.4,
+    "width": 1
+  },
+  "EditArgovisorOverrideTags": {
+    "container": "ArgohConfigForm",
+    "row": 4.6,
+    "col": 8,
+    "height": 0.6,
+    "width": 1
+  },
+  "EditDb2graphSchema": {
+    "container": "DB2GraphConfig",
+    "row": 0.2,
+    "col": 9,
+    "height": 0.6,
+    "width": 1
+  },
+  "FeedSignalsTable": {
+    "container": "tabs",
+    "subcontainer": "10",
+    "row": 1.4,
+    "height": 12.8,
+    "width": 12
+  },
+  "FeedUserSelector": {
+    "container": "tabs",
+    "subcontainer": "10",
+    "height": 1,
+    "width": 4
+  },
+  "GenerateConnectCardButton": {
+    "container": "NewFivetranConenctorModal",
+    "row": 1.6,
+    "col": 1,
+    "height": 1,
+    "width": 10
+  },
+  "HermesConfigForm": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "8",
+    "width": 12
+  },
+  "HermesSchedule": {
+    "container": "HermesConfigForm",
+    "row": 0.2,
+    "height": 1,
+    "width": 4
+  },
+  "ImportOverridesFromCsvModal": {
+    "container": "tabs",
+    "subcontainer": "5",
+    "col": 11,
+    "height": 1.4,
+    "width": 1
+  },
+  "InsightTypesTable": {
+    "container": "tabs2",
+    "subcontainer": "2",
+    "height": 13.2,
+    "width": 12
+  },
+  "JobRunAdvancedForm": {
+    "container": "JobRunnerAdvanedModal",
+    "row": 0.2,
+    "height": 7.8,
+    "width": 12
+  },
+  "JobRunnerAdvanedModal": {
+    "container": "JobRunnerForm",
+    "row": 4.8,
+    "height": 0.8
+  },
+  "JobRunnerForm": {
+    "container": "newWorkflowModal",
+    "row": 0,
+    "height": 11.4,
+    "width": 12
+  },
+  "JobsTabs": {
+    "container": "tabs",
+    "subcontainer": "2",
+    "row": 0.2,
+    "height": 23.2,
+    "width": 12
+  },
+  "MetricTable": {
+    "container": "tabs",
+    "subcontainer": "63eca",
+    "height": 16.4,
+    "width": 12
+  },
+  "MetricTesterConfigForm": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "6",
+    "row": 0.8,
+    "height": 6,
+    "width": 12
+  },
+  "MetricTesterConfigJson": {
+    "container": "MetricTesterConfigForm",
+    "row": 1.4,
+    "col": 1,
+    "height": 8,
+    "width": 4
+  },
+  "MetricTesterNumThreads": {
+    "container": "MetricTesterConfigForm",
+    "col": 7,
+    "height": 1,
+    "width": 4
+  },
+  "MetricTesterSchedule": {
+    "container": "MetricTesterConfigForm",
+    "height": 1,
+    "width": 4
+  },
+  "NewFivetranConenctorModal": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "0",
+    "row": 0.2,
+    "col": 8,
+    "height": 0.8,
+    "width": 4
+  },
+  "OverrideSchemaRevision": {
+    "container": "JobRunAdvancedForm",
+    "row": 0.6,
+    "height": 1,
+    "width": 11
+  },
+  "OverridesCsvDropZone": {
+    "container": "ImportOverridesFromCsvModal",
+    "height": 2.4,
+    "width": 5
+  },
+  "RunBabelfishOverrideImageTag": {
+    "container": "JobRunAdvancedForm",
+    "row": 3.4,
+    "height": 1,
+    "width": 8
+  },
+  "RunDb2graphOverrideImageTag": {
+    "container": "JobRunAdvancedForm",
+    "row": 2.4,
+    "height": 1,
+    "width": 8
+  },
+  "RunTailorOverrideImageTag": {
+    "container": "JobRunAdvancedForm",
+    "row": 4.4,
+    "height": 1,
+    "width": 8
+  },
+  "RunValidatorOverrideImageTag": {
+    "container": "JobRunAdvancedForm",
+    "row": 5.4,
+    "height": 1,
+    "width": 8
+  },
+  "SendActivationMails": {
+    "container": "NewFivetranConenctorModal",
+    "row": 7,
+    "col": 2,
+    "height": 1,
+    "width": 9
+  },
+  "SherlockConfigForm": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "5",
+    "row": 0.4,
+    "height": 6,
+    "width": 12
+  },
+  "SherlockSchedule": {
+    "container": "SherlockConfigForm",
+    "row": 1.2,
+    "height": 1,
+    "width": 4
+  },
+  "SherlockTenantConfigPath": {
+    "container": "SherlockConfigForm",
+    "row": 0.2,
+    "height": 1,
+    "width": 4
+  },
+  "SumbitDb2graphConfig": {
+    "container": "DB2GraphConfig",
+    "rowGroup": "footer",
+    "row": 1,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "TablefishForm": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "cf8f8",
+    "height": 2,
+    "width": 12
+  },
+  "TailorConcurrentJobs": {
+    "container": "ArgohConfigForm",
+    "row": 1.4,
+    "col": 8,
+    "height": 1
+  },
+  "TailorConfigForm": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "3",
+    "height": 9.8,
+    "width": 11
+  },
+  "TailorConfigPath": {
+    "container": "TailorConfigForm",
+    "height": 1,
+    "width": 4
+  },
+  "TailorLargeDeletionsUntil": {
+    "container": "TailorConfigForm",
+    "row": 2,
+    "height": 1,
+    "width": 6
+  },
+  "TailorSpecificConfigPath": {
+    "container": "TailorConfigForm",
+    "row": 1,
+    "height": 1,
+    "width": 4
+  },
+  "TenantCodeName": {
+    "container": "TenantSettingsForm",
+    "row": 3.6,
+    "col": 1,
+    "height": 1,
+    "width": 8
+  },
+  "TenantSettingsForm": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "0",
+    "height": 13.4,
+    "width": 8
+  },
+  "TenantSettingsTabs": {
+    "container": "tabs",
+    "subcontainer": "8",
+    "height": 25.2,
+    "width": 12
+  },
+  "UseratorConfigForm": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "7",
+    "row": 0.6,
+    "width": 12
+  },
+  "UseratorSchedule": {
+    "container": "UseratorConfigForm",
+    "row": 1.2,
+    "height": 1,
+    "width": 4
+  },
+  "UseratorTenantConfigPath": {
+    "container": "UseratorConfigForm",
+    "row": 0.2,
+    "height": 1,
+    "width": 4
+  },
+  "alert1": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 6,
+    "col": 3,
+    "height": 1.6,
+    "width": 6
+  },
+  "alert2": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 7.6,
+    "col": 3,
+    "height": 1.6,
+    "width": 6
+  },
+  "alert3": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 10.8,
+    "col": 3,
+    "height": 1.6,
+    "width": 6
+  },
+  "alert4": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 9.2,
+    "col": 3,
+    "height": 1.6,
+    "width": 6
+  },
+  "argoTable": {
+    "container": "JobsTabs",
+    "subcontainer": "1",
+    "row": 0,
+    "height": 11.4,
+    "width": 12
+  },
+  "argovisorConfigIndicator": {
+    "container": "ArgohConfigForm",
+    "rowGroup": "footer",
+    "col": 5,
+    "height": 0.6,
+    "width": 2
+  },
+  "babelfishConfigIndicator": {
+    "container": "BabelfishConfigForm",
+    "rowGroup": "footer",
+    "row": 0.2,
+    "col": 6,
+    "height": 0.6,
+    "width": 2
+  },
+  "btnOpenSightfull": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 5,
+    "col": 8,
+    "height": 1,
+    "width": 1
+  },
+  "button1": {
+    "container": "tabs2",
+    "subcontainer": "0",
+    "row": 13.2,
+    "height": 1,
+    "width": 2
+  },
+  "button2": {
+    "container": "newDetectionModal",
+    "row": 9,
+    "col": 9,
+    "height": 1
+  },
+  "button3": {
+    "container": "container1",
+    "row": 1,
+    "col": 5,
+    "height": 1.2,
+    "width": 7
+  },
+  "button4": {
+    "container": "JobsTabs",
+    "subcontainer": "1",
+    "row": 11.6,
+    "col": 8,
+    "height": 1,
+    "width": 2
+  },
+  "button5": {
+    "container": "deleteTenantGraphButton",
+    "row": 4,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "button6": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "3e138",
+    "row": 0.8,
+    "col": 1,
+    "height": 1.4,
+    "width": 2
+  },
+  "button7": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "3e138",
+    "row": 3,
+    "col": 1,
+    "height": 1.4,
+    "width": 2
+  },
+  "cacherConfigIndicator": {
+    "container": "CacherConfigForm",
+    "rowGroup": "footer",
+    "col": 6,
+    "height": 0.6
+  },
+  "clearCacheButton": {
+    "container": "JobsTabs",
+    "subcontainer": "1",
+    "row": 12.8,
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "container1": { "container": "importWorkspace", "height": 6, "width": 12 },
+  "containerTitle1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle2": {
+    "container": "runSpecificContainer",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "customComponent1": {
+    "container": "tabs",
+    "subcontainer": "9",
+    "height": 17,
+    "width": 12
+  },
+  "daysToKeepSucceededWorkflows": {
+    "container": "ArgohConfigForm",
+    "row": 8.4,
+    "col": 6,
+    "height": 1,
+    "width": 4
+  },
+  "db2gConfigIndicator": {
+    "container": "DB2GraphConfig",
+    "rowGroup": "footer",
+    "row": 1.2,
+    "col": 6,
+    "height": 0.6,
+    "width": 2
+  },
+  "db2graphDefaultConfigPath": {
+    "container": "DB2GraphConfig",
+    "height": 1,
+    "width": 4
+  },
+  "db2graphHubSpotEnabled": {
+    "container": "ArgohConfigForm",
+    "row": 2.6,
+    "col": 5,
+    "height": 0.6,
+    "width": 2
+  },
+  "db2graphIncremental": {
+    "container": "DB2GraphConfig",
+    "row": 1.2,
+    "col": 5,
+    "height": 0.6,
+    "width": 2
+  },
+  "db2graphNetsuiteEnabled": {
+    "container": "ArgohConfigForm",
+    "row": 2,
+    "col": 5,
+    "height": 0.6,
+    "width": 2
+  },
+  "db2graphSalesforceEnabled": {
+    "container": "ArgohConfigForm",
+    "row": 1.4,
+    "col": 5,
+    "height": 0.6,
+    "width": 2
+  },
+  "db2graphSchema": {
+    "container": "DB2GraphConfig",
+    "col": 5,
+    "height": 1,
+    "width": 4
+  },
+  "db2graphShiftDates": {
+    "container": "DB2GraphConfig",
+    "row": 1.2,
+    "col": 7,
+    "height": 0.6,
+    "width": 2
+  },
+  "db2graphSpecificConfigPath": {
+    "container": "DB2GraphConfig",
+    "row": 1,
+    "height": 1,
+    "width": 4
+  },
+  "db2graphTargetsEnabled": {
+    "container": "ArgohConfigForm",
+    "row": 3.2,
+    "col": 5,
+    "height": 0.6,
+    "width": 2
+  },
+  "dbtSteps": {
+    "container": "TablefishForm",
+    "col": 9,
+    "height": 0.6,
+    "width": 1
+  },
+  "deleteButton": {
+    "container": "SherlockConfigForm",
+    "rowGroup": "footer",
+    "row": 0,
+    "col": 3,
+    "height": 1,
+    "width": 1
+  },
+  "deleteButton2": {
+    "container": "ArgohConfigForm",
+    "rowGroup": "footer",
+    "col": 3,
+    "height": 1,
+    "width": 1
+  },
+  "deleteButton3": {
+    "container": "MetricTesterConfigForm",
+    "rowGroup": "footer",
+    "col": 3,
+    "height": 1,
+    "width": 1
+  },
+  "deleteButton4": {
+    "container": "UseratorConfigForm",
+    "rowGroup": "footer",
+    "row": 0,
+    "col": 3,
+    "height": 1,
+    "width": 1
+  },
+  "deleteButton5": {
+    "container": "HermesConfigForm",
+    "rowGroup": "footer",
+    "col": 3,
+    "height": 1,
+    "width": 1
+  },
+  "deleteTenantGraphButton": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "3e138",
+    "row": 8.6,
+    "col": 1,
+    "height": 2,
+    "width": 2
+  },
+  "detectionPresetTable": {
+    "container": "newDetectionModal",
+    "height": 9,
+    "width": 12
+  },
+  "detectionsTable": {
+    "container": "tabs2",
+    "subcontainer": "0",
+    "row": 0,
+    "height": 11,
+    "width": 12
+  },
+  "editSpecificSteps": {
+    "container": "TablefishForm",
+    "col": 10,
+    "height": 0.6,
+    "width": 2
+  },
+  "featureFlagsTable": {
+    "container": "tabs",
+    "subcontainer": "3",
+    "height": 14.8,
+    "width": 11
+  },
+  "formButton2": {
+    "container": "JobRunnerForm",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formButton3": {
+    "container": "newTenantForm",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formButton4": {
+    "container": "BabelfishConfigForm",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formButton5": {
+    "container": "TenantSettingsForm",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formButton6": {
+    "container": "TailorConfigForm",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formButton7": {
+    "container": "ArgohConfigForm",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formButton8": {
+    "container": "JobRunAdvancedForm",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formButton9": {
+    "container": "internalMetadata",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formTitle1": {
+    "container": "DB2GraphConfig",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "formTitle2": {
+    "container": "internalMetadata",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "formTitle3": {
+    "container": "TablefishForm",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "hermesConfigIndicator": {
+    "container": "HermesConfigForm",
+    "rowGroup": "footer",
+    "row": 0.2,
+    "col": 7,
+    "height": 0.6
+  },
+  "hygieneDeleteFixed": {
+    "container": "tabs",
+    "subcontainer": "4",
+    "row": 14,
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "importWorkspace": {
+    "container": "tabs",
+    "subcontainer": "6",
+    "col": 11,
+    "height": 1.2,
+    "width": 1
+  },
+  "importedJsonWorkspace": {
+    "container": "container1",
+    "row": 0,
+    "height": 2.8,
+    "width": 5
+  },
+  "internalMetadata": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "0",
+    "row": 1.8,
+    "col": 8,
+    "height": 0.2,
+    "width": 4
+  },
+  "isSalesforceDbt": {
+    "container": "TablefishForm",
+    "row": 3.8,
+    "col": 4,
+    "height": 0.6
+  },
+  "jobsStatusTable": {
+    "container": "JobsTabs",
+    "subcontainer": "0",
+    "height": 12.8,
+    "width": 8
+  },
+  "metricTesterConfigIndicator": {
+    "container": "MetricTesterConfigForm",
+    "rowGroup": "footer",
+    "row": 0.2,
+    "col": 8,
+    "height": 0.6,
+    "width": 2
+  },
+  "modal1": {
+    "container": "tabs",
+    "subcontainer": "6",
+    "row": 1.2,
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "newDetectionModal": {
+    "container": "tabs2",
+    "subcontainer": "0",
+    "row": 13.2,
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "newTenantForm": {
+    "container": "newTenantModal",
+    "row": 0,
+    "height": 5,
+    "width": 11
+  },
+  "newTenantIDTextbox": {
+    "container": "newTenantForm",
+    "row": 0.8,
+    "height": 1,
+    "width": 8
+  },
+  "newTenantModal": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 3.8,
+    "col": 8,
+    "height": 1,
+    "width": 1
+  },
+  "newTenantNameTextbox": {
+    "container": "newTenantForm",
+    "row": 2,
+    "height": 1,
+    "width": 8
+  },
+  "newWorkflowModal": {
+    "container": "JobsTabs",
+    "subcontainer": "1",
+    "row": 11.4,
+    "col": 10,
+    "height": 1.4,
+    "width": 2
+  },
+  "overrideTablefishSnapshot": {
+    "container": "TablefishForm",
+    "row": 1.8,
+    "col": 4,
+    "height": 0.6
+  },
+  "preview": {
+    "container": "container1",
+    "row": 2.8,
+    "height": 6,
+    "width": 12
+  },
+  "productionTokenButton": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 2,
+    "col": 8,
+    "height": 1,
+    "width": 1
+  },
+  "projectPath": {
+    "container": "TablefishForm",
+    "row": 0.6,
+    "height": 1,
+    "width": 4
+  },
+  "resumeButton": {
+    "container": "SherlockConfigForm",
+    "rowGroup": "footer",
+    "col": 1,
+    "height": 1,
+    "width": 1
+  },
+  "resumeButton2": {
+    "container": "ArgohConfigForm",
+    "rowGroup": "footer",
+    "col": 1,
+    "height": 1,
+    "width": 1
+  },
+  "resumeButton3": {
+    "container": "MetricTesterConfigForm",
+    "rowGroup": "footer",
+    "col": 1,
+    "height": 1,
+    "width": 1
+  },
+  "resumeButton4": {
+    "container": "UseratorConfigForm",
+    "rowGroup": "footer",
+    "row": 0,
+    "col": 1,
+    "height": 1,
+    "width": 1
+  },
+  "resumeButton5": {
+    "container": "HermesConfigForm",
+    "rowGroup": "footer",
+    "col": 1,
+    "height": 1,
+    "width": 1
+  },
+  "role": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 3.8,
+    "col": 3,
+    "height": 0.6,
+    "width": 1
+  },
+  "runHermesButton": {
+    "container": "JobsTabs",
+    "subcontainer": "1",
+    "row": 11.6,
+    "col": 4,
+    "height": 1,
+    "width": 2
+  },
+  "runMetricTester": {
+    "container": "JobsTabs",
+    "subcontainer": "1",
+    "row": 11.6,
+    "col": 2,
+    "height": 1,
+    "width": 2
+  },
+  "runSpecificContainer": {
+    "container": "JobRunnerForm",
+    "row": 0,
+    "col": 3,
+    "height": 5.6,
+    "width": 9
+  },
+  "runTinyTenantCheckbox": {
+    "container": "JobRunnerForm",
+    "row": 6,
+    "height": 0.6
+  },
+  "runUseratorButton": {
+    "container": "JobsTabs",
+    "subcontainer": "1",
+    "row": 11.6,
+    "col": 6,
+    "height": 1,
+    "width": 2
+  },
+  "schemaRepoRevision": {
+    "container": "SherlockConfigForm",
+    "row": 1.2,
+    "col": 4,
+    "height": 1,
+    "width": 4
+  },
+  "selectorConnectorType": {
+    "container": "NewFivetranConenctorModal",
+    "row": 0.2,
+    "height": 1,
+    "width": 12
+  },
+  "settingsTabs": {
+    "container": "TenantSettingsTabs",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "sherlockConfigIndicator": {
+    "container": "SherlockConfigForm",
+    "rowGroup": "footer",
+    "col": 7,
+    "height": 0.6,
+    "width": 2
+  },
+  "signalsInWorkspaceTable": {
+    "container": "modal1",
+    "height": 10.2,
+    "width": 12
+  },
+  "signalsTable": {
+    "container": "tabs",
+    "subcontainer": "7",
+    "row": 0,
+    "height": 15.8,
+    "width": 12
+  },
+  "snapshotSchema": {
+    "container": "TablefishForm",
+    "row": 1.6,
+    "height": 1,
+    "width": 4
+  },
+  "specificObjectNames": {
+    "container": "runSpecificContainer",
+    "row": 0,
+    "col": 4,
+    "height": 1,
+    "width": 8
+  },
+  "specificObjectsTo": {
+    "container": "runSpecificContainer",
+    "row": 0,
+    "height": 0.6,
+    "width": 4
+  },
+  "stagingTokenButton": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 2,
+    "col": 7,
+    "height": 1,
+    "width": 1
+  },
+  "stamp": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 3.8,
+    "col": 4,
+    "height": 0.6,
+    "width": 1
+  },
+  "stepModeSwitch": { "container": "JobRunnerForm", "height": 0.8 },
+  "stepSelector": { "container": "JobRunnerForm", "row": 0.8, "height": 4 },
+  "submitHermesForm": {
+    "container": "HermesConfigForm",
+    "rowGroup": "footer",
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "submitUseratorForm": {
+    "container": "UseratorConfigForm",
+    "rowGroup": "footer",
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "suspendButton": {
+    "container": "SherlockConfigForm",
+    "rowGroup": "footer",
+    "height": 1,
+    "width": 1
+  },
+  "suspendButton2": {
+    "container": "ArgohConfigForm",
+    "rowGroup": "footer",
+    "height": 1,
+    "width": 1
+  },
+  "suspendButton3": {
+    "container": "MetricTesterConfigForm",
+    "rowGroup": "footer",
+    "height": 1,
+    "width": 1
+  },
+  "suspendButton4": {
+    "container": "UseratorConfigForm",
+    "rowGroup": "footer",
+    "row": 0,
+    "height": 1,
+    "width": 1
+  },
+  "suspendButton5": {
+    "container": "HermesConfigForm",
+    "rowGroup": "footer",
+    "row": 0,
+    "height": 1,
+    "width": 1
+  },
+  "syncTinyTenant": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "3c95f",
+    "row": 2.8,
+    "height": 1,
+    "width": 4
+  },
+  "table2": {
+    "container": "tabs",
+    "subcontainer": "4",
+    "height": 13.8,
+    "width": 12
+  },
+  "tablefishConfigIndicator": {
+    "container": "TablefishForm",
+    "rowGroup": "footer",
+    "row": 0.2,
+    "col": 5,
+    "height": 0.6,
+    "width": 2
+  },
+  "tablefishSalesforceSchema": {
+    "container": "TablefishForm",
+    "row": 3.6,
+    "height": 1,
+    "width": 4
+  },
+  "tabs": { "row": 0.4, "height": 36, "width": 12 },
+  "tabs2": {
+    "container": "tabs",
+    "subcontainer": "1",
+    "height": 29.8,
+    "width": 12
+  },
+  "tabs3": {
+    "container": "tabs",
+    "rowGroup": "header",
+    "row": 0.2,
+    "height": 0.8,
+    "width": 12
+  },
+  "tabs4": {
+    "container": "tabs2",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "tabs6": {
+    "container": "JobsTabs",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "tailorConfigIndicator": {
+    "container": "TailorConfigForm",
+    "rowGroup": "footer",
+    "row": 0.2,
+    "col": 6,
+    "height": 0.6,
+    "width": 2
+  },
+  "tenantAE": {
+    "container": "internalMetadata",
+    "row": 1.6,
+    "col": 5,
+    "height": 1,
+    "width": 5
+  },
+  "tenantIdPicker": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 3.8,
+    "col": 5,
+    "height": 0.6
+  },
+  "tenantInfo": {
+    "subcontainer": "header",
+    "row": 0.2,
+    "col": 3,
+    "height": 1.8,
+    "width": 2
+  },
+  "tenantInfo2": {
+    "subcontainer": "header",
+    "row": 0.2,
+    "height": 1.8,
+    "width": 2
+  },
+  "tenantNameForApproval": {
+    "container": "deleteTenantGraphButton",
+    "row": 2.2,
+    "height": 1,
+    "width": 12
+  },
+  "tenantOwner": {
+    "container": "internalMetadata",
+    "row": 0.6,
+    "col": 5,
+    "height": 1,
+    "width": 5
+  },
+  "tenantState": {
+    "container": "internalMetadata",
+    "row": 0.4,
+    "height": 0.6,
+    "width": 4
+  },
+  "tenant_color_palette_textbox": {
+    "container": "TenantSettingsForm",
+    "row": 5.6,
+    "col": 1,
+    "height": 1,
+    "width": 8
+  },
+  "tenant_decimal_digits": {
+    "container": "TenantSettingsForm",
+    "row": 7.2,
+    "col": 1,
+    "height": 1,
+    "width": 8
+  },
+  "tenant_fiscalyear_textbox": {
+    "container": "TenantSettingsForm",
+    "row": 2.6,
+    "col": 1,
+    "height": 1,
+    "width": 8
+  },
+  "tenant_last_sync": {
+    "container": "TenantSettingsForm",
+    "row": 8.2,
+    "col": 1,
+    "height": 1,
+    "width": 8
+  },
+  "tenant_logo": {
+    "subcontainer": "header",
+    "col": 2,
+    "height": 2.2,
+    "width": 1
+  },
+  "tenant_logo_settings": {
+    "container": "TenantSettingsForm",
+    "row": 0.8,
+    "col": 10,
+    "height": 2,
+    "width": 2
+  },
+  "tenant_logo_url_textbox": {
+    "container": "TenantSettingsForm",
+    "row": 1.6,
+    "col": 1,
+    "height": 1,
+    "width": 8
+  },
+  "tenant_name_textbox": {
+    "container": "TenantSettingsForm",
+    "row": 0.6,
+    "col": 1,
+    "height": 1,
+    "width": 8
+  },
+  "tenant_trial_end": {
+    "container": "TenantSettingsForm",
+    "row": 4.6,
+    "col": 1,
+    "height": 1,
+    "width": 8
+  },
+  "text10": {
+    "container": "MetricTesterConfigForm",
+    "row": 2.8,
+    "col": 6,
+    "height": 0.6
+  },
+  "text11": {
+    "container": "deleteTenantGraphButton",
+    "row": 0.6,
+    "height": 0.6,
+    "width": 12
+  },
+  "text12": {
+    "container": "TablefishForm",
+    "row": 3,
+    "height": 0.6,
+    "width": 2
+  },
+  "text3": {
+    "subcontainer": "header",
+    "row": 0.6,
+    "col": 10,
+    "height": 0.6,
+    "width": 2
+  },
+  "text6": {
+    "container": "JobRunnerForm",
+    "row": 5.8,
+    "col": 10,
+    "height": 0.6,
+    "width": 2
+  },
+  "text7": { "container": "newTenantForm", "row": 1, "col": 8, "height": 0.6 },
+  "text8": {
+    "container": "JobRunAdvancedForm",
+    "row": 1.8,
+    "col": 3,
+    "height": 0.6,
+    "width": 5
+  },
+  "text9": {
+    "container": "ArgohConfigForm",
+    "row": 4.6,
+    "col": 4,
+    "height": 0.6,
+    "width": 4
+  },
+  "timeline1": {
+    "container": "JobsTabs",
+    "subcontainer": "0",
+    "row": 0,
+    "col": 8,
+    "height": 12.8,
+    "width": 4
+  },
+  "tinyTenantInfo": {
+    "container": "TenantSettingsTabs",
+    "subcontainer": "3c95f",
+    "row": 0.2,
+    "height": 1.8
+  },
+  "tokenInput": {
+    "container": "tabs",
+    "subcontainer": "0",
+    "row": 2,
+    "col": 2,
+    "height": 1,
+    "width": 4
+  },
+  "updateButton": {
+    "container": "SherlockConfigForm",
+    "rowGroup": "footer",
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "updateTablefishConf": {
+    "container": "TablefishForm",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "useratorConfigIndicator": {
+    "container": "UseratorConfigForm",
+    "rowGroup": "footer",
+    "row": 0.2,
+    "col": 6,
+    "height": 0.6
+  },
+  "useratorMutedCheckbox": {
+    "container": "UseratorConfigForm",
+    "row": 0.6,
+    "col": 8,
+    "height": 0.6
+  },
+  "useratorSalesforceSchema": {
+    "container": "UseratorConfigForm",
+    "row": 1.2,
+    "col": 4,
+    "height": 1,
+    "width": 4
+  },
+  "useratorSchemaRepo": {
+    "container": "UseratorConfigForm",
+    "row": 0.2,
+    "col": 4,
+    "height": 1,
+    "width": 4
+  },
+  "usersEmailTable": {
+    "container": "tabs2",
+    "subcontainer": "9ec1e",
+    "row": 0.4,
+    "height": 15.8,
+    "width": 12
+  },
+  "usersSubscriptionsTable": {
+    "container": "tabs2",
+    "subcontainer": "1",
+    "row": 0,
+    "height": 13.2,
+    "width": 12
+  },
+  "usersTable": {
+    "container": "tabs",
+    "subcontainer": "905ef",
+    "row": 0.2,
+    "height": 12.6,
+    "width": 12
+  },
+  "workerRetryLimit": {
+    "container": "ArgohConfigForm",
+    "row": 2.6,
+    "col": 8,
+    "height": 1
+  },
+  "workspaceImportName": {
+    "container": "container1",
+    "col": 5,
+    "height": 1,
+    "width": 7
+  },
+  "workspacesTable": {
+    "container": "tabs",
+    "subcontainer": "6",
+    "height": 14.2,
+    "width": 11
+  }
+}

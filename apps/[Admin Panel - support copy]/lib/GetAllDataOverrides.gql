@@ -1,0 +1,13 @@
+query GetAllDataOverrides {
+  data_overrides {
+    object_id
+    dimension
+    value
+    comment
+    last_modified_by
+    edited_at
+    status
+    source_value
+    updated_at
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "container1": { "height": 0.2, "width": 12 },
+  "search_category_tv": {
+    "container": "container1",
+    "subcontainer": "eaa74",
+    "row": 1.6,
+    "height": 1,
+    "width": 4
+  },
+  "text2": { "container": "container1", "subcontainer": "eaa74", "height": 0.6 }
+}

@@ -1,0 +1,15 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "e3b8fe70-fca9-11ec-95f0-bbd5319ce9e9",
+  "appTemplate": {
+    "experimentalPerfFeatures": {
+      "object": {
+        "batchCommitModelEnabled": false,
+        "skipDepCycleCheckingEnabled": false
+      }
+    },
+    "isGlobalWidget": true,
+    "version": "3.8.1"
+  }
+}

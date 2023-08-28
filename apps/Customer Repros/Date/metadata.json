@@ -1,0 +1,13 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "56f4d192-7811-11ed-8da5-cf58528c7def",
+  "appTemplate": {
+    "preloadedAppJSLinks": {
+      "array": [
+        "https://momentjs.com/downloads/moment-timezone-with-data.min.js"
+      ]
+    },
+    "version": "3.8.1"
+  }
+}

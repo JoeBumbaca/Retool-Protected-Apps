@@ -1,0 +1,7 @@
+{
+  "image1": { "row": 3, "col": 9, "height": 3, "width": 2 },
+  "numberInput1": { "row": 11.8, "col": 6, "height": 1, "width": 4 },
+  "table1": { "row": 0.6, "col": 1, "height": 8, "width": 8 },
+  "text1": { "row": 0.8, "col": 9, "height": 0.6, "width": 2 },
+  "text2": { "row": 1.6, "col": 9, "height": 0.6 }
+}

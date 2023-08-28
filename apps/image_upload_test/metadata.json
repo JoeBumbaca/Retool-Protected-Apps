@@ -1,0 +1,11 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "2f024062-7fa9-11ed-9911-038c3ddb65c1",
+  "appTemplate": {
+    "experimentalPerfFeatures": {
+      "object": { "serverDepGraphEnabled": false, "useRuntimeV2": false }
+    },
+    "version": "3.8.1"
+  }
+}

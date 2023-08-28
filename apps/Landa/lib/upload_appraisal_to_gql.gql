@@ -1,0 +1,14 @@
+mutation new_lease($firstName: String!, $lastName: String!,
+$email: String!, $phoneNumber: String, 
+$startDate: Date!, $endDate: Date!, $monthlyRentAmount: Int!,
+$securityDepositAmount: Int!, $documentUri: String!,
+$isSecurityDepositPaidToHoldings: Boolean, $ticker: String!) {
+    uploadRentLease(firstName: $firstName, lastName: $lastName,
+    email: $email, phoneNumber: $phoneNumber, startDate: $startDate,
+    endDate: $endDate, monthlyRentAmount: $monthlyRentAmount,
+    securityDepositAmount: $securityDepositAmount,
+    documentUri: $documentUri, isSecurityDepositPaidToHoldings: $isSecurityDepositPaidToHoldings,
+    ticker: $ticker) {
+        ok   
+    }
+}

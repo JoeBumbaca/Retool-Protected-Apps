@@ -1,0 +1,1 @@
+SELECT description AS vendor_description, id_as_hash AS vendor_id FROM financials_vendor;

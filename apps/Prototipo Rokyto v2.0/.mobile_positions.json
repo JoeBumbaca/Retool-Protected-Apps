@@ -1,0 +1,242 @@
+{
+  "button1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 7,
+    "height": 1,
+    "width": 6
+  },
+  "button10": { "container": "modal4", "row": 7.8, "height": 1, "width": 12 },
+  "button11": { "container": "modal4", "row": 9.4, "height": 1, "width": 12 },
+  "button12": {
+    "container": "wizard1",
+    "row": 5.8,
+    "col": 7,
+    "height": 1,
+    "width": 5,
+    "tabNum": "K1i47hSmL"
+  },
+  "button2": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 7,
+    "col": 6,
+    "height": 1,
+    "width": 6
+  },
+  "button3": { "container": "modal2", "row": 16.8, "height": 1, "width": 6 },
+  "button4": {
+    "container": "modal2",
+    "row": 16.2,
+    "col": 6,
+    "height": 1,
+    "width": 6
+  },
+  "button5": {
+    "container": "modal2",
+    "row": 1,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "button7": { "container": "modal1", "row": 9.6, "height": 0.8, "width": 12 },
+  "button8": {
+    "container": "modal3",
+    "row": 10,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "button9": { "container": "modal1", "row": 10.6, "height": 0.8, "width": 12 },
+  "container2": {
+    "container": "modal4",
+    "row": 4.2,
+    "height": 2.8,
+    "width": 12
+  },
+  "image1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 0.2,
+    "height": 4.8,
+    "width": 6
+  },
+  "image2": { "container": "modal1", "row": 2.4, "height": 4.8, "width": 12 },
+  "image3": { "height": 1.8 },
+  "image4": {
+    "container": "wizard1",
+    "col": 4,
+    "height": 3.2,
+    "width": 5,
+    "tabNum": "K1i47hSmL"
+  },
+  "map1": { "container": "modal2", "row": 2, "height": 7, "width": 12 },
+  "modal1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 5,
+    "height": 0.8,
+    "width": 12
+  },
+  "modal2": {
+    "container": "wizard1",
+    "row": 6,
+    "height": 1,
+    "width": 5,
+    "tabNum": "nTVxmNGrC"
+  },
+  "modal3": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 6,
+    "height": 0.8,
+    "width": 12
+  },
+  "modal4": {
+    "container": "wizard1",
+    "row": 8.2,
+    "height": 0.8,
+    "width": 5,
+    "tabNum": "GDrtLremT"
+  },
+  "numberinput1": {
+    "container": "modal1",
+    "row": 7.6,
+    "col": 6,
+    "height": 1,
+    "width": 6
+  },
+  "numberinput2": {
+    "container": "modal4",
+    "row": 0.2,
+    "col": 6,
+    "height": 1,
+    "width": 6
+  },
+  "radiogroup1": { "container": "modal4", "height": 0.6, "width": 6 },
+  "radiogroup2": { "container": "container2", "height": 0.6, "width": 5 },
+  "radiogroup3": {
+    "container": "wizard1",
+    "row": 5.8,
+    "col": 6,
+    "height": 0.6,
+    "width": 6,
+    "tabNum": "nTVxmNGrC"
+  },
+  "select1": {
+    "container": "modal4",
+    "row": 2,
+    "col": 6,
+    "height": 1,
+    "width": 6
+  },
+  "statistic1": { "row": 0.2, "col": 4, "height": 1.4 },
+  "statistic2": { "row": 0.2, "col": 8, "height": 1.4, "width": 4 },
+  "tabbedcontainer1": {
+    "container": "wizard1",
+    "height": 10,
+    "width": 12,
+    "tabNum": "gk2xSE1KE"
+  },
+  "table1": {
+    "container": "wizard1",
+    "row": 0.2,
+    "height": 5.6,
+    "width": 12,
+    "tabNum": "nTVxmNGrC"
+  },
+  "table2": { "row": 15.8, "height": 8, "width": 12 },
+  "table3": { "container": "modal3", "row": 1, "height": 8, "width": 12 },
+  "table4": {
+    "container": "wizard1",
+    "row": 2.6,
+    "height": 5.4,
+    "width": 12,
+    "tabNum": "GDrtLremT"
+  },
+  "text1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "col": 6,
+    "height": 0.6,
+    "width": 6
+  },
+  "text10": {
+    "container": "wizard1",
+    "row": 8.2,
+    "col": 5,
+    "height": 0.6,
+    "width": 7,
+    "tabNum": "GDrtLremT"
+  },
+  "text11": {
+    "container": "wizard1",
+    "row": 7.6,
+    "height": 0.6,
+    "width": 6,
+    "tabNum": "nTVxmNGrC"
+  },
+  "text12": {
+    "container": "wizard1",
+    "row": 3.8,
+    "height": 0.6,
+    "width": 12,
+    "tabNum": "K1i47hSmL"
+  },
+  "text13": {
+    "container": "wizard1",
+    "row": 7.2,
+    "height": 0.6,
+    "width": 12,
+    "tabNum": "K1i47hSmL"
+  },
+  "text2": { "container": "modal1", "col": 1, "height": 0.6, "width": 10 },
+  "text3": {
+    "container": "modal1",
+    "row": 1,
+    "col": 1,
+    "height": 0.6,
+    "width": 10
+  },
+  "text4": {
+    "container": "modal1",
+    "row": 8.8,
+    "col": 3,
+    "height": 0.6,
+    "width": 9
+  },
+  "text5": { "container": "modal2", "row": 9, "height": 0.6, "width": 12 },
+  "text6": { "container": "modal1", "row": 7.6, "height": 0.6, "width": 6 },
+  "text7": { "container": "modal3", "row": 0.2, "col": 9, "height": 0.6 },
+  "text8": { "container": "modal3", "row": 9.4, "height": 0.6, "width": 12 },
+  "text9": {
+    "container": "wizard1",
+    "height": 0.6,
+    "width": 12,
+    "tabNum": "GDrtLremT"
+  },
+  "textinput2": { "container": "modal2", "height": 1, "width": 12 },
+  "textinput3": { "container": "modal2", "row": 1, "height": 1, "width": 8 },
+  "textinput4": {
+    "container": "wizard1",
+    "row": 8.2,
+    "height": 1,
+    "width": 12,
+    "tabNum": "nTVxmNGrC"
+  },
+  "textinput5": {
+    "container": "container2",
+    "row": 0.6,
+    "col": 5,
+    "height": 1,
+    "width": 7
+  },
+  "textinput6": {
+    "container": "wizard1",
+    "row": 5.8,
+    "height": 1,
+    "width": 7,
+    "tabNum": "K1i47hSmL"
+  },
+  "wizard1": { "row": 2.2, "height": 13.4, "width": 12 }
+}

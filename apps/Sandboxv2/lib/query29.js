@@ -1,0 +1,1 @@
+return environment.variables.graphQLURL

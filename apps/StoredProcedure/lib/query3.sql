@@ -1,0 +1,1 @@
+call userCount('joe', @userCount);

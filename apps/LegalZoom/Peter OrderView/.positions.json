@@ -1,0 +1,315 @@
+{
+  "DocumentsIframe": {
+    "container": "tabbedContainer1",
+    "subcontainer": "a798d",
+    "height": 18.6,
+    "width": 12
+  },
+  "ProductSelect": {
+    "container": "container2",
+    "subcontainer": "2bb74",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "addButton": {
+    "container": "containerPost",
+    "subcontainer": "d5e50",
+    "row": 1.6,
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "avatar1": {
+    "subcontainer": "header",
+    "row": 0.2,
+    "col": 9,
+    "height": 0.2,
+    "width": 2
+  },
+  "button2": {
+    "container": "container2",
+    "subcontainer": "2bb74",
+    "col": 9,
+    "height": 1
+  },
+  "button3": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "col": 5,
+    "height": 1
+  },
+  "category1": { "container": "form1", "row": 0.4, "height": 1, "width": 4 },
+  "category2": { "container": "form1", "row": 1.8, "height": 1, "width": 4 },
+  "category3": { "container": "form1", "row": 3.4, "height": 1, "width": 4 },
+  "category4": { "container": "form1", "row": 4.8, "height": 1, "width": 4 },
+  "contactId": {
+    "container": "containerPost",
+    "subcontainer": "d5e50",
+    "col": 7,
+    "height": 1
+  },
+  "container1": { "row": 1, "height": 0.2, "width": 12 },
+  "container2": { "row": 35.8, "height": 0.2, "width": 6 },
+  "container3": { "row": 0.8, "height": 0.2, "width": 12 },
+  "containerPost": {
+    "container": "ledgerContainer",
+    "subcontainer": "d5e50",
+    "row": 0,
+    "height": 0.2,
+    "width": 12
+  },
+  "containerTitle1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 1,
+    "height": 0.6
+  },
+  "containerTitle2": {
+    "container": "ledgerContainer",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle3": {
+    "container": "urlParamsStore",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle4": {
+    "container": "containerPost",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 7
+  },
+  "containerTitle5": {
+    "container": "container3",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "customer": {
+    "container": "container3",
+    "subcontainer": "09a1c",
+    "height": 1
+  },
+  "descriptionText": {
+    "container": "containerPost",
+    "subcontainer": "d5e50",
+    "row": 1.6,
+    "height": 1,
+    "width": 10
+  },
+  "entityName": {
+    "container": "container3",
+    "subcontainer": "09a1c",
+    "col": 8,
+    "height": 1
+  },
+  "form1": { "container": "modal1", "height": 2, "width": 12 },
+  "formButton1": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "getLedgerBbutton": {
+    "container": "urlParamsStore",
+    "subcontainer": "d5e50",
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "historyTable": {
+    "container": "tabbedContainer1",
+    "subcontainer": "59c7a",
+    "row": 0.2,
+    "height": 8,
+    "width": 12
+  },
+  "html1": { "subcontainer": "header", "height": 0.2, "width": 5 },
+  "iFrame1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "e3fcd",
+    "row": 1,
+    "height": 10.4,
+    "width": 12
+  },
+  "ledgerContainer": {
+    "container": "tabbedContainer1",
+    "subcontainer": "9cbc5",
+    "row": 0,
+    "height": 0.2,
+    "width": 12
+  },
+  "ledgerDataTable": {
+    "container": "ledgerContainer",
+    "subcontainer": "d5e50",
+    "row": 3.6,
+    "height": 14,
+    "width": 12
+  },
+  "modal1": {
+    "container": "container3",
+    "subcontainer": "09a1c",
+    "row": 0,
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "noteCaseSelect": {
+    "container": "containerPost",
+    "subcontainer": "d5e50",
+    "row": 0,
+    "height": 1,
+    "width": 2
+  },
+  "orcoform": {
+    "container": "form1",
+    "rowGroup": "header",
+    "row": 0.4,
+    "height": 0.8,
+    "width": 12
+  },
+  "order": {
+    "container": "container3",
+    "subcontainer": "09a1c",
+    "col": 3,
+    "height": 1,
+    "width": 2
+  },
+  "orderId": {
+    "container": "containerPost",
+    "subcontainer": "d5e50",
+    "col": 3,
+    "height": 1
+  },
+  "orderNumberInput": {
+    "container": "container2",
+    "subcontainer": "2bb74",
+    "row": 0,
+    "height": 1,
+    "width": 9
+  },
+  "product": {
+    "container": "container3",
+    "subcontainer": "09a1c",
+    "col": 5,
+    "height": 1
+  },
+  "reason1": {
+    "container": "form1",
+    "row": 0.4,
+    "col": 4,
+    "height": 1,
+    "width": 4
+  },
+  "reason2": {
+    "container": "form1",
+    "row": 0.4,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "reason3": {
+    "container": "form1",
+    "row": 3.4,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "reason4": {
+    "container": "form1",
+    "row": 1.8,
+    "col": 4,
+    "height": 1,
+    "width": 4
+  },
+  "reason5": {
+    "container": "form1",
+    "row": 1.8,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "reason6": {
+    "container": "form1",
+    "row": 3.4,
+    "col": 4,
+    "height": 1,
+    "width": 4
+  },
+  "reason7": {
+    "container": "form1",
+    "row": 4.8,
+    "col": 4,
+    "height": 1,
+    "width": 4
+  },
+  "reason8": {
+    "container": "form1",
+    "row": 4.8,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "switch1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 1.2,
+    "col": 10,
+    "height": 0.6,
+    "width": 2
+  },
+  "tabbedContainer1": { "row": 1.2, "height": 0.2, "width": 12 },
+  "table1": { "container": "container1", "subcontainer": "2bb74", "width": 12 },
+  "tabs1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "e3fcd",
+    "row": 0.2,
+    "height": 0.8,
+    "width": 12
+  },
+  "text1": {
+    "container": "container2",
+    "subcontainer": "2bb74",
+    "row": 2.6,
+    "col": 4,
+    "height": 0.6,
+    "width": 4
+  },
+  "text3": {
+    "container": "container2",
+    "subcontainer": "2bb74",
+    "row": 2.6,
+    "height": 0.6,
+    "width": 4
+  },
+  "textInput1": {
+    "container": "urlParamsStore",
+    "subcontainer": "d5e50",
+    "row": 1,
+    "height": 1
+  },
+  "urlCustomerOrderNumber": {
+    "container": "urlParamsStore",
+    "subcontainer": "d5e50",
+    "col": 7,
+    "height": 1
+  },
+  "urlDepartmentName": {
+    "container": "urlParamsStore",
+    "subcontainer": "d5e50",
+    "col": 4,
+    "height": 1
+  },
+  "urlParamsStore": { "height": 0.8, "width": 12 },
+  "urlProcessingNumber": {
+    "container": "urlParamsStore",
+    "subcontainer": "d5e50",
+    "height": 1,
+    "width": 4
+  }
+}

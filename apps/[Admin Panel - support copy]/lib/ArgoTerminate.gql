@@ -1,0 +1,5 @@
+mutation($workflow: String) {
+  argo_terminate(workflow: $workflow) {
+    msg
+  }
+}

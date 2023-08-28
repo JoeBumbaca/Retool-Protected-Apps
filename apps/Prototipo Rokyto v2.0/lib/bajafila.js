@@ -1,0 +1,1 @@
+table2.selectRow(table2.selectedIndex + 1)

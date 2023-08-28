@@ -1,0 +1,25 @@
+{
+  "image1": { "container": "moduleContainer", "height": 1.6, "width": 1 },
+  "moduleContainer": { "height": 1.8, "width": 12 },
+  "navigation1": {
+    "container": "moduleContainer",
+    "row": 0.4,
+    "col": 1,
+    "height": 1,
+    "width": 7
+  },
+  "tags1": {
+    "container": "moduleContainer",
+    "row": 0.6,
+    "col": 11,
+    "height": 0.8,
+    "width": 1
+  },
+  "txtSKU": {
+    "container": "moduleContainer",
+    "row": 0.4,
+    "col": 9,
+    "height": 1,
+    "width": 2
+  }
+}

@@ -1,0 +1,10 @@
+query {
+  users(where: {email: {_nlike: "%sightfull.com"}}) {
+    first_name
+    id
+    last_name
+    sub
+    email
+    internal_metadata
+  }
+}

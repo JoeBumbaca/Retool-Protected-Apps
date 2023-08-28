@@ -1,0 +1,264 @@
+{
+  "btnUpdate": {
+    "container": "container2",
+    "rowGroup": "footer",
+    "row": 0,
+    "col": 3,
+    "height": 1,
+    "width": 1
+  },
+  "checkboxDRMEnabled": {
+    "container": "container4",
+    "subcontainer": "30ec8",
+    "row": 13.4,
+    "height": 0.6,
+    "width": 12
+  },
+  "checkboxMerchant": {
+    "container": "container4",
+    "subcontainer": "30ec8",
+    "row": 5,
+    "height": 0.6,
+    "width": 12
+  },
+  "checkboxSalesDisabled": {
+    "container": "container4",
+    "subcontainer": "30ec8",
+    "row": 14.8,
+    "height": 0.6,
+    "width": 12
+  },
+  "container2": { "row": 0.8, "height": 2, "width": 12 },
+  "container3": {
+    "container": "container2",
+    "subcontainer": "7e184",
+    "row": 0.2,
+    "height": 3,
+    "width": 8
+  },
+  "container4": { "container": "container2", "height": 0.2, "width": 7 },
+  "container5": {
+    "container": "container2",
+    "subcontainer": "fc349",
+    "height": 0.4,
+    "width": 8
+  },
+  "container6": {
+    "container": "container2",
+    "subcontainer": "7e184",
+    "height": 0.2,
+    "width": 8
+  },
+  "containerTitle1": {
+    "container": "container3",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle2": {
+    "container": "container4",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle3": {
+    "container": "container5",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle4": {
+    "container": "container6",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "divider1": { "row": 0.6, "height": 0.2, "width": 12 },
+  "image1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "ae2d1",
+    "col": 2,
+    "height": 3,
+    "width": 8
+  },
+  "ottToolingCmsHeader1": {
+    "subcontainer": "header",
+    "height": 0.4,
+    "width": 11
+  },
+  "radioPushNotifications": {
+    "container": "container4",
+    "subcontainer": "30ec8",
+    "row": 10,
+    "height": 0.6,
+    "width": 12
+  },
+  "radioRecreateContent": {
+    "container": "container4",
+    "subcontainer": "30ec8",
+    "row": 12,
+    "height": 0.6,
+    "width": 12
+  },
+  "selectCommentaryLanguage": {
+    "container": "container5",
+    "subcontainer": "b4056",
+    "row": 0,
+    "height": 1,
+    "width": 12
+  },
+  "selectPathHlsOrSrt": {
+    "container": "container3",
+    "subcontainer": "c2001",
+    "height": 1,
+    "width": 12
+  },
+  "selectPrice": {
+    "container": "container4",
+    "subcontainer": "30ec8",
+    "row": 4,
+    "height": 1,
+    "width": 12
+  },
+  "selectRtmp": {
+    "container": "container3",
+    "subcontainer": "30ec8",
+    "height": 1,
+    "width": 12
+  },
+  "selectSatOrUnknown": {
+    "container": "container3",
+    "subcontainer": "49956",
+    "height": 1,
+    "width": 12
+  },
+  "select_encoding_after_mins": {
+    "container": "container6",
+    "subcontainer": "b4056",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "select_encoding_before_mins": {
+    "container": "container6",
+    "subcontainer": "b4056",
+    "row": 0,
+    "height": 1,
+    "width": 12
+  },
+  "select_live_after_mins": {
+    "container": "container6",
+    "subcontainer": "b4056",
+    "row": 3,
+    "height": 1,
+    "width": 12
+  },
+  "select_live_before_mins": {
+    "container": "container6",
+    "subcontainer": "b4056",
+    "row": 2,
+    "height": 1,
+    "width": 12
+  },
+  "select_thumbnail": {
+    "container": "tabbedContainer1",
+    "subcontainer": "b9fd9",
+    "height": 2.4,
+    "width": 12
+  },
+  "select_thumbnail_url": {
+    "container": "tabbedContainer1",
+    "subcontainer": "87c81",
+    "height": 1,
+    "width": 12
+  },
+  "tabbedContainer1": {
+    "container": "container2",
+    "subcontainer": "63472",
+    "row": 0,
+    "height": 0.2,
+    "width": 8
+  },
+  "tabs1": {
+    "container": "container2",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "tabs2": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "text1": { "row": 0, "height": 0.6, "width": 4 },
+  "text2": {
+    "container": "container2",
+    "row": 9.6,
+    "col": 7,
+    "height": 3,
+    "width": 5
+  },
+  "text4": {
+    "container": "container2",
+    "row": 15.4,
+    "col": 7,
+    "height": 4,
+    "width": 5
+  },
+  "text5": {
+    "container": "container2",
+    "row": 4.6,
+    "col": 7,
+    "height": 0.6,
+    "width": 5
+  },
+  "text6": {
+    "container": "container2",
+    "row": 7,
+    "col": 7,
+    "height": 0.6,
+    "width": 5
+  },
+  "textInput1": {
+    "container": "container4",
+    "subcontainer": "30ec8",
+    "height": 1,
+    "width": 12
+  },
+  "textInput2": {
+    "container": "container4",
+    "subcontainer": "30ec8",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "textInput3": {
+    "container": "container4",
+    "subcontainer": "30ec8",
+    "row": 2,
+    "height": 1,
+    "width": 12
+  },
+  "textInput4": {
+    "container": "container4",
+    "subcontainer": "30ec8",
+    "row": 3,
+    "height": 1,
+    "width": 12
+  },
+  "textInputCountriesOfConsumption": {
+    "container": "container5",
+    "subcontainer": "b4056",
+    "row": 2,
+    "height": 1,
+    "width": 12
+  },
+  "textInputCountriesOfPurchase": {
+    "container": "container5",
+    "subcontainer": "b4056",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  }
+}

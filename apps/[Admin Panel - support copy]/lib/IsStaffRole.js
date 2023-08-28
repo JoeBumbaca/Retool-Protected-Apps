@@ -1,0 +1,1 @@
+return (!TenantNotSelected.data && ["staff","superuser"].includes(role.value))

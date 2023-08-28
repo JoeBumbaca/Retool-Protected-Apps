@@ -1,0 +1,14 @@
+{
+  "type": "cosmosdb",
+  "host": "https://retool-cosmos.documents.azure.com",
+  "port": "443",
+  "databaseName": "ToDoList",
+  "databaseUsername": null,
+  "ssl": null,
+  "editPrivilege": null,
+  "options": {},
+  "environment": "production",
+  "dynamicallyQueryable": false,
+  "uuid": "4503b7c3-dcb1-4de2-bfea-614b4dc09895",
+  "toolscriptVersion": "1.0.0"
+}

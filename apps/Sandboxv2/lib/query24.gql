@@ -1,0 +1,14 @@
+{
+  __schema {
+    queryType {
+      fields {
+        name
+      }
+    }
+    mutationType{
+      fields {
+        name
+      }
+    }
+  }
+}

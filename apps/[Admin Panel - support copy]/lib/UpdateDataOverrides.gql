@@ -1,0 +1,10 @@
+mutation UpdateDataOverrides($objects: [data_overrides_insert_input!] = {}) {
+  insert_data_overrides(objects: $objects, on_conflict: {constraint: data_overrides_pkey, update_columns: [value, comment]}) {
+    returning {
+      object_id
+      dimension
+      value
+      comment
+    }
+  }
+}

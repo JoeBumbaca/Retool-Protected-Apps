@@ -1,0 +1,22 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "1a9b9b90-722b-11ed-85f6-df98d11a432f",
+  "appTemplate": {
+    "experimentalFeatures": {
+      "object": { "sourceControlTemplateDehydration": false }
+    },
+    "queryStatusVisibility": true,
+    "experimentalPerfFeatures": {
+      "object": {
+        "batchCommitModelEnabled": false,
+        "skipDepCycleCheckingEnabled": false,
+        "serverDepGraphEnabled": false,
+        "useRuntimeV2": false
+      }
+    },
+    "isFetching": true,
+    "version": "3.8.1",
+    "markdownLinkBehavior": "never"
+  }
+}

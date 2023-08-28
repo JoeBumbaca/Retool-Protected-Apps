@@ -1,0 +1,5 @@
+mutation ToggleUserAutoSubscribe($id: uuid!, $auto_subscribe: Boolean!) {
+  update_users_by_pk(pk_columns: {id: $id}, _set: {subscribe_to_new_insights: $auto_subscribe}) {
+    id
+  }
+}

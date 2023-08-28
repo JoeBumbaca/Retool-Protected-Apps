@@ -1,0 +1,15 @@
+mutation UnpinSignalFromEverywhere($signal_id: uuid!, $feed_id: uuid!) {
+  delete_feed_signals(where: {signal_id: {_eq: $signal_id}, feed_id: {_eq: $feed_id}}) {
+    returning {
+      feed {
+        user {
+          email
+        }
+        workspace {
+          name
+        }
+      }
+    }
+    affected_rows
+  }
+}

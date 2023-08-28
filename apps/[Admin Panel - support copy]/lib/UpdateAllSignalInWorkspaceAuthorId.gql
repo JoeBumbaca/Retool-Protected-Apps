@@ -1,0 +1,5 @@
+mutation ($author_id: uuid , $workspace_id: uuid ) {
+  update_signals(where: {feed_signals: {feed_id: {_eq: $workspace_id}}}, _set: {author_id: $author_id}) {
+    affected_rows
+  }
+}

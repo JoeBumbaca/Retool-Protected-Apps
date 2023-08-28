@@ -1,0 +1,11 @@
+query GetDataOverridesHistory {
+  data_overrides_history {
+    object_id
+    dimension
+    value
+    comment
+    created_at
+    last_modified_by
+    status
+  }
+}

@@ -1,0 +1,8 @@
+mutation WorkspaceDelete($id: uuid!, $name: String!) {
+    update_workspaces(where: {id: {_eq: $id}}, _set: {is_deleted: true, name: $name}) {
+        affected_rows
+        returning {
+            name
+        }
+    }
+}

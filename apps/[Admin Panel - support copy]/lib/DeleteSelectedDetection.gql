@@ -1,0 +1,5 @@
+mutation ($id: String!, $tid: Int!) {
+  delete_detections_by_pk(id: $id, tid:$tid) {
+    id
+  }
+}

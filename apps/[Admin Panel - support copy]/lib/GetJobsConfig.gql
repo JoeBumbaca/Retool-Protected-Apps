@@ -1,0 +1,15 @@
+query {
+   jobs {
+    config
+    name
+  }
+  argo_cron {
+    schedule
+    name
+    isSuspended
+  }
+  argo_params {
+    name
+    extra_params
+  }
+}

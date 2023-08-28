@@ -1,0 +1,6 @@
+{
+  "planConfigurationModule1": { "col": 6, "height": 2.4, "width": 2 },
+  "planConfigurationModule2": { "col": 8, "height": 2.4, "width": 2 },
+  "tableLegacy1": { "row": 2.4, "height": 8, "width": 12 },
+  "testModule": { "col": 4, "height": 2.4, "width": 2 }
+}

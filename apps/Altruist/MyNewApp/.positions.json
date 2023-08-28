@@ -1,0 +1,10 @@
+{
+  "image1": { "row": 2.8, "col": 9, "height": 3, "width": 2 },
+  "tabbedContainer1": { "row": 6.8, "col": 1, "height": 0.2, "width": 6 },
+  "tabs1": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  }
+}

@@ -1,0 +1,5 @@
+mutation ($name: String!, $collection_type: String!, $feed: feeds_obj_rel_insert_input) {
+  insert_workspaces_one(object: {collection_type: $collection_type, name: $name, feed: $feed}) {
+    id
+  }
+}

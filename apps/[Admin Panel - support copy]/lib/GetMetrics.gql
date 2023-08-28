@@ -1,0 +1,10 @@
+query {
+  metrics {
+    name
+    flavor
+    category
+    order
+    display_name
+    export_config
+  }
+}

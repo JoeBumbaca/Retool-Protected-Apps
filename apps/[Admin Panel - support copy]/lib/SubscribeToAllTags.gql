@@ -1,0 +1,5 @@
+mutation SubscribeToTags($objects: [user_tags_insert_input!]!) {
+  insert_user_tags(objects: $objects, on_conflict: {constraint: user_tags_pkey}) {
+    affected_rows
+  }
+}

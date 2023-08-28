@@ -1,0 +1,8 @@
+mutation UpsertWorkspace($workspace_name: String!, $collection_type: String = "workspace", $order: bigint) {
+  insert_workspaces_one(
+    object: { name: $workspace_name, order: $order, collection_type: $collection_type, feed: { data: {} } }
+    on_conflict: { constraint: workspaces_tid_name_collection_type_key, update_columns: [order] }
+  ) {
+    id
+  }
+}

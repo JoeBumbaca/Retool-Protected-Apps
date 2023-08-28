@@ -1,0 +1,15 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "29459f20-e513-11eb-991a-e34948acca2f",
+  "appTemplate": {
+    "appStyles": ".ph16 > div:first-child > button > span {\n  display: none;\n}\n\n.ph16 > div:first-child > button::after {\n  content: \"Reiniciar\"\n}\n\n.ph16 > div:last-child > button > span {\n  display: none;\n}\n\n.ph16 > div:last-child > button::after {\n  content: \"Retroceder\"\n}",
+    "experimentalPerfFeatures": {
+      "object": {
+        "batchCommitModelEnabled": false,
+        "skipDepCycleCheckingEnabled": false
+      }
+    },
+    "version": "3.8.1"
+  }
+}

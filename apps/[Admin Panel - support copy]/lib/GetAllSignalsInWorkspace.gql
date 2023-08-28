@@ -1,0 +1,25 @@
+query SignalsGetByFeed($feed_id: uuid!) {
+    feeds_by_pk(id: $feed_id) {
+      feed_signals(where: {resolved: {_eq: false}}, order_by: {order: asc}) {
+        signal_id
+        feed_id
+        signal {
+          attachment
+          created_at
+          updated_at
+          message
+          id
+          author {
+              email
+              first_name
+              last_name
+              picture
+          }
+          author_id
+        }
+        order
+        resolved
+        reason
+      }
+  }
+}

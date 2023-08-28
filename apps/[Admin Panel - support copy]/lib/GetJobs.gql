@@ -1,0 +1,15 @@
+{
+  jobs(order_by: {updated_at: desc}) {
+    started_at
+    status
+    progress
+    last_successful_started_at
+    last_successful_finished_at
+    name
+    tid
+    updated_at
+    version
+    created_at
+    config
+  }
+}

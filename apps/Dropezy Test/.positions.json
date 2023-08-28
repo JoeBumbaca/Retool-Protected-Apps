@@ -1,0 +1,337 @@
+{
+  "abbreviation_error_tv": {
+    "container": "form1",
+    "row": 9.2,
+    "height": 0.6,
+    "width": 5
+  },
+  "abbreviation_tv": {
+    "container": "form1",
+    "row": 7.2,
+    "height": 1,
+    "width": 6
+  },
+  "addSubCategoryModal": {
+    "container": "container1",
+    "subcontainer": "eaa74",
+    "row": 1.4,
+    "col": 8,
+    "height": 1,
+    "width": 1
+  },
+  "addSubCategoryToNewCategoryModal": {
+    "container": "container1",
+    "subcontainer": "eaa74",
+    "row": 1.4,
+    "col": 10,
+    "height": 1,
+    "width": 1
+  },
+  "add_category_modal": {
+    "container": "container1",
+    "subcontainer": "eaa74",
+    "row": 0.2,
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "button10": {
+    "container": "addSubCategoryModal",
+    "row": 9.8,
+    "col": 7,
+    "height": 1,
+    "width": 2
+  },
+  "button11": {
+    "container": "categoriesTable",
+    "subcontainer": "child_categories",
+    "row": 9.6,
+    "col": 9,
+    "height": 1
+  },
+  "button13": {
+    "container": "addSubCategoryToNewCategoryModal",
+    "row": 11.2,
+    "col": 9,
+    "height": 1,
+    "width": 2
+  },
+  "button14": {
+    "container": "addSubCategoryToNewCategoryModal",
+    "row": 11.2,
+    "col": 7,
+    "height": 1,
+    "width": 2
+  },
+  "button15": {
+    "container": "categoriesTable",
+    "subcontainer": "Custom Column 2",
+    "row": 3.4,
+    "col": 3,
+    "height": 1,
+    "width": 6
+  },
+  "button17": {
+    "container": "ediCategoryModal",
+    "row": 6.8,
+    "col": 9,
+    "height": 1,
+    "width": 2
+  },
+  "button18": {
+    "container": "ediCategoryModal",
+    "row": 6.8,
+    "col": 7,
+    "height": 1,
+    "width": 2
+  },
+  "button3": {
+    "container": "container1",
+    "subcontainer": "eaa74",
+    "row": 0.2,
+    "col": 7,
+    "height": 1,
+    "width": 1
+  },
+  "button8": {
+    "container": "container1",
+    "subcontainer": "eaa74",
+    "row": 0.2,
+    "col": 8,
+    "height": 1,
+    "width": 2
+  },
+  "button9": {
+    "container": "addSubCategoryModal",
+    "row": 9.8,
+    "col": 9,
+    "height": 1,
+    "width": 2
+  },
+  "cancel": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "row": 1.6,
+    "col": 8,
+    "height": 1,
+    "width": 2
+  },
+  "cat_name_eng_tv": {
+    "container": "form1",
+    "row": 3.8,
+    "height": 1,
+    "width": 5
+  },
+  "cat_name_id_tv": {
+    "container": "form1",
+    "row": 3,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "categoriesTable": {
+    "container": "container1",
+    "subcontainer": "eaa74",
+    "row": 4.4,
+    "height": 8,
+    "width": 12
+  },
+  "container1": { "height": 0.2, "width": 12 },
+  "containerTitle1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "ediCategoryModal": { "row": 0.2, "col": 11, "height": 1, "width": 1 },
+  "edit_cat_name_eng_tv2": {
+    "container": "ediCategoryModal",
+    "row": 4,
+    "height": 1,
+    "width": 5
+  },
+  "edit_cat_name_id_tv2": {
+    "container": "ediCategoryModal",
+    "row": 4,
+    "col": 6,
+    "height": 1,
+    "width": 5
+  },
+  "edit_sub_categories_btn": {
+    "container": "categoriesTable",
+    "subcontainer": "Custom Column 2",
+    "row": 5,
+    "col": 3,
+    "height": 1,
+    "width": 6
+  },
+  "fileDropzone3": {
+    "container": "addSubCategoryToNewCategoryModal",
+    "row": 3.6,
+    "height": 2.4
+  },
+  "fileDropzone4": {
+    "container": "ediCategoryModal",
+    "row": 0.6,
+    "height": 2.4
+  },
+  "form1": { "container": "add_category_modal", "height": 0.2, "width": 12 },
+  "formTitle1": {
+    "container": "form1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "header1": { "subcontainer": "header", "height": 0.4, "width": 12 },
+  "link2": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "row": 0.4,
+    "height": 0.6
+  },
+  "link4": {
+    "container": "categoriesTable",
+    "subcontainer": "child_categories",
+    "row": 9.6,
+    "height": 0.6,
+    "width": 4
+  },
+  "must_have_subcategory_tv": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "row": 1.4,
+    "height": 0.6,
+    "width": 5
+  },
+  "newCategoryFileDropzone": {
+    "container": "form1",
+    "row": 0.2,
+    "height": 2.4
+  },
+  "new_subcategories_table": {
+    "container": "form1",
+    "row": 10.8,
+    "height": 2,
+    "width": 12
+  },
+  "search_category_tv": {
+    "container": "container1",
+    "subcontainer": "eaa74",
+    "row": 1.6,
+    "height": 1,
+    "width": 4
+  },
+  "subCategoriesTable": {
+    "container": "categoriesTable",
+    "subcontainer": "child_categories",
+    "row": 1.6,
+    "height": 8,
+    "width": 12
+  },
+  "subCategoryFileDropzone": {
+    "container": "addSubCategoryModal",
+    "row": 3.8,
+    "height": 2.4
+  },
+  "sub_cat_name_eng_tv": {
+    "container": "addSubCategoryToNewCategoryModal",
+    "row": 8.2,
+    "height": 1,
+    "width": 5
+  },
+  "sub_cat_name_id_tv": {
+    "container": "addSubCategoryToNewCategoryModal",
+    "row": 7.6,
+    "col": 6,
+    "height": 1,
+    "width": 5
+  },
+  "submit_new_category_btn": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "row": 1.6,
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "text10": {
+    "container": "addSubCategoryToNewCategoryModal",
+    "height": 0.8,
+    "width": 6
+  },
+  "text11": {
+    "container": "categoriesTable",
+    "subcontainer": "Custom Column 2",
+    "row": 0.6,
+    "col": 2,
+    "height": 0.6,
+    "width": 8
+  },
+  "text12": { "container": "ediCategoryModal", "height": 0.6, "width": 6 },
+  "text13": {
+    "container": "form1",
+    "row": 5.2,
+    "col": 7,
+    "height": 0.6,
+    "width": 4
+  },
+  "text14": { "container": "form1", "row": 4.8, "height": 0.6, "width": 4 },
+  "text15": {
+    "container": "form1",
+    "row": 1.8,
+    "col": 3,
+    "height": 0.6,
+    "width": 4
+  },
+  "text16": {
+    "container": "addSubCategoryToNewCategoryModal",
+    "row": 6.4,
+    "height": 0.6,
+    "width": 4
+  },
+  "text2": {
+    "container": "container1",
+    "subcontainer": "eaa74",
+    "height": 0.6
+  },
+  "text5": { "container": "form1", "row": 10.2, "height": 0.6 },
+  "text6": { "container": "addSubCategoryModal", "height": 0.6, "width": 6 },
+  "text9": {
+    "container": "categoriesTable",
+    "subcontainer": "child_categories",
+    "height": 0.6,
+    "width": 8
+  },
+  "textInput10": {
+    "container": "addSubCategoryToNewCategoryModal",
+    "row": 1.6,
+    "height": 1,
+    "width": 7
+  },
+  "textInput4": {
+    "container": "categoriesTable",
+    "subcontainer": "child_categories",
+    "row": 0.6,
+    "height": 1,
+    "width": 12
+  },
+  "textInput5": {
+    "container": "addSubCategoryModal",
+    "row": 7,
+    "col": 6,
+    "height": 1,
+    "width": 5
+  },
+  "textInput6": {
+    "container": "addSubCategoryModal",
+    "row": 7,
+    "height": 1,
+    "width": 5
+  },
+  "textInput7": {
+    "container": "addSubCategoryModal",
+    "row": 1.6,
+    "height": 1,
+    "width": 7
+  }
+}

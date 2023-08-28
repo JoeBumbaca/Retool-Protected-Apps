@@ -1,0 +1,5 @@
+mutation($name: String!, $last_successful_started_at: timestamptz) {
+  update_jobs(where: {name: {_eq: $name}}, _set: {last_successful_started_at: $last_successful_started_at}) {
+    affected_rows
+  }
+}

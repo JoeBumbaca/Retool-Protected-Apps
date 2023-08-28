@@ -1,0 +1,5 @@
+{
+  "button1": { "row": 1, "col": 10, "height": 1, "width": 2 },
+  "numberInput1": { "row": 3.2, "col": 9, "height": 1 },
+  "table1": { "row": 0.4, "col": 1, "height": 8, "width": 8 }
+}

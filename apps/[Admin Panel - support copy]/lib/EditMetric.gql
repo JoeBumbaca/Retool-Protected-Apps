@@ -1,0 +1,5 @@
+mutation ($export_config: jsonb, $flavor: String, $name: String,$category: String,) {
+  update_metrics(where: {flavor: {_eq: $flavor}, name: {_eq: $name}}, _set: {export_config: $export_config, category:$category}) {
+    affected_rows
+  }
+}

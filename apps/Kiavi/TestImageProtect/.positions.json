@@ -1,0 +1,6 @@
+{
+  "button1": { "row": 7.4, "col": 8, "height": 1 },
+  "image1": { "row": 2.4, "col": 4, "height": 3, "width": 2 },
+  "numberInput1": { "row": 2.4, "col": 8, "height": 1, "width": 4 },
+  "numberInput2": { "row": 5.4, "col": 8, "height": 1, "width": 4 }
+}

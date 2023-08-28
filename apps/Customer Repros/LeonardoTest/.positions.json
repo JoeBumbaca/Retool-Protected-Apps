@@ -1,0 +1,9 @@
+{
+  "listView1": { "row": 2.2, "col": 2, "width": 7 },
+  "numberInput1": {
+    "container": "listView1",
+    "row": 0.4,
+    "height": 1,
+    "width": 7
+  }
+}

@@ -1,0 +1,5 @@
+mutation MyMutation2 {
+  argo_run(workflow_type: "hermes") {
+    msg
+  }
+}

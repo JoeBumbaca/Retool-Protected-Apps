@@ -1,8 +1,0 @@
-version: 43.0.9
-pageUuid: 790ab0b4-ccb6-11ec-9901-b7e833d0ffe8
-appTemplate:
-  folders:
-    - Temporary state
-  preloadedAppJavaScript: ''
-  rootScreen: null
-  version: 2.91.5

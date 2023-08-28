@@ -1,0 +1,10 @@
+query {
+  workspaces(order_by: {
+    order: asc
+  }) {
+    id
+    order
+    name
+    collection_type
+  }
+}

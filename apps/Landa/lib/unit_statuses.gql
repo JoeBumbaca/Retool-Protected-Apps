@@ -1,0 +1,7 @@
+query($ticker:[String]!) {
+    unitQuery{
+        units(ticker:$ticker){
+            status
+        }
+    }
+}

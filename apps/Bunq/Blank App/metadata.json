@@ -1,0 +1,12 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "ccf90f38-9c17-11ec-a52a-a3b8c533cf21",
+  "appTemplate": {
+    "preloadedAppJavaScript": "window.test2 = function() {\n return 'test1'\n}",
+    "experimentalPerfFeatures": {
+      "object": { "batchCommitModelEnabled": false }
+    },
+    "version": "3.8.1"
+  }
+}

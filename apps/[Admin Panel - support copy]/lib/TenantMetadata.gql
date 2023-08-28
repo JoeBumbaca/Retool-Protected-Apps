@@ -1,0 +1,5 @@
+query ($tid: Int!) {
+  tenants_by_pk(tid: $tid) {
+    internal_metadata
+  }
+}

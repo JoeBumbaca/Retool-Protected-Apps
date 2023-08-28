@@ -1,0 +1,9 @@
+{
+  "tabs1": {
+    "container": "tabbedcontainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "wizard1": { "col": 3, "height": 11.6, "width": 6 }
+}

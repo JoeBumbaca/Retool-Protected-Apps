@@ -1,0 +1,91 @@
+{
+  "button1": { "row": 3.4, "col": 10, "height": 1, "width": 2 },
+  "customComponent1": { "row": 25.6, "col": 2, "height": 4, "width": 7 },
+  "customComponent2": { "row": 55.8, "height": 4, "width": 5 },
+  "fileButton1": { "row": 10.4, "col": 1, "height": 1 },
+  "form1": { "row": 129, "col": 5, "height": 0.2, "width": 6 },
+  "formButton1": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formTitle1": {
+    "container": "form1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "html1": { "row": 51, "col": 9, "height": 0.2 },
+  "image1": { "row": 83, "col": 7, "height": 3, "width": 4 },
+  "image2": { "row": 94.2, "col": 4, "height": 3, "width": 7 },
+  "multiselect1": { "row": 1.2, "col": 9, "height": 1 },
+  "nextButton1": {
+    "container": "steppedContainer1",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "prevButton1": {
+    "container": "steppedContainer1",
+    "rowGroup": "footer",
+    "height": 1,
+    "width": 4
+  },
+  "select1": { "row": 33.2, "col": 2, "height": 1, "width": 2 },
+  "select2": { "row": 34.4, "col": 2, "height": 1, "width": 2 },
+  "select3": {
+    "container": "form1",
+    "row": 1.4,
+    "col": 2,
+    "height": 1,
+    "width": 7
+  },
+  "select4": { "row": 147.8, "col": 5, "height": 1, "width": 4 },
+  "steppedContainer1": { "row": 52.8, "col": 8, "height": 0.2, "width": 4 },
+  "steps1": {
+    "container": "steppedContainer1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "tabbedContainer1": { "row": 42.2, "col": 5, "height": 0.2, "width": 6 },
+  "tabbedContainer2": { "row": 26.6, "col": 9, "height": 0.2 },
+  "table1": { "row": 17.6, "col": 3, "height": 8, "width": 5 },
+  "table2": { "row": 32.2, "col": 4, "height": 8, "width": 8 },
+  "table3": { "row": 9.6, "col": 5, "height": 8, "width": 7 },
+  "table4": { "row": 61.6, "col": 3, "height": 8, "width": 7 },
+  "table5": { "row": 70, "col": 2, "height": 8, "width": 8 },
+  "table6": { "row": 112.6, "col": 5, "height": 8, "width": 7 },
+  "table7": { "row": 136.4, "col": 5, "height": 8, "width": 7 },
+  "tabs1": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "tabs2": {
+    "container": "tabbedContainer2",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "tags1": { "row": 7, "col": 8, "height": 0.8, "width": 4 },
+  "text1": { "row": 30.6, "col": 4, "height": 0.6 },
+  "text2": { "row": 53, "col": 6, "height": 0.6 },
+  "text3": { "row": 50.8, "col": 5, "height": 0.6 },
+  "textArea1": { "row": 125.2, "col": 6, "height": 1, "width": 4 },
+  "textInput1": { "row": 17.6, "col": 8, "height": 1, "width": 4 },
+  "textInput2": { "row": 48.6, "col": 5, "height": 1, "width": 4 },
+  "textInput3": { "row": 47.2, "col": 5, "height": 1, "width": 4 },
+  "textInput4": {
+    "container": "form1",
+    "row": 0.4,
+    "col": 2,
+    "height": 1,
+    "width": 8
+  },
+  "virtualizedTable1": { "row": 0.2, "height": 8, "width": 8 }
+}

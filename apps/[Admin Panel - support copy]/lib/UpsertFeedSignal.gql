@@ -1,0 +1,5 @@
+mutation ($feed_id: uuid!, $signal_id: uuid!, $order: bigint!) {
+  update_feed_signals_by_pk(pk_columns: {feed_id: $feed_id, signal_id: $signal_id}, _set: {order: $order}) {
+    order
+  }
+}

@@ -1,0 +1,12 @@
+query ($tid: Int!) {
+  tenants_by_pk(tid: $tid) {
+    name
+    tid
+    logo_url
+    fiscal_year_start
+    trial_end
+    graph_colors
+    decimal_digits
+    last_etl_synced
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "712462c4-dc00-11ec-ac6a-f317aa0d465d",
+  "appTemplate": {
+    "preloadedAppJavaScript": "var newCategory = {};\nvar child_categories = []\nnewCategory.child_categories = child_categories;\n\nvar gcsUrl = \"https://storage.googleapis.com/\";\nvar bucketName = retoolContext.environment == \"production\"? \"svc-prod-ap-se1-bucket\" : \"svc-preprod-ap-se1-bucket\";\nvar rootImageUrl = gcsUrl + bucketName+\"/\";\n\n",
+    "version": "3.8.1"
+  }
+}

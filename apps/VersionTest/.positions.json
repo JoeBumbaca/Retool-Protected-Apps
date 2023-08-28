@@ -1,0 +1,5 @@
+{
+  "image1": { "row": 4.2, "col": 2, "height": 3, "width": 2 },
+  "image2": { "row": 4.6, "col": 6, "height": 3, "width": 2 },
+  "image3": { "row": 12.2, "col": 5, "height": 3, "width": 2 }
+}

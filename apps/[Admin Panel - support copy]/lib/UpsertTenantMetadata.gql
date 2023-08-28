@@ -1,0 +1,7 @@
+mutation UpsertTenantMetadata($internal_metadata: jsonb!, $tid: Int!) {
+  update_tenants_by_pk(pk_columns: {tid: $tid}, _set: {internal_metadata: $internal_metadata}) {
+    updated_at
+    internal_metadata
+  }
+}
+

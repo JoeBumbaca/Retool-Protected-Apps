@@ -1,0 +1,11 @@
+mutation UpsertSubscription($objects: [user_tags_insert_input!]!, $users_ids: [uuid!]!) {
+  delete_user_tags(where:{user_id:{_in: $users_ids}}){
+    affected_rows
+  },
+  insert_user_tags(
+    objects: $objects
+    on_conflict: {constraint: user_tags_pkey}
+  ) {
+    affected_rows
+  }
+}

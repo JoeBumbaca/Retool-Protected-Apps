@@ -1,0 +1,7 @@
+mutation ($objects: [signals_insert_input!]!) {
+  insert_signals(objects: $objects, on_conflict: {constraint: signals_pkey, update_columns: [
+      	attachment
+        ]}) {
+    affected_rows
+  }
+}

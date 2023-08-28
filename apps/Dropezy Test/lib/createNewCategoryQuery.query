@@ -1,0 +1,3 @@
+{$or: [{name: {{search_category_tv.value !== ""? {$regex: search_category_tv.value, $options: 'i'}: {$exists: true} }} }, {"child_categories.name": {{search_category_tv.value !== ""? {$regex: search_category_tv.value, $options: 'i'}: {$exists: true} }} }] }
+
+ 

@@ -1,0 +1,15 @@
+query MyQuery {
+  insight_types(order_by: {display_name: asc}) {
+    id
+    auto_approve_default
+    auto_approve_override
+    auto_approve
+    display_name
+    visible
+    visible_default
+    visible_override
+    tags {
+      tag_id
+    }
+  }
+}

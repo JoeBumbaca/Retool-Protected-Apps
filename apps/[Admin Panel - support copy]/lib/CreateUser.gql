@@ -1,0 +1,5 @@
+mutation manual_argo($email: String, $first_name: String, $last_name: String) {
+  insert_users_one(object: {email: $email, last_name: $last_name, first_name: $first_name, feed: { data: {} }}, on_conflict: {constraint: users_tid_email_key, update_columns: email}) {
+    id
+  }
+}

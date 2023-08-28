@@ -1,0 +1,5 @@
+mutation myMutation($workflow: String!){
+  resume_cron(workflow: $workflow) {
+		msg
+	}
+}

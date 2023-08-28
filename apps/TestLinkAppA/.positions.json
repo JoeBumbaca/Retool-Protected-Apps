@@ -1,0 +1,11 @@
+{
+  "button1": { "row": 0.6, "col": 10, "height": 1, "width": 2 },
+  "image1": { "row": 4, "col": 10, "height": 3, "width": 2 },
+  "navigation1": {
+    "subcontainer": "header",
+    "row": 0.2,
+    "height": 1,
+    "width": 12
+  },
+  "table1": { "row": 0.8, "col": 1, "height": 8, "width": 8 }
+}

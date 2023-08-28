@@ -1,0 +1,5 @@
+mutation ToggleVisibleOverride($id: String!, $tid: Int!, $visible_override: Boolean!) {
+  update_insight_types_by_pk(pk_columns: {tid: $tid, id: $id}, _set: {visible_override: $visible_override}) {
+    id
+  }
+}

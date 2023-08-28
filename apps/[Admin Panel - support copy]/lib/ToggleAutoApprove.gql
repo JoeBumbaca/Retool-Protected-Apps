@@ -1,0 +1,5 @@
+mutation ToggleAutoApprove($id: String!, $tid: Int!, $auto_approve: Boolean!) {
+  update_insight_types_by_pk(pk_columns: {tid: $tid, id: $id}, _set: {auto_approve_override: $auto_approve}) {
+    id
+  }
+}

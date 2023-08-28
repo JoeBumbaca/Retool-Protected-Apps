@@ -1,0 +1,7 @@
+query {
+  tenants(order_by:{tid:asc}) {
+    name
+    tid
+    logo_url
+  }
+}

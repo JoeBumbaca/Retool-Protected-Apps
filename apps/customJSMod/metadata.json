@@ -1,0 +1,10 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "8d6ed570-e391-11ec-bfd2-97208cc993bf",
+  "appTemplate": {
+    "preloadedAppJavaScript": "window.myFunction = () => {\n  console.log('testing');\n  return false;\n}",
+    "isGlobalWidget": true,
+    "version": "3.8.1"
+  }
+}

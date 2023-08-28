@@ -1,0 +1,6 @@
+mutation UpsertTenant($fiscal_year_start: Int, $logo_url: String, $name: String,$graph_colors: String, $decimal_digits: Int, $trial_end: timestamptz, $last_sync: timestamptz) {
+  insert_tenants_one(object: {fiscal_year_start: $fiscal_year_start, logo_url: $logo_url, name: $name, graph_colors: $graph_colors, decimal_digits: $decimal_digits, trial_end: $trial_end, last_etl_synced: $last_sync}, on_conflict: {constraint: tenants_pkey, update_columns: [logo_url, name, graph_colors, decimal_digits, trial_end, last_etl_synced]}) {
+    name
+  }
+}
+

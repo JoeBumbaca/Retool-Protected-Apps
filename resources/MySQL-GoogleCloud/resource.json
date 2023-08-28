@@ -1,0 +1,25 @@
+{
+  "type": "mysql",
+  "host": "35.230.82.91",
+  "port": "3306",
+  "databaseName": "retoolDB",
+  "databaseUsername": "root",
+  "ssl": false,
+  "editPrivilege": false,
+  "options": {
+    "client_cert": null,
+    "client_key": null,
+    "credentialPrivileges": { "allowRead": true, "allowWrite": true },
+    "gcpConnectWithSelfSignedCertificate": false,
+    "queryEditorModes": { "allowGuiMode": true, "allowSqlMode": true },
+    "sshHost": "",
+    "sshPrivateKeyName": "",
+    "sshTunnelEnabled": false,
+    "sshUsername": "",
+    "version": "SqlQueryUnified"
+  },
+  "environment": "production",
+  "dynamicallyQueryable": false,
+  "uuid": "f92e82dc-07a4-4ee8-9bc0-e090b294e43e",
+  "toolscriptVersion": "1.0.0"
+}

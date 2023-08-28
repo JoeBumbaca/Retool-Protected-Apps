@@ -1,0 +1,13 @@
+query UsersSubscribeToTags {
+  users(order_by: {first_name: asc}) {
+    id
+    sub
+    first_name
+    last_name
+    email
+    subscribe_to_new_insights
+    tags {
+      tag_id
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation CreateConnector($source: String!) {
+  fivetran_create_connector(source: $source) {
+    result
+  }
+}

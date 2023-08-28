@@ -1,0 +1,12 @@
+mutation UpsertFeatureFlag($user_id: uuid!, $key: String!, $value: jsonb!) {
+  insert_features_one(object:{
+    user_id: $user_id
+    key: $key
+    value: $value
+  }, on_conflict: {constraint:features_pkey, update_columns:[value]}) {
+    tid
+    user_id
+    key
+    value
+  }
+}

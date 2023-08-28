@@ -1,0 +1,7 @@
+mutation($name: String) {
+  insert_tenants_one(object: {name: $name}) {
+    name
+    tid
+  }
+}
+

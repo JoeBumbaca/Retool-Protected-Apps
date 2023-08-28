@@ -1,0 +1,11 @@
+{
+  country(code: "BR"){
+    languages {
+      code
+      name
+    }
+    states {
+      name
+    }
+  }
+}

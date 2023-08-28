@@ -1,0 +1,8 @@
+query {
+  features {
+    key
+    user_id
+    value
+  }
+}
+

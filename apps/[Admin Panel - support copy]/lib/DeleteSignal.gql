@@ -1,0 +1,9 @@
+mutation DeleteSignal($signal_id: uuid!) {
+  delete_signals(where: {id: {_eq: $signal_id}}) {
+    returning {
+      id
+      author_id
+      message
+    }
+  }
+}

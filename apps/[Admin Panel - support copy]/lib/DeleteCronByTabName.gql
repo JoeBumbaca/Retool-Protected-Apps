@@ -1,0 +1,5 @@
+mutation DeleteCron($workflow: String!){
+  delete_cron(workflow: $workflow) {
+    msg
+  }
+}

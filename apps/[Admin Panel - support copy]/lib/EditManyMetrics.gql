@@ -1,0 +1,5 @@
+mutation ($updates: [metrics_updates!]!) {
+  update_metrics_many(updates: $updates){
+    affected_rows
+  }
+}

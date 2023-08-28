@@ -1,0 +1,5 @@
+{$or: [{name_en: {{search_category_tv.value !== ""? {$regex: search_category_tv.value, $options: 'i'}: {$exists: true} }} },
+        {name_id: {{search_category_tv.value !== ""? {$regex: search_category_tv.value, $options: 'i'}: {$exists: true} }} }, {"child_categories.name_en": {{search_category_tv.value !== ""? {$regex: search_category_tv.value, $options: 'i'}: {$exists: true} }} },
+      {"child_categories.name_id": {{search_category_tv.value !== ""? {$regex: search_category_tv.value, $options: 'i'}: {$exists: true} }} }] }
+
+ 

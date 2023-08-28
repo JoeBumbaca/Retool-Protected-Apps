@@ -1,0 +1,338 @@
+{
+  "avatar1": {
+    "subcontainer": "header",
+    "row": 0,
+    "col": 10,
+    "height": 0.2,
+    "width": 2
+  },
+  "button3": { "container": "container1", "height": 1, "width": 1 },
+  "button4": {
+    "container": "container2",
+    "subcontainer": "a9d15",
+    "row": 1.8,
+    "col": 9,
+    "height": 1
+  },
+  "button5": {
+    "container": "collapsibleContainer2",
+    "rowGroup": "header",
+    "col": 10,
+    "height": 0.8,
+    "width": 2
+  },
+  "button6": {
+    "container": "collapsibleContainer2",
+    "height": 0.8,
+    "width": 1
+  },
+  "button7": {
+    "container": "collapsibleContainer2",
+    "subcontainer": "391b9",
+    "row": 6.2,
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "button8": {
+    "container": "container2",
+    "subcontainer": "4d594",
+    "row": 1,
+    "col": 9,
+    "height": 1
+  },
+  "button9": {
+    "container": "container1",
+    "subcontainer": "64428",
+    "col": 8,
+    "height": 1,
+    "width": 2
+  },
+  "button_backToVariations": {
+    "container": "container2",
+    "subcontainer": "4d594",
+    "height": 1,
+    "width": 2
+  },
+  "button_editProducts": {
+    "container": "container1",
+    "subcontainer": "64428",
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "checkbox_availableProduct": {
+    "container": "collapsibleContainer_includedProducts2",
+    "rowGroup": "header",
+    "row": 0.2,
+    "height": 0.6,
+    "width": 1
+  },
+  "checkbox_includeProduct": {
+    "container": "collapsibleContainer_includedProducts",
+    "rowGroup": "header",
+    "row": 0.2,
+    "height": 0.6,
+    "width": 1
+  },
+  "checkbox_includeProductLineItem": {
+    "container": "listView_includedLineItems",
+    "height": 0.6,
+    "width": 1
+  },
+  "checkbox_includeProductLineItem2": {
+    "container": "listView_includedLineItems2",
+    "height": 0.6,
+    "width": 1
+  },
+  "cleanMode1": { "row": 2, "height": 0.4 },
+  "collapsibleContainer2": {
+    "container": "listView_variations",
+    "row": 0.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "collapsibleContainer_includedProducts": {
+    "container": "listView_includedProducts",
+    "height": 0.2,
+    "width": 12
+  },
+  "collapsibleContainer_includedProducts2": {
+    "container": "listView_availableProducts",
+    "height": 1.4,
+    "width": 12
+  },
+  "collapsibleTitle_includedLineItemName": {
+    "container": "listView_includedLineItems",
+    "col": 1,
+    "height": 0.8,
+    "width": 6
+  },
+  "collapsibleTitle_includedLineItemName2": {
+    "container": "listView_includedLineItems2",
+    "col": 1,
+    "width": 6
+  },
+  "collapsibleTitle_includedProductName": {
+    "container": "collapsibleContainer_includedProducts",
+    "rowGroup": "header",
+    "row": 0.2,
+    "col": 1,
+    "height": 0.8,
+    "width": 7
+  },
+  "collapsibleTitle_includedProductName2": {
+    "container": "collapsibleContainer_includedProducts2",
+    "rowGroup": "header",
+    "row": 0.2,
+    "col": 1,
+    "height": 0.8,
+    "width": 5
+  },
+  "collapsibleTitle_variationName": {
+    "container": "collapsibleContainer2",
+    "rowGroup": "header",
+    "row": 0,
+    "height": 0.8,
+    "width": 2
+  },
+  "collapsibleToggle2": {
+    "container": "collapsibleContainer2",
+    "rowGroup": "header",
+    "col": 2,
+    "height": 0.8,
+    "width": 1
+  },
+  "collapsibleToggle3": {
+    "container": "collapsibleContainer_includedProducts",
+    "rowGroup": "header",
+    "row": 0,
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "collapsibleToggle4": {
+    "container": "collapsibleContainer_includedProducts2",
+    "rowGroup": "header",
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "container1": {
+    "container": "listView_bundles",
+    "row": 0,
+    "height": 0.2,
+    "width": 12
+  },
+  "container2": { "height": 2, "width": 12 },
+  "containerTitle1": {
+    "container": "container2",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "currency_includedLineItem": {
+    "container": "listView_includedLineItems",
+    "row": 0,
+    "col": 8,
+    "height": 1
+  },
+  "currency_includedLineItem2": {
+    "container": "listView_includedLineItems2",
+    "col": 8,
+    "height": 1
+  },
+  "currency_includedProductAmount": {
+    "container": "collapsibleContainer_includedProducts",
+    "rowGroup": "header",
+    "col": 8,
+    "height": 1
+  },
+  "currency_includedProductAmount2": {
+    "container": "collapsibleContainer_includedProducts2",
+    "rowGroup": "header",
+    "col": 8,
+    "height": 1
+  },
+  "divider1": {
+    "container": "collapsibleContainer2",
+    "rowGroup": "header",
+    "row": 0.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "editableTextGroupName": {
+    "container": "container2",
+    "subcontainer": "a9d15",
+    "row": 0.6,
+    "height": 0.6,
+    "width": 2
+  },
+  "editableText_bundleAmount": {
+    "container": "container1",
+    "subcontainer": "64428",
+    "col": 4,
+    "height": 1
+  },
+  "editableText_bundleName": {
+    "container": "container1",
+    "subcontainer": "64428",
+    "height": 0.6,
+    "width": 2
+  },
+  "listView_availableProducts": {
+    "container": "container2",
+    "subcontainer": "4d594",
+    "row": 5.6,
+    "col": 6,
+    "height": 1,
+    "width": 6
+  },
+  "listView_bundles": {
+    "container": "collapsibleContainer2",
+    "subcontainer": "391b9",
+    "row": 1.2,
+    "width": 12
+  },
+  "listView_includedLineItems": {
+    "container": "collapsibleContainer_includedProducts",
+    "subcontainer": "635fc",
+    "row": 0,
+    "col": 1,
+    "width": 11
+  },
+  "listView_includedLineItems2": {
+    "container": "collapsibleContainer_includedProducts2",
+    "subcontainer": "635fc",
+    "col": 1,
+    "width": 11
+  },
+  "listView_includedProducts": {
+    "container": "container2",
+    "subcontainer": "4d594",
+    "row": 5.6,
+    "height": 1,
+    "width": 6
+  },
+  "listView_variations": {
+    "container": "container2",
+    "subcontainer": "a9d15",
+    "row": 3.2,
+    "width": 12
+  },
+  "modal_bundleEditor": { "row": 2, "col": 9, "height": 1 },
+  "navigation1": {
+    "subcontainer": "header",
+    "row": 0,
+    "height": 1,
+    "width": 8
+  },
+  "text1": {
+    "container": "collapsibleContainer2",
+    "subcontainer": "391b9",
+    "row": 0.6,
+    "height": 0.6
+  },
+  "textAvailableProducts": {
+    "container": "container2",
+    "subcontainer": "4d594",
+    "row": 5,
+    "col": 6,
+    "height": 1,
+    "width": 5
+  },
+  "textIncludedProducts": {
+    "container": "container2",
+    "subcontainer": "4d594",
+    "row": 5,
+    "height": 0.6,
+    "width": 6
+  },
+  "textInput1": {
+    "subcontainer": "header",
+    "row": 0,
+    "col": 8,
+    "height": 1,
+    "width": 2
+  },
+  "text_bundleName": {
+    "container": "modal_bundleEditor",
+    "row": 0,
+    "height": 0.6,
+    "width": 11
+  },
+  "text_bundleName2": {
+    "container": "container2",
+    "subcontainer": "4d594",
+    "row": 2.4,
+    "height": 0.8,
+    "width": 5
+  },
+  "text_bundles": {
+    "container": "collapsibleContainer2",
+    "subcontainer": "391b9",
+    "row": 0,
+    "height": 0.6
+  },
+  "text_groupName": {
+    "container": "container2",
+    "subcontainer": "4d594",
+    "row": 1.2,
+    "height": 0.6,
+    "width": 5
+  },
+  "text_title2": {
+    "container": "container2",
+    "subcontainer": "a9d15",
+    "row": 0,
+    "height": 0.6,
+    "width": 12
+  },
+  "text_variationName": {
+    "container": "container2",
+    "subcontainer": "4d594",
+    "row": 1.8,
+    "height": 1.2,
+    "width": 5
+  }
+}

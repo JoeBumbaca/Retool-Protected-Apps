@@ -1,0 +1,10 @@
+mutation ($objects: [detections_insert_input!]!) {
+  insert_detections(objects: $objects, on_conflict: {constraint: detections_pkey, update_columns: [
+      	display_name,
+        execution_options,
+        require_oversight,
+        schedule,
+        type]}) {
+    affected_rows
+  }
+}

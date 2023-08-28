@@ -1,0 +1,1 @@
+return current_user.groups.map(group => group.name).includes("All Users")

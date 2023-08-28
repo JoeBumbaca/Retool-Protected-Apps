@@ -1,0 +1,8 @@
+mutation MyMutation($name: String , $config: jsonb, $schedule: String, $extra_params: jsonb) {
+	insert_jobs_one(object: {config: $config, name: $name}, on_conflict: {constraint: jobs_pkey, update_columns: config}) {
+    name
+  }
+  upsert_argo_cron(schedule: $schedule, workflow_type: $name, extra_params: $extra_params) {
+    msg
+  }
+}

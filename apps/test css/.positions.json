@@ -1,0 +1,9 @@
+{
+  "navBar1": {
+    "subcontainer": "header",
+    "row": 0.2,
+    "col": 1,
+    "height": 0.2,
+    "width": 10
+  }
+}

@@ -1,0 +1,23 @@
+{
+  signals {
+    id
+    message
+    created_at
+    updated_at
+    edited_at
+    attachment
+    author {
+      email
+    }
+    state
+    insight_type
+    feed_signals {
+      feed {
+        workspace {
+          name
+        }
+      }
+      resolved
+    }
+  }
+}

@@ -1,0 +1,12 @@
+mutation UpsertWorkspace($id: uuid!, $order: bigint!, $name: String!) {
+  update_workspaces_by_pk(pk_columns:{
+    id: $id,
+  }, _set: {
+    order: $order,
+    name: $name
+  }) {
+    order
+    id
+    name
+  }
+}

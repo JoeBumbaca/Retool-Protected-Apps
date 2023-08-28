@@ -1,0 +1,8 @@
+mutation DeleteDataOverride($object_id: String!, $dimension: String!) {
+  delete_data_overrides(where: {object_id: {_eq: $object_id}, dimension: {_eq: $dimension}}) {
+    returning {
+      object_id
+      dimension
+    }
+  }
+}

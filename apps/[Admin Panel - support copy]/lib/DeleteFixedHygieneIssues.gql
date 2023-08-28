@@ -1,0 +1,8 @@
+mutation {
+  delete_data_issues(where: {
+    detection_status: {_eq: "Fixed"},
+    user_action: {_is_null: true}
+  }) {
+    affected_rows
+  }
+}

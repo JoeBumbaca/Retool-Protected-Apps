@@ -1,0 +1,1 @@
+return (stamp.value == "" || role.value == "" || tenantIdPicker.value == "")

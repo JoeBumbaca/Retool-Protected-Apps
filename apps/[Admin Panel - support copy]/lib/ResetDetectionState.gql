@@ -1,0 +1,8 @@
+mutation UpdateDetectionState($id: String = "", $state: jsonb = "") {
+  update_detections(where: {id: {_eq: $id}}, _set: {state: $state}) {
+    returning {
+      id
+      state
+    }
+  }
+}

@@ -1,0 +1,17 @@
+query ($name: String!) {
+  workspaces(where: {name: {_eq: $name}}) {
+    name
+    collection_type
+    feed {
+      feed_signals(order_by: {order: asc}, where: {resolved: {_eq: false}}) {
+        signal_width
+        signal_height
+        order
+        signal {
+          message
+          attachment
+        }
+      }
+    }
+  }
+}

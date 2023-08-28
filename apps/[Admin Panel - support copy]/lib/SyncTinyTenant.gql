@@ -1,0 +1,22 @@
+mutation SyncTinyTenant($fiscal_year_start: Int, $name: String = "", $internal_metadata: jsonb, $tablefish_config: jsonb, $db2graph_salesforce_config: jsonb, $db2graph_targets_config: jsonb, $babelfish_config: jsonb, $tailor_config: jsonb, $argovisor_config: jsonb) {
+  insert_tenants_one(object: {name: $name, fiscal_year_start: $fiscal_year_start, internal_metadata: $internal_metadata}, on_conflict: {constraint: tenants_pkey, update_columns: [name, fiscal_year_start, internal_metadata]}) {
+    tid
+    fiscal_year_start
+    name
+    internal_metadata
+  }
+  insert_jobs(objects: [{name: "tablefish", config: $tablefish_config}, 
+                        {name: "DB2Graph-Salesforce", config: $db2graph_salesforce_config},
+                        {name: "DB2Graph-Targets", config: $db2graph_targets_config},
+                        {name: "Babelfish", config: $babelfish_config},
+                        {name: "Tailor", config: $tailor_config},
+                        {name: "argovisor", config: $argovisor_config}],
+                        on_conflict: {constraint: jobs_pkey, update_columns: config}) {
+    returning {
+      tid
+      name
+      config
+    }
+  }
+}
+

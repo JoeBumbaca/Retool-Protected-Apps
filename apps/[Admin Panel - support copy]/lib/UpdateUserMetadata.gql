@@ -1,0 +1,7 @@
+mutation MyMutation($id: uuid!, $internal_metadata: jsonb) {
+  update_users_by_pk(pk_columns: {id: $id}, _set: {internal_metadata: $internal_metadata}) {
+    internal_metadata
+  }
+}
+
+

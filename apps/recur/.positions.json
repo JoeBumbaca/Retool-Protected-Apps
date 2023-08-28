@@ -1,0 +1,6 @@
+{
+  "button1": { "container": "moduleContainer", "row": 0.4, "height": 1 },
+  "listView1": { "container": "moduleContainer", "row": 1.6, "width": 6 },
+  "moduleContainer": { "height": 12, "width": 12 },
+  "text1": { "container": "listView1", "col": 3, "height": 0.6, "width": 8 }
+}

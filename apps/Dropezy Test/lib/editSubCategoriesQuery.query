@@ -1,0 +1,1 @@
+{_id: {$oid:  {{ categoriesTable.selectedRow.data._id }} }, child_categories: { $elemMatch: { _id: {$oid:  {{ id }} }}} }

@@ -1,0 +1,15 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "9132283e-4e34-11ed-92b2-672e37ce5e2c",
+  "appTemplate": {
+    "mobileAppSettings": { "object": { "mobileOfflineModeEnabled": false } },
+    "experimentalPerfFeatures": {
+      "object": { "serverDepGraphEnabled": false, "useRuntimeV2": false }
+    },
+    "version": "3.8.1",
+    "experimentalStabilityFeatures": {
+      "object": { "lockModelForUpdates": true }
+    }
+  }
+}

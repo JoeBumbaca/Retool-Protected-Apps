@@ -1,0 +1,5 @@
+mutation($specific_step: String, $run_from: String,$specific_objects: [String],$override_tags: [String], $schema_revision: String) {
+  argo_run(workflow_type: "argovisor", specific_step: $specific_step, run_from: $run_from, specific_objects: $specific_objects, override_tags: $override_tags, schema_revision: $schema_revision) {
+    msg
+  }
+}

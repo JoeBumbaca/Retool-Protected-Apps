@@ -1,0 +1,20 @@
+query {
+  detections {
+    display_name
+    id
+    config
+    execution_options
+    require_oversight
+    schedule
+    state
+    type
+    timeout_seconds
+    job {
+      started_at
+      status
+      progress
+      last_successful_started_at
+      last_successful_finished_at
+    }
+  }
+}

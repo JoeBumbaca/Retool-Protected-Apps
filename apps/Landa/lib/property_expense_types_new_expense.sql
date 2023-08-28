@@ -1,0 +1,1 @@
+SELECT DISTINCT type FROM properties_propertyexpense UNION SELECT 'other' AS type

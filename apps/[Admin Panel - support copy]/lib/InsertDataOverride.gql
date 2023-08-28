@@ -1,0 +1,10 @@
+mutation InsertDataOverride($object_id: String!, $dimension: String!, $value: jsonb!, $comment: String = "") {
+  insert_data_overrides(objects: {object_id: $object_id, dimension: $dimension, value: $value, comment: $comment}) {
+    returning {
+      object_id
+      dimension
+      value
+      comment
+    }
+  }
+}

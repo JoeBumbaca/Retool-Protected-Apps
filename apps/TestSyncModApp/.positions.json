@@ -1,0 +1,5 @@
+{
+  "image1": { "row": 6.2, "col": 8, "height": 3, "width": 2 },
+  "image2": { "row": 6.6, "col": 2, "height": 3, "width": 2 },
+  "testSyncModule1": { "col": 1, "height": 2.4, "width": 10 }
+}

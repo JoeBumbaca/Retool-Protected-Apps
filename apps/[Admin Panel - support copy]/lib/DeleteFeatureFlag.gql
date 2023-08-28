@@ -1,0 +1,5 @@
+mutation ($tid: Int!, $user_id: uuid!, $key: String!) {
+  delete_features_by_pk(tid: $tid, key: $key, user_id: $user_id) {
+    tid
+  }
+}

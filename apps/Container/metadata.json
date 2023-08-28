@@ -1,0 +1,14 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "16ebb154-b211-11ec-826e-6385b57aacf7",
+  "appTemplate": {
+    "experimentalPerfFeatures": {
+      "object": { "batchCommitModelEnabled": false }
+    },
+    "version": "3.8.1",
+    "experimentalStabilityFeatures": {
+      "object": { "lockModelForUpdates": true }
+    }
+  }
+}

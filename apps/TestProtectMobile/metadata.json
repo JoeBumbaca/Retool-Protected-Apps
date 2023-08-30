@@ -1,0 +1,15 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "ba28619e-474a-11ee-b653-dfa25c23b991",
+  "appTemplate": {
+    "experimentalPerfFeatures": {
+      "object": { "useRuntimeV2": true, "runtimeV2OptOut": false }
+    },
+    "rootScreen": "tabscreen",
+    "isMobileApp": true,
+    "version": "3.8.3",
+    "multiScreenMobileApp": true,
+    "experimentalDataTabEnabled": true
+  }
+}

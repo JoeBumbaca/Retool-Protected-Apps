@@ -1,0 +1,13 @@
+<App>
+  <ModuleContainerWidget
+    id="moduleContainer"
+    backgroundColor="white"
+    isGlobalWidgetContainer={true}
+  >
+    <Image
+      id="image1"
+      horizontalAlign="center"
+      src="https://placekitten.com/400/300"
+    />
+  </ModuleContainerWidget>
+</App>

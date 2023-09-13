@@ -1,0 +1,305 @@
+{
+  "CitySelect": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 5.2,
+    "height": 0.8,
+    "width": 12
+  },
+  "CitySelect2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "ffaab",
+    "row": 2.2,
+    "height": 0.8,
+    "width": 9
+  },
+  "DabaseDevelopment": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 16,
+    "height": 5.4,
+    "width": 7
+  },
+  "DabaseDevelopment2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "row": 10.6,
+    "col": 6,
+    "height": 9,
+    "width": 6
+  },
+  "DabaseDevelopment3": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "row": 10.6,
+    "height": 9,
+    "width": 6
+  },
+  "DabaseDevelopment4": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "row": 19.6,
+    "height": 9,
+    "width": 6
+  },
+  "DabaseDevelopment5": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "row": 19.6,
+    "col": 6,
+    "height": 9,
+    "width": 6
+  },
+  "DocumentStatus": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 35,
+    "height": 1.4
+  },
+  "EndEnergyIntensityDisplay": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 0.6,
+    "height": 0.8,
+    "width": 1
+  },
+  "ExpirationChart": {
+    "container": "tabbedContainer1",
+    "subcontainer": "ffaab",
+    "row": 11,
+    "height": 7,
+    "width": 9
+  },
+  "ExpirationRateDisplay": {
+    "container": "tabbedContainer1",
+    "subcontainer": "ffaab",
+    "row": 1.6,
+    "col": 9,
+    "height": 3.4
+  },
+  "ExpirationTable": {
+    "container": "tabbedContainer1",
+    "subcontainer": "ffaab",
+    "row": 3,
+    "height": 8,
+    "width": 9
+  },
+  "OverviewTable": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 7.2,
+    "height": 8,
+    "width": 7
+  },
+  "PRIMEnergyIntensityDisplay2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 0.6,
+    "col": 1,
+    "height": 0.8,
+    "width": 1
+  },
+  "ReportTable": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "row": 1,
+    "height": 9.4,
+    "width": 12
+  },
+  "UnderEndEnergyValueTable": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "row": 41.6,
+    "col": 1,
+    "height": 4.6,
+    "width": 6
+  },
+  "UnderEndValueBox": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "row": 43.2,
+    "col": 7,
+    "height": 1
+  },
+  "avatar1": {
+    "rowGroup": "footer",
+    "subcontainer": "sidebarFrame1",
+    "height": 0.2,
+    "width": 1
+  },
+  "breadcrumbs1": { "row": 0.6, "height": 0.6, "width": 12 },
+  "button3": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "row": 33.6,
+    "height": 1,
+    "width": 12
+  },
+  "chart1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 0,
+    "col": 9,
+    "height": 5
+  },
+  "chart2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "ffaab",
+    "row": 5,
+    "col": 9,
+    "height": 5.4
+  },
+  "chart5": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 0,
+    "col": 4,
+    "width": 5
+  },
+  "chart6": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "row": 28.6,
+    "width": 12
+  },
+  "chart7": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "row": 34.6,
+    "col": 2,
+    "height": 6,
+    "width": 8
+  },
+  "chart8": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 21.4,
+    "height": 6,
+    "width": 7
+  },
+  "chart9": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 27.4,
+    "height": 7,
+    "width": 7
+  },
+  "divider1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 6,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 5,
+    "height": 0.2,
+    "width": 12
+  },
+  "expirationDateSelect": {
+    "container": "tabbedContainer1",
+    "subcontainer": "ffaab",
+    "row": 1.2,
+    "height": 1
+  },
+  "image1": {
+    "rowGroup": "header",
+    "subcontainer": "sidebarFrame1",
+    "height": 1.6,
+    "width": 1
+  },
+  "image2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "height": 3,
+    "width": 1
+  },
+  "image3": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "col": 1,
+    "height": 3,
+    "width": 1
+  },
+  "mainNavigation1": { "subcontainer": "sidebarFrame1", "width": 1 },
+  "main_title": { "height": 0.6, "width": 5 },
+  "pdf2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 7.2,
+    "col": 7,
+    "height": 11.4,
+    "width": 5
+  },
+  "progressBar1": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "row": 1.2,
+    "height": 0.4,
+    "width": 12
+  },
+  "searchExpirlist": {
+    "container": "tabbedContainer1",
+    "subcontainer": "ffaab",
+    "row": 1.2,
+    "col": 4,
+    "height": 1,
+    "width": 4
+  },
+  "searchReport": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2753c",
+    "height": 1,
+    "width": 9
+  },
+  "search_address": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 6.2,
+    "height": 1,
+    "width": 7
+  },
+  "tabbedContainer1": { "row": 1.2, "height": 0.2, "width": 12 },
+  "tabs1": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "row": 0.2,
+    "height": 0.8,
+    "width": 12
+  },
+  "text1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 4.4,
+    "height": 0.6
+  },
+  "text2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 34.4,
+    "height": 0.6
+  },
+  "text4": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 18.8,
+    "col": 7,
+    "height": 0.6
+  },
+  "text5": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 15.4,
+    "height": 0.6
+  },
+  "timeline2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "c6c53",
+    "row": 19.4,
+    "col": 7,
+    "height": 8.8,
+    "width": 5
+  }
+}

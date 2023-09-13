@@ -1,0 +1,1 @@
+select SUM(CO2_Emissions_kgma) from {{ EPCdatabaseConnect.data }} where EPC_available = True

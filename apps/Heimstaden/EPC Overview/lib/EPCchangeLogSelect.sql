@@ -1,0 +1,1 @@
+select * from {{ ChangeLogConnect.data }} where EPC_ID = {{OverviewTable.selectedRow.id}} 

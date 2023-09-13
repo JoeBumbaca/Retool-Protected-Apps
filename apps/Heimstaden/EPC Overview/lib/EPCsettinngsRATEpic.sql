@@ -1,0 +1,1 @@
+select * from {{ EPCsettings.data }} where Subject = "EPCrating" order by id ASC

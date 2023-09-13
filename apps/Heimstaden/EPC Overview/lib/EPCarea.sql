@@ -1,0 +1,1 @@
+select SUM(area_included_in_EPC_sqm) from {{ EPCdatabaseConnect.data }} where EPC_available = True

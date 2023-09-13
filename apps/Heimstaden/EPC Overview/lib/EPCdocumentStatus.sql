@@ -1,0 +1,1 @@
+select COUNT(TEMP_fileUpload) from {{ EPCdatabaseConnect.data }} where TEMP_fileUpload = True

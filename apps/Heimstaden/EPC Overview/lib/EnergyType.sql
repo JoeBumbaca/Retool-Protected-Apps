@@ -1,0 +1,1 @@
+SELECT Typ_of_energy1, Typ_of_energy2, Typ_of_energy3 from {{ EPCdatabaseConnect.data }} where EPC_available = True

@@ -1,0 +1,1 @@
+select * from {{EPCdatabaseConnect.data}} where Certificate_valid_untill <= {{expirationDateSelect.value}} and (EPC_adress ilike {{ "%" + searchExpirlist.value + "%"}} or {{ searchExpirlist.value == "" }}) and Preservation_order = False and ({{CitySelect2.value}} = 'All' OR City = {{CitySelect2.value}}) 

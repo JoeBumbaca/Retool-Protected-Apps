@@ -1,0 +1,18 @@
+[
+  {
+    "name": "id",
+    "labels": {{formatDataAsObject(EPCtype.data)['kategorie_Verbrachs__Bedarf']}},
+    "values": {{formatDataAsObject(EPCtype.data)['id']}},
+    "type": "pie",
+    "automargin": true,
+    "layout": {
+      "legend": {
+        "xanchor": "left",
+        "orientation": "v"
+      }
+    },
+    "marker": {
+      "colors": {{(formatDataAsObject(EPCtype.data)['kategorie_Verbrachs__Bedarf']).map(v => ['#033663','#247BC7'][[...new Set(formatDataAsObject(EPCtype.data)['kategorie_Verbrachs__Bedarf'])].indexOf(v)])}}
+    }
+  }
+]

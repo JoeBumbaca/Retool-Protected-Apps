@@ -1,0 +1,1 @@
+select AVG(NULLIF(end_energy_intesity_value,0)) from {{ EPCdatabaseConnect.data }} where EPC_available = True

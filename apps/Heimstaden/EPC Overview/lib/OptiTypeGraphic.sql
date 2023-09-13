@@ -1,0 +1,1 @@
+select * from {{ EPCdatabaseConnect.data }} where Optimizations_available = True and and Optimizations_available = False 

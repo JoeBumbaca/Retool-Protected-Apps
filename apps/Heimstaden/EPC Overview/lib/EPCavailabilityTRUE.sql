@@ -1,0 +1,1 @@
+select * from {{ EPCdatabaseConnect.data }} where EPC_available = True 

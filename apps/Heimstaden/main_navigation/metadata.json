@@ -1,0 +1,28 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "8de47693-762f-4e42-93ed-a70ad36fa281",
+  "appTemplate": {
+    "mobileAppSettings": {
+      "object": {
+        "mobileOfflineModeEnabled": false,
+        "displaySetting": {
+          "object": { "landscapeMode": false, "tabletMode": false }
+        }
+      }
+    },
+    "appThemeId": 1,
+    "experimentalFeatures": {
+      "object": { "sourceControlTemplateDehydration": false }
+    },
+    "experimentalPerfFeatures": {
+      "object": {
+        "serverDepGraphEnabled": false,
+        "useRuntimeV2": false,
+        "runtimeV2OptOut": false
+      }
+    },
+    "isGlobalWidget": true,
+    "version": "3.6.5"
+  }
+}

@@ -1,0 +1,1 @@
+select * from {{ EPCquarterSTATS.data }} order by id ASC

@@ -1,0 +1,1 @@
+select * from {{EPCdatabaseConnect.data}} where Certificate_valid_untill <= {{expirationDateSelect.value}} and EPC_available = True and Preservation_order = False

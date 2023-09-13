@@ -1,0 +1,9 @@
+{
+  "main_navigation": {
+    "container": "moduleContainer",
+    "row": 0,
+    "height": 1,
+    "width": 12
+  },
+  "moduleContainer": { "height": 25.2, "width": 12 }
+}

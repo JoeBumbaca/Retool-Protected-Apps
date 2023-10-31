@@ -485,15 +485,6 @@ https://dopiaza.org/tools/datauri/index.php"
           value="{{GetChosenDB2GraphConfig.data.jobs[0]?.config?.specific_config_path ?? `/schemas/${TenantCodeName.value}/db2graph/config.yaml`}}"
         />
         <Switch
-          id="db2graphShiftDates"
-          _defaultValue={false}
-          _disclosedFields={{ array: [] }}
-          disabled={'{{IsProduction.data && stamp.value != "preprod"}}'}
-          hidden=""
-          label="Shift dates"
-          value="{{GetChosenDB2GraphConfig.data.jobs[0]?.config?.shift_dates ?? false}}"
-        />
-        <Switch
           id="db2graphIncremental"
           _defaultValue={false}
           _disclosedFields={{ array: [] }}
@@ -503,6 +494,15 @@ https://dopiaza.org/tools/datauri/index.php"
           value={
             '{{GetChosenDB2GraphConfig.data.jobs[0]?.config?.incremental ?? ChosenDB2Graph.value != "Targets"}}'
           }
+        />
+        <Switch
+          id="db2graphShiftDates"
+          _defaultValue={false}
+          _disclosedFields={{ array: [] }}
+          disabled={'{{IsProduction.data && stamp.value != "preprod"}}'}
+          hidden=""
+          label="Shift dates"
+          value="{{GetChosenDB2GraphConfig.data.jobs[0]?.config?.shift_dates ?? false}}"
         />
       </Body>
       <Footer>
@@ -758,16 +758,16 @@ https://dopiaza.org/tools/datauri/index.php"
     >
       <Body>
         <TextInput
-          id="TailorConcurrentJobs"
+          id="ArgovisorSchedule"
           _defaultValue=""
-          _disclosedFields={{ array: [] }}
-          customValidation="{{parseInt(self.value) < 8 ? null : 'Too high!'}}"
-          label="Tailor concurrent workers"
-          labelWidth="50"
-          tooltipText="Not more than 5 is recommended"
-          value={
-            "{{GetJobsConfig.data.jobs.filter(x=>x.name==\"argovisor\")[0]?.config.tailorConfig.concurrentJobsCount ?? '3'}}"
-          }
+          _disclosedFields={{
+            array: ["patternType", "pattern", "tooltipText"],
+          }}
+          label="Schedule"
+          pattern="^((((\d+,)+\d+|(\d+(\/|-)\d+)|\d+|\*) ?){5})$"
+          patternType="regex"
+          tooltipText="https://crontab.guru/#{{ArgovisorSchedule.value}}"
+          value="{{GetJobsConfig.data.argo_cron.filter(x => x.name?.startsWith('argovisor-tenant'))[0]?.schedule ?? GetJobsConfig.data.argo_cron.filter(x => x.name?.startsWith('argovisor'))[0]?.schedule ??'0 0 * * *'}}"
         />
         <Switch
           id="db2graphSalesforceEnabled"
@@ -779,16 +779,16 @@ https://dopiaza.org/tools/datauri/index.php"
           }
         />
         <TextInput
-          id="ArgovisorSchedule"
+          id="TailorConcurrentJobs"
           _defaultValue=""
-          _disclosedFields={{
-            array: ["patternType", "pattern", "tooltipText"],
-          }}
-          label="Schedule"
-          pattern="^((((\d+,)+\d+|(\d+(\/|-)\d+)|\d+|\*) ?){5})$"
-          patternType="regex"
-          tooltipText="https://crontab.guru/#{{ArgovisorSchedule.value}}"
-          value="{{GetJobsConfig.data.argo_cron.filter(x => x.name?.startsWith('argovisor-tenant'))[0]?.schedule ?? GetJobsConfig.data.argo_cron.filter(x => x.name?.startsWith('argovisor'))[0]?.schedule ??'0 0 * * *'}}"
+          _disclosedFields={{ array: [] }}
+          customValidation="{{parseInt(self.value) < 8 ? null : 'Too high!'}}"
+          label="Tailor concurrent workers"
+          labelWidth="50"
+          tooltipText="Not more than 5 is recommended"
+          value={
+            "{{GetJobsConfig.data.jobs.filter(x=>x.name==\"argovisor\")[0]?.config.tailorConfig.concurrentJobsCount ?? '3'}}"
+          }
         />
         <TextInput
           id="ArgovisorTailorOverrideImageTag"
@@ -1131,23 +1131,6 @@ https://dopiaza.org/tools/datauri/index.php"
             waitType="debounce"
           />
         </Button>
-        <Text
-          id="sherlockConfigIndicator"
-          _disclosedFields={{ array: [] }}
-          value={
-            '{{!isSherlockConfigInvalid.value ? "Config is Valid for upsert ✅" : "Config is Invalid for upsert⛔ ⛔"}}'
-          }
-          verticalAlign="center"
-        />
-        <Button
-          id="updateButton"
-          _disclosedFields={{ array: [] }}
-          submit={true}
-          submitTargetId="SherlockConfigForm"
-          text={
-            '{{!(GetJobsConfig.data.argo_cron.filter(x => x.name?.startsWith(TenantSettingsTabs.labels[TenantSettingsTabs.currentViewIndex].toLowerCase() + \'-tenant\'))[0] ?? false) ? "Create" : "Update" }}'
-          }
-        />
         <Button
           id="deleteButton"
           _disclosedFields={{ array: [] }}
@@ -1166,6 +1149,23 @@ https://dopiaza.org/tools/datauri/index.php"
             waitType="debounce"
           />
         </Button>
+        <Text
+          id="sherlockConfigIndicator"
+          _disclosedFields={{ array: [] }}
+          value={
+            '{{!isSherlockConfigInvalid.value ? "Config is Valid for upsert ✅" : "Config is Invalid for upsert⛔ ⛔"}}'
+          }
+          verticalAlign="center"
+        />
+        <Button
+          id="updateButton"
+          _disclosedFields={{ array: [] }}
+          submit={true}
+          submitTargetId="SherlockConfigForm"
+          text={
+            '{{!(GetJobsConfig.data.argo_cron.filter(x => x.name?.startsWith(TenantSettingsTabs.labels[TenantSettingsTabs.currentViewIndex].toLowerCase() + \'-tenant\'))[0] ?? false) ? "Create" : "Update" }}'
+          }
+        />
       </Footer>
       <Event
         enabled="{{IsStaffRole.data && GetJobsConfig.data != undefined}}"
@@ -1498,24 +1498,6 @@ To see the default config - sightcode/infra/tools/metric_tester/config/default_c
     >
       <Body>
         <TextInput
-          id="useratorSchemaRepo"
-          _defaultValue=""
-          _disclosedFields={{ array: ["background"] }}
-          label="Schema Repo Revision"
-          placeholder={
-            '{{ArgovisorSchemaRevision.value ?? "fork/default-no-op"}}'
-          }
-          style={{
-            ordered: [
-              {
-                background:
-                  "{{GetJobsConfig.data.argo_params.filter(x => x.name?.startsWith('userator-tenant'))[0]?.extra_params?.filter(x => x.name == 'schemaRevision')[0]?.value || GetJobsConfig.data.argo_params.filter(x => x.name?.startsWith('sherlock-tenant'))[0]?.extra_params?.filter(x => x.name == 'schemaRevision')[0]?.value == useratorSchemaRepo.value ? \"#FFFFFF\" : \"#696969\"}}",
-              },
-            ],
-          }}
-          value="{{ GetJobsConfig.data.argo_params.filter(x => x.name?.startsWith('userator-tenant'))[0]?.extra_params?.filter(x => x.name == 'schemaRevision')[0]?.value || GetJobsConfig.data.argo_params.filter(x => x.name?.startsWith('sherlock-tenant'))[0]?.extra_params?.filter(x => x.name == 'schemaRevision')[0]?.value || 'HEAD'}}"
-        />
-        <TextInput
           id="UseratorTenantConfigPath"
           _defaultValue=""
           _disclosedFields={{ array: ["background"] }}
@@ -1535,6 +1517,24 @@ To see the default config - sightcode/infra/tools/metric_tester/config/default_c
           value={
             '{{GetJobsConfig.data.jobs.filter(x=>x.name=="userator")[0]?.config?.configFilePath ??GetJobsConfig.data.jobs.filter(x=>x.name=="sherlock")[0]?.config?.configFilePath ?? `/schemas/${TenantCodeName.value}/config.yaml`}}'
           }
+        />
+        <TextInput
+          id="useratorSchemaRepo"
+          _defaultValue=""
+          _disclosedFields={{ array: ["background"] }}
+          label="Schema Repo Revision"
+          placeholder={
+            '{{ArgovisorSchemaRevision.value ?? "fork/default-no-op"}}'
+          }
+          style={{
+            ordered: [
+              {
+                background:
+                  "{{GetJobsConfig.data.argo_params.filter(x => x.name?.startsWith('userator-tenant'))[0]?.extra_params?.filter(x => x.name == 'schemaRevision')[0]?.value || GetJobsConfig.data.argo_params.filter(x => x.name?.startsWith('sherlock-tenant'))[0]?.extra_params?.filter(x => x.name == 'schemaRevision')[0]?.value == useratorSchemaRepo.value ? \"#FFFFFF\" : \"#696969\"}}",
+              },
+            ],
+          }}
+          value="{{ GetJobsConfig.data.argo_params.filter(x => x.name?.startsWith('userator-tenant'))[0]?.extra_params?.filter(x => x.name == 'schemaRevision')[0]?.value || GetJobsConfig.data.argo_params.filter(x => x.name?.startsWith('sherlock-tenant'))[0]?.extra_params?.filter(x => x.name == 'schemaRevision')[0]?.value || 'HEAD'}}"
         />
         <Checkbox
           id="useratorMutedCheckbox"

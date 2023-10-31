@@ -20,14 +20,6 @@
   </Header>
   <View id="" viewKey="View 1" />
   <Body>
-    <TextInput
-      id="workspaceImportName"
-      _defaultValue=""
-      _disclosedFields={{ array: [] }}
-      label="Workspace Name"
-      labelPosition="top"
-      value="{{importedJsonWorkspace.parsedValue[0].name}}"
-    />
     <FileDropzone
       id="importedJsonWorkspace"
       _disclosedFields={{ array: [] }}
@@ -37,6 +29,14 @@
       labelPosition="top"
       parseFiles={true}
       placeholder="Drop exported workspace json file"
+    />
+    <TextInput
+      id="workspaceImportName"
+      _defaultValue=""
+      _disclosedFields={{ array: [] }}
+      label="Workspace Name"
+      labelPosition="top"
+      value="{{importedJsonWorkspace.parsedValue[0].name}}"
     />
     <Button
       id="button3"

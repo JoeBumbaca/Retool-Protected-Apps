@@ -3,12 +3,19 @@
   "version": "43.0.9",
   "pageUuid": "05b1f354-e928-11ed-abbc-2f7f8425a55e",
   "appTemplate": {
-    "mobileAppSettings": { "object": { "mobileOfflineModeEnabled": false } },
+    "mobileAppSettings": {
+      "object": {
+        "mobileOfflineModeEnabled": false
+      }
+    },
+    "appMaxWidth": "1560px",
     "preloadedAppJavaScript": "function parseSightfullJwt (token) {\n    var base64Url = token.split('.')[1];\n    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');\n    var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {\n        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);\n    }).join(''));\n\n    return JSON.parse(jsonPayload)[\"https://api.sightfull.com:metadata\"];\n};\n\nfunction decimalToHex(decimal, chars) {\n    return (decimal + Math.pow(16, chars)).toString(16).slice(-chars).toUpperCase();\n}\n\nfunction elapsedTime(from, to) {\n  from = new Date(from).getTime();\n  \n  if (!to) {\n    to = new Date().getTime();\n  } else {\n    to = new Date(to).getTime();\n  }\n  \n  var elapsed = Math.floor((to - from) / 1000.0 / 60.0);\n  var days = Math.floor(elapsed / 1440);\n  var hours = Math.floor((elapsed % 1440) / 60);\n  var minutes = elapsed % 60;\n  var formatted = [];\n  \n  if (days > 0)\n    formatted.push(`${days}days`);\n  \n  if (hours > 0)\n    formatted.push(`${hours}hrs`);\n  \n  if (minutes > 0)\n    formatted.push(`${minutes}mins`);\n  \n  return formatted.join(' ') || 'less than a minute';\n}\n\nfunction now_days_delta(delta=0) {\n  var currentTime = new Date();\n\tcurrentTime.setDate(currentTime.getDate()+delta);\n  return currentTime;\n}",
     "experimentalPerfFeatures": {
-      "object": { "batchCommitModelEnabled": false }
+      "object": {
+        "batchCommitModelEnabled": false
+      }
     },
     "isFetching": true,
-    "version": "3.8.1"
+    "version": "3.14.1"
   }
 }

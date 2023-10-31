@@ -2867,4 +2867,9 @@ return data"
       funcBody={include("./lib/isUseratorConfigInvalid.js", "string")}
     />
   </Folder>
+  <RESTQuery
+    id="query100"
+    resourceDisplayName="2xOauthTest"
+    resourceName="a38e35fa-3dcc-4e67-b65b-4150f2f5a81d"
+  />
 </GlobalFunctions>

@@ -314,6 +314,12 @@
       title="Great job"
       type="success"
     />
+    <KeyValueMap
+      id="keyValue1"
+      data={'{\n  "a": 1,\n  "b": 2,\n  "c": 3\n}'}
+      rows={["a", "b", "c"]}
+      rowVisibility={{ ordered: [{ a: true }, { b: true }, { c: true }] }}
+    />
   </View>
   <View id="1" label="Sherlock" viewKey={1}>
     <Include src="./tabs2.rsx" />

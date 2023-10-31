@@ -28,13 +28,6 @@
     </Tabs>
   </Header>
   <View id="0" label="Status" viewKey={0}>
-    <Timeline
-      id="timeline1"
-      isGrouped={true}
-      items="{{ GetJobsTimeline.data.map((x) => x.name) }}"
-      sortedDesc={true}
-      timestamps="{{ GetJobsTimeline.data.map((x) => x.time) }}"
-    />
     <TableLegacy
       id="jobsStatusTable"
       _columns={[
@@ -274,6 +267,13 @@
       showDownloadButton={false}
       sortMappedValue={{ ordered: [{ started_at: true }] }}
       useCompactMode={true}
+    />
+    <Timeline
+      id="timeline1"
+      isGrouped={true}
+      items="{{ GetJobsTimeline.data.map((x) => x.name) }}"
+      sortedDesc={true}
+      timestamps="{{ GetJobsTimeline.data.map((x) => x.time) }}"
     />
   </View>
   <View id="1" label="Argo" viewKey={1}>
@@ -562,6 +562,20 @@
         showInEditor={null}
       >
         <Body>
+          <SegmentedControl
+            id="stepModeSwitch"
+            _data={[]}
+            _defaultValue={null}
+            data="['From', 'Step']"
+            deprecatedLabels=""
+            hideLabel={true}
+            iconPositionByIndex={null}
+            label=""
+            labels="{{ ['Run from', 'Run step'][i] }}"
+            required={true}
+            value="From"
+            values="{{ item }}"
+          />
           <Container
             id="runSpecificContainer"
             disabled=""
@@ -626,20 +640,6 @@
               />
             </Body>
           </Container>
-          <SegmentedControl
-            id="stepModeSwitch"
-            _data={[]}
-            _defaultValue={null}
-            data="['From', 'Step']"
-            deprecatedLabels=""
-            hideLabel={true}
-            iconPositionByIndex={null}
-            label=""
-            labels="{{ ['Run from', 'Run step'][i] }}"
-            required={true}
-            value="From"
-            values="{{ item }}"
-          />
           <Listbox
             id="stepSelector"
             _data={[]}

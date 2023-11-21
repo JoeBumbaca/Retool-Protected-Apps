@@ -1,0 +1,18 @@
+{
+  "image1": {
+    "row": 6.2,
+    "col": 1,
+    "height": 3,
+    "width": 2
+  },
+  "keyValue1": {
+    "row": 6,
+    "col": 7,
+    "width": 2
+  },
+  "modal1": {
+    "row": 16.2,
+    "col": 1,
+    "height": 1
+  }
+}

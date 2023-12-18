@@ -18,5 +18,15 @@
     "height": 3,
     "width": 2
   },
-  "moduleContainer": { "height": 12, "width": 12 }
+  "image2": {
+    "container": "moduleContainer",
+    "row": 2.8,
+    "col": 1,
+    "height": 3,
+    "width": 2
+  },
+  "moduleContainer": {
+    "height": 12,
+    "width": 12
+  }
 }

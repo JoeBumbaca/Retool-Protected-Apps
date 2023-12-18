@@ -11,6 +11,11 @@
       backgroundColor="white"
       isGlobalWidgetContainer={true}
     >
+      <Image
+        id="image2"
+        horizontalAlign="center"
+        src="https://placekitten.com/400/300"
+      />
       <Button id="button1" styleVariant="solid" text="Button" />
       <Image
         id="image1"

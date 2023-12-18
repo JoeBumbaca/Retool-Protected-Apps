@@ -3,15 +3,9 @@
   "version": "43.0.9",
   "pageUuid": "20bf3054-41f1-11ee-bb6f-574ac401c30f",
   "appTemplate": {
-    "experimentalPerfFeatures": {
-      "object": {
-        "serverDepGraphEnabled": false,
-        "useRuntimeV2": true,
-        "runtimeV2OptOut": false
-      }
-    },
+    "appMaxWidth": "1560px",
     "isGlobalWidget": true,
-    "version": "3.8.1",
+    "version": "3.22.4",
     "experimentalDataTabEnabled": true
   }
 }

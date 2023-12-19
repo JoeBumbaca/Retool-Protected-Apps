@@ -1,0 +1,24 @@
+{
+  "type": "postgresql",
+  "host": "banana",
+  "port": "5432",
+  "databaseName": "avocado",
+  "databaseUsername": "orange",
+  "description": null,
+  "outboundRegion": null,
+  "ssl": false,
+  "editPrivilege": false,
+  "options": {
+    "sshHost": "",
+    "version": "SqlQueryUnified",
+    "sshUsername": "",
+    "authentication": "user_password",
+    "queryEditorModes": { "allowGuiMode": true, "allowSqlMode": true },
+    "sshTunnelEnabled": true,
+    "sshPrivateKeyName": ""
+  },
+  "environment": "production",
+  "dynamicallyQueryable": false,
+  "uuid": "48019488-fc32-4c80-b468-5432f023db57",
+  "toolscriptVersion": "1.0.0"
+}
